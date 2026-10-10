@@ -1,0 +1,638 @@
+{
+  "experiment_id": "test-record",
+  "provenance": "synthetic_contract_tests_and_real_source_integrity",
+  "started_at": "2026-10-10T05:36:02.255849+00:00",
+  "finished_at": "2026-10-10T05:38:36.806095+00:00",
+  "environment": {
+    "python": "3.13.16",
+    "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39",
+    "libraries": {
+      "pydantic": "2.13.5",
+      "numpy": "2.3.5",
+      "pypdf": "6.10.0",
+      "pdfplumber": "0.11.9",
+      "pypdfium2": "5.13.0"
+    }
+  },
+  "tests_run": 126,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 0,
+  "records": [
+    {
+      "test_id": "tests.test_case_review.CaseEvidenceTests.test_body_required_for_every_topic",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_case_review.CaseEvidenceTests.test_duplicate_source_id_rejected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_case_review.CaseEvidenceTests.test_full_source_binding_without_model_quote",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_case_review.CaseEvidenceTests.test_gap_claim_requires_requirement_source",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_case_review.CaseEvidenceTests.test_invented_page_rejected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_case_review.CaseEvidenceTests.test_malformed_structure_fails_without_crashing",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_case_review.CaseEvidenceTests.test_missing_topic_cannot_pass_coverage",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_case_review.CaseEvidenceTests.test_no_official_weights_and_illegal_scale",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_case_review.CaseEvidenceTests.test_prompt_excludes_outcome_and_contains_visual_limit",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_case_review.CaseEvidenceTests.test_visual_fact_cannot_attach_to_different_submission",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_case_review.CaseEvidenceTests.test_visual_fact_transfer_uses_whitelist",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.EvidenceTests.test_ambiguous_project_isolated",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.EvidenceTests.test_boolean_position_rejected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.EvidenceTests.test_empty_query_and_file_scope",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.EvidenceTests.test_manifest_escape_rejected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.EvidenceTests.test_original_excerpt_valid",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.EvidenceTests.test_source_bytes_mismatch_rejected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.EvidenceTests.test_tampered_identity_rejected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.EvidenceTests.test_tampered_quote_rejected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.EvidenceTests.test_unknown_project_no_fallback",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.EvidenceTests.test_wrong_page_rejected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.LifecycleTests.test_backup_restore_database_and_artifacts",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.LifecycleTests.test_bundle_switch_and_whole_bundle_rollback",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.LifecycleTests.test_concurrent_workers_claim_once",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.LifecycleTests.test_corrupted_artifact_detected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.LifecycleTests.test_corrupted_backup_database_rejected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.LifecycleTests.test_cross_project_input_rejected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.LifecycleTests.test_expired_worker_without_reclaim_rejected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.LifecycleTests.test_future_file_and_result_input_rejected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.LifecycleTests.test_idempotence_and_conflicting_payload",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.LifecycleTests.test_late_outcome_correction_preserves_frozen_dataset",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.LifecycleTests.test_latest_component_rejected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.LifecycleTests.test_lease_expiry_recovery_and_late_worker_rejected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.LifecycleTests.test_new_file_preserves_old_snapshot",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.LifecycleTests.test_objects_immutable_even_sql_update",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.LifecycleTests.test_unvalidated_incompatible_and_production_release_rejected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.OutcomeTests.test_candidate_word_in_body_not_award",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.OutcomeTests.test_invalid_numbers_need_review",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.OutcomeTests.test_slash_unknown_but_explicit_zero_is_zero",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.OutcomeTests.test_wrapped_candidate_title_and_final_title_differ",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.PredictionContractTests.test_unavailable_prediction_cannot_show_score_or_probability",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.RuleDiagnosticTests.test_ambiguous_multiple_patches_require_review",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.RuleDiagnosticTests.test_contradiction_then_recheck_corrected_fixture",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.RuleDiagnosticTests.test_different_material_sections_not_false_conflict",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.RuleDiagnosticTests.test_patch_requires_matching_original",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.RuleDiagnosticTests.test_recommendation_not_denial",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_core.RuleDiagnosticTests.test_unchecked_ai_option_not_selected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_deepseek.DeepSeekBoundaryTests.test_budget_rejected_before_network",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_deepseek.DeepSeekBoundaryTests.test_external_endpoint_rejected_without_network",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_deepseek.DeepSeekBoundaryTests.test_http_error_body_never_enters_exception",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_deepseek.DeepSeekBoundaryTests.test_json_array_not_accepted",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_deepseek.DeepSeekBoundaryTests.test_larger_thinking_budget_can_reach_provider",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_deepseek.DeepSeekBoundaryTests.test_model_content_credential_rejected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_deepseek.DeepSeekBoundaryTests.test_private_credential_read",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_deepseek.DeepSeekBoundaryTests.test_reasoning_and_request_headers_not_archived",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_deepseek.DeepSeekBoundaryTests.test_redirect_refused",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_deepseek.DeepSeekBoundaryTests.test_thinking_does_not_send_ineffective_temperature",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_deepseek.DeepSeekBoundaryTests.test_truncated_json_not_accepted",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_deepseek.DeepSeekBoundaryTests.test_truncation_keeps_only_numeric_usage_and_safe_reason",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_deepseek.DeepSeekBoundaryTests.test_world_readable_credential_rejected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_deepseek.ScoreAndEvidenceTests.test_candidate_with_fake_official_weights_rejected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_deepseek.ScoreAndEvidenceTests.test_case_input_excludes_metadata",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_deepseek.ScoreAndEvidenceTests.test_discontinuous_quote_rejected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_deepseek.ScoreAndEvidenceTests.test_duplicate_answer_ids_rejected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_deepseek.ScoreAndEvidenceTests.test_duplicate_evidence_id_rejected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_deepseek.ScoreAndEvidenceTests.test_evidence_binding_retains_exact_source",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_deepseek.ScoreAndEvidenceTests.test_frozen_input_cannot_silently_change",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_deepseek.ScoreAndEvidenceTests.test_invalid_evidence_id_rejected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_deepseek.ScoreAndEvidenceTests.test_out_of_scale_cutoff_rejected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_deepseek.ScoreAndEvidenceTests.test_public_rules_trial_never_sends_private_body",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_deepseek.ScoreAndEvidenceTests.test_score_in_original_text_triggers_leakage_audit",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_deepseek.ScoreAndEvidenceTests.test_user_report_cannot_be_official_label",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_deepseek.ScoreAndEvidenceTests.test_user_report_cannot_self_approve_training",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_deepseek.ScoreAndEvidenceTests.test_wrong_project_page_rejected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_model_service.ProviderRoutingTests.test_adapter_addition_preserves_existing_route",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_model_service.ProviderRoutingTests.test_current_adapter_only_deepseek",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_model_service.ProviderRoutingTests.test_duplicate_adapter_cannot_replace_existing_route",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_model_service.ProviderRoutingTests.test_mismatched_adapter_identity_rejected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_model_service.ProviderRoutingTests.test_registration_is_lazy",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_model_service.ProviderRoutingTests.test_unknown_provider_cannot_fall_back_to_deepseek",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_paths.OriginalTests.test_prefers_workspace_then_cache_then_explains_fetch",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.AdmissionTests.test_eligible_flag_must_match_exclusion",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.AdmissionTests.test_failed_run_stays_in_evaluation_with_fallback",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.AdmissionTests.test_format_b_numbers_are_decimal_strings",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.AdmissionTests.test_only_verified_published_technical_totals",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.AdmissionTests.test_prediction_must_bind_same_inputs",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.ArchiveAuditTests.test_admissible_and_verified_official_results_counted",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.GroupingTests.test_folds_balanced_and_deterministic",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.GroupingTests.test_same_template_never_crosses_folds",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.GroupingTests.test_tampered_split_rejected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.GroupingTests.test_transitive_project_template_body_groups",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.MethodTests.test_cluster_bootstrap_deterministic",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.MethodTests.test_conformal_quantile_finite_sample",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.MethodTests.test_exported_model_formula_matches_internal_prediction",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.MethodTests.test_learning_curve_nested_fractions",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.MethodTests.test_linear_recovers_known_bias",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.MethodTests.test_median_impute_and_indicator_only_when_missingness_varies",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.MethodTests.test_only_pf1_features_enter_models",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.MethodTests.test_pav_monotone_and_ties",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.MethodTests.test_pf1_artifact_preferred_and_fallback_derived",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.MethodTests.test_test_labels_never_influence_predictions",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.RankingAndProbabilityTests.test_item_matching_one_to_one",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.RankingAndProbabilityTests.test_probability_metrics",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.RankingAndProbabilityTests.test_within_project_ranking",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.ScoringModelContractTests.test_golden_first_vector_by_hand",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.ScoringModelContractTests.test_golden_vectors",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.ScoringModelContractTests.test_model_id_changes_with_parameters",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.SyntheticSignalEvalTests.test_calibration_beats_baselines_and_verdict_passes",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.SyntheticSignalEvalTests.test_conformal_coverage_near_nominal",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.SyntheticSignalEvalTests.test_learning_curve_and_text_arms_not_selected",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.SyntheticSignalEvalTests.test_scale_and_split_counts",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.SyntheticSignalEvalTests.test_scoring_model_bundle_contract",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.SyntheticSignalEvalTests.test_verified_official_subset_reported",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.SyntheticSignalEvalTests.test_within_project_ranking_and_extras",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.SyntheticVerdictTests.test_deterministic_with_fixed_seed",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.SyntheticVerdictTests.test_holdout_runs_once_per_protocol",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.SyntheticVerdictTests.test_merged_sources_dedup_by_body",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.SyntheticVerdictTests.test_no_signal_not_passed_and_text_methods_dropped",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.SyntheticVerdictTests.test_not_evaluable_bundle_has_no_model",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.SyntheticVerdictTests.test_protocol_requires_baseline_and_system_method",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.SyntheticVerdictTests.test_tiny_set_not_evaluable_without_accuracy",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.TextTests.test_body_text_verified_and_cached",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.TextTests.test_hashing_deterministic_and_similarity",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.TextTests.test_knn_uses_only_pool_and_excludes_same_group",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.TimeHoldoutTests.test_label_known_after_cutoff_not_used_for_training",
+      "status": "passed"
+    },
+    {
+      "test_id": "tests.test_score_eval.TimeHoldoutTests.test_latest_groups_test_and_crossing_group_quarantined",
+      "status": "passed"
+    }
+  ],
+  "source_integrity": {
+    "CASE-001_广德_污水管网改造及新建/01-招标资料/CASE-001_招标文件_20260820.pdf": {
+      "sha256": "0ac3fc35e412cd8aeec7614f28c41743331dedd5d22be988feab553296006e25",
+      "matches_manifest": true
+    },
+    "CASE-001_广德_污水管网改造及新建/02-投标文件/CASE-001_技术标_安徽秉一市政_20260910.pdf": {
+      "sha256": "5027159571bf015e6c0d01a8f782a868ad382a08c24520187f7d23fb2f23779f",
+      "matches_manifest": true
+    },
+    "公开规则资料/政策/合政秘〔2024〕78号_评定分离管理办法_20241108.pdf": {
+      "sha256": "c86463907785e1aeab4edb23eff29ce3be221c603202623d0e008ccbc7a6318b",
+      "matches_manifest": true
+    },
+    "公开规则资料/政策/合公信〔2026〕20号_电子招标投标操作规程_20260407.pdf": {
+      "sha256": "b6888deb5d963aeab24764966f25dc3c91f745d4fd58216bab1263bd0bb9bd13",
+      "matches_manifest": true
+    },
+    "公开规则资料/政策/合公信〔2026〕46号_大模型管理办法修订_20260706.pdf": {
+      "sha256": "0747784491c35afb20abdc4a82c70f00818a392935f3bde34accff70d9455918",
+      "matches_manifest": true
+    },
+    "公开规则资料/2026BFFGZ51067/2026BFFGZ51067_招标文件_20260904.pdf": {
+      "sha256": "24c1c81ec1ca7e9449dd00ca2a136cfcf44e6ccd97e57acb1d8197e67191912b",
+      "matches_manifest": true
+    },
+    "公开规则资料/2026BFFGZ51067/2026BFFGZ51067_补疑1_20260911.pdf": {
+      "sha256": "b7f8c220b347949a3791e6309f45eb2d0e6ebf96402c0220ee54ef26a7286516",
+      "matches_manifest": true
+    },
+    "公开规则资料/2026BFFGZ51067/2026BFFGZ51067_评标情况一览表_20260930.pdf": {
+      "sha256": "91badac4c62dfcde1467cde1b48aa2e49aef78f39efce60420ced357bdea8cce",
+      "matches_manifest": true
+    },
+    "公开规则资料/2026BFFGZ51067/2026BFFGZ51067_候选人公示_20260930.pdf": {
+      "sha256": "ef52a39245ef2084077d02142e3a2422cd274710648c643e5ea36a0d1ac07834",
+      "matches_manifest": true
+    },
+    "公开规则资料/2026BFJGZ50917/2026BFJGZ50917_招标文件_202608日期未注明.pdf": {
+      "sha256": "c3af9ea9e24de0925e5c51161be1c7feb1fd6eb11783e84c395ac4454d45523d",
+      "matches_manifest": true
+    },
+    "公开规则资料/2026BFJGZ50917/2026BFJGZ50917_补疑1_20260902.pdf": {
+      "sha256": "bbc3b65fd3f8e22268b206f5635f4f922c863bebc69cc6907f2929dbbba1563e",
+      "matches_manifest": true
+    },
+    "公开规则资料/2026BFJGZ50917/2026BFJGZ50917_补疑2_20260909.pdf": {
+      "sha256": "61b3a7830a0aa81464ab22b8483e4e0a15a4f27e9700f2982211e1b0777e642c",
+      "matches_manifest": true
+    },
+    "公开规则资料/2026BFJGZ50917/2026BFJGZ50917_评标情况一览表_20260918.pdf": {
+      "sha256": "ddc57eb2f4d4ef71b4d4a6f7f88beb24671b766d27d2e44bd13bbf6c4b1237c3",
+      "matches_manifest": true
+    },
+    "公开规则资料/2026BFJGZ50917/2026BFJGZ50917_候选人公示_20260918.pdf": {
+      "sha256": "fed2609ca6f7163f078c645146793882ecf1800bd499a6e82f9a9c2b964b858c",
+      "matches_manifest": true
+    }
+  },
+  "credential_leak_files": [],
+  "credential_file_permissions_private": true,
+  "code_sha256": {
+    "__init__.py": "147ff22a6ff7df27e64b00d96ba68c0d678e8d6bdc43fab814fa4e1341031521",
+    "contracts.py": "c0af2183f3c08415c7427719cf8ba78f1468bf81e2ff32023754da10999c5f21",
+    "deepseek_client.py": "c040a4814ebeebff4d5316a88364d25d2fd677839d8d5cccb8294c6315a2ed13",
+    "diagnostics.py": "89fc8edac65866e8fc554c644175700379fd1458b4ff37660d7ab30ed364e615",
+    "intake.py": "2d94a7d2fe77fdfd5cdb22a72723e5807a80adee0d3dfda745b6f988e615670d",
+    "lifecycle.py": "1f33be102aca18b77246227643db5b9694f7bbe31d1008a04d94ca0da0b21d7c",
+    "llm_baseline.py": "a059cc5d6ac29945a08dc2635e5c8cf8712c4a156beb3068eb8257e6e8dde84e",
+    "llm_common.py": "bb5aa250b064ac5cbf4e7b7fd7fc5f44809c00ebd09d6d35e869db5d449ddc77",
+    "llm_fulltext.py": "a23ce3c83e018d113101d995ee41da04fd2d62f8848a00e02f818b9c48e5bdf1",
+    "llm_rules.py": "fd4ab778deb04cca6ad1703fd819b7514134e95e38b62a45ee3163d99f51479d",
+    "llm_visual.py": "5ba7716b0d61e7ee3a551be0a6c2fbab756ec968574e57c06fd2e62e71a2a8ed",
+    "model_service.py": "e3e27bb47b16b5b679e98fa684ae9c348e0e7ed598219884713d7c64cb33b673",
+    "ocr_probe.py": "0c2da36bafa59ee1c7dd42f76e3cd933057d8f89a66d919735674f515ace0461",
+    "outcomes.py": "f883a69cc7a75dbf19d8044e88440f1078646a87f67c9b734331b51631ac41be",
+    "paths.py": "8953e625cc5bd9355457d23d7679bcb804f242c8120d3ca84d7aa15c661581f3",
+    "retrieval_eval.py": "876bd0daf047449646469af339a8cc19266a976dd782ff77d3ea6e5f51c4c40b",
+    "rule_checks.py": "db97dc45b2612565f8d6fe93d21b432b8bd1042739354c39d45e72fc0bdc6cfb",
+    "rule_evidence.py": "da624ddf47a20020d20207d7d7fe6fa1b0fe206acb33addfdc98a7747c9e09c3",
+    "run_all.py": "15edbd9d6316141155679aa0dcc42f3b179e1b87f01114a0bf637bcf197941d1",
+    "score_eval.py": "5a3f44882d3c6dcae75d22fa7e3092adc920e1a4e47bd563175d95f27813ca11",
+    "score_model.py": "8bd6512af7b44f30df9f3c9e528ce748a22693209f0a33fdbf4aae784009621b",
+    "score_text.py": "3716d0b1493e680b7f40a882f8ba9e70ae9b8c1298bcf711939db7af145d94d2",
+    "scoring.py": "77d4acf5c5d096f2f56cf8311178e02a7a3caf831980e7bf35b71c98ca675b63",
+    "store.py": "54a3eba3c9b4a34d73cb12d23a8dc3b7a9140b6d56d1f1a2ac9b22ee1dcda34c"
+  },
+  "artifacts_sha256": {
+    "contracts.schema.json": "ece559d770c128ce391493dea3348ceb0bfdd267cfdb7f56bad184dd4a0c638d",
+    "llm-fulltext-baseline.json": "ebc4707e1b0afc73fca512d10947c2b5f999d9f2ffcb59aa8cdfd10e47164ba5",
+    "llm-fulltext-budget-probe.json": "acbb68af8aaee37d3cfe2452207104985ebd9532e42035acf7b764812125a27f",
+    "llm-fulltext-id-bound.json": "25a254bc3c97d6e13f86f77f151a99856b1c6941213ab85877097587ff2002e1",
+    "llm-fulltext-visual-facts.json": "8b04c0805484b696266537462310200fb2056b9cf93aad7c16a1d53fccdcad1f",
+    "llm-public-rules-flash.json": "f318ecaf7ecbe36f2b13b7e16de7ad0b4254f5906528f1f0c66229c370712b1e",
+    "llm-public-rules-pro.json": "d7a7d98116b71c4495338c3b6619eb5dadef7ab712edf9419d74934bf2b96cdb",
+    "llm-visual-probe.json": "43d01de92ad67860adb9bb035c832c8641a677c4956f1effac465c4dd89f557a",
+    "ocr-probe.json": "c97ca61058dda7ff2b9aed81e7a262109f2ae37cd78ba8875496c9aa2c87477a",
+    "orchestration-check.json": "ccae5c3312e348afec468ef6cbfdf5f3c82ae7da60f76d284de85229704a9c42",
+    "outcome-import.json": "ff90868fe826954aa2c97d6ed2ef2390c4e9e56a4c92496b1d73daaeadabb454",
+    "retrieval-rules.json": "6f7ef9ee381985618c61a56b40ad35f59b16eda02c33e5b86334ab78216c6d28",
+    "review-fulltext.json": "7512faeafedd57ad6b9b7a3ac53121f68de63dc7e83f897656a3c78144f31220",
+    "review-public-rules.json": "46dead59a7e719aa08a3f44a3757176d092fbdcb254c0f8e7e6597c1db924a52",
+    "rule-checks.json": "b821b2b15382f6c28a0d51378608e58509551851acf979dde26a924aca0458ac",
+    "score-readiness.json": "ebd06ff5182e82e766221af5f3cc35398488de18ca071e4bdec025fe16461092"
+  },
+  "elapsed_seconds": 154.567,
+  "local_checks_passed": true,
+  "limits": [
+    "夹具分数不证明真实预测精度",
+    "本地发布回退不代替生产联调或正式发布",
+    "角色参数检查不代替身份认证"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "call_id": "THINK-FLASH-1",
+  "input_file_sha256": "e3c94bcfc7faec22a29b1f49fa6e23a55cb9f7dceab906802d5e115352d87f7f",
+  "started_at": "2026-10-07T04:27:32.102346+00:00",
+  "status": "failed",
+  "error_category": "incomplete_generation",
+  "http_status": null
+}

@@ -1,0 +1,38 @@
+{
+  "call_id": "RULE-012",
+  "input_file_sha256": "3e0bfe8d742a339a4fadf9f87e5d9127181ccd03d1cc4c210e9fbb93b6b3aa12",
+  "started_at": "2026-10-07T03:56:45.055518+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-flash",
+    "response_model": "deepseek-flash",
+    "response_id": "a8bc943c-9956-495a-9ff5-b39ab40b48c4",
+    "created": 1791345405,
+    "usage": {
+      "prompt_tokens": 4329,
+      "completion_tokens": 274,
+      "total_tokens": 4603,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 3689
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.912,
+    "request_sha256": "2b95ffe1ad52df25022bdf80899759be83acc0da8bda68f06c992925d75cc320",
+    "response_sha256": "96812b595c33f9e93025a4dac6fab530e8a3351600500eff2cd5136d1ecc37f6",
+    "output": {
+      "task_id": "RULE-012",
+      "status": "supported",
+      "answer": "技术入围家数按技术文件详细评审得分由高到低排序确定：进入技术文件详细评审的投标人不足5家时全部入围；达到或超过5家（含5家）时取前5家入围，得分相同且排序最末的投标人均入围（即同分末位并列者一并入围）。入围后评标委员会须对入围投标人的商务及技术文件初步评审指标再次复核，复核通过方可进入报价文件开启和评审，复核不通过不予增补；若进入报价文件评审的投标人不足3家，评标委员会将否决所有投标。同分处理仅规定于技术入围末位并列情形；报价文件评审通过后的中标候选人推荐阶段，评标价相同时按技术文件详细评审得分高者优先，仍相同则由评标委员会投票按少数服从多数确定顺序。",
+      "evidence_ids": [
+        "E1",
+        "E5",
+        "E6"
+      ],
+      "limitations": "以上为原招标文件（PUB-004）第三章评标办法及其附件1、附件2的规定，未提供补疑内容，补疑是否修改上述规则未知；技术入围规则与中标候选人推荐规则分属不同阶段，不得混用；本回答不涉及最终中标结果。"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-008",
+  "input_file_sha256": "bba280a2020b085f7a0dcb3414e70e6619f9ee76929b8fafd7466c8376b6dbff",
+  "started_at": "2026-10-07T03:58:44.886984+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro",
+    "response_model": "deepseek-v4-pro",
+    "response_id": "33d4443f-9aaa-441b-883c-786383b2f005",
+    "created": 1791345525,
+    "usage": {
+      "prompt_tokens": 2871,
+      "completion_tokens": 88,
+      "total_tokens": 2959,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 2615
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.782,
+    "request_sha256": "9578598b4be04651cd13204edd9bde1b72f2c9d9251c2ae4bc16b5be2c9749de",
+    "response_sha256": "521b535ee34c5fea6a7171aea7fd2d3d8dd09182d1b5f9ea233da5096421d435",
+    "output": {
+      "task_id": "RULE-008",
+      "status": "supported",
+      "answer": "施工组织设计满分100分，整体赋分，无分项分值。评标委员会综合考虑，酌情赋分。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "证据来自招标文件正文，未提供补疑文件，无法确认补疑是否修改评分规则。"
+    }
+  }
+}

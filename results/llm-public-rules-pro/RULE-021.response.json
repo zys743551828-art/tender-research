@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-021",
+  "input_file_sha256": "a21f3d0cebe2c76e30da32b7fa9346a2c29707437de94c06b7ea0a6051afeacc",
+  "started_at": "2026-10-07T03:59:08.820229+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro",
+    "response_model": "deepseek-v4-pro",
+    "response_id": "4aa4118d-3b08-4ecc-a5fb-ec67b7f15594",
+    "created": 1791345549,
+    "usage": {
+      "prompt_tokens": 3832,
+      "completion_tokens": 98,
+      "total_tokens": 3930,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 3576
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.725,
+    "request_sha256": "8ec8b85878759e3042b0c334ed81539930d8933ba4fe9dfd3bd55c6582229a34",
+    "response_sha256": "cda5db0282332b8fc4c6f02c49f16b2cea8c9b00e4e203c044f9dde21428f121",
+    "output": {
+      "task_id": "RULE-021",
+      "status": "supported",
+      "answer": "工程重点难点保障体系技术权重为40%。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "证据来自招标文件正文（PUB-008）第88页，明确列出技术文件评审中“工程重点难点保障体系”权重为40%。未提供补疑文件，无法确认补疑是否修改该权重。"
+    }
+  }
+}

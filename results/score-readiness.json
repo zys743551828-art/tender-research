@@ -1,0 +1,34 @@
+{
+  "experiment_id": "score-readiness",
+  "status": "independent_official_scoring_not_evaluable",
+  "archived_cases": [
+    {
+      "case_id": "CASE-001",
+      "project_id": "2026AFWGZ50940",
+      "submitted_body_files": [
+        "FILE-002"
+      ],
+      "recorded_technical_max": 5,
+      "user_reported_results": 1,
+      "user_reported_technical_results": 1,
+      "official_results": 0,
+      "admissible_technical_results": 0,
+      "verified_official_technical_results": 0,
+      "eligible_for_training": false,
+      "exclusion": "no_admissible_technical_label"
+    }
+  ],
+  "eligible_real_score_pairs": 0,
+  "verified_official_pairs": 0,
+  "independent_projects": 0,
+  "label_sources": [
+    "official_document",
+    "company_ledger"
+  ],
+  "user_reported_technical_pairs": 1,
+  "trained_on_real_cases": false,
+  "model_inference_calls": 76,
+  "reason": "可评测技术总分配对 0 份（其中已核验官方原件 0 份）、独立项目 0 个（评测下限 30 份、10 个）；用户报送结果不计入",
+  "llm_route": "actual_responses_archived",
+  "ranking_route": "score_eval_within_project_ranking"
+}

@@ -1,0 +1,38 @@
+{
+  "call_id": "RULE-029",
+  "input_file_sha256": "2f7e9b78abc97053be0ca58f2b1a8bc026fd70501890adc8d52953b981b04c1a",
+  "started_at": "2026-10-07T03:57:13.305774+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-flash",
+    "response_model": "deepseek-flash",
+    "response_id": "2cc372bf-e9d5-418d-a284-885e5e50bfee",
+    "created": 1791345433,
+    "usage": {
+      "prompt_tokens": 4175,
+      "completion_tokens": 297,
+      "total_tokens": 4472,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 3663
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 2.222,
+    "request_sha256": "341d9794c76b4c71360c879f4f3374a83023bfbd72cd1a83933acd2405ce227b",
+    "response_sha256": "6308dd153a586025c15f4fe5d64b1d5f589315b5dfb2d7f45ab7d8623d541935",
+    "output": {
+      "task_id": "RULE-029",
+      "status": "supported",
+      "answer": "有明确答复：本项目不计保存养护。补疑2（PUB-010）针对“所有绿化工程缺少保存期养护（即初验后的成活率养护）”答复：本项目养护等级一级，成活养护3个月，日常养护9个月，不计保存养护。即：成活养护3个月＋日常养护9个月，合计12个月；无保存养护。注意该12个月与招标正文（PUB-008）绿化养护责任书“绿化养护期12个月，从工程竣工验收合格之日起计算”在起算口径上表述不同（补疑未明确起算点），且招标正文质量标准处勾选为二级标准，与补疑“养护等级一级”不一致，属原文件与补疑之间的差异，按补疑视同招标文件组成部分、同等法律效力，应以补疑为准。",
+      "evidence_ids": [
+        "E1",
+        "E5",
+        "E3"
+      ],
+      "limitations": "补疑2仅给出成活养护3个月、日常养护9个月及不计保存养护，未说明该12个月的起算点；招标正文绿化养护责任书载明养护期12个月自竣工验收合格之日起算，二者起算口径是否一致未在材料中明确。招标正文勾选养护标准为二级，补疑称一级，存在不一致，材料未说明修改原因。以上均为招标阶段文件约定，非最终中标结果。"
+    }
+  }
+}

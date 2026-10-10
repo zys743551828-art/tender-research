@@ -1,0 +1,1511 @@
+{
+  "Evidence": {
+    "additionalProperties": false,
+    "properties": {
+      "file_id": {
+        "title": "File Id",
+        "type": "string"
+      },
+      "source_sha256": {
+        "pattern": "^[0-9a-f]{64}$",
+        "title": "Source Sha256",
+        "type": "string"
+      },
+      "source_path": {
+        "title": "Source Path",
+        "type": "string"
+      },
+      "source_ids": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Source Ids",
+        "type": "array"
+      },
+      "pdf_page": {
+        "exclusiveMinimum": 0,
+        "title": "Pdf Page",
+        "type": "integer"
+      },
+      "start_char": {
+        "minimum": 0,
+        "title": "Start Char",
+        "type": "integer"
+      },
+      "end_char": {
+        "exclusiveMinimum": 0,
+        "title": "End Char",
+        "type": "integer"
+      },
+      "quote": {
+        "minLength": 1,
+        "title": "Quote",
+        "type": "string"
+      },
+      "kind": {
+        "const": "source_excerpt",
+        "title": "Kind",
+        "type": "string"
+      },
+      "retrieval_score": {
+        "title": "Retrieval Score",
+        "type": "number"
+      }
+    },
+    "required": [
+      "file_id",
+      "source_sha256",
+      "source_path",
+      "source_ids",
+      "pdf_page",
+      "start_char",
+      "end_char",
+      "quote",
+      "kind",
+      "retrieval_score"
+    ],
+    "title": "Evidence",
+    "type": "object"
+  },
+  "OfficialLabel": {
+    "additionalProperties": false,
+    "properties": {
+      "target": {
+        "enum": [
+          "technical_total",
+          "composite_total"
+        ],
+        "title": "Target",
+        "type": "string"
+      },
+      "value": {
+        "minimum": 0,
+        "title": "Value",
+        "type": "number"
+      },
+      "maximum": {
+        "exclusiveMinimum": 0,
+        "title": "Maximum",
+        "type": "number"
+      },
+      "source_file_id": {
+        "title": "Source File Id",
+        "type": "string"
+      },
+      "source_sha256": {
+        "pattern": "^[0-9a-f]{64}$",
+        "title": "Source Sha256",
+        "type": "string"
+      },
+      "source_pdf_page": {
+        "exclusiveMinimum": 0,
+        "title": "Source Pdf Page",
+        "type": "integer"
+      },
+      "submission_id": {
+        "title": "Submission Id",
+        "type": "string"
+      },
+      "aggregation": {
+        "minLength": 1,
+        "title": "Aggregation",
+        "type": "string"
+      },
+      "confirmed": {
+        "title": "Confirmed",
+        "type": "boolean"
+      },
+      "known_at": {
+        "format": "date-time",
+        "title": "Known At",
+        "type": "string"
+      },
+      "revision": {
+        "title": "Revision",
+        "type": "string"
+      }
+    },
+    "required": [
+      "target",
+      "value",
+      "maximum",
+      "source_file_id",
+      "source_sha256",
+      "source_pdf_page",
+      "submission_id",
+      "aggregation",
+      "confirmed",
+      "known_at",
+      "revision"
+    ],
+    "title": "OfficialLabel",
+    "type": "object"
+  },
+  "ReportedResult": {
+    "additionalProperties": false,
+    "description": "用户报送结果单独保存；不能自动升级为官方监督标签。",
+    "properties": {
+      "result_id": {
+        "title": "Result Id",
+        "type": "string"
+      },
+      "source_kind": {
+        "const": "user_statement",
+        "title": "Source Kind",
+        "type": "string"
+      },
+      "received_date": {
+        "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+        "title": "Received Date",
+        "type": "string"
+      },
+      "source_description": {
+        "minLength": 1,
+        "title": "Source Description",
+        "type": "string"
+      },
+      "verification_status": {
+        "const": "official_source_pending",
+        "title": "Verification Status",
+        "type": "string"
+      },
+      "target": {
+        "enum": [
+          "technical_total",
+          "composite_total"
+        ],
+        "title": "Target",
+        "type": "string"
+      },
+      "target_interpretation": {
+        "minLength": 1,
+        "title": "Target Interpretation",
+        "type": "string"
+      },
+      "value": {
+        "minimum": 0,
+        "title": "Value",
+        "type": "number"
+      },
+      "maximum": {
+        "exclusiveMinimum": 0,
+        "title": "Maximum",
+        "type": "number"
+      },
+      "reported_shortlist_cutoff": {
+        "anyOf": [
+          {
+            "minimum": 0,
+            "type": "number"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Reported Shortlist Cutoff"
+      },
+      "cutoff_scope_status": {
+        "title": "Cutoff Scope Status",
+        "type": "string"
+      },
+      "submission_file_id": {
+        "title": "Submission File Id",
+        "type": "string"
+      },
+      "submission_sha256": {
+        "pattern": "^[0-9a-f]{64}$",
+        "title": "Submission Sha256",
+        "type": "string"
+      },
+      "official_training_eligible": {
+        "const": false,
+        "title": "Official Training Eligible",
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "result_id",
+      "source_kind",
+      "received_date",
+      "source_description",
+      "verification_status",
+      "target",
+      "target_interpretation",
+      "value",
+      "maximum",
+      "cutoff_scope_status",
+      "submission_file_id",
+      "submission_sha256",
+      "official_training_eligible"
+    ],
+    "title": "ReportedResult",
+    "type": "object"
+  },
+  "PairSample": {
+    "$defs": {
+      "LabelItem": {
+        "additionalProperties": true,
+        "description": "官方分项得分；同一分项可有多位评委各一行。",
+        "properties": {
+          "item": {
+            "minLength": 1,
+            "title": "Item",
+            "type": "string"
+          },
+          "value": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Value"
+          },
+          "maximum": {
+            "exclusiveMinimum": 0,
+            "title": "Maximum",
+            "type": "number"
+          },
+          "evaluator": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Evaluator"
+          }
+        },
+        "required": [
+          "item",
+          "maximum"
+        ],
+        "title": "LabelItem",
+        "type": "object"
+      },
+      "PairBody": {
+        "additionalProperties": true,
+        "properties": {
+          "file_id": {
+            "title": "File Id",
+            "type": "string"
+          },
+          "path": {
+            "title": "Path",
+            "type": "string"
+          },
+          "sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "title": "Sha256",
+            "type": "string"
+          },
+          "pages": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Pages"
+          },
+          "text_layer": {
+            "title": "Text Layer",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "file_id",
+          "path",
+          "sha256",
+          "text_layer"
+        ],
+        "title": "PairBody",
+        "type": "object"
+      },
+      "PairFile": {
+        "additionalProperties": true,
+        "properties": {
+          "file_id": {
+            "title": "File Id",
+            "type": "string"
+          },
+          "path": {
+            "title": "Path",
+            "type": "string"
+          },
+          "sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "title": "Sha256",
+            "type": "string"
+          },
+          "pages": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Pages"
+          },
+          "role": {
+            "enum": [
+              "tender",
+              "addendum"
+            ],
+            "title": "Role",
+            "type": "string"
+          }
+        },
+        "required": [
+          "file_id",
+          "path",
+          "sha256",
+          "role"
+        ],
+        "title": "PairFile",
+        "type": "object"
+      },
+      "PairLabel": {
+        "additionalProperties": true,
+        "properties": {
+          "target": {
+            "enum": [
+              "technical_total",
+              "composite_total"
+            ],
+            "title": "Target",
+            "type": "string"
+          },
+          "value": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Value"
+          },
+          "maximum": {
+            "exclusiveMinimum": 0,
+            "title": "Maximum",
+            "type": "number"
+          },
+          "verification_status": {
+            "enum": [
+              "verified",
+              "pending"
+            ],
+            "title": "Verification Status",
+            "type": "string"
+          },
+          "source_kind": {
+            "enum": [
+              "official_document",
+              "company_ledger",
+              "user_statement"
+            ],
+            "title": "Source Kind",
+            "type": "string"
+          },
+          "known_at": {
+            "anyOf": [
+              {
+                "format": "date",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Known At"
+          },
+          "stage_result": {
+            "anyOf": [
+              {
+                "enum": [
+                  "shortlisted",
+                  "not_shortlisted",
+                  "rejected",
+                  "awarded",
+                  "not_awarded",
+                  "unknown"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Stage Result"
+          },
+          "items": {
+            "items": {
+              "$ref": "#/$defs/LabelItem"
+            },
+            "title": "Items",
+            "type": "array"
+          }
+        },
+        "required": [
+          "target",
+          "value",
+          "maximum",
+          "verification_status",
+          "source_kind"
+        ],
+        "title": "PairLabel",
+        "type": "object"
+      }
+    },
+    "additionalProperties": true,
+    "description": "交接格式 A 的一份样本：某项目／标段下某企业的一次实际提交。",
+    "properties": {
+      "sample_id": {
+        "minLength": 1,
+        "title": "Sample Id",
+        "type": "string"
+      },
+      "project_key": {
+        "minLength": 1,
+        "title": "Project Key",
+        "type": "string"
+      },
+      "template_group": {
+        "minLength": 1,
+        "title": "Template Group",
+        "type": "string"
+      },
+      "region": {
+        "title": "Region",
+        "type": "string"
+      },
+      "engineering_type": {
+        "title": "Engineering Type",
+        "type": "string"
+      },
+      "scoring_scheme": {
+        "title": "Scoring Scheme",
+        "type": "string"
+      },
+      "bidder": {
+        "title": "Bidder",
+        "type": "string"
+      },
+      "own_company": {
+        "title": "Own Company",
+        "type": "boolean"
+      },
+      "submitted_at": {
+        "format": "date",
+        "title": "Submitted At",
+        "type": "string"
+      },
+      "tender_files": {
+        "items": {
+          "$ref": "#/$defs/PairFile"
+        },
+        "title": "Tender Files",
+        "type": "array"
+      },
+      "body_file": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/PairBody"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "label": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/PairLabel"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "eligible": {
+        "title": "Eligible",
+        "type": "boolean"
+      },
+      "exclusion": {
+        "anyOf": [
+          {
+            "enum": [
+              "missing_label",
+              "composite_not_technical",
+              "no_text_layer",
+              "duplicate_body",
+              "missing_files",
+              "score_out_of_range"
+            ],
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "title": "Exclusion"
+      }
+    },
+    "required": [
+      "sample_id",
+      "project_key",
+      "template_group",
+      "region",
+      "engineering_type",
+      "scoring_scheme",
+      "bidder",
+      "own_company",
+      "submitted_at",
+      "tender_files",
+      "body_file",
+      "label",
+      "eligible",
+      "exclusion"
+    ],
+    "title": "PairSample",
+    "type": "object"
+  },
+  "SystemPrediction": {
+    "$defs": {
+      "PredictedItem": {
+        "additionalProperties": true,
+        "description": "分项预测；上游追加的数值键（如 grade_index、coverage）按分值加权聚合为特征。",
+        "properties": {
+          "statement": {
+            "default": "",
+            "title": "Statement",
+            "type": "string"
+          },
+          "max_points": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Max Points"
+          },
+          "estimate": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Estimate"
+          },
+          "low": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Low"
+          },
+          "high": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "High"
+          },
+          "failed": {
+            "default": false,
+            "title": "Failed",
+            "type": "boolean"
+          }
+        },
+        "title": "PredictedItem",
+        "type": "object"
+      },
+      "PredictedTotal": {
+        "additionalProperties": true,
+        "properties": {
+          "status": {
+            "enum": [
+              "candidate",
+              "abstained"
+            ],
+            "title": "Status",
+            "type": "string"
+          },
+          "estimate": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Estimate"
+          },
+          "low": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Low"
+          },
+          "high": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "High"
+          },
+          "maximum": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Maximum"
+          }
+        },
+        "required": [
+          "status"
+        ],
+        "title": "PredictedTotal",
+        "type": "object"
+      },
+      "PredictionExtra": {
+        "additionalProperties": true,
+        "description": "产品后端计算并随预测保存的评分特征（feature_spec 如 pf-1）；值为数值或 null。",
+        "properties": {
+          "feature_spec": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Feature Spec"
+          },
+          "features": {
+            "additionalProperties": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "title": "Features",
+            "type": "object"
+          }
+        },
+        "title": "PredictionExtra",
+        "type": "object"
+      },
+      "PredictionInputs": {
+        "additionalProperties": true,
+        "properties": {
+          "tender_sha256": {
+            "items": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "title": "Tender Sha256",
+            "type": "array"
+          },
+          "body_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "title": "Body Sha256",
+            "type": "string"
+          }
+        },
+        "required": [
+          "tender_sha256",
+          "body_sha256"
+        ],
+        "title": "PredictionInputs",
+        "type": "object"
+      }
+    },
+    "additionalProperties": true,
+    "description": "交接格式 B：系统对单份样本的批量预测；只由招标文件与正文产生。",
+    "properties": {
+      "schema": {
+        "const": "system-prediction/1",
+        "title": "Schema",
+        "type": "string"
+      },
+      "sample_id": {
+        "title": "Sample Id",
+        "type": "string"
+      },
+      "status": {
+        "enum": [
+          "succeeded",
+          "failed"
+        ],
+        "title": "Status",
+        "type": "string"
+      },
+      "error": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Error"
+      },
+      "fingerprint": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Fingerprint"
+      },
+      "model": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Model"
+      },
+      "prompt_version": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Prompt Version"
+      },
+      "code_sha256": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Code Sha256"
+      },
+      "inputs": {
+        "$ref": "#/$defs/PredictionInputs"
+      },
+      "technical_full_score": {
+        "anyOf": [
+          {
+            "type": "number"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Technical Full Score"
+      },
+      "prediction": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/PredictedTotal"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "items": {
+        "items": {
+          "$ref": "#/$defs/PredictedItem"
+        },
+        "title": "Items",
+        "type": "array"
+      },
+      "compliance": {
+        "anyOf": [
+          {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Compliance"
+      },
+      "findings": {
+        "anyOf": [
+          {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Findings"
+      },
+      "body": {
+        "anyOf": [
+          {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Body"
+      },
+      "artifact_extra": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/PredictionExtra"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "schema",
+      "sample_id",
+      "status",
+      "inputs"
+    ],
+    "title": "SystemPrediction",
+    "type": "object"
+  },
+  "EvalProtocol": {
+    "$defs": {
+      "EvalCV": {
+        "additionalProperties": false,
+        "properties": {
+          "folds": {
+            "default": 5,
+            "minimum": 2,
+            "title": "Folds",
+            "type": "integer"
+          },
+          "repeats": {
+            "default": 3,
+            "minimum": 1,
+            "title": "Repeats",
+            "type": "integer"
+          }
+        },
+        "title": "EvalCV",
+        "type": "object"
+      },
+      "EvalFeatures": {
+        "additionalProperties": false,
+        "properties": {
+          "include": {
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1,
+            "title": "Include",
+            "type": "array"
+          },
+          "exclude": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Exclude",
+            "type": "array"
+          }
+        },
+        "required": [
+          "include"
+        ],
+        "title": "EvalFeatures",
+        "type": "object"
+      },
+      "EvalHoldout": {
+        "additionalProperties": false,
+        "properties": {
+          "test_fraction": {
+            "default": 0.2,
+            "exclusiveMinimum": 0,
+            "maximum": 0.5,
+            "title": "Test Fraction",
+            "type": "number"
+          },
+          "min_test_samples": {
+            "default": 10,
+            "minimum": 1,
+            "title": "Min Test Samples",
+            "type": "integer"
+          }
+        },
+        "title": "EvalHoldout",
+        "type": "object"
+      },
+      "EvalKnn": {
+        "additionalProperties": false,
+        "properties": {
+          "k": {
+            "default": 10,
+            "minimum": 1,
+            "title": "K",
+            "type": "integer"
+          },
+          "ngrams": {
+            "default": [
+              2,
+              3
+            ],
+            "items": {
+              "type": "integer"
+            },
+            "minItems": 1,
+            "title": "Ngrams",
+            "type": "array"
+          },
+          "hash_bits": {
+            "default": 18,
+            "maximum": 22,
+            "minimum": 10,
+            "title": "Hash Bits",
+            "type": "integer"
+          }
+        },
+        "title": "EvalKnn",
+        "type": "object"
+      },
+      "EvalMinimums": {
+        "additionalProperties": false,
+        "properties": {
+          "labeled_samples": {
+            "default": 30,
+            "minimum": 1,
+            "title": "Labeled Samples",
+            "type": "integer"
+          },
+          "independent_projects": {
+            "default": 10,
+            "minimum": 1,
+            "title": "Independent Projects",
+            "type": "integer"
+          },
+          "slice_samples": {
+            "default": 10,
+            "minimum": 1,
+            "title": "Slice Samples",
+            "type": "integer"
+          },
+          "ranking_projects": {
+            "default": 5,
+            "minimum": 1,
+            "title": "Ranking Projects",
+            "type": "integer"
+          },
+          "shortlist_samples": {
+            "default": 20,
+            "minimum": 1,
+            "title": "Shortlist Samples",
+            "type": "integer"
+          },
+          "item_matches": {
+            "default": 10,
+            "minimum": 1,
+            "title": "Item Matches",
+            "type": "integer"
+          }
+        },
+        "title": "EvalMinimums",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "description": "评测协议：在看测试标签前冻结；文件 SHA 写入报告。",
+    "properties": {
+      "schema": {
+        "const": "score-eval-protocol/1",
+        "title": "Schema",
+        "type": "string"
+      },
+      "frozen_at": {
+        "format": "date",
+        "title": "Frozen At",
+        "type": "string"
+      },
+      "description": {
+        "minLength": 1,
+        "title": "Description",
+        "type": "string"
+      },
+      "target_mae": {
+        "exclusiveMinimum": 0,
+        "maximum": 100,
+        "title": "Target Mae",
+        "type": "number"
+      },
+      "selection": {
+        "default": "cv_mae",
+        "title": "Selection",
+        "type": "string"
+      },
+      "methods": {
+        "items": {
+          "enum": [
+            "mean",
+            "median",
+            "scheme_mean",
+            "raw",
+            "linear",
+            "isotonic",
+            "anchor",
+            "ridge",
+            "ridge_anchor",
+            "ridge_isotonic",
+            "knn",
+            "ridge_knn"
+          ],
+          "type": "string"
+        },
+        "minItems": 2,
+        "title": "Methods",
+        "type": "array"
+      },
+      "ridge_alphas": {
+        "default": [
+          0.1,
+          1.0,
+          10.0,
+          100.0
+        ],
+        "items": {
+          "type": "number"
+        },
+        "minItems": 1,
+        "title": "Ridge Alphas",
+        "type": "array"
+      },
+      "seed": {
+        "title": "Seed",
+        "type": "integer"
+      },
+      "cv": {
+        "$ref": "#/$defs/EvalCV",
+        "default": {
+          "folds": 5,
+          "repeats": 3
+        }
+      },
+      "holdout": {
+        "$ref": "#/$defs/EvalHoldout",
+        "default": {
+          "test_fraction": 0.2,
+          "min_test_samples": 10
+        }
+      },
+      "bootstrap_resamples": {
+        "default": 1000,
+        "minimum": 100,
+        "title": "Bootstrap Resamples",
+        "type": "integer"
+      },
+      "confidence": {
+        "default": 0.95,
+        "exclusiveMaximum": 1,
+        "exclusiveMinimum": 0.5,
+        "title": "Confidence",
+        "type": "number"
+      },
+      "interval_levels": {
+        "default": [
+          0.8,
+          0.9
+        ],
+        "items": {
+          "type": "number"
+        },
+        "minItems": 1,
+        "title": "Interval Levels",
+        "type": "array"
+      },
+      "features": {
+        "$ref": "#/$defs/EvalFeatures"
+      },
+      "knn": {
+        "$ref": "#/$defs/EvalKnn",
+        "default": {
+          "k": 10,
+          "ngrams": [
+            2,
+            3
+          ],
+          "hash_bits": 18
+        }
+      },
+      "slices": {
+        "default": [
+          "scoring_scheme",
+          "engineering_type",
+          "own_company"
+        ],
+        "items": {
+          "enum": [
+            "scoring_scheme",
+            "engineering_type",
+            "own_company",
+            "region",
+            "system_status"
+          ],
+          "type": "string"
+        },
+        "title": "Slices",
+        "type": "array"
+      },
+      "item_match_threshold": {
+        "default": 0.5,
+        "exclusiveMinimum": 0,
+        "maximum": 1,
+        "title": "Item Match Threshold",
+        "type": "number"
+      },
+      "minimums": {
+        "$ref": "#/$defs/EvalMinimums",
+        "default": {
+          "labeled_samples": 30,
+          "independent_projects": 10,
+          "slice_samples": 10,
+          "ranking_projects": 5,
+          "shortlist_samples": 20,
+          "item_matches": 10
+        }
+      },
+      "allow_repeat_runs": {
+        "default": false,
+        "title": "Allow Repeat Runs",
+        "type": "boolean"
+      },
+      "learning_curve_fractions": {
+        "default": [
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "items": {
+          "type": "number"
+        },
+        "title": "Learning Curve Fractions",
+        "type": "array"
+      },
+      "label_sources": {
+        "default": [
+          "official_document",
+          "company_ledger"
+        ],
+        "items": {
+          "enum": [
+            "official_document",
+            "company_ledger",
+            "user_statement"
+          ],
+          "type": "string"
+        },
+        "minItems": 1,
+        "title": "Label Sources",
+        "type": "array"
+      }
+    },
+    "required": [
+      "schema",
+      "frozen_at",
+      "description",
+      "target_mae",
+      "methods",
+      "seed",
+      "features"
+    ],
+    "title": "EvalProtocol",
+    "type": "object"
+  },
+  "Finding": {
+    "$defs": {
+      "Evidence": {
+        "additionalProperties": false,
+        "properties": {
+          "file_id": {
+            "title": "File Id",
+            "type": "string"
+          },
+          "source_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "title": "Source Sha256",
+            "type": "string"
+          },
+          "source_path": {
+            "title": "Source Path",
+            "type": "string"
+          },
+          "source_ids": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Source Ids",
+            "type": "array"
+          },
+          "pdf_page": {
+            "exclusiveMinimum": 0,
+            "title": "Pdf Page",
+            "type": "integer"
+          },
+          "start_char": {
+            "minimum": 0,
+            "title": "Start Char",
+            "type": "integer"
+          },
+          "end_char": {
+            "exclusiveMinimum": 0,
+            "title": "End Char",
+            "type": "integer"
+          },
+          "quote": {
+            "minLength": 1,
+            "title": "Quote",
+            "type": "string"
+          },
+          "kind": {
+            "const": "source_excerpt",
+            "title": "Kind",
+            "type": "string"
+          },
+          "retrieval_score": {
+            "title": "Retrieval Score",
+            "type": "number"
+          }
+        },
+        "required": [
+          "file_id",
+          "source_sha256",
+          "source_path",
+          "source_ids",
+          "pdf_page",
+          "start_char",
+          "end_char",
+          "quote",
+          "kind",
+          "retrieval_score"
+        ],
+        "title": "Evidence",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "properties": {
+      "finding_id": {
+        "title": "Finding Id",
+        "type": "string"
+      },
+      "check_id": {
+        "title": "Check Id",
+        "type": "string"
+      },
+      "severity": {
+        "enum": [
+          "review",
+          "blocking"
+        ],
+        "title": "Severity",
+        "type": "string"
+      },
+      "status": {
+        "enum": [
+          "needs_engineer_confirmation",
+          "confirmed",
+          "rejected"
+        ],
+        "title": "Status",
+        "type": "string"
+      },
+      "statement": {
+        "title": "Statement",
+        "type": "string"
+      },
+      "evidence": {
+        "items": {
+          "$ref": "#/$defs/Evidence"
+        },
+        "minItems": 1,
+        "title": "Evidence",
+        "type": "array"
+      },
+      "official_score_effect": {
+        "default": null,
+        "title": "Official Score Effect",
+        "type": "null"
+      }
+    },
+    "required": [
+      "finding_id",
+      "check_id",
+      "severity",
+      "status",
+      "statement",
+      "evidence"
+    ],
+    "title": "Finding",
+    "type": "object"
+  },
+  "Prediction": {
+    "additionalProperties": false,
+    "properties": {
+      "target": {
+        "const": "technical_total",
+        "title": "Target",
+        "type": "string"
+      },
+      "status": {
+        "enum": [
+          "candidate",
+          "unavailable"
+        ],
+        "title": "Status",
+        "type": "string"
+      },
+      "bundle_id": {
+        "title": "Bundle Id",
+        "type": "string"
+      },
+      "input_snapshot": {
+        "title": "Input Snapshot",
+        "type": "string"
+      },
+      "estimated_value": {
+        "anyOf": [
+          {
+            "type": "number"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "title": "Estimated Value"
+      },
+      "maximum": {
+        "title": "Maximum",
+        "type": "number"
+      },
+      "validation_status": {
+        "enum": [
+          "not_validated",
+          "validated_in_scope"
+        ],
+        "title": "Validation Status",
+        "type": "string"
+      },
+      "applicability": {
+        "title": "Applicability",
+        "type": "string"
+      },
+      "official_subscores": {
+        "default": null,
+        "title": "Official Subscores",
+        "type": "null"
+      },
+      "win_probability": {
+        "default": null,
+        "title": "Win Probability",
+        "type": "null"
+      }
+    },
+    "required": [
+      "target",
+      "status",
+      "bundle_id",
+      "input_snapshot",
+      "estimated_value",
+      "maximum",
+      "validation_status",
+      "applicability"
+    ],
+    "title": "Prediction",
+    "type": "object"
+  }
+}

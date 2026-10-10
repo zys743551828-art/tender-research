@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-002",
+  "input_file_sha256": "5682772a011eed800d931666589e94e210405510f02f8f8f9fcff615516f2104",
+  "started_at": "2026-10-07T03:58:34.744485+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro",
+    "response_model": "deepseek-v4-pro",
+    "response_id": "c3c71c53-0c0c-4e5a-b213-6a48439695ce",
+    "created": 1791345514,
+    "usage": {
+      "prompt_tokens": 3089,
+      "completion_tokens": 157,
+      "total_tokens": 3246,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 3089
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 2.979,
+    "request_sha256": "487c156ad201fc0166726fd1e3fe50500b94a234edaea4f23c895ef2e79af2db",
+    "response_sha256": "c29a7f93fe5ffd3b4ea0ebd2521f30b416930e3e1b6639044370526cdf16415b",
+    "output": {
+      "task_id": "RULE-002",
+      "status": "supported",
+      "answer": "出现网络、服务器、数据库等故障，电力系统故障，网络攻击、病毒入侵、系统安全漏洞，或其他无法保证公平公正和信息安全的情形，导致AI“类人”评审无法正常服务时，除因投标人责任外各方免责；评标委员会应当停止使用AI“类人”评审服务，放弃采纳其建议，依据项目特点及自身专业能力完成招标投标程序。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "仅依据《合肥公共资源交易大模型开发建设与应用管理暂行办法》第二十三条，未涉及具体项目招标文件或补疑中的特殊约定。"
+    }
+  }
+}

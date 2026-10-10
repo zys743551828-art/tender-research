@@ -1,0 +1,37 @@
+{
+  "call_id": "RULE-023",
+  "input_file_sha256": "101e3ef8c42b1fc019685d8de9aad10984f44b14687c0a9ccdd8db26244b9121",
+  "started_at": "2026-10-07T03:59:11.871229+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro",
+    "response_model": "deepseek-v4-pro",
+    "response_id": "f8decd32-63b1-49ab-b830-29e41a998631",
+    "created": 1791345552,
+    "usage": {
+      "prompt_tokens": 3712,
+      "completion_tokens": 187,
+      "total_tokens": 3899,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 3456
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 2.672,
+    "request_sha256": "d2f074ab34f3877fe389a181b6f2e72bdf731fac9ceed8797b370e34939e6593",
+    "response_sha256": "8291a779825d27c1e2811481f7473c45c6d00dbc57e633a5e59c5a044ff4e1df",
+    "output": {
+      "task_id": "RULE-023",
+      "status": "supported",
+      "answer": "初审通过的投标人数量N与推荐中标候选人数M的关系为：当N＜3时，否决所有投标；当3≤N＜10时，推荐3家；当N≥10时，推荐5家。若综合评价为好的投标人数X不足M，则从较好的投标人中补充，但若X+Y＜3，评标委员会可以继续推荐并说明理由，否则否决所有投标；若N≥10且3≤X+Y＜5，则推荐X+Y家。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "limitations": "证据来自招标文件示范文本，未提供补疑文件，无法确认是否有修改；推荐数量规则为示范文本通用条款，本项目是否完全适用需结合补疑确认。"
+    }
+  }
+}

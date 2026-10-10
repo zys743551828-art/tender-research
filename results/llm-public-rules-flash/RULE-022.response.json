@@ -1,0 +1,37 @@
+{
+  "call_id": "RULE-022",
+  "input_file_sha256": "13c7bf95a92ad2ab26a354fb948238bf3db3a40ede4d0ae643251cba2b4a8a2c",
+  "started_at": "2026-10-07T03:57:00.366456+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-flash",
+    "response_model": "deepseek-flash",
+    "response_id": "12f8fbca-9f0f-4843-b401-7b2b04c334dd",
+    "created": 1791345420,
+    "usage": {
+      "prompt_tokens": 3664,
+      "completion_tokens": 322,
+      "total_tokens": 3986,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 3024
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 2.483,
+    "request_sha256": "261ecc4e7c048cafb618a5db9396c68086134cdca4246bb95dd9d9a78c402881",
+    "response_sha256": "aa9a5314ea02e867b7a8f112eb365fb2094063ef34791e92afd2915acd2d5eb7",
+    "output": {
+      "task_id": "RULE-022",
+      "status": "supported",
+      "answer": "按招标文件正文（原文件，非补疑）第三章“商务及技术文件评审说明”第3项“各投标人技术评审标准评价”：技术评审标准部分得分＞70分的，由高到低取前9家（得分相同且排序最末的均计入）为A；如不足9家，则全部为A。即A等级需同时满足“得分＞70分”与“按得分由高到低排序进入前9家（含并列末位）”两个条件；得分≤70分为C，其余为B。计算保留两位小数（小数点后第三位四舍五入）。该A等级为技术文件定级，用于综合评价（好/较好/一般）及推荐中标候选人，并非最终中标结果。",
+      "evidence_ids": [
+        "E1",
+        "E4"
+      ],
+      "limitations": "证据仅来自招标文件正文（示范文本2023年版）第92页及第104页；未提供补疑1、2，若补疑对技术评审定级另有修改，本结论不覆盖。E1中“技术评审标准部分得分＞70分”与前文“技术评审标准评审汇总”计算规则（赋分值×权重后按附件2计算）之间的衔接，附件2内容未在证据中提供，故具体赋分与权重无法核实。E4仅说明按得分定级及推荐中标候选人（不标明排序），未给出A等级具体阈值，阈值依据为E1。"
+    }
+  }
+}

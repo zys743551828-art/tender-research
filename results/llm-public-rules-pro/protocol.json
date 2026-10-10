@@ -1,0 +1,27 @@
+{
+  "experiment_id": "llm-public-rules-pro",
+  "prompt_version": "DS-RULE-003-v1",
+  "context": "dossier",
+  "code_sha256": {
+    "run_deepseek_rules.py": "4f7afcb6509255c4cf528bdfb4d7acb8cf274fc4f45c95179e58f0620a801a96",
+    "deepseek_client.py": "f19a457f65178512bc11dc35a00367189d0ffc516f0b847f9f18b3dc2ebf6835",
+    "run_deepseek.py": "94c47fdc74cf956e9eda400da6ac192eb50fb8f1a984a26cc516c3fab0bd1f35"
+  },
+  "reference_sha256": "0a1aa5e9d680d26384bedd811026dc8002ad72f380138220d274c446da52dcd6",
+  "retrieval_sha256": "e42141e537acedcaeeddc60df5c82ae437d6ecd33c3601c99051ed2b2a171262",
+  "max_completion_calls": 32,
+  "max_output_tokens_per_call": 4000,
+  "changes": [
+    "one question per request",
+    "explicit project/file scope",
+    "evidence IDs selected by model and exact source excerpts filled by program",
+    "source manifest and first 3 physical pages establish document identity",
+    "each top-3 hit expanded to whole page plus next page, deduplicated"
+  ],
+  "known_reference_not_blind": true,
+  "reference_answers_excluded_from_input": true,
+  "case_body_sent": false,
+  "model": "deepseek-v4-pro",
+  "thinking": false,
+  "temperature": 0
+}

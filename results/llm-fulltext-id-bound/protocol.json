@@ -1,0 +1,78 @@
+{
+  "experiment_id": "llm-fulltext-id-bound",
+  "prompt_version": "DS-CASE-002-v1",
+  "code_sha256": {
+    "run_deepseek_case.py": "35bb272e4d3c7bdd2af724976bbdb4382c71c6e0d0c7399ac3c94891d05bac23",
+    "run_deepseek.py": "1bee9341041694bc53bb6796a66582c03e3847176e31c72fc875dde38a47e25c",
+    "model_service.py": "8bcab758c2eeb4b59c783d89aa127d98c0607d82c639d4e79318831b3ca2ab6c",
+    "deepseek_client.py": "daaaebcdfaab7b80e79160841ee7030ab69984c34ef4555bdfb77568f91fff79",
+    "rule_evidence.py": "a96616e8987fb965bd2f8a2cdb2c385ccf80603f4304769243b4e1fc292d6cd4"
+  },
+  "max_completion_calls": 6,
+  "jobs": [
+    [
+      "BOUND-FLASH-1",
+      "deepseek-flash",
+      false
+    ],
+    [
+      "BOUND-FLASH-2",
+      "deepseek-flash",
+      false
+    ],
+    [
+      "BOUND-FLASH-3",
+      "deepseek-flash",
+      false
+    ],
+    [
+      "BOUND-PRO-1",
+      "deepseek-v4-pro",
+      false
+    ],
+    [
+      "THINK-FLASH-1",
+      "deepseek-flash",
+      true
+    ],
+    [
+      "THINK-PRO-1",
+      "deepseek-v4-pro",
+      true
+    ]
+  ],
+  "output_token_limit": 16000,
+  "thinking_effort": "high",
+  "change_from_CASE_001": "page evidence IDs + source-bound citations + scope checks; thinking additionally compared on identical messages",
+  "known_to_analyst": true,
+  "blind_evaluation": false,
+  "label_used_to_tune_prompt": false,
+  "excluded_inputs": [
+    "reported score",
+    "observed cutoff",
+    "case analysis",
+    "earlier model outputs"
+  ],
+  "source": "all archived tender 219 pages and submitted body 50 pages as extracted text; no images sent",
+  "external_transfer_authorization": {
+    "source": "direct_user_message",
+    "date": "2026-10-07",
+    "destination": "https://api.deepseek.com/chat/completions",
+    "scope": "CASE-001 full tender and technical body"
+  },
+  "pricing_source": "https://api-docs.deepseek.com/quick_start/pricing/",
+  "pricing_verified_date": "2026-10-07",
+  "pricing_per_million_peak": {
+    "deepseek-flash": [
+      0.006,
+      0.3,
+      1.2
+    ],
+    "deepseek-v4-pro": [
+      0.044,
+      1.32,
+      3.96
+    ]
+  },
+  "thinking_source": "https://api-docs.deepseek.com/guides/thinking_mode/"
+}

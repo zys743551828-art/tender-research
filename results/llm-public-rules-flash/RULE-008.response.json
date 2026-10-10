@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-008",
+  "input_file_sha256": "2ca9a689e4981a0813195924cc67e8c2c76cd6a37086708985793401d6e974fc",
+  "started_at": "2026-10-07T03:56:39.474435+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-flash",
+    "response_model": "deepseek-flash",
+    "response_id": "9e78bfc2-7d2b-4f43-87bc-1996d229be82",
+    "created": 1791345399,
+    "usage": {
+      "prompt_tokens": 2874,
+      "completion_tokens": 221,
+      "total_tokens": 3095,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 2234
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.488,
+    "request_sha256": "90c63b3d2be15dd87dd5785a3c67471106df21ff0b7647529e766fc697e40fea",
+    "response_sha256": "3c0038a0d073d58474bf638467f483fd92ba6f2abf56b65d4cf9429b59b36e6a",
+    "output": {
+      "task_id": "RULE-008",
+      "status": "supported",
+      "answer": "施工组织设计本项满分100分，属整体酌情赋分而非按分项权重赋分：评审标准按整体档次给出区间（一般50分＜F≤70分，良好70分＜F＜80分，优秀90分≤F≤100分），并明确“本项满分100分，评标委员会综合考虑，酌情赋分”。该100分为技术文件详细评审中施工组织设计一项的分值，属技术入围评审环节，非最终中标结果。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "仅依据招标文件正文（PUB-004）评标办法前附表；该文件版本说明须结合补疑1，补疑未提供，故不排除补疑对分值或赋分方式的调整。E1中“一般/良好/优秀”区间存在70分与80分、80分与90分之间的空档，条款本身未说明空档如何处理，但满分100分及整体酌情赋分结论不受影响。"
+    }
+  }
+}

@@ -1,0 +1,3730 @@
+{
+  "experiment_id": "ocr-probe",
+  "adapter": "rapidocr-onnx-cpu",
+  "evaluation_kind": "three_known_page_probes_not_ocr_accuracy_benchmark",
+  "runtime": {
+    "platform": "macOS-26.4-arm64-arm-64bit",
+    "packages": {
+      "rapidocr": "3.9.2",
+      "onnxruntime": "1.30.0",
+      "numpy": "2.5.3",
+      "opencv_python": "5.0.0.93"
+    }
+  },
+  "model_sha256": {
+    "models/PP-OCRv6_det_small.onnx": "090f04abcd9d9a7498bc4ebf677e4cb9bdce1fe4197ddb7e529f1ef44e1ff94f",
+    "models/ch_ppocr_mobile_v2.0_cls_mobile.onnx": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c",
+    "models/PP-OCRv6_rec_small.onnx": "6f327246b50388f3c176ae304bd95767ea6dc0c9ae92153ef8cbe210b3c14884"
+  },
+  "pages": [
+    {
+      "file_id": "PUB-004",
+      "source_sha256": "24c1c81ec1ca7e9449dd00ca2a136cfcf44e6ccd97e57acb1d8197e67191912b",
+      "pdf_page": 26,
+      "image_sha256": "4a53bc80cc3c61b04d7d78fa26d156573da93fde89a679bc60837526201c2d8d",
+      "image_dimensions": [
+        1191,
+        1684
+      ],
+      "render_scale": 2,
+      "crop_text": "-24-",
+      "ocr_lines": [
+        {
+          "text": "2. 造价咨询工作服务费收费标准",
+          "bbox_pixels_top_left": [
+            [
+              435.0,
+              230.0
+            ],
+            [
+              777.0,
+              230.0
+            ],
+            [
+              777.0,
+              259.0
+            ],
+            [
+              435.0,
+              259.0
+            ]
+          ],
+          "confidence": 0.99088,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "中标（成交）价",
+          "bbox_pixels_top_left": [
+            [
+              675.0,
+              273.0
+            ],
+            [
+              843.0,
+              275.0
+            ],
+            [
+              843.0,
+              308.0
+            ],
+            [
+              675.0,
+              306.0
+            ]
+          ],
+          "confidence": 0.98657,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "收费基础",
+          "bbox_pixels_top_left": [
+            [
+              341.0,
+              287.0
+            ],
+            [
+              378.0,
+              287.0
+            ],
+            [
+              378.0,
+              416.0
+            ],
+            [
+              341.0,
+              416.0
+            ]
+          ],
+          "confidence": 0.99996,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "金额（万元）",
+          "bbox_pixels_top_left": [
+            [
+              665.0,
+              303.0
+            ],
+            [
+              816.0,
+              303.0
+            ],
+            [
+              816.0,
+              340.0
+            ],
+            [
+              665.0,
+              340.0
+            ]
+          ],
+          "confidence": 0.98412,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "费率：%",
+          "bbox_pixels_top_left": [
+            [
+              852.0,
+              303.0
+            ],
+            [
+              968.0,
+              303.0
+            ],
+            [
+              968.0,
+              338.0
+            ],
+            [
+              852.0,
+              338.0
+            ]
+          ],
+          "confidence": 0.99801,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "序号",
+          "bbox_pixels_top_left": [
+            [
+              220.0,
+              318.0
+            ],
+            [
+              261.0,
+              318.0
+            ],
+            [
+              261.0,
+              388.0
+            ],
+            [
+              220.0,
+              388.0
+            ]
+          ],
+          "confidence": 0.99979,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "咨询",
+          "bbox_pixels_top_left": [
+            [
+              260.0,
+              319.0
+            ],
+            [
+              320.0,
+              319.0
+            ],
+            [
+              320.0,
+              355.0
+            ],
+            [
+              260.0,
+              355.0
+            ]
+          ],
+          "confidence": 0.99998,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "工程",
+          "bbox_pixels_top_left": [
+            [
+              394.0,
+              317.0
+            ],
+            [
+              468.0,
+              317.0
+            ],
+            [
+              468.0,
+              356.0
+            ],
+            [
+              394.0,
+              356.0
+            ]
+          ],
+          "confidence": 0.99999,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "项目",
+          "bbox_pixels_top_left": [
+            [
+              261.0,
+              351.0
+            ],
+            [
+              318.0,
+              351.0
+            ],
+            [
+              318.0,
+              385.0
+            ],
+            [
+              261.0,
+              385.0
+            ]
+          ],
+          "confidence": 0.99996,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "类型",
+          "bbox_pixels_top_left": [
+            [
+              394.0,
+              347.0
+            ],
+            [
+              468.0,
+              347.0
+            ],
+            [
+              468.0,
+              387.0
+            ],
+            [
+              394.0,
+              387.0
+            ]
+          ],
+          "confidence": 1.0,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "100",
+          "bbox_pixels_top_left": [
+            [
+              487.0,
+              352.0
+            ],
+            [
+              533.0,
+              352.0
+            ],
+            [
+              533.0,
+              384.0
+            ],
+            [
+              487.0,
+              384.0
+            ]
+          ],
+          "confidence": 0.99999,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "200",
+          "bbox_pixels_top_left": [
+            [
+              554.0,
+              352.0
+            ],
+            [
+              602.0,
+              352.0
+            ],
+            [
+              602.0,
+              384.0
+            ],
+            [
+              554.0,
+              384.0
+            ]
+          ],
+          "confidence": 0.99999,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "500",
+          "bbox_pixels_top_left": [
+            [
+              620.0,
+              351.0
+            ],
+            [
+              670.0,
+              351.0
+            ],
+            [
+              670.0,
+              385.0
+            ],
+            [
+              620.0,
+              385.0
+            ]
+          ],
+          "confidence": 1.0,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "1000",
+          "bbox_pixels_top_left": [
+            [
+              689.0,
+              353.0
+            ],
+            [
+              745.0,
+              353.0
+            ],
+            [
+              745.0,
+              383.0
+            ],
+            [
+              689.0,
+              383.0
+            ]
+          ],
+          "confidence": 0.99999,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "2000",
+          "bbox_pixels_top_left": [
+            [
+              758.0,
+              351.0
+            ],
+            [
+              819.0,
+              351.0
+            ],
+            [
+              819.0,
+              384.0
+            ],
+            [
+              758.0,
+              384.0
+            ]
+          ],
+          "confidence": 1.0,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "5000",
+          "bbox_pixels_top_left": [
+            [
+              832.0,
+              353.0
+            ],
+            [
+              889.0,
+              353.0
+            ],
+            [
+              889.0,
+              383.0
+            ],
+            [
+              832.0,
+              383.0
+            ]
+          ],
+          "confidence": 1.0,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "10000",
+          "bbox_pixels_top_left": [
+            [
+              900.0,
+              352.0
+            ],
+            [
+              970.0,
+              352.0
+            ],
+            [
+              970.0,
+              384.0
+            ],
+            [
+              900.0,
+              384.0
+            ]
+          ],
+          "confidence": 0.99999,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "1000",
+          "bbox_pixels_top_left": [
+            [
+              982.0,
+              340.0
+            ],
+            [
+              1038.0,
+              340.0
+            ],
+            [
+              1038.0,
+              368.0
+            ],
+            [
+              982.0,
+              368.0
+            ]
+          ],
+          "confidence": 1.0,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "0以",
+          "bbox_pixels_top_left": [
+            [
+              981.0,
+              363.0
+            ],
+            [
+              1036.0,
+              363.0
+            ],
+            [
+              1036.0,
+              401.0
+            ],
+            [
+              981.0,
+              401.0
+            ]
+          ],
+          "confidence": 0.99775,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "以内",
+          "bbox_pixels_top_left": [
+            [
+              480.0,
+              377.0
+            ],
+            [
+              541.0,
+              380.0
+            ],
+            [
+              539.0,
+              419.0
+            ],
+            [
+              478.0,
+              416.0
+            ]
+          ],
+          "confidence": 0.9994,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "以内",
+          "bbox_pixels_top_left": [
+            [
+              548.0,
+              379.0
+            ],
+            [
+              608.0,
+              379.0
+            ],
+            [
+              608.0,
+              417.0
+            ],
+            [
+              548.0,
+              417.0
+            ]
+          ],
+          "confidence": 0.99928,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "以内",
+          "bbox_pixels_top_left": [
+            [
+              615.0,
+              379.0
+            ],
+            [
+              675.0,
+              379.0
+            ],
+            [
+              675.0,
+              417.0
+            ],
+            [
+              615.0,
+              417.0
+            ]
+          ],
+          "confidence": 0.99928,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "以内",
+          "bbox_pixels_top_left": [
+            [
+              687.0,
+              379.0
+            ],
+            [
+              746.0,
+              379.0
+            ],
+            [
+              746.0,
+              417.0
+            ],
+            [
+              687.0,
+              417.0
+            ]
+          ],
+          "confidence": 0.99925,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "以内",
+          "bbox_pixels_top_left": [
+            [
+              758.0,
+              379.0
+            ],
+            [
+              820.0,
+              379.0
+            ],
+            [
+              820.0,
+              417.0
+            ],
+            [
+              758.0,
+              417.0
+            ]
+          ],
+          "confidence": 0.99961,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "以内",
+          "bbox_pixels_top_left": [
+            [
+              831.0,
+              379.0
+            ],
+            [
+              890.0,
+              379.0
+            ],
+            [
+              890.0,
+              417.0
+            ],
+            [
+              831.0,
+              417.0
+            ]
+          ],
+          "confidence": 0.99936,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "以内",
+          "bbox_pixels_top_left": [
+            [
+              898.0,
+              379.0
+            ],
+            [
+              960.0,
+              379.0
+            ],
+            [
+              960.0,
+              417.0
+            ],
+            [
+              898.0,
+              417.0
+            ]
+          ],
+          "confidence": 0.99958,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "上",
+          "bbox_pixels_top_left": [
+            [
+              987.0,
+              394.0
+            ],
+            [
+              1028.0,
+              394.0
+            ],
+            [
+              1028.0,
+              433.0
+            ],
+            [
+              987.0,
+              433.0
+            ]
+          ],
+          "confidence": 0.99978,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "招标",
+          "bbox_pixels_top_left": [
+            [
+              262.0,
+              427.0
+            ],
+            [
+              321.0,
+              427.0
+            ],
+            [
+              321.0,
+              465.0
+            ],
+            [
+              262.0,
+              465.0
+            ]
+          ],
+          "confidence": 0.99974,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "建筑",
+          "bbox_pixels_top_left": [
+            [
+              400.0,
+              426.0
+            ],
+            [
+              461.0,
+              426.0
+            ],
+            [
+              461.0,
+              463.0
+            ],
+            [
+              400.0,
+              463.0
+            ]
+          ],
+          "confidence": 0.99996,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "中标价",
+          "bbox_pixels_top_left": [
+            [
+              333.0,
+              438.0
+            ],
+            [
+              371.0,
+              438.0
+            ],
+            [
+              371.0,
+              541.0
+            ],
+            [
+              333.0,
+              541.0
+            ]
+          ],
+          "confidence": 0.99994,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "4.80",
+          "bbox_pixels_top_left": [
+            [
+              481.0,
+              444.0
+            ],
+            [
+              540.0,
+              444.0
+            ],
+            [
+              540.0,
+              477.0
+            ],
+            [
+              481.0,
+              477.0
+            ]
+          ],
+          "confidence": 0.99995,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "4.30",
+          "bbox_pixels_top_left": [
+            [
+              549.0,
+              445.0
+            ],
+            [
+              608.0,
+              445.0
+            ],
+            [
+              608.0,
+              475.0
+            ],
+            [
+              549.0,
+              475.0
+            ]
+          ],
+          "confidence": 0.99999,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "3.80",
+          "bbox_pixels_top_left": [
+            [
+              616.0,
+              445.0
+            ],
+            [
+              674.0,
+              445.0
+            ],
+            [
+              674.0,
+              475.0
+            ],
+            [
+              616.0,
+              475.0
+            ]
+          ],
+          "confidence": 0.99999,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "3.40",
+          "bbox_pixels_top_left": [
+            [
+              686.0,
+              444.0
+            ],
+            [
+              746.0,
+              444.0
+            ],
+            [
+              746.0,
+              477.0
+            ],
+            [
+              686.0,
+              477.0
+            ]
+          ],
+          "confidence": 1.0,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "3.00",
+          "bbox_pixels_top_left": [
+            [
+              757.0,
+              443.0
+            ],
+            [
+              819.0,
+              443.0
+            ],
+            [
+              819.0,
+              476.0
+            ],
+            [
+              757.0,
+              476.0
+            ]
+          ],
+          "confidence": 0.99998,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "2.80",
+          "bbox_pixels_top_left": [
+            [
+              830.0,
+              441.0
+            ],
+            [
+              892.0,
+              444.0
+            ],
+            [
+              890.0,
+              478.0
+            ],
+            [
+              828.0,
+              475.0
+            ]
+          ],
+          "confidence": 0.99997,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "2.50",
+          "bbox_pixels_top_left": [
+            [
+              904.0,
+              443.0
+            ],
+            [
+              965.0,
+              443.0
+            ],
+            [
+              965.0,
+              477.0
+            ],
+            [
+              904.0,
+              477.0
+            ]
+          ],
+          "confidence": 0.99997,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "2.30",
+          "bbox_pixels_top_left": [
+            [
+              979.0,
+              444.0
+            ],
+            [
+              1039.0,
+              444.0
+            ],
+            [
+              1039.0,
+              477.0
+            ],
+            [
+              979.0,
+              477.0
+            ]
+          ],
+          "confidence": 0.99998,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "工程",
+          "bbox_pixels_top_left": [
+            [
+              262.0,
+              456.0
+            ],
+            [
+              320.0,
+              456.0
+            ],
+            [
+              320.0,
+              494.0
+            ],
+            [
+              262.0,
+              494.0
+            ]
+          ],
+          "confidence": 0.99997,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "工程",
+          "bbox_pixels_top_left": [
+            [
+              400.0,
+              455.0
+            ],
+            [
+              461.0,
+              455.0
+            ],
+            [
+              461.0,
+              492.0
+            ],
+            [
+              400.0,
+              492.0
+            ]
+          ],
+          "confidence": 0.99998,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "1",
+          "bbox_pixels_top_left": [
+            [
+              226.0,
+              477.0
+            ],
+            [
+              246.0,
+              477.0
+            ],
+            [
+              246.0,
+              504.0
+            ],
+            [
+              226.0,
+              504.0
+            ]
+          ],
+          "confidence": 0.99973,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "量清",
+          "bbox_pixels_top_left": [
+            [
+              263.0,
+              485.0
+            ],
+            [
+              320.0,
+              485.0
+            ],
+            [
+              320.0,
+              524.0
+            ],
+            [
+              263.0,
+              524.0
+            ]
+          ],
+          "confidence": 0.99876,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "单",
+          "bbox_pixels_top_left": [
+            [
+              270.0,
+              515.0
+            ],
+            [
+              310.0,
+              515.0
+            ],
+            [
+              310.0,
+              555.0
+            ],
+            [
+              270.0,
+              555.0
+            ]
+          ],
+          "confidence": 0.99735,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "工程",
+          "bbox_pixels_top_left": [
+            [
+              401.0,
+              515.0
+            ],
+            [
+              461.0,
+              515.0
+            ],
+            [
+              461.0,
+              554.0
+            ],
+            [
+              401.0,
+              554.0
+            ]
+          ],
+          "confidence": 0.99994,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "5.00",
+          "bbox_pixels_top_left": [
+            [
+              480.0,
+              504.0
+            ],
+            [
+              540.0,
+              504.0
+            ],
+            [
+              540.0,
+              537.0
+            ],
+            [
+              480.0,
+              537.0
+            ]
+          ],
+          "confidence": 0.98987,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "4.60",
+          "bbox_pixels_top_left": [
+            [
+              549.0,
+              506.0
+            ],
+            [
+              608.0,
+              506.0
+            ],
+            [
+              608.0,
+              536.0
+            ],
+            [
+              549.0,
+              536.0
+            ]
+          ],
+          "confidence": 0.99999,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "4.00",
+          "bbox_pixels_top_left": [
+            [
+              617.0,
+              506.0
+            ],
+            [
+              674.0,
+              506.0
+            ],
+            [
+              674.0,
+              536.0
+            ],
+            [
+              617.0,
+              536.0
+            ]
+          ],
+          "confidence": 0.99994,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "3.60",
+          "bbox_pixels_top_left": [
+            [
+              686.0,
+              504.0
+            ],
+            [
+              746.0,
+              504.0
+            ],
+            [
+              746.0,
+              537.0
+            ],
+            [
+              686.0,
+              537.0
+            ]
+          ],
+          "confidence": 0.99999,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "3.10",
+          "bbox_pixels_top_left": [
+            [
+              759.0,
+              504.0
+            ],
+            [
+              820.0,
+              504.0
+            ],
+            [
+              820.0,
+              537.0
+            ],
+            [
+              759.0,
+              537.0
+            ]
+          ],
+          "confidence": 0.99998,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "2.90",
+          "bbox_pixels_top_left": [
+            [
+              830.0,
+              504.0
+            ],
+            [
+              890.0,
+              504.0
+            ],
+            [
+              890.0,
+              537.0
+            ],
+            [
+              830.0,
+              537.0
+            ]
+          ],
+          "confidence": 0.99998,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "2.60",
+          "bbox_pixels_top_left": [
+            [
+              905.0,
+              504.0
+            ],
+            [
+              966.0,
+              504.0
+            ],
+            [
+              966.0,
+              537.0
+            ],
+            [
+              905.0,
+              537.0
+            ]
+          ],
+          "confidence": 0.99998,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "2.40",
+          "bbox_pixels_top_left": [
+            [
+              980.0,
+              506.0
+            ],
+            [
+              1038.0,
+              506.0
+            ],
+            [
+              1038.0,
+              536.0
+            ],
+            [
+              980.0,
+              536.0
+            ]
+          ],
+          "confidence": 0.99999,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "建筑",
+          "bbox_pixels_top_left": [
+            [
+              401.0,
+              548.0
+            ],
+            [
+              461.0,
+              548.0
+            ],
+            [
+              461.0,
+              586.0
+            ],
+            [
+              401.0,
+              586.0
+            ]
+          ],
+          "confidence": 0.99999,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "最高",
+          "bbox_pixels_top_left": [
+            [
+              261.0,
+              562.0
+            ],
+            [
+              322.0,
+              562.0
+            ],
+            [
+              322.0,
+              604.0
+            ],
+            [
+              261.0,
+              604.0
+            ]
+          ],
+          "confidence": 0.9998,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "中标价",
+          "bbox_pixels_top_left": [
+            [
+              332.0,
+              561.0
+            ],
+            [
+              370.0,
+              561.0
+            ],
+            [
+              370.0,
+              662.0
+            ],
+            [
+              332.0,
+              662.0
+            ]
+          ],
+          "confidence": 0.99985,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "2.00",
+          "bbox_pixels_top_left": [
+            [
+              480.0,
+              566.0
+            ],
+            [
+              540.0,
+              566.0
+            ],
+            [
+              540.0,
+              599.0
+            ],
+            [
+              480.0,
+              599.0
+            ]
+          ],
+          "confidence": 0.99998,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "1.80",
+          "bbox_pixels_top_left": [
+            [
+              549.0,
+              567.0
+            ],
+            [
+              607.0,
+              567.0
+            ],
+            [
+              607.0,
+              597.0
+            ],
+            [
+              549.0,
+              597.0
+            ]
+          ],
+          "confidence": 0.99998,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "1.60",
+          "bbox_pixels_top_left": [
+            [
+              616.0,
+              566.0
+            ],
+            [
+              675.0,
+              566.0
+            ],
+            [
+              675.0,
+              599.0
+            ],
+            [
+              616.0,
+              599.0
+            ]
+          ],
+          "confidence": 0.99997,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "1.40",
+          "bbox_pixels_top_left": [
+            [
+              687.0,
+              566.0
+            ],
+            [
+              746.0,
+              566.0
+            ],
+            [
+              746.0,
+              599.0
+            ],
+            [
+              687.0,
+              599.0
+            ]
+          ],
+          "confidence": 0.99997,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "1.30",
+          "bbox_pixels_top_left": [
+            [
+              760.0,
+              566.0
+            ],
+            [
+              820.0,
+              566.0
+            ],
+            [
+              820.0,
+              599.0
+            ],
+            [
+              760.0,
+              599.0
+            ]
+          ],
+          "confidence": 0.99998,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "1.20",
+          "bbox_pixels_top_left": [
+            [
+              831.0,
+              566.0
+            ],
+            [
+              890.0,
+              566.0
+            ],
+            [
+              890.0,
+              599.0
+            ],
+            [
+              831.0,
+              599.0
+            ]
+          ],
+          "confidence": 0.99986,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "1.10",
+          "bbox_pixels_top_left": [
+            [
+              905.0,
+              566.0
+            ],
+            [
+              966.0,
+              566.0
+            ],
+            [
+              966.0,
+              599.0
+            ],
+            [
+              905.0,
+              599.0
+            ]
+          ],
+          "confidence": 0.99994,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "1.00",
+          "bbox_pixels_top_left": [
+            [
+              980.0,
+              566.0
+            ],
+            [
+              1039.0,
+              566.0
+            ],
+            [
+              1039.0,
+              599.0
+            ],
+            [
+              980.0,
+              599.0
+            ]
+          ],
+          "confidence": 0.99994,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "工程",
+          "bbox_pixels_top_left": [
+            [
+              401.0,
+              578.0
+            ],
+            [
+              461.0,
+              578.0
+            ],
+            [
+              461.0,
+              617.0
+            ],
+            [
+              401.0,
+              617.0
+            ]
+          ],
+          "confidence": 0.99998,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "2",
+          "bbox_pixels_top_left": [
+            [
+              224.0,
+              598.0
+            ],
+            [
+              248.0,
+              598.0
+            ],
+            [
+              248.0,
+              629.0
+            ],
+            [
+              224.0,
+              629.0
+            ]
+          ],
+          "confidence": 0.99996,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "投标",
+          "bbox_pixels_top_left": [
+            [
+              261.0,
+              593.0
+            ],
+            [
+              321.0,
+              593.0
+            ],
+            [
+              321.0,
+              632.0
+            ],
+            [
+              261.0,
+              632.0
+            ]
+          ],
+          "confidence": 0.99866,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "安装",
+          "bbox_pixels_top_left": [
+            [
+              401.0,
+              609.0
+            ],
+            [
+              461.0,
+              609.0
+            ],
+            [
+              461.0,
+              647.0
+            ],
+            [
+              401.0,
+              647.0
+            ]
+          ],
+          "confidence": 0.99995,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "限价",
+          "bbox_pixels_top_left": [
+            [
+              262.0,
+              624.0
+            ],
+            [
+              322.0,
+              624.0
+            ],
+            [
+              322.0,
+              662.0
+            ],
+            [
+              262.0,
+              662.0
+            ]
+          ],
+          "confidence": 0.99988,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "2.10",
+          "bbox_pixels_top_left": [
+            [
+              480.0,
+              627.0
+            ],
+            [
+              541.0,
+              627.0
+            ],
+            [
+              541.0,
+              660.0
+            ],
+            [
+              480.0,
+              660.0
+            ]
+          ],
+          "confidence": 0.99998,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "1.90",
+          "bbox_pixels_top_left": [
+            [
+              549.0,
+              629.0
+            ],
+            [
+              608.0,
+              629.0
+            ],
+            [
+              608.0,
+              658.0
+            ],
+            [
+              549.0,
+              658.0
+            ]
+          ],
+          "confidence": 0.99997,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "1.70",
+          "bbox_pixels_top_left": [
+            [
+              616.0,
+              629.0
+            ],
+            [
+              675.0,
+              629.0
+            ],
+            [
+              675.0,
+              658.0
+            ],
+            [
+              616.0,
+              658.0
+            ]
+          ],
+          "confidence": 0.99998,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "1.60",
+          "bbox_pixels_top_left": [
+            [
+              687.0,
+              627.0
+            ],
+            [
+              746.0,
+              627.0
+            ],
+            [
+              746.0,
+              660.0
+            ],
+            [
+              687.0,
+              660.0
+            ]
+          ],
+          "confidence": 0.99996,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "1.40",
+          "bbox_pixels_top_left": [
+            [
+              760.0,
+              628.0
+            ],
+            [
+              821.0,
+              628.0
+            ],
+            [
+              821.0,
+              660.0
+            ],
+            [
+              760.0,
+              660.0
+            ]
+          ],
+          "confidence": 0.99998,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "1.30",
+          "bbox_pixels_top_left": [
+            [
+              831.0,
+              628.0
+            ],
+            [
+              891.0,
+              628.0
+            ],
+            [
+              891.0,
+              660.0
+            ],
+            [
+              831.0,
+              660.0
+            ]
+          ],
+          "confidence": 0.99999,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "1.20",
+          "bbox_pixels_top_left": [
+            [
+              906.0,
+              628.0
+            ],
+            [
+              966.0,
+              628.0
+            ],
+            [
+              966.0,
+              660.0
+            ],
+            [
+              906.0,
+              660.0
+            ]
+          ],
+          "confidence": 0.99997,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "1.10",
+          "bbox_pixels_top_left": [
+            [
+              979.0,
+              628.0
+            ],
+            [
+              1039.0,
+              628.0
+            ],
+            [
+              1039.0,
+              660.0
+            ],
+            [
+              979.0,
+              660.0
+            ]
+          ],
+          "confidence": 0.99996,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "工程",
+          "bbox_pixels_top_left": [
+            [
+              401.0,
+              639.0
+            ],
+            [
+              461.0,
+              639.0
+            ],
+            [
+              461.0,
+              677.0
+            ],
+            [
+              401.0,
+              677.0
+            ]
+          ],
+          "confidence": 0.99993,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "注意：本收费标准中的“建筑工程”适用建筑工程及配套的装饰工程、安装工程；",
+          "bbox_pixels_top_left": [
+            [
+              224.0,
+              686.0
+            ],
+            [
+              1030.0,
+              686.0
+            ],
+            [
+              1030.0,
+              716.0
+            ],
+            [
+              224.0,
+              716.0
+            ]
+          ],
+          "confidence": 0.99892,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "市政工程等。“安装工程”适用单独安装工程、装饰工程（含二次装饰装修）；",
+          "bbox_pixels_top_left": [
+            [
+              226.0,
+              731.0
+            ],
+            [
+              1030.0,
+              731.0
+            ],
+            [
+              1030.0,
+              761.0
+            ],
+            [
+              226.0,
+              761.0
+            ]
+          ],
+          "confidence": 0.9947,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "房屋修缮；园林绿化及仿古建筑工程等。以上中标价含本数。",
+          "bbox_pixels_top_left": [
+            [
+              225.0,
+              776.0
+            ],
+            [
+              846.0,
+              776.0
+            ],
+            [
+              846.0,
+              806.0
+            ],
+            [
+              225.0,
+              806.0
+            ]
+          ],
+          "confidence": 0.99934,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "例如：某造价咨询项目中标金额为6000.00万元，工程类型为建筑工程，计算造",
+          "bbox_pixels_top_left": [
+            [
+              225.0,
+              821.0
+            ],
+            [
+              1035.0,
+              821.0
+            ],
+            [
+              1035.0,
+              851.0
+            ],
+            [
+              225.0,
+              851.0
+            ]
+          ],
+          "confidence": 0.99967,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "价咨询工作服务费金额如下：",
+          "bbox_pixels_top_left": [
+            [
+              225.0,
+              865.0
+            ],
+            [
+              517.0,
+              865.0
+            ],
+            [
+              517.0,
+              895.0
+            ],
+            [
+              225.0,
+              895.0
+            ]
+          ],
+          "confidence": 0.99958,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "①如编制招标工程量清单及最高投标限价：",
+          "bbox_pixels_top_left": [
+            [
+              225.0,
+              910.0
+            ],
+            [
+              657.0,
+              910.0
+            ],
+            [
+              657.0,
+              939.0
+            ],
+            [
+              225.0,
+              939.0
+            ]
+          ],
+          "confidence": 0.9991,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "6000.00万元×(0.25%+0.11%)×70%=15.12万元",
+          "bbox_pixels_top_left": [
+            [
+              224.0,
+              956.0
+            ],
+            [
+              744.0,
+              956.0
+            ],
+            [
+              744.0,
+              985.0
+            ],
+            [
+              224.0,
+              985.0
+            ]
+          ],
+          "confidence": 0.97848,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": ",关",
+          "bbox_pixels_top_left": [
+            [
+              225.0,
+              999.0
+            ],
+            [
+              865.0,
+              999.0
+            ],
+            [
+              865.0,
+              1029.0
+            ],
+            [
+              225.0,
+              1029.0
+            ]
+          ],
+          "confidence": 0.53422,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "6000.00万元×(0.25%+0.11%)×70%=15.12万元",
+          "bbox_pixels_top_left": [
+            [
+              224.0,
+              1045.0
+            ],
+            [
+              745.0,
+              1045.0
+            ],
+            [
+              745.0,
+              1073.0
+            ],
+            [
+              224.0,
+              1073.0
+            ]
+          ],
+          "confidence": 0.98339,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "③如规范性审核招标工程量清单及最高投标限价：",
+          "bbox_pixels_top_left": [
+            [
+              225.0,
+              1089.0
+            ],
+            [
+              726.0,
+              1089.0
+            ],
+            [
+              726.0,
+              1119.0
+            ],
+            [
+              225.0,
+              1119.0
+            ]
+          ],
+          "confidence": 0.99938,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "A:6000.00万元×(0.25%+0.11%)×50%=10.8万元",
+          "bbox_pixels_top_left": [
+            [
+              224.0,
+              1134.0
+            ],
+            [
+              757.0,
+              1134.0
+            ],
+            [
+              757.0,
+              1163.0
+            ],
+            [
+              224.0,
+              1163.0
+            ]
+          ],
+          "confidence": 0.98902,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "B:6000.00万元×（0.25%+0.11%）×10%=2.16万元",
+          "bbox_pixels_top_left": [
+            [
+              223.0,
+              1179.0
+            ],
+            [
+              755.0,
+              1179.0
+            ],
+            [
+              755.0,
+              1208.0
+            ],
+            [
+              223.0,
+              1208.0
+            ]
+          ],
+          "confidence": 0.98347,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "-24-",
+          "bbox_pixels_top_left": [
+            [
+              568.0,
+              1582.0
+            ],
+            [
+              622.0,
+              1582.0
+            ],
+            [
+              622.0,
+              1615.0
+            ],
+            [
+              568.0,
+              1615.0
+            ]
+          ],
+          "confidence": 0.99987,
+          "kind": "ocr_excerpt_needs_review"
+        }
+      ],
+      "anchor_checks": [
+        {
+          "anchor": "造价咨询工作服务费收费标准",
+          "ocr_contains": true,
+          "crop_contains": false
+        },
+        {
+          "anchor": "15.12万元",
+          "ocr_contains": true,
+          "crop_contains": false
+        },
+        {
+          "anchor": "10.8万元",
+          "ocr_contains": true,
+          "crop_contains": false
+        },
+        {
+          "anchor": "2.16万元",
+          "ocr_contains": true,
+          "crop_contains": false
+        }
+      ],
+      "blank_page_no_ocr_text": null,
+      "elapsed_seconds": 1.248
+    },
+    {
+      "file_id": "PUB-008",
+      "source_sha256": "c3af9ea9e24de0925e5c51161be1c7feb1fd6eb11783e84c395ac4454d45523d",
+      "pdf_page": 88,
+      "image_sha256": "b5b7f8ef959636b1a5af78efac0619c9a3f508085b384c501f4363a52011d6c9",
+      "image_dimensions": [
+        1191,
+        1684
+      ],
+      "render_scale": 2,
+      "crop_text": "房建市政施工评定分离招标示范文本（2023年版）\n满足以上要求的奖项荣誉数量=0的为差（应赋0分）。\n评标委员会根据投标人自2021年1月1日以来，获得\n省级及以上住房城乡建设主管部门或在国内依法登记\n注册的行业协会（学会）公布的企业实力认定结果进行\n综合评价。\n采用投标截止时间前，投标人自2021年1月1日以来\n省级及以上住房城乡建设主管部门或在国内依法注册\n的行业协会（学会）公布的企业实力认定结果为准。\n注：\n（1）投标人至多提供3个企业实力认定成果。\n（2）如投标人提供的企业实力认定成果超过3个，评\n标委员会只评审投标人在评审表中序号前3个认定成\n果，投标人自行考虑排序，超出部分不予评审。\n35% 企业实力 （3）企业实力指省级及以上住房城乡建设主管部门或\n在国内依法登记注册的行业协会（学会）对企业颁发的\n荣誉，如优秀建筑业企业、龙头企业、50强等。\n（4）评标委员会根据投标人所提供的满足以上要求的\n企业实力认定成果数量进行评审：\n满足以上要求的企业实力认定成果数量=3的为优良（应\n赋100分）；\n满足以上要求的企业实力认定成果数量=2的为中等（应\n赋80分）；\n满足以上要求的企业实力认定成果数量=1的为一般（应\n赋60分）；\n满足以上要求的企业实力认定成果数量=0的为差（应赋\n0分）。\n依据投标人提供的工程重点难点保障体系与措施进行\n工程重点\n评审，评审为优（应赋100分），评审为良（应赋90 分），\n40% 难点保障\n评审为中等（应赋80分），评审为一般（应赋70分），\n体系\n评审 为差（应赋60分），未提供的不得分。\n确保工期\n与质量的\n依据投标人提供的确保工期与质量的保障体系与措施、\n保障体系\n技术文\n确保安全文明生产的管理体系与措施进行评审，评审为\n2.2.1 与措施、\n件评审\n30% 优（应赋100分），评审为良（应赋90 分），评审为\n确保安全\n（2） 中等（应赋80分），评审为一般（应赋70分），评审\n文明生产\n标准\n为差（应赋60分），未提供的不得分。\n的管理体\n系与措施\n依据投标人提供的确保人、材（、机的保障体系与措施\n确保人、\n进行评审，评审为优（应赋100分），评审为良（应赋\n材、机的\n30% 90 分），评审为中等（应赋80分），评审为一般（应\n保障体系\n赋 70 分），评审 为差（应赋 60 分），未提供的不得\n与措施\n分。\n87",
+      "ocr_lines": [
+        {
+          "text": "房建市政施工评定分离招标示范文本（2023年版）",
+          "bbox_pixels_top_left": [
+            [
+              179.0,
+              84.0
+            ],
+            [
+              573.0,
+              84.0
+            ],
+            [
+              573.0,
+              107.0
+            ],
+            [
+              179.0,
+              107.0
+            ]
+          ],
+          "confidence": 0.99025,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "满足以上要求的奖项荣誉数量=0的为差（应赋0分）。",
+          "bbox_pixels_top_left": [
+            [
+              536.0,
+              147.0
+            ],
+            [
+              1109.0,
+              147.0
+            ],
+            [
+              1109.0,
+              173.0
+            ],
+            [
+              536.0,
+              173.0
+            ]
+          ],
+          "confidence": 0.99672,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "评标委员会根据投标人自2021年1月1日以来，获得",
+          "bbox_pixels_top_left": [
+            [
+              537.0,
+              179.0
+            ],
+            [
+              1103.0,
+              179.0
+            ],
+            [
+              1103.0,
+              205.0
+            ],
+            [
+              537.0,
+              205.0
+            ]
+          ],
+          "confidence": 0.99993,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "省级及以上住房城乡建设主管部门或在国内依法登记",
+          "bbox_pixels_top_left": [
+            [
+              539.0,
+              211.0
+            ],
+            [
+              1090.0,
+              211.0
+            ],
+            [
+              1090.0,
+              234.0
+            ],
+            [
+              539.0,
+              234.0
+            ]
+          ],
+          "confidence": 0.99986,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "注册的行业协会（学会）公布的企业实力认定结果进行",
+          "bbox_pixels_top_left": [
+            [
+              536.0,
+              241.0
+            ],
+            [
+              1109.0,
+              241.0
+            ],
+            [
+              1109.0,
+              267.0
+            ],
+            [
+              536.0,
+              267.0
+            ]
+          ],
+          "confidence": 0.99838,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "综合评价。",
+          "bbox_pixels_top_left": [
+            [
+              535.0,
+              271.0
+            ],
+            [
+              649.0,
+              271.0
+            ],
+            [
+              649.0,
+              301.0
+            ],
+            [
+              535.0,
+              301.0
+            ]
+          ],
+          "confidence": 0.99995,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "采用投标截止时间前，投标人自2021年1月1日以来",
+          "bbox_pixels_top_left": [
+            [
+              538.0,
+              304.0
+            ],
+            [
+              1103.0,
+              304.0
+            ],
+            [
+              1103.0,
+              330.0
+            ],
+            [
+              538.0,
+              330.0
+            ]
+          ],
+          "confidence": 0.9999,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "省级及以上住房城乡建设主管部门或在国内依法注册",
+          "bbox_pixels_top_left": [
+            [
+              539.0,
+              335.0
+            ],
+            [
+              1090.0,
+              335.0
+            ],
+            [
+              1090.0,
+              360.0
+            ],
+            [
+              539.0,
+              360.0
+            ]
+          ],
+          "confidence": 0.99986,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "的行业协会（学会）公布的企业实力认定结果为准。",
+          "bbox_pixels_top_left": [
+            [
+              537.0,
+              366.0
+            ],
+            [
+              1075.0,
+              366.0
+            ],
+            [
+              1075.0,
+              392.0
+            ],
+            [
+              537.0,
+              392.0
+            ]
+          ],
+          "confidence": 0.99858,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "注：",
+          "bbox_pixels_top_left": [
+            [
+              533.0,
+              394.0
+            ],
+            [
+              577.0,
+              394.0
+            ],
+            [
+              577.0,
+              426.0
+            ],
+            [
+              533.0,
+              426.0
+            ]
+          ],
+          "confidence": 0.99838,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "（1）投标人至多提供3个企业实力认定成果。",
+          "bbox_pixels_top_left": [
+            [
+              547.0,
+              428.0
+            ],
+            [
+              1019.0,
+              428.0
+            ],
+            [
+              1019.0,
+              454.0
+            ],
+            [
+              547.0,
+              454.0
+            ]
+          ],
+          "confidence": 0.98912,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "（2）如投标人提供的企业实力认定成果超过3个，评",
+          "bbox_pixels_top_left": [
+            [
+              548.0,
+              459.0
+            ],
+            [
+              1102.0,
+              459.0
+            ],
+            [
+              1102.0,
+              485.0
+            ],
+            [
+              548.0,
+              485.0
+            ]
+          ],
+          "confidence": 0.97088,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "标委员会只评审投标人在评审表中序号前3个认定成",
+          "bbox_pixels_top_left": [
+            [
+              539.0,
+              492.0
+            ],
+            [
+              1091.0,
+              492.0
+            ],
+            [
+              1091.0,
+              515.0
+            ],
+            [
+              539.0,
+              515.0
+            ]
+          ],
+          "confidence": 0.99995,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "果，投标人自行考虑排序，超出部分不予评审。",
+          "bbox_pixels_top_left": [
+            [
+              535.0,
+              519.0
+            ],
+            [
+              1032.0,
+              521.0
+            ],
+            [
+              1032.0,
+              550.0
+            ],
+            [
+              535.0,
+              548.0
+            ]
+          ],
+          "confidence": 0.99974,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "35%",
+          "bbox_pixels_top_left": [
+            [
+              357.0,
+              544.0
+            ],
+            [
+              415.0,
+              544.0
+            ],
+            [
+              415.0,
+              574.0
+            ],
+            [
+              357.0,
+              574.0
+            ]
+          ],
+          "confidence": 0.99997,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "企业实力",
+          "bbox_pixels_top_left": [
+            [
+              439.0,
+              544.0
+            ],
+            [
+              540.0,
+              544.0
+            ],
+            [
+              540.0,
+              572.0
+            ],
+            [
+              439.0,
+              572.0
+            ]
+          ],
+          "confidence": 0.99986,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "（3）企业实力指省级及以上住房城乡建设主管部门或",
+          "bbox_pixels_top_left": [
+            [
+              544.0,
+              553.0
+            ],
+            [
+              1110.0,
+              553.0
+            ],
+            [
+              1110.0,
+              579.0
+            ],
+            [
+              544.0,
+              579.0
+            ]
+          ],
+          "confidence": 0.97938,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "在国内依法登记注册的行业协会（学会）对企业颁发的",
+          "bbox_pixels_top_left": [
+            [
+              538.0,
+              584.0
+            ],
+            [
+              1110.0,
+              584.0
+            ],
+            [
+              1110.0,
+              610.0
+            ],
+            [
+              538.0,
+              610.0
+            ]
+          ],
+          "confidence": 0.99882,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "荣誉，如优秀建筑业企业、龙头企业、50强等。",
+          "bbox_pixels_top_left": [
+            [
+              537.0,
+              614.0
+            ],
+            [
+              1036.0,
+              614.0
+            ],
+            [
+              1036.0,
+              639.0
+            ],
+            [
+              537.0,
+              639.0
+            ]
+          ],
+          "confidence": 0.99987,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "（4）评标委员会根据投标人所提供的满足以上要求的",
+          "bbox_pixels_top_left": [
+            [
+              548.0,
+              647.0
+            ],
+            [
+              1109.0,
+              647.0
+            ],
+            [
+              1109.0,
+              670.0
+            ],
+            [
+              548.0,
+              670.0
+            ]
+          ],
+          "confidence": 0.97894,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "企业实力认定成果数量进行评审：",
+          "bbox_pixels_top_left": [
+            [
+              538.0,
+              677.0
+            ],
+            [
+              886.0,
+              677.0
+            ],
+            [
+              886.0,
+              703.0
+            ],
+            [
+              538.0,
+              703.0
+            ]
+          ],
+          "confidence": 0.99932,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "满足以上要求的企业实力认定成果数量=3的为优良(应",
+          "bbox_pixels_top_left": [
+            [
+              536.0,
+              709.0
+            ],
+            [
+              1111.0,
+              709.0
+            ],
+            [
+              1111.0,
+              735.0
+            ],
+            [
+              536.0,
+              735.0
+            ]
+          ],
+          "confidence": 0.99243,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "赋100分）；",
+          "bbox_pixels_top_left": [
+            [
+              535.0,
+              738.0
+            ],
+            [
+              669.0,
+              738.0
+            ],
+            [
+              669.0,
+              765.0
+            ],
+            [
+              535.0,
+              765.0
+            ]
+          ],
+          "confidence": 0.99169,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "满足以上要求的企业实力认定成果数量=2的为中等(应",
+          "bbox_pixels_top_left": [
+            [
+              535.0,
+              770.0
+            ],
+            [
+              1111.0,
+              770.0
+            ],
+            [
+              1111.0,
+              798.0
+            ],
+            [
+              535.0,
+              798.0
+            ]
+          ],
+          "confidence": 0.9984,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "赋80分）；",
+          "bbox_pixels_top_left": [
+            [
+              536.0,
+              801.0
+            ],
+            [
+              660.0,
+              801.0
+            ],
+            [
+              660.0,
+              828.0
+            ],
+            [
+              536.0,
+              828.0
+            ]
+          ],
+          "confidence": 0.97411,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "满足以上要求的企业实力认定成果数量=1的为一般(应",
+          "bbox_pixels_top_left": [
+            [
+              536.0,
+              833.0
+            ],
+            [
+              1111.0,
+              833.0
+            ],
+            [
+              1111.0,
+              859.0
+            ],
+            [
+              536.0,
+              859.0
+            ]
+          ],
+          "confidence": 0.9961,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "赋60分）；",
+          "bbox_pixels_top_left": [
+            [
+              536.0,
+              864.0
+            ],
+            [
+              659.0,
+              864.0
+            ],
+            [
+              659.0,
+              891.0
+            ],
+            [
+              536.0,
+              891.0
+            ]
+          ],
+          "confidence": 0.99331,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "满足以上要求的企业实力认定成果数量=0的为差(应赋",
+          "bbox_pixels_top_left": [
+            [
+              536.0,
+              895.0
+            ],
+            [
+              1110.0,
+              895.0
+            ],
+            [
+              1110.0,
+              920.0
+            ],
+            [
+              536.0,
+              920.0
+            ]
+          ],
+          "confidence": 0.99775,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "0分）。",
+          "bbox_pixels_top_left": [
+            [
+              533.0,
+              923.0
+            ],
+            [
+              621.0,
+              923.0
+            ],
+            [
+              621.0,
+              954.0
+            ],
+            [
+              533.0,
+              954.0
+            ]
+          ],
+          "confidence": 0.99171,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "依据投标人提供的工程重点难点保障体系与措施进行",
+          "bbox_pixels_top_left": [
+            [
+              537.0,
+              959.0
+            ],
+            [
+              1091.0,
+              959.0
+            ],
+            [
+              1091.0,
+              985.0
+            ],
+            [
+              537.0,
+              985.0
+            ]
+          ],
+          "confidence": 0.99993,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "工程重点",
+          "bbox_pixels_top_left": [
+            [
+              439.0,
+              971.0
+            ],
+            [
+              542.0,
+              971.0
+            ],
+            [
+              542.0,
+              1002.0
+            ],
+            [
+              439.0,
+              1002.0
+            ]
+          ],
+          "confidence": 0.99999,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "40%",
+          "bbox_pixels_top_left": [
+            [
+              370.0,
+              997.0
+            ],
+            [
+              426.0,
+              997.0
+            ],
+            [
+              426.0,
+              1027.0
+            ],
+            [
+              370.0,
+              1027.0
+            ]
+          ],
+          "confidence": 0.99995,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "难点保障",
+          "bbox_pixels_top_left": [
+            [
+              438.0,
+              1003.0
+            ],
+            [
+              542.0,
+              1003.0
+            ],
+            [
+              542.0,
+              1034.0
+            ],
+            [
+              438.0,
+              1034.0
+            ]
+          ],
+          "confidence": 0.99998,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "评审，评审为优(应赋100分），评审为良（应赋90分)，",
+          "bbox_pixels_top_left": [
+            [
+              537.0,
+              990.0
+            ],
+            [
+              1107.0,
+              990.0
+            ],
+            [
+              1107.0,
+              1016.0
+            ],
+            [
+              537.0,
+              1016.0
+            ]
+          ],
+          "confidence": 0.93939,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "评审为中等（应赋80分），评审为一般（应赋70分）",
+          "bbox_pixels_top_left": [
+            [
+              535.0,
+              1021.0
+            ],
+            [
+              1098.0,
+              1021.0
+            ],
+            [
+              1098.0,
+              1047.0
+            ],
+            [
+              535.0,
+              1047.0
+            ]
+          ],
+          "confidence": 0.98829,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "体系",
+          "bbox_pixels_top_left": [
+            [
+              458.0,
+              1031.0
+            ],
+            [
+              520.0,
+              1031.0
+            ],
+            [
+              520.0,
+              1067.0
+            ],
+            [
+              458.0,
+              1067.0
+            ]
+          ],
+          "confidence": 0.99994,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "评审为差（应赋60分），未提供的不得分。",
+          "bbox_pixels_top_left": [
+            [
+              535.0,
+              1051.0
+            ],
+            [
+              1007.0,
+              1051.0
+            ],
+            [
+              1007.0,
+              1079.0
+            ],
+            [
+              535.0,
+              1079.0
+            ]
+          ],
+          "confidence": 0.99786,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "确保工期",
+          "bbox_pixels_top_left": [
+            [
+              438.0,
+              1081.0
+            ],
+            [
+              541.0,
+              1081.0
+            ],
+            [
+              541.0,
+              1112.0
+            ],
+            [
+              438.0,
+              1112.0
+            ]
+          ],
+          "confidence": 0.99992,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "与质量的",
+          "bbox_pixels_top_left": [
+            [
+              440.0,
+              1112.0
+            ],
+            [
+              541.0,
+              1112.0
+            ],
+            [
+              541.0,
+              1143.0
+            ],
+            [
+              440.0,
+              1143.0
+            ]
+          ],
+          "confidence": 0.99999,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "依据投标人提供的确保工期与质量的保障体系与措施、",
+          "bbox_pixels_top_left": [
+            [
+              534.0,
+              1131.0
+            ],
+            [
+              1102.0,
+              1131.0
+            ],
+            [
+              1102.0,
+              1157.0
+            ],
+            [
+              534.0,
+              1157.0
+            ]
+          ],
+          "confidence": 0.9999,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "技术文",
+          "bbox_pixels_top_left": [
+            [
+              246.0,
+              1150.0
+            ],
+            [
+              329.0,
+              1150.0
+            ],
+            [
+              329.0,
+              1185.0
+            ],
+            [
+              246.0,
+              1185.0
+            ]
+          ],
+          "confidence": 0.99999,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "保障体系",
+          "bbox_pixels_top_left": [
+            [
+              438.0,
+              1144.0
+            ],
+            [
+              541.0,
+              1141.0
+            ],
+            [
+              543.0,
+              1172.0
+            ],
+            [
+              439.0,
+              1176.0
+            ]
+          ],
+          "confidence": 0.99859,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "确保安全文明生产的管理体系与措施进行评审，评审为",
+          "bbox_pixels_top_left": [
+            [
+              534.0,
+              1161.0
+            ],
+            [
+              1110.0,
+              1161.0
+            ],
+            [
+              1110.0,
+              1190.0
+            ],
+            [
+              534.0,
+              1190.0
+            ]
+          ],
+          "confidence": 0.9998,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "2.2.1",
+          "bbox_pixels_top_left": [
+            [
+              184.0,
+              1177.0
+            ],
+            [
+              243.0,
+              1177.0
+            ],
+            [
+              243.0,
+              1206.0
+            ],
+            [
+              184.0,
+              1206.0
+            ]
+          ],
+          "confidence": 0.99999,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "件评审",
+          "bbox_pixels_top_left": [
+            [
+              246.0,
+              1196.0
+            ],
+            [
+              329.0,
+              1196.0
+            ],
+            [
+              329.0,
+              1231.0
+            ],
+            [
+              246.0,
+              1231.0
+            ]
+          ],
+          "confidence": 0.9998,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "30%",
+          "bbox_pixels_top_left": [
+            [
+              368.0,
+              1183.0
+            ],
+            [
+              426.0,
+              1183.0
+            ],
+            [
+              426.0,
+              1216.0
+            ],
+            [
+              368.0,
+              1216.0
+            ]
+          ],
+          "confidence": 0.99995,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "确保安全",
+          "bbox_pixels_top_left": [
+            [
+              438.0,
+              1205.0
+            ],
+            [
+              540.0,
+              1205.0
+            ],
+            [
+              540.0,
+              1236.0
+            ],
+            [
+              438.0,
+              1236.0
+            ]
+          ],
+          "confidence": 0.99998,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "与措施、",
+          "bbox_pixels_top_left": [
+            [
+              440.0,
+              1174.0
+            ],
+            [
+              532.0,
+              1174.0
+            ],
+            [
+              532.0,
+              1205.0
+            ],
+            [
+              440.0,
+              1205.0
+            ]
+          ],
+          "confidence": 0.99967,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "优（应赋100分），评审为良（应赋90分），评审为",
+          "bbox_pixels_top_left": [
+            [
+              535.0,
+              1192.0
+            ],
+            [
+              1111.0,
+              1192.0
+            ],
+            [
+              1111.0,
+              1220.0
+            ],
+            [
+              535.0,
+              1220.0
+            ]
+          ],
+          "confidence": 0.99809,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "(2)",
+          "bbox_pixels_top_left": [
+            [
+              189.0,
+              1217.0
+            ],
+            [
+              239.0,
+              1217.0
+            ],
+            [
+              239.0,
+              1251.0
+            ],
+            [
+              189.0,
+              1251.0
+            ]
+          ],
+          "confidence": 0.99271,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "中等（应赋80分），评审为一般（应赋70分），评审",
+          "bbox_pixels_top_left": [
+            [
+              533.0,
+              1220.0
+            ],
+            [
+              1112.0,
+              1220.0
+            ],
+            [
+              1112.0,
+              1253.0
+            ],
+            [
+              533.0,
+              1253.0
+            ]
+          ],
+          "confidence": 0.99731,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "标准",
+          "bbox_pixels_top_left": [
+            [
+              258.0,
+              1243.0
+            ],
+            [
+              318.0,
+              1243.0
+            ],
+            [
+              318.0,
+              1277.0
+            ],
+            [
+              258.0,
+              1277.0
+            ]
+          ],
+          "confidence": 0.9997,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "文明生产",
+          "bbox_pixels_top_left": [
+            [
+              436.0,
+              1236.0
+            ],
+            [
+              543.0,
+              1234.0
+            ],
+            [
+              543.0,
+              1268.0
+            ],
+            [
+              437.0,
+              1270.0
+            ]
+          ],
+          "confidence": 0.99976,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "为差（应赋60分），未提供的不得分。",
+          "bbox_pixels_top_left": [
+            [
+              535.0,
+              1253.0
+            ],
+            [
+              948.0,
+              1253.0
+            ],
+            [
+              948.0,
+              1282.0
+            ],
+            [
+              535.0,
+              1282.0
+            ]
+          ],
+          "confidence": 0.99804,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "的管理体",
+          "bbox_pixels_top_left": [
+            [
+              438.0,
+              1267.0
+            ],
+            [
+              541.0,
+              1269.0
+            ],
+            [
+              541.0,
+              1300.0
+            ],
+            [
+              437.0,
+              1298.0
+            ]
+          ],
+          "confidence": 0.99996,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "系与措施",
+          "bbox_pixels_top_left": [
+            [
+              439.0,
+              1298.0
+            ],
+            [
+              542.0,
+              1298.0
+            ],
+            [
+              542.0,
+              1332.0
+            ],
+            [
+              439.0,
+              1332.0
+            ]
+          ],
+          "confidence": 0.99968,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "依据投标人提供的确保人、材（、机的保障体系与措施",
+          "bbox_pixels_top_left": [
+            [
+              538.0,
+              1333.0
+            ],
+            [
+              1110.0,
+              1333.0
+            ],
+            [
+              1110.0,
+              1359.0
+            ],
+            [
+              538.0,
+              1359.0
+            ]
+          ],
+          "confidence": 0.9985,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "确保人、",
+          "bbox_pixels_top_left": [
+            [
+              438.0,
+              1346.0
+            ],
+            [
+              530.0,
+              1346.0
+            ],
+            [
+              530.0,
+              1378.0
+            ],
+            [
+              438.0,
+              1378.0
+            ]
+          ],
+          "confidence": 0.99996,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "进行评审，评审为优（应赋100分），评审为良（应赋",
+          "bbox_pixels_top_left": [
+            [
+              536.0,
+              1362.0
+            ],
+            [
+              1112.0,
+              1362.0
+            ],
+            [
+              1112.0,
+              1391.0
+            ],
+            [
+              536.0,
+              1391.0
+            ]
+          ],
+          "confidence": 0.99827,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "30%",
+          "bbox_pixels_top_left": [
+            [
+              368.0,
+              1386.0
+            ],
+            [
+              426.0,
+              1386.0
+            ],
+            [
+              426.0,
+              1419.0
+            ],
+            [
+              368.0,
+              1419.0
+            ]
+          ],
+          "confidence": 0.99995,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "材、机的",
+          "bbox_pixels_top_left": [
+            [
+              438.0,
+              1378.0
+            ],
+            [
+              541.0,
+              1378.0
+            ],
+            [
+              541.0,
+              1409.0
+            ],
+            [
+              438.0,
+              1409.0
+            ]
+          ],
+          "confidence": 0.99992,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "90分），评审为中等（应赋80分），评审为一般（应",
+          "bbox_pixels_top_left": [
+            [
+              533.0,
+              1394.0
+            ],
+            [
+              1112.0,
+              1394.0
+            ],
+            [
+              1112.0,
+              1423.0
+            ],
+            [
+              533.0,
+              1423.0
+            ]
+          ],
+          "confidence": 0.9973,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "保障体系",
+          "bbox_pixels_top_left": [
+            [
+              440.0,
+              1410.0
+            ],
+            [
+              541.0,
+              1410.0
+            ],
+            [
+              541.0,
+              1441.0
+            ],
+            [
+              440.0,
+              1441.0
+            ]
+          ],
+          "confidence": 0.9999,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "赋70分），评审为差（应赋60分），未提供的不得",
+          "bbox_pixels_top_left": [
+            [
+              534.0,
+              1425.0
+            ],
+            [
+              1111.0,
+              1425.0
+            ],
+            [
+              1111.0,
+              1455.0
+            ],
+            [
+              534.0,
+              1455.0
+            ]
+          ],
+          "confidence": 0.99693,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "与措施",
+          "bbox_pixels_top_left": [
+            [
+              449.0,
+              1439.0
+            ],
+            [
+              532.0,
+              1439.0
+            ],
+            [
+              532.0,
+              1474.0
+            ],
+            [
+              449.0,
+              1474.0
+            ]
+          ],
+          "confidence": 0.99965,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "分。",
+          "bbox_pixels_top_left": [
+            [
+              531.0,
+              1454.0
+            ],
+            [
+              579.0,
+              1454.0
+            ],
+            [
+              579.0,
+              1490.0
+            ],
+            [
+              531.0,
+              1490.0
+            ]
+          ],
+          "confidence": 0.99972,
+          "kind": "ocr_excerpt_needs_review"
+        },
+        {
+          "text": "87",
+          "bbox_pixels_top_left": [
+            [
+              574.0,
+              1557.0
+            ],
+            [
+              611.0,
+              1557.0
+            ],
+            [
+              611.0,
+              1587.0
+            ],
+            [
+              574.0,
+              1587.0
+            ]
+          ],
+          "confidence": 1.0,
+          "kind": "ocr_excerpt_needs_review"
+        }
+      ],
+      "anchor_checks": [
+        {
+          "anchor": "40%",
+          "ocr_contains": true,
+          "crop_contains": true
+        },
+        {
+          "anchor": "30%",
+          "ocr_contains": true,
+          "crop_contains": true
+        },
+        {
+          "anchor": "工程重点难点保障体系",
+          "ocr_contains": true,
+          "crop_contains": true
+        }
+      ],
+      "blank_page_no_ocr_text": null,
+      "elapsed_seconds": 1.363
+    },
+    {
+      "file_id": "PUB-012",
+      "source_sha256": "fed2609ca6f7163f078c645146793882ecf1800bd499a6e82f9a9c2b964b858c",
+      "pdf_page": 3,
+      "image_sha256": "7ac588a3d11d59ea46fcaf49230d6805563d34c963b97153786498007af26bdc",
+      "image_dimensions": [
+        1190,
+        1684
+      ],
+      "render_scale": 2,
+      "crop_text": "2026年09月18日",
+      "ocr_lines": [],
+      "anchor_checks": [],
+      "blank_page_no_ocr_text": true,
+      "elapsed_seconds": 0.181
+    }
+  ],
+  "elapsed_seconds": 3.468,
+  "limits": [
+    "人工挑选少量锚点，不代表字错率或表格结构准确率",
+    "OCR文字和数字仍需复核",
+    "本实验没有向外部OCR服务发送项目文件"
+  ],
+  "code_sha256": {
+    "run_ocr.py": "5a2e1db9cf4333ae69d2a0de5815c07e1829da797a30039bf3ea6f3338e04da4",
+    "vision_ocr.swift": "d68e072ccefd5b05535096adf1704451c9dfd640952a9ef9bdd45b12badad86c"
+  },
+  "dependency_lock_sha256": "542a16a9bc7277c45c1ddca9f1793f1a8acd14c48060fde0108ccc7ad11e865e"
+}

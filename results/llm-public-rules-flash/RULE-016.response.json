@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-016",
+  "input_file_sha256": "36ef5af692d0ae779a41f14075ac8a01cca37b3c68d07fc821fbe308debf3289",
+  "started_at": "2026-10-07T03:56:51.527728+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-flash",
+    "response_model": "deepseek-flash",
+    "response_id": "8451dbb0-c6ea-4358-9fa8-a91520ae66c9",
+    "created": 1791345411,
+    "usage": {
+      "prompt_tokens": 4327,
+      "completion_tokens": 171,
+      "total_tokens": 4498,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 3687
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.371,
+    "request_sha256": "51b56cf28dab0dc409efc97f27b2d8ce87eb49c5b50f3133688c1be2fcb38e4e",
+    "response_sha256": "cd1d3b52f1d590a7f0d26d48762e27ea27a6ed8e1556119741e0985c5f523a52",
+    "output": {
+      "task_id": "RULE-016",
+      "status": "supported",
+      "answer": "评标价相同时，中标候选人顺序按以下优先顺序确定：（1）技术文件详细评审得分高的优先；（2）由评标委员会根据投标文件投票，按少数服从多数的原则确定中标候选人顺序。该规则出自招标文件正文（PUB-004）评标办法附件2“推荐规则”，属原文件规定，非补疑。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "E1为招标文件正文评标办法附件2，仅规定评标价相同时的排序优先顺序；未提供补疑内容，故不涉及补疑是否修改该规则。该规则针对中标候选人顺序，不等同于最终中标人确定（另见E5授权评标委员会确定中标人）。"
+    }
+  }
+}

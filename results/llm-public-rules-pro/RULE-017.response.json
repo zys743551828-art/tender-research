@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-017",
+  "input_file_sha256": "0c61c2b3b3d793ce76e62714d7604165f8e5d818aa63ddeab5cd6ba8c35c6678",
+  "started_at": "2026-10-07T03:59:01.214452+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro",
+    "response_model": "deepseek-v4-pro",
+    "response_id": "2c0de296-c22a-4280-b7b2-a49c8de1763a",
+    "created": 1791345541,
+    "usage": {
+      "prompt_tokens": 3076,
+      "completion_tokens": 114,
+      "total_tokens": 3190,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 2820
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.509,
+    "request_sha256": "d069caab8e9a040b9bccae6389ae29880470d206e3c04fe2fd9471afe66cbc73",
+    "response_sha256": "291afde9b7ede1f00573fd6b6854ae8d7317a12db0efcd0b0134b6597990b8f0",
+    "output": {
+      "task_id": "RULE-017",
+      "status": "supported",
+      "answer": "补疑1将施工组织设计良好评分区间由“70分＜F＜80分”修改为“70分＜F＜90分”。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "仅依据补疑1（E1）和招标文件正文（E2）的原文；E2为原评分标准，E1为补疑变更，两者结合可确认变更内容。"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-025",
+  "input_file_sha256": "a73292ff0d8ff263fe0db98e1e26aa0936eb03d2b935e2360aa799c4d61bc03f",
+  "started_at": "2026-10-07T03:59:16.459904+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro",
+    "response_model": "deepseek-v4-pro",
+    "response_id": "550d1e21-874b-4cdb-bc67-bd585b977558",
+    "created": 1791345556,
+    "usage": {
+      "prompt_tokens": 3671,
+      "completion_tokens": 166,
+      "total_tokens": 3837,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 3415
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 2.345,
+    "request_sha256": "8ab78c67fb5bd29220138ef90d3e3ec013bd6cca6bb00c73ff3f67a909121d60",
+    "response_sha256": "2f7c8480931f9978fb1b38b71004d43b05efa1f128fb6ab26f8e8d5268aad342",
+    "output": {
+      "task_id": "RULE-025",
+      "status": "supported",
+      "answer": "直接票决定标：定标委员会成员在中标候选人中选择1家投票，按得票数由高到低排序确定中标人。若最高得票数相同，由定标委员会对得票数最高且相同的中标候选人按投标报价由低到高排序，报价最低者确定为中标人；若报价也相同，则对报价相同的中标候选人再次投票，得票数高者为中标人。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "仅依据招标文件正文（PUB-008）定标办法前附表，未提供补疑文件；未涉及逐轮票决或票决随机法。"
+    }
+  }
+}

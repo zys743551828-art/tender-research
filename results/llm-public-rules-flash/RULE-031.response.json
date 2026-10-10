@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-031",
+  "input_file_sha256": "c2e99c7c24abf94bd2f4cac9b6d223002cf4cfc241e90cc4a539622a8e5628a0",
+  "started_at": "2026-10-07T03:57:16.552779+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-flash",
+    "response_model": "deepseek-flash",
+    "response_id": "95dc6bc1-8214-4476-8fbe-a216543a3ab1",
+    "created": 1791345436,
+    "usage": {
+      "prompt_tokens": 5125,
+      "completion_tokens": 154,
+      "total_tokens": 5279,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 4485
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.318,
+    "request_sha256": "83345cece9d76e00d784ad9252581996ecb5bf1bd6d367b67772aa1b7054eaea",
+    "response_sha256": "b606408c7fe0dfef04f7d26fcabd57ef0ae8bac4c56501ea58b2f0689a4cfc1e",
+    "output": {
+      "task_id": "RULE-031",
+      "status": "supported",
+      "answer": "补疑1（PUB-009）对清单第108项栽植黄菖蒲的变更：经复核，工程量由1865株调整为29840株（原编制按图纸1865㎡误编为1865株，按设计密度16株/㎡应为1865×16=29840株）。该补疑视同招标文件组成部分，与招标文件具有同等法律效力。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "仅依据补疑1第5条问答；未提供最新版清单控制价附件，无法核对调整后清单实际数值；该条为工程量清单编制错误的更正，不涉及单价或结算规则。"
+    }
+  }
+}

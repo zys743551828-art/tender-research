@@ -1,0 +1,498 @@
+{
+  "experiment_id": "rule-checks",
+  "runtime": {
+    "version": "1.0.0",
+    "python": "3.13.16",
+    "pypdf": "6.10.0",
+    "pdfplumber": "0.11.9",
+    "pypdfium2": "5.13.0",
+    "pdfminer.six": "20251230"
+  },
+  "evaluation_kind": "known_scope_regression_not_engineering_acceptance",
+  "rules": [
+    {
+      "rule_id": "PUB-004:65:ai_assistance:546",
+      "project_id": "2026BFFGZ51067",
+      "key": "ai_assistance",
+      "value": true,
+      "category": "explicit",
+      "condition": "",
+      "review_status": "needs_confirmation",
+      "parser_version": "explicit-clause-v1",
+      "evidence": [
+        {
+          "file_id": "PUB-004",
+          "source_ids": [
+            "SRC-035"
+          ],
+          "source_path": "2026BFFGZ51067/2026BFFGZ51067_招标文件_20260904.pdf",
+          "source_sha256": "24c1c81ec1ca7e9449dd00ca2a136cfcf44e6ccd97e57acb1d8197e67191912b",
+          "pdf_page": 65,
+          "start_char": 546,
+          "end_char": 575,
+          "quote": "启用合肥公共资源交易大模型 AI“类人”评\n审功能辅助评标",
+          "retrieval_score": 0.0,
+          "kind": "source_excerpt"
+        }
+      ]
+    },
+    {
+      "rule_id": "PUB-004:65:technical_max:221",
+      "project_id": "2026BFFGZ51067",
+      "key": "technical_max",
+      "value": 100.0,
+      "category": "explicit",
+      "condition": "",
+      "review_status": "needs_confirmation",
+      "parser_version": "explicit-clause-v1",
+      "evidence": [
+        {
+          "file_id": "PUB-004",
+          "source_ids": [
+            "SRC-035"
+          ],
+          "source_path": "2026BFFGZ51067/2026BFFGZ51067_招标文件_20260904.pdf",
+          "source_sha256": "24c1c81ec1ca7e9449dd00ca2a136cfcf44e6ccd97e57acb1d8197e67191912b",
+          "pdf_page": 65,
+          "start_char": 221,
+          "end_char": 229,
+          "quote": "本项满分100分",
+          "retrieval_score": 0.0,
+          "kind": "source_excerpt"
+        }
+      ]
+    },
+    {
+      "rule_id": "PUB-004:65:recommended_page_limit:418",
+      "project_id": "2026BFFGZ51067",
+      "key": "recommended_page_limit",
+      "value": 50,
+      "category": "recommendation",
+      "condition": "建议编制要求；不直接转为否决条件",
+      "review_status": "needs_confirmation",
+      "parser_version": "explicit-clause-v1",
+      "evidence": [
+        {
+          "file_id": "PUB-004",
+          "source_ids": [
+            "SRC-035"
+          ],
+          "source_path": "2026BFFGZ51067/2026BFFGZ51067_招标文件_20260904.pdf",
+          "source_sha256": "24c1c81ec1ca7e9449dd00ca2a136cfcf44e6ccd97e57acb1d8197e67191912b",
+          "pdf_page": 65,
+          "start_char": 418,
+          "end_char": 435,
+          "quote": "施工组织设计的篇幅不超过\n50 页",
+          "retrieval_score": 0.0,
+          "kind": "source_excerpt"
+        }
+      ]
+    },
+    {
+      "rule_id": "PUB-004:65:good_interval:189",
+      "project_id": "2026BFFGZ51067",
+      "key": "good_interval",
+      "value": {
+        "lower": 70,
+        "upper": 80,
+        "lower_open": true,
+        "upper_open": true
+      },
+      "category": "explicit",
+      "condition": "",
+      "review_status": "needs_confirmation",
+      "parser_version": "explicit-clause-v1",
+      "evidence": [
+        {
+          "file_id": "PUB-004",
+          "source_ids": [
+            "SRC-035"
+          ],
+          "source_path": "2026BFFGZ51067/2026BFFGZ51067_招标文件_20260904.pdf",
+          "source_sha256": "24c1c81ec1ca7e9449dd00ca2a136cfcf44e6ccd97e57acb1d8197e67191912b",
+          "pdf_page": 65,
+          "start_char": 189,
+          "end_char": 204,
+          "quote": "良好得 70 分＜F＜80\n分",
+          "retrieval_score": 0.0,
+          "kind": "source_excerpt"
+        }
+      ]
+    },
+    {
+      "rule_id": "PUB-005:1:good_interval_patch:113",
+      "project_id": "2026BFFGZ51067",
+      "key": "good_interval_patch",
+      "value": {
+        "lower": 70,
+        "upper": 90,
+        "lower_open": true,
+        "upper_open": true
+      },
+      "category": "correction",
+      "condition": "",
+      "review_status": "needs_confirmation",
+      "parser_version": "explicit-clause-v1",
+      "evidence": [
+        {
+          "file_id": "PUB-005",
+          "source_ids": [
+            "SRC-047"
+          ],
+          "source_path": "2026BFFGZ51067/2026BFFGZ51067_补疑1_20260911.pdf",
+          "source_sha256": "b7f8c220b347949a3791e6309f45eb2d0e6ebf96402c0220ee54ef26a7286516",
+          "pdf_page": 1,
+          "start_char": 113,
+          "end_char": 184,
+          "quote": "良好得 70 分＜F＜80 分，优秀得 90 分≤F≤100 分。”现修改\n为“一般得 50 分＜F≤70 分，良好得 70 分＜F＜90 分",
+          "retrieval_score": 0.0,
+          "kind": "source_excerpt"
+        }
+      ],
+      "old_value": {
+        "lower": 70,
+        "upper": 80,
+        "lower_open": true,
+        "upper_open": true
+      }
+    },
+    {
+      "rule_id": "PUB-008:79:ai_assistance:231",
+      "project_id": "2026BFJGZ50917",
+      "key": "ai_assistance",
+      "value": false,
+      "category": "explicit",
+      "condition": "",
+      "review_status": "needs_confirmation",
+      "parser_version": "explicit-clause-v1",
+      "evidence": [
+        {
+          "file_id": "PUB-008",
+          "source_ids": [
+            "SRC-041"
+          ],
+          "source_path": "2026BFJGZ50917/2026BFJGZ50917_招标文件_202608日期未注明.pdf",
+          "source_sha256": "c3af9ea9e24de0925e5c51161be1c7feb1fd6eb11783e84c395ac4454d45523d",
+          "pdf_page": 79,
+          "start_char": 231,
+          "end_char": 245,
+          "quote": "☑不执行AI“类人”辅助评标",
+          "retrieval_score": 0.0,
+          "kind": "source_excerpt"
+        }
+      ]
+    },
+    {
+      "rule_id": "PUB-008:89:recommended_page_limit:142",
+      "project_id": "2026BFJGZ50917",
+      "key": "recommended_page_limit",
+      "value": 50,
+      "category": "recommendation",
+      "condition": "建议编制要求；不直接转为否决条件",
+      "review_status": "needs_confirmation",
+      "parser_version": "explicit-clause-v1",
+      "evidence": [
+        {
+          "file_id": "PUB-008",
+          "source_ids": [
+            "SRC-041"
+          ],
+          "source_path": "2026BFJGZ50917/2026BFJGZ50917_招标文件_202608日期未注明.pdf",
+          "source_sha256": "c3af9ea9e24de0925e5c51161be1c7feb1fd6eb11783e84c395ac4454d45523d",
+          "pdf_page": 89,
+          "start_char": 142,
+          "end_char": 157,
+          "quote": "施工组织设计的篇幅不超过50页",
+          "retrieval_score": 0.0,
+          "kind": "source_excerpt"
+        }
+      ]
+    },
+    {
+      "rule_id": "PUB-009:1:date_year_conflict:146",
+      "project_id": "2026BFJGZ50917",
+      "key": "date_year_conflict",
+      "value": {
+        "source_year": 2023,
+        "project_year": 2026
+      },
+      "category": "needs_clarification",
+      "condition": "保留原文年份，不自动纠正",
+      "review_status": "needs_confirmation",
+      "parser_version": "explicit-clause-v1",
+      "evidence": [
+        {
+          "file_id": "PUB-009",
+          "source_ids": [
+            "SRC-049"
+          ],
+          "source_path": "2026BFJGZ50917/2026BFJGZ50917_补疑1_20260902.pdf",
+          "source_sha256": "bbc3b65fd3f8e22268b206f5635f4f922c863bebc69cc6907f2929dbbba1563e",
+          "pdf_page": 1,
+          "start_char": 146,
+          "end_char": 175,
+          "quote": "招标文件获取截止时间延期到“2023 年 9 月 17 日",
+          "retrieval_score": 0.0,
+          "kind": "source_excerpt"
+        }
+      ]
+    },
+    {
+      "rule_id": "PUB-010:1:testing_material_timing:152",
+      "project_id": "2026BFJGZ50917",
+      "key": "testing_material_timing",
+      "value": "bid_or_post_award",
+      "category": "explicit_exception",
+      "condition": "仅限同条答复所述试验人员、仪器设备及检测单位资料",
+      "review_status": "needs_confirmation",
+      "parser_version": "explicit-clause-v1",
+      "evidence": [
+        {
+          "file_id": "PUB-010",
+          "source_ids": [
+            "SRC-049"
+          ],
+          "source_path": "2026BFJGZ50917/2026BFJGZ50917_补疑2_20260909.pdf",
+          "source_sha256": "61b3a7830a0aa81464ab22b8483e4e0a15a4f27e9700f2982211e1b0777e642c",
+          "pdf_page": 1,
+          "start_char": 152,
+          "end_char": 221,
+          "quote": "请问投标单位是否需要提供具体的试验人员名单、试验仪器及设\n备、检测单位资质（包括营业执照，资质证书）等，还是中标后提供\n即可？\n答：均可。",
+          "retrieval_score": 0.0,
+          "kind": "source_excerpt"
+        }
+      ]
+    }
+  ],
+  "interval_resolution": {
+    "status": "candidate_effective_rule_needs_confirmation",
+    "value": {
+      "lower": 70,
+      "upper": 90,
+      "lower_open": true,
+      "upper_open": true
+    },
+    "base_rule": "PUB-004:65:good_interval:189",
+    "patch_rule": "PUB-005:1:good_interval_patch:113",
+    "evidence": [
+      {
+        "file_id": "PUB-004",
+        "source_ids": [
+          "SRC-035"
+        ],
+        "source_path": "2026BFFGZ51067/2026BFFGZ51067_招标文件_20260904.pdf",
+        "source_sha256": "24c1c81ec1ca7e9449dd00ca2a136cfcf44e6ccd97e57acb1d8197e67191912b",
+        "pdf_page": 65,
+        "start_char": 189,
+        "end_char": 204,
+        "quote": "良好得 70 分＜F＜80\n分",
+        "retrieval_score": 0.0,
+        "kind": "source_excerpt"
+      },
+      {
+        "file_id": "PUB-005",
+        "source_ids": [
+          "SRC-047"
+        ],
+        "source_path": "2026BFFGZ51067/2026BFFGZ51067_补疑1_20260911.pdf",
+        "source_sha256": "b7f8c220b347949a3791e6309f45eb2d0e6ebf96402c0220ee54ef26a7286516",
+        "pdf_page": 1,
+        "start_char": 113,
+        "end_char": 184,
+        "quote": "良好得 70 分＜F＜80 分，优秀得 90 分≤F≤100 分。”现修改\n为“一般得 50 分＜F≤70 分，良好得 70 分＜F＜90 分",
+        "retrieval_score": 0.0,
+        "kind": "source_excerpt"
+      }
+    ],
+    "limits": "仅已归档版本的显式修订，未证明后续补遗齐全"
+  },
+  "findings": [
+    {
+      "finding_id": "FND-c3040106baf06638",
+      "check_id": "PIPE-HEADING-001",
+      "severity": "review",
+      "status": "needs_engineer_confirmation",
+      "statement": "球墨铸铁管施工小节描述 FRPM／玻璃纤维增强塑料夹砂管，工程对象表述需核实。",
+      "evidence": [
+        {
+          "file_id": "FILE-002",
+          "source_sha256": "5027159571bf015e6c0d01a8f782a868ad382a08c24520187f7d23fb2f23779f",
+          "source_path": "02-投标文件/CASE-001_技术标_安徽秉一市政_20260910.pdf",
+          "source_ids": [],
+          "pdf_page": 3,
+          "start_char": 119,
+          "end_char": 128,
+          "quote": "一、球墨铸铁管施工",
+          "kind": "source_excerpt",
+          "retrieval_score": 0.0
+        },
+        {
+          "file_id": "FILE-002",
+          "source_sha256": "5027159571bf015e6c0d01a8f782a868ad382a08c24520187f7d23fb2f23779f",
+          "source_path": "02-投标文件/CASE-001_技术标_安徽秉一市政_20260910.pdf",
+          "source_ids": [],
+          "pdf_page": 3,
+          "start_char": 137,
+          "end_char": 143,
+          "quote": "FRPM 管",
+          "kind": "source_excerpt",
+          "retrieval_score": 0.0
+        }
+      ],
+      "official_score_effect": null
+    }
+  ],
+  "revision_gates": [
+    {
+      "status": "awaiting_engineering_basis",
+      "finding_id": "FND-c3040106baf06638",
+      "required": [
+        "图纸或工程量清单确认管材",
+        "工程师核实该小节用途"
+      ],
+      "automatic_material_replacement": false
+    }
+  ],
+  "checks": [
+    {
+      "check_id": "road_ai_enabled",
+      "passed": true
+    },
+    {
+      "check_id": "landscape_ai_disabled",
+      "passed": true
+    },
+    {
+      "check_id": "road_technical_max_100",
+      "passed": true
+    },
+    {
+      "check_id": "recommended_not_blocking",
+      "passed": true
+    },
+    {
+      "check_id": "interval_patch_preserves_both_versions",
+      "passed": true
+    },
+    {
+      "check_id": "year_conflict_no_auto_correction",
+      "passed": true
+    },
+    {
+      "check_id": "testing_material_exception",
+      "passed": true
+    },
+    {
+      "check_id": "all_rule_quotes_are_source_spans",
+      "passed": true
+    },
+    {
+      "check_id": "case_known_issue_located_page_3",
+      "passed": true
+    },
+    {
+      "check_id": "no_official_deduction_created",
+      "passed": true
+    },
+    {
+      "check_id": "no_unreviewed_material_replacement",
+      "passed": true
+    }
+  ],
+  "summary": {
+    "checks": 11,
+    "passed": 11,
+    "rules": 9,
+    "findings": 1
+  },
+  "source_files": [
+    {
+      "file_id": "PUB-001",
+      "sha256": "c86463907785e1aeab4edb23eff29ce3be221c603202623d0e008ccbc7a6318b"
+    },
+    {
+      "file_id": "PUB-002",
+      "sha256": "b6888deb5d963aeab24764966f25dc3c91f745d4fd58216bab1263bd0bb9bd13"
+    },
+    {
+      "file_id": "PUB-003",
+      "sha256": "0747784491c35afb20abdc4a82c70f00818a392935f3bde34accff70d9455918"
+    },
+    {
+      "file_id": "PUB-004",
+      "sha256": "24c1c81ec1ca7e9449dd00ca2a136cfcf44e6ccd97e57acb1d8197e67191912b"
+    },
+    {
+      "file_id": "PUB-005",
+      "sha256": "b7f8c220b347949a3791e6309f45eb2d0e6ebf96402c0220ee54ef26a7286516"
+    },
+    {
+      "file_id": "PUB-006",
+      "sha256": "91badac4c62dfcde1467cde1b48aa2e49aef78f39efce60420ced357bdea8cce"
+    },
+    {
+      "file_id": "PUB-007",
+      "sha256": "ef52a39245ef2084077d02142e3a2422cd274710648c643e5ea36a0d1ac07834"
+    },
+    {
+      "file_id": "PUB-008",
+      "sha256": "c3af9ea9e24de0925e5c51161be1c7feb1fd6eb11783e84c395ac4454d45523d"
+    },
+    {
+      "file_id": "PUB-009",
+      "sha256": "bbc3b65fd3f8e22268b206f5635f4f922c863bebc69cc6907f2929dbbba1563e"
+    },
+    {
+      "file_id": "PUB-010",
+      "sha256": "61b3a7830a0aa81464ab22b8483e4e0a15a4f27e9700f2982211e1b0777e642c"
+    },
+    {
+      "file_id": "PUB-011",
+      "sha256": "ddc57eb2f4d4ef71b4d4a6f7f88beb24671b766d27d2e44bd13bbf6c4b1237c3"
+    },
+    {
+      "file_id": "PUB-012",
+      "sha256": "fed2609ca6f7163f078c645146793882ecf1800bd499a6e82f9a9c2b964b858c"
+    },
+    {
+      "file_id": "FILE-001",
+      "sha256": "0ac3fc35e412cd8aeec7614f28c41743331dedd5d22be988feab553296006e25"
+    },
+    {
+      "file_id": "FILE-002",
+      "sha256": "5027159571bf015e6c0d01a8f782a868ad382a08c24520187f7d23fb2f23779f"
+    }
+  ],
+  "code_sha256": {
+    "diagnostics.py": "89fc8edac65866e8fc554c644175700379fd1458b4ff37660d7ab30ed364e615",
+    "paths.py": "8953e625cc5bd9355457d23d7679bcb804f242c8120d3ca84d7aa15c661581f3",
+    "intake.py": "2d94a7d2fe77fdfd5cdb22a72723e5807a80adee0d3dfda745b6f988e615670d",
+    "llm_common.py": "bb5aa250b064ac5cbf4e7b7fd7fc5f44809c00ebd09d6d35e869db5d449ddc77",
+    "deepseek_client.py": "c040a4814ebeebff4d5316a88364d25d2fd677839d8d5cccb8294c6315a2ed13",
+    "rule_checks.py": "db97dc45b2612565f8d6fe93d21b432b8bd1042739354c39d45e72fc0bdc6cfb",
+    "__init__.py": "147ff22a6ff7df27e64b00d96ba68c0d678e8d6bdc43fab814fa4e1341031521",
+    "model_service.py": "e3e27bb47b16b5b679e98fa684ae9c348e0e7ed598219884713d7c64cb33b673",
+    "contracts.py": "c0af2183f3c08415c7427719cf8ba78f1468bf81e2ff32023754da10999c5f21",
+    "score_text.py": "3716d0b1493e680b7f40a882f8ba9e70ae9b8c1298bcf711939db7af145d94d2",
+    "score_eval.py": "5a3f44882d3c6dcae75d22fa7e3092adc920e1a4e47bd563175d95f27813ca11",
+    "outcomes.py": "f883a69cc7a75dbf19d8044e88440f1078646a87f67c9b734331b51631ac41be",
+    "llm_fulltext.py": "a23ce3c83e018d113101d995ee41da04fd2d62f8848a00e02f818b9c48e5bdf1",
+    "lifecycle.py": "1f33be102aca18b77246227643db5b9694f7bbe31d1008a04d94ca0da0b21d7c",
+    "llm_visual.py": "5ba7716b0d61e7ee3a551be0a6c2fbab756ec968574e57c06fd2e62e71a2a8ed",
+    "scoring.py": "77d4acf5c5d096f2f56cf8311178e02a7a3caf831980e7bf35b71c98ca675b63",
+    "score_model.py": "8bd6512af7b44f30df9f3c9e528ce748a22693209f0a33fdbf4aae784009621b",
+    "run_all.py": "15edbd9d6316141155679aa0dcc42f3b179e1b87f01114a0bf637bcf197941d1",
+    "rule_evidence.py": "da624ddf47a20020d20207d7d7fe6fa1b0fe206acb33addfdc98a7747c9e09c3",
+    "llm_baseline.py": "a059cc5d6ac29945a08dc2635e5c8cf8712c4a156beb3068eb8257e6e8dde84e",
+    "retrieval_eval.py": "876bd0daf047449646469af339a8cc19266a976dd782ff77d3ea6e5f51c4c40b",
+    "store.py": "54a3eba3c9b4a34d73cb12d23a8dc3b7a9140b6d56d1f1a2ac9b22ee1dcda34c",
+    "llm_rules.py": "fd4ab778deb04cca6ad1703fd819b7514134e95e38b62a45ee3163d99f51479d",
+    "ocr_probe.py": "0c2da36bafa59ee1c7dd42f76e3cd933057d8f89a66d919735674f515ace0461"
+  },
+  "elapsed_seconds": 46.6,
+  "limits": [
+    "仅少量显式句式，不是通用语义解析",
+    "CASE-001 已知疑点回归，非盲测召回或精确率",
+    "无图纸清单与工程复核，未生成可提交修订稿"
+  ]
+}

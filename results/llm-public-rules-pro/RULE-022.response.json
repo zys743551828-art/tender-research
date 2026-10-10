@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-022",
+  "input_file_sha256": "7ec84ca82d2982f1f96b39a0cf97dbb30780681a69bd2c7f2742b296de5be2d3",
+  "started_at": "2026-10-07T03:59:10.548006+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro",
+    "response_model": "deepseek-v4-pro",
+    "response_id": "bfd423e2-ebea-4528-9eac-c8f97cda1b8b",
+    "created": 1791345550,
+    "usage": {
+      "prompt_tokens": 3661,
+      "completion_tokens": 119,
+      "total_tokens": 3780,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 3405
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.32,
+    "request_sha256": "254e473a247d8a45bcb9825ac4db67dfa8b8764a41ef3163996ef3fd7612e579",
+    "response_sha256": "1c6dc86562c3b3f0170f1c927de25edb73fe1bdf3d302c3f3b0b4b8c1cd31128",
+    "output": {
+      "task_id": "RULE-022",
+      "status": "supported",
+      "answer": "技术评审标准的A等级按以下规则确定：技术评审标准部分得分＞70分，由高到低取前9家（得分相同且排序最末的均计入）为A；如不足9家，则全部为A。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "所给证据来自招标文件示范文本，未提供补疑文件；若补疑有修改，以补疑为准。"
+    }
+  }
+}

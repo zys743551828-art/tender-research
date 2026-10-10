@@ -1,0 +1,37 @@
+{
+  "call_id": "RULE-024",
+  "input_file_sha256": "f92d7b6637a50e35f3b22f46ba393d16df677ed16780c728b2a818858bd82726",
+  "started_at": "2026-10-07T03:57:04.561155+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-flash",
+    "response_model": "deepseek-flash",
+    "response_id": "91c59a90-08d3-4db3-92bd-abfd8e207657",
+    "created": 1791345424,
+    "usage": {
+      "prompt_tokens": 4322,
+      "completion_tokens": 280,
+      "total_tokens": 4602,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 3682
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 2.016,
+    "request_sha256": "224acd9cd9635e6d915872e578223aebcd05f7096b19d5694eea1ff62242b281",
+    "response_sha256": "e94cd02f7af3fe309e169a642c46d83421ed343b3625b6d4b9782e4a9110df55",
+    "output": {
+      "task_id": "RULE-024",
+      "status": "supported",
+      "answer": "AAA 优先。依据原招标文件（PUB-008）第三章评标及定标办法“推荐规则”第（2）项：当综合评价结果为好的投标人家数 X＞拟推荐中标候选人数量 M 时，按优先顺序确定中标候选人，其中①技术、商务、报价评价结果：AAA 优于 AAB（或 ABA，或 BAA），且 AAB、ABA 与 BAA 三者不区分优先顺序。故 AAA 优先于 AAB、ABA、BAA；后三者之间无优先顺序，需依次按②技术文件得分高、③商务文件得分高、④投标报价低、⑤评标委员会投票少数服从多数继续区分。",
+      "evidence_ids": [
+        "E1",
+        "E3"
+      ],
+      "limitations": "E1 为示范文本第三章评标及定标办法原文，其优先顺序仅在 X＞M（综合评价为好的家数超过拟推荐中标候选人数）时适用；E3 仅界定 AAA、AAB、ABA、BAA 均属综合评价“好”，未规定彼此优先顺序。本结论为技术入围/推荐中标候选人排序规则，非最终中标结果；文件身份说明提示须结合补疑1、2，但补疑未提供，故未纳入。"
+    }
+  }
+}

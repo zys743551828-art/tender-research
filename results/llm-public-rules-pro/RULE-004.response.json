@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-004",
+  "input_file_sha256": "90fa7d2b55e994bdfca49baa71cb51de951850535c195f0af79980b47898f500",
+  "started_at": "2026-10-07T03:58:39.078659+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro",
+    "response_model": "deepseek-v4-pro",
+    "response_id": "4d6ff293-2185-4d50-8d6d-6662b94876f0",
+    "created": 1791345519,
+    "usage": {
+      "prompt_tokens": 3466,
+      "completion_tokens": 97,
+      "total_tokens": 3563,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 3210
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.435,
+    "request_sha256": "0362197526a221bbd019f35786dbd70eac994d514682befa8a0ec835e42c831f",
+    "response_sha256": "7c6a4163d16b93fe0b265344352157a768f1b243afa0c8d06ef61a28504b29b8",
+    "output": {
+      "task_id": "RULE-004",
+      "status": "supported",
+      "answer": "投标人未及时回复询标函的后果是：视为放弃澄清、说明或补正。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "仅依据《合肥市工程建设项目电子招标投标操作规程》第十八条，未提供具体项目招标文件或补遗，无法判断是否有更严格或不同的约定。"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-003",
+  "input_file_sha256": "a7b740cd7124e4ca2c62102239899233ef926754ac4484092d1e5b20aef11f84",
+  "started_at": "2026-10-07T03:58:37.726567+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro",
+    "response_model": "deepseek-v4-pro",
+    "response_id": "2687474c-50e0-4f9c-bac4-b95530474785",
+    "created": 1791345517,
+    "usage": {
+      "prompt_tokens": 3467,
+      "completion_tokens": 72,
+      "total_tokens": 3539,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 3211
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.349,
+    "request_sha256": "e2d13b1fd937c52fbbeecf4d4906ebf9fba123d940fc27ed61001110c25a1cb5",
+    "response_sha256": "e7ec246794d8fdc8101f79f7a0961d32f76683bafe6c405a5a774698d3d63905",
+    "output": {
+      "task_id": "RULE-003",
+      "status": "supported",
+      "answer": "模型生成的结论不取代使用主体的自主判断，不改变使用主体的法定责任。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "仅依据提供的文件，未涉及其他项目或补疑。"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "call_id": "RULE-009",
+  "input_file_sha256": "dbdc3218be320d6e3f55eb9bc363d37a9e99021dd50439a7c57a8fbffc92a030",
+  "started_at": "2026-10-07T03:58:46.672523+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro",
+    "response_model": "deepseek-v4-pro",
+    "response_id": "73143011-da6c-4c06-a626-0c71fb85004c",
+    "created": 1791345526,
+    "usage": {
+      "prompt_tokens": 3511,
+      "completion_tokens": 162,
+      "total_tokens": 3673,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 3255
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 2.043,
+    "request_sha256": "5615f516625ff76d3bd30dd7ec1f4357d30a8d92c862d285584a503cdbdf8362",
+    "response_sha256": "bc1980b51e18ece81970f4e3a6fb6686a99c81b675ba2cc99d7c4a52d4f30ffa",
+    "output": {
+      "task_id": "RULE-009",
+      "status": "supported",
+      "answer": "是，技术文件详细评审启用 AI 类人评审。依据招标文件正文（PUB-004）第65页注1：“对于技术文件详细评审评分标准，启用合肥公共资源交易大模型 AI‘类人’评审功能辅助评标，模型生成的结论不替代使用主体的自主判断，不改变使用主体的法定责任。”同时第66页要求评标委员会成员须对人工智能辅助评审结果进行复核。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "limitations": "仅依据招标文件正文，未提供补疑文件；AI 评审为辅助功能，不替代评标委员会自主判断。"
+    }
+  }
+}

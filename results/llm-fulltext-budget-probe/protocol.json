@@ -1,0 +1,53 @@
+{
+  "experiment_id": "llm-fulltext-budget-probe",
+  "prompt_version": "DS-CASE-002-v1",
+  "code_sha256": {
+    "run_deepseek_case.py": "ed43f8c5280688ee6cb8c683a7b4f490d55b7d1378b76338467e12f373f902c5",
+    "run_deepseek.py": "b8293ab04b7c520a6002a510366b90cc5f282e9a7af32f0cb2746c1fcc5c1489",
+    "model_service.py": "60511c7f196c4364db34bbccf420d276ac0faccb0f804dab9d7221d2832ce292",
+    "deepseek_client.py": "9fc09d97dc6531c18ededece66f2683e4efc63c4f55a34240de221b630556d7f",
+    "rule_evidence.py": "a96616e8987fb965bd2f8a2cdb2c385ccf80603f4304769243b4e1fc292d6cd4"
+  },
+  "max_completion_calls": 1,
+  "jobs": [
+    [
+      "THINK-FLASH-BUDGET-1",
+      "deepseek-flash",
+      true
+    ]
+  ],
+  "output_token_limit": 32768,
+  "thinking_effort": "high",
+  "configuration": "same messages as llm-fulltext-id-bound; single Flash thinking call with larger output budget; no automatic retry",
+  "known_to_analyst": true,
+  "blind_evaluation": false,
+  "label_used_to_tune_prompt": false,
+  "excluded_inputs": [
+    "reported score",
+    "observed cutoff",
+    "case analysis",
+    "earlier model outputs"
+  ],
+  "source": "all archived tender 219 pages and submitted body 50 pages as extracted text; no images sent",
+  "external_transfer_authorization": {
+    "source": "direct_user_message",
+    "date": "2026-10-07",
+    "destination": "https://api.deepseek.com/chat/completions",
+    "scope": "CASE-001 full tender and technical body"
+  },
+  "pricing_source": "https://api-docs.deepseek.com/quick_start/pricing/",
+  "pricing_verified_date": "2026-10-07",
+  "pricing_per_million_peak": {
+    "deepseek-flash": [
+      0.006,
+      0.3,
+      1.2
+    ],
+    "deepseek-v4-pro": [
+      0.044,
+      1.32,
+      3.96
+    ]
+  },
+  "thinking_source": "https://api-docs.deepseek.com/guides/thinking_mode/"
+}

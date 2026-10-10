@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-014",
+  "input_file_sha256": "15ca6eda721195ec89a1104160c050a7755d49062a3c15ca1dc823060e2aee0b",
+  "started_at": "2026-10-07T03:56:48.529163+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-flash",
+    "response_model": "deepseek-flash",
+    "response_id": "d2d17282-b727-4302-a634-225004615d9a",
+    "created": 1791345408,
+    "usage": {
+      "prompt_tokens": 3959,
+      "completion_tokens": 129,
+      "total_tokens": 4088,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 3319
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.39,
+    "request_sha256": "0de343d9dc8a4d92d5d38798e28511dec81b0d1e456fb184998c13edd300a310",
+    "response_sha256": "d889135df49bad7c1df15cafef0f78b67d8ef97ccb87dee4344f90ff54980c55",
+    "output": {
+      "task_id": "RULE-014",
+      "status": "supported",
+      "answer": "依据本项目招标文件正文（PUB-004）评标办法前附表附件1：进入报价文件评审的投标人数量不足3家的，评标委员会将否决所有投标。该规则为强制否决，非建议；适用于报价文件评审阶段（技术入围之后），与最终中标无关。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "仅依据PUB-004招标文件正文第67页附件1；该文件版本说明须结合补疑1，但补疑未提供，故补疑是否修改此规则未知。"
+    }
+  }
+}

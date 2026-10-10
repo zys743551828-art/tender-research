@@ -1,0 +1,37 @@
+{
+  "call_id": "RULE-012",
+  "input_file_sha256": "9464a2b005113c026395291673191b1de92c0d403b640746434043f5ef93f801",
+  "started_at": "2026-10-07T03:58:51.879114+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro",
+    "response_model": "deepseek-v4-pro",
+    "response_id": "9f5fe911-adea-4fdf-8980-c3e0dd767353",
+    "created": 1791345532,
+    "usage": {
+      "prompt_tokens": 4326,
+      "completion_tokens": 178,
+      "total_tokens": 4504,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 4070
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 2.552,
+    "request_sha256": "93843e2df99558d83f925f11f050bd1413f254a90fab4a64eecb14aa17eefced",
+    "response_sha256": "d498462f7b6e5de6b8f2df086bbadf5c5f0bdd13f808ddae4d482203ae0f4df0",
+    "output": {
+      "task_id": "RULE-012",
+      "status": "supported",
+      "answer": "技术排序确定入围报价评审的家数规则：进入技术文件详细评审的投标人家数不足5家时全部入围；超过5家（含5家）时确定前5家入围，得分相同且排序最末的投标人均入围。同分处理：技术得分相同且排序最末的投标人均入围报价评审；若后续评标价相同，则技术得分高者优先，仍相同由评标委员会投票按少数服从多数确定顺序。",
+      "evidence_ids": [
+        "E1",
+        "E5"
+      ],
+      "limitations": "证据来自招标文件正文（PUB-004），未提供补疑文件；规则为技术入围报价评审阶段，最终中标候选人推荐规则另见附件2。"
+    }
+  }
+}

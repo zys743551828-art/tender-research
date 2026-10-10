@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-028",
+  "input_file_sha256": "7dbdcac00511c717e4b71ed5a2c4efa347b2034db10f4bf28f3e23cae3ddaac7",
+  "started_at": "2026-10-07T03:59:23.148104+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro",
+    "response_model": "deepseek-v4-pro",
+    "response_id": "5ffde254-bf51-40d8-8d55-da7e9293f59b",
+    "created": 1791345563,
+    "usage": {
+      "prompt_tokens": 4592,
+      "completion_tokens": 98,
+      "total_tokens": 4690,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 4336
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.611,
+    "request_sha256": "e16b95405c3b22c7b08ff236c45231efec26bf97037e7da1fe9979ae6945da83",
+    "response_sha256": "364a5b646681c306cc286673f4bc4f16f8f10dd04ecf8227564cf16bc7a2ab4f",
+    "output": {
+      "task_id": "RULE-028",
+      "status": "supported",
+      "answer": "可以。补疑2明确答复“均可”，即投标时提供或中标后提供均可。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "补疑2为招标文件组成部分，与招标文件具有同等法律效力；原招标文件第43条要求投标文件中明确，但补疑2已放宽为均可。"
+    }
+  }
+}

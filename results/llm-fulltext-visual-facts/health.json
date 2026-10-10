@@ -1,0 +1,10 @@
+{
+  "provider": "deepseek",
+  "base_url": "https://api.deepseek.com",
+  "checked_at": "2026-10-07T04:36:48.514168+00:00",
+  "status": "available",
+  "models": [
+    "deepseek-flash",
+    "deepseek-v4-pro"
+  ]
+}

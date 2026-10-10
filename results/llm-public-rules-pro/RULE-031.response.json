@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-031",
+  "input_file_sha256": "7bc55b4c0f42414a5511ca1c8c872b8ea92611d9e5ffa7316443bbc4cc2608d6",
+  "started_at": "2026-10-07T03:59:28.433409+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro",
+    "response_model": "deepseek-v4-pro",
+    "response_id": "dee71d2c-95f8-40ca-8c42-fe5b28f0a8c2",
+    "created": 1791345569,
+    "usage": {
+      "prompt_tokens": 5122,
+      "completion_tokens": 94,
+      "total_tokens": 5216,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 4866
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 2.251,
+    "request_sha256": "3390af77849453e836789845fc86d787dca42aff0dbddd490b6794b60daf0595",
+    "response_sha256": "a515742b5d19b087f3bd8abc29763103c28a2bdad48f9f1dca6f9331da88d5a4",
+    "output": {
+      "task_id": "RULE-031",
+      "status": "supported",
+      "answer": "清单第108项黄菖蒲工程量由1865株调整为29840株。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "依据补疑1（PUB-009）第4页，该调整属于补疑变更，原清单编制错误，按设计密度16株/㎡计算。"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-030",
+  "input_file_sha256": "970cd2a2867b2bb0275cc7c765d442485aef3532c9640a04532abf857a9eeb61",
+  "started_at": "2026-10-07T03:59:26.491111+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro",
+    "response_model": "deepseek-v4-pro",
+    "response_id": "75a37b23-a6c6-44a1-b336-82de4a308823",
+    "created": 1791345566,
+    "usage": {
+      "prompt_tokens": 4388,
+      "completion_tokens": 128,
+      "total_tokens": 4516,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 4132
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.939,
+    "request_sha256": "6e22e3c48d441f28212d3c1dd0d609733608d6cf0255fd03cd531159f0d2e346",
+    "response_sha256": "1ad421a0cddda98157cdc289c67f6f93a1fe3db0a236e3ead1631d5336769ec0",
+    "output": {
+      "task_id": "RULE-030",
+      "status": "supported",
+      "answer": "如颁奖文件或颁奖单位官网文件未能体现项目负责人姓名的，须同时提供项目施工合同扫描件及竣工验收报告；合同与竣工验收报告项目负责人不一致的，以竣工验收报告为准。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "仅依据补疑1的答复，未提供原招标文件相关评审标准原文；补充证明要求为补疑明确答复，但未说明是否适用于所有奖项类型或仅限地市级及以上优质工程奖项。"
+    }
+  }
+}

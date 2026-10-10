@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-016",
+  "input_file_sha256": "059714cb1fef95a32d409d9b1fe7791086a46bf7414c621d93c75bf78015921e",
+  "started_at": "2026-10-07T03:58:59.600353+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro",
+    "response_model": "deepseek-v4-pro",
+    "response_id": "de7d8473-3a90-4369-8868-ef2dc06165da",
+    "created": 1791345539,
+    "usage": {
+      "prompt_tokens": 4324,
+      "completion_tokens": 104,
+      "total_tokens": 4428,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 4068
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.611,
+    "request_sha256": "27a35ef685b25eaa82f3d4c02b90e8a74907154f59321acc528ba818d1faf3da",
+    "response_sha256": "fbda38b0c2ebeed089651181dbb4d33264a14a1bbff48f0952a5df200c82d835",
+    "output": {
+      "task_id": "RULE-016",
+      "status": "supported",
+      "answer": "评标价相同时，优先顺序为：技术文件详细评审得分高的优先；若技术得分仍相同，则由评标委员会根据投标文件投票，按少数服从多数的原则确定中标候选人顺序。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "依据招标文件正文附件2推荐规则，未发现补疑文件对此有修改。"
+    }
+  }
+}

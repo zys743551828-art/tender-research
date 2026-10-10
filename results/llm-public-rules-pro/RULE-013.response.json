@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-013",
+  "input_file_sha256": "94b8637b0e3daac16f7843c21bbad80c7f31f031ff88b05202a73fa05bb19958",
+  "started_at": "2026-10-07T03:58:54.435602+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro",
+    "response_model": "deepseek-v4-pro",
+    "response_id": "272b1a44-a750-4ac6-97c3-50c4e6fb9eb1",
+    "created": 1791345534,
+    "usage": {
+      "prompt_tokens": 5999,
+      "completion_tokens": 87,
+      "total_tokens": 6086,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 5743
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.306,
+    "request_sha256": "e9feaf0b04e06dc64b480129b098491a0a3d028f703256ee93f998349e132332",
+    "response_sha256": "c3c6711dc4a4859b3639f8cf0b689a32ddba03a9b8cb7e455eddad004a32bb1f",
+    "output": {
+      "task_id": "RULE-013",
+      "status": "supported",
+      "answer": "技术入围后的商务技术复核不通过，不予增补其他投标人。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "依据招标文件评标办法附件1，明确复核不通过不予增补；未提供补疑文件，不涉及补疑变更。"
+    }
+  }
+}

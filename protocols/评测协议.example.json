@@ -1,0 +1,23 @@
+{
+  "schema": "score-eval-protocol/1",
+  "frozen_at": "2026-10-10",
+  "description": "技术分预测评测协议示例：在查看任何测试标签前复制、填写并冻结；字段含义见 README“技术分评测与校准”。",
+  "target_mae": 8.0,
+  "selection": "cv_mae",
+  "methods": ["mean", "median", "scheme_mean", "raw", "linear", "isotonic", "anchor", "ridge", "ridge_anchor", "ridge_isotonic", "knn", "ridge_knn"],
+  "ridge_alphas": [0.1, 1, 10, 100],
+  "seed": 20261010,
+  "cv": {"folds": 5, "repeats": 3},
+  "holdout": {"test_fraction": 0.2, "min_test_samples": 10},
+  "bootstrap_resamples": 1000,
+  "confidence": 0.95,
+  "interval_levels": [0.8, 0.9],
+  "features": {"include": ["raw_pct", "low_pct", "high_pct", "width_pct", "grade_mean", "coverage_mean", "coverage_min", "specificity_mean", "repeat_spread_pct", "failed_share", "mapped_share", "items_count", "max_ratio", "body_pages", "body_chars_log", "qualification_violated", "qualification_unclear", "findings_consistency", "findings_scope", "anchor_pct", "anchor_agree", "anchor_n"], "exclude": []},
+  "knn": {"k": 10, "ngrams": [2, 3], "hash_bits": 18},
+  "slices": ["scoring_scheme", "engineering_type", "own_company", "system_status"],
+  "item_match_threshold": 0.5,
+  "minimums": {"labeled_samples": 30, "independent_projects": 10, "slice_samples": 10, "ranking_projects": 5, "shortlist_samples": 20, "item_matches": 10},
+  "learning_curve_fractions": [0.25, 0.5, 0.75, 1.0],
+  "label_sources": ["official_document", "company_ledger"],
+  "allow_repeat_runs": false
+}

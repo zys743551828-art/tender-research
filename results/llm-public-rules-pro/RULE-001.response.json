@@ -1,0 +1,37 @@
+{
+  "call_id": "RULE-001",
+  "input_file_sha256": "d194f840e0ee7224c2054f82129d613ca546a6119f4fb7ec9ae36f7df7ec1bda",
+  "started_at": "2026-10-07T03:58:32.759916+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro",
+    "response_model": "deepseek-v4-pro",
+    "response_id": "b63fb102-2371-4c52-8d83-051124b116b3",
+    "created": 1791345512,
+    "usage": {
+      "prompt_tokens": 3355,
+      "completion_tokens": 130,
+      "total_tokens": 3485,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 3355
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.981,
+    "request_sha256": "a1763fe781ac5378f6f2933da4509186cabb26aef2287e9c237669afbfb899fe",
+    "response_sha256": "eda52cfcf6164ed2d420fb5bb5a42a76bf6ee5e86aba50f9f87150e8ac0ddbcd",
+    "output": {
+      "task_id": "RULE-001",
+      "status": "supported",
+      "answer": "评标委员会成员自主决定采纳或不予采纳AI“类人”评审结论，并非必须采纳。",
+      "evidence_ids": [
+        "E1",
+        "E3"
+      ],
+      "limitations": "证据来自《合肥公共资源交易大模型开发建设与应用管理暂行办法》修订版，明确评标委员会成员自主决定采纳或不予采纳AI“类人”评审结论，且不予采纳的优化建议作为算法迭代依据。未提供具体项目招标文件，无法判断项目是否另有约定。"
+    }
+  }
+}

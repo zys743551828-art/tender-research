@@ -1,0 +1,38 @@
+{
+  "call_id": "RULE-032",
+  "input_file_sha256": "d3bcbd736a944fcf0591f2661145721d01cab8642c096cbf024b1c42fc2e4756",
+  "started_at": "2026-10-07T03:59:30.687813+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro",
+    "response_model": "deepseek-v4-pro",
+    "response_id": "186b9e96-b5b5-42e6-a191-0f943f5fc555",
+    "created": 1791345570,
+    "usage": {
+      "prompt_tokens": 5770,
+      "completion_tokens": 113,
+      "total_tokens": 5883,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 5514
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.659,
+    "request_sha256": "b7488b1f0519a9d48caf70ccac05d032f829a7f295c5a98b5ab34432141c9b9f",
+    "response_sha256": "ad1cbb66e8cfe3e6559786475152f2c571b926a5bb11e1119c6ac378f94725ba",
+    "output": {
+      "task_id": "RULE-032",
+      "status": "supported",
+      "answer": "中标候选人公示无先后排名。招标文件规定评标委员会推荐不标明排序的中标候选人，中标候选人公示中明确注明“排名不分先后”。",
+      "evidence_ids": [
+        "E1",
+        "E3",
+        "E5"
+      ],
+      "limitations": "证据来自招标文件示范文本和本项目中标候选人公示，未提供补疑文件；未取得最终定标结果，无法判断最终中标人。"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-024",
+  "input_file_sha256": "9f33934c1eb70b7aa7c60b40f20a5e8b97e2545c02e69c1226cb09eb6063f25d",
+  "started_at": "2026-10-07T03:59:14.546716+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro",
+    "response_model": "deepseek-v4-pro",
+    "response_id": "fd53556d-0e36-4d14-b026-c82f593dcb83",
+    "created": 1791345554,
+    "usage": {
+      "prompt_tokens": 4319,
+      "completion_tokens": 116,
+      "total_tokens": 4435,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 4063
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.91,
+    "request_sha256": "ea35fdfb5f9f68724adeca42b0230414e00bbf091e6e7a7bafb2a060c774d7c5",
+    "response_sha256": "274900ffac248967a6b2b923fc706b1095b60dbe2689f75e35d5b4bdb136d376",
+    "output": {
+      "task_id": "RULE-024",
+      "status": "supported",
+      "answer": "综合评价为好时，AAA 优先于 AAB、ABA、BAA；AAB、ABA、BAA 三者不区分优先顺序。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "依据招标文件正文（PUB-008）第78页推荐规则，仅适用于综合评价结果为好且需从好的投标人中确定中标候选人的情形；未提供补疑文件，不涉及补疑修改。"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+langgraph==1.2.14
+langgraph-checkpoint==4.2.0
+langgraph-checkpoint-postgres==3.1.2
+langgraph-prebuilt==1.1.0
+langgraph-sdk==0.4.6
+langchain-core==1.6.7
+psycopg[binary]==3.3.6
+psycopg-binary==3.3.6
+psycopg-pool==3.3.3
+pydantic==2.13.3
+pydantic-core==2.46.3

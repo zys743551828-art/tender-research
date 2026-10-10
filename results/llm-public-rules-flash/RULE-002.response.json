@@ -1,0 +1,37 @@
+{
+  "call_id": "RULE-002",
+  "input_file_sha256": "df6c91c26ad219a3ceeb3cd580430ac768f1b917d0222675f59694d404dcca7d",
+  "started_at": "2026-10-07T03:56:30.828152+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-flash",
+    "response_model": "deepseek-flash",
+    "response_id": "4f3831c0-c3d8-49a7-8393-22c7bba37ba6",
+    "created": 1791345390,
+    "usage": {
+      "prompt_tokens": 3092,
+      "completion_tokens": 359,
+      "total_tokens": 3451,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 2324
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 2.12,
+    "request_sha256": "6adf7bd442b225e4f6f31575274d7c84498ebefd30535805bfd41dbe6f155c43",
+    "response_sha256": "3b32ebefc7a596e565e4e6801ec4b4179709d5de5c0c89b2afb70f944c5683d4",
+    "output": {
+      "task_id": "RULE-002",
+      "status": "supported",
+      "answer": "依《合肥公共资源交易大模型开发建设与应用管理暂行办法》（合公信〔2026〕46号修订后重新发布，PUB-003）第二十三条【异常情形处置措施】：出现下列情形导致AI“类人”评审无法提供正常服务，影响招标投标过程公平、公正和信息安全的，除因投标人的责任外，各方当事人免责：（一）网络、服务器、数据库等发生故障造成无法访问或使用的；（二）电力系统发生故障导致大模型系统无法运行的；（三）出现网络攻击、病毒入侵以及系统安全漏洞导致大模型无法正常提供服务的；（四）其他无法保证招标投标过程公平、公正和信息安全的情形。出现上述情形，评标委员会应当停止使用AI“类人”评审服务，放弃采纳AI“类人”评审的有关建议，依据项目特点及自身专业能力完成招标投标程序。另据第二十四条，AI“类人”评审的服务日志、中间结论等相关数据应在交易系统全程记录并留存；据第二十五条，评审过程中发现的异常行为线索，评标委员会、招标人或招标代理机构应及时移交监管部门。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "limitations": "仅依据PUB-003（合公信〔2026〕46号修订后重新发布的办法正文）作答；未提供具体项目招标文件或补疑，故不涉及具体项目的适用与例外；第二十三条列举为“下列情形”并含兜底项，是否构成“无法提供正常服务”需由评标委员会按项目实际判断；免责范围限于“除因投标人的责任外”；本回答为规则梳理，非官方认定结果。"
+    }
+  }
+}

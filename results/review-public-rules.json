@@ -1,0 +1,701 @@
+{
+  "experiment_id": "review-public-rules",
+  "reviewed_date": "2026-10-07",
+  "reviewer": "developer, not independent municipal engineer",
+  "kind": "known_reference_developer_review_not_independent_engineering_validation",
+  "review_method": "逐题对照既有参考、实际回答和冻结输入；区分主回答、额外推断、条件完整性和所选证据。原文匹配不验证推断。",
+  "reference_sha256": "0a1aa5e9d680d26384bedd811026dc8002ad72f380138220d274c446da52dcd6",
+  "rounds": [
+    {
+      "experiment_id": "llm-public-rules-flash",
+      "tasks": [
+        {
+          "task_id": "RULE-001",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "成员自主决定采纳或不予采纳。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-001.response.json",
+          "response_sha256": "0a96b71b828d86918ae50f18e8dade33e9727747c1b6411d517e2a1d273a1801"
+        },
+        {
+          "task_id": "RULE-002",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "停止使用服务，放弃有关建议，依据项目特点及专业能力完成程序。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-002.response.json",
+          "response_sha256": "cf3f6893b023d6ba101d12b191c8c98174afec7a4aa2f9cd3a2dcd719add4e26"
+        },
+        {
+          "task_id": "RULE-003",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "不替代自主判断，不改变法定责任。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-003.response.json",
+          "response_sha256": "c244e59c8b900183a82ce7fe239a9ea56adbf0e39d8e25d49186a03522e801e5"
+        },
+        {
+          "task_id": "RULE-004",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "视为放弃澄清、说明或补正。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-004.response.json",
+          "response_sha256": "e58f1af4121e47ca17fba29a1de312ed048a700f191ee8d31fcdbea99bdcf78f"
+        },
+        {
+          "task_id": "RULE-005",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "2026年5月8日起，三年。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-005.response.json",
+          "response_sha256": "0405a3a1c8e874f09a80b08eb8df30778722276b8fa5ba1058a66303669106b5"
+        },
+        {
+          "task_id": "RULE-006",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "评标委员会评审并推荐，定标委员会按规则择优确定中标人。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-006.response.json",
+          "response_sha256": "22a2aab0b3a8a44f38996f8eab36ebf570dc8882f81f1edfffe596d518605672"
+        },
+        {
+          "task_id": "RULE-007",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "技术评分合理价格法。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-007.response.json",
+          "response_sha256": "a4a88b9ca84eed5416d382be177430199a66a8491e9c34aef8e32046cad17ca9"
+        },
+        {
+          "task_id": "RULE-008",
+          "core_reference_agreement": "met_with_unsupported_extra",
+          "review_note": "声称70分存在档次空档，而70分属于一般区间；还引入未要求的旧区间讨论。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "本项满分100分，综合考虑酌情赋分；未给六项独立权重。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-008.response.json",
+          "response_sha256": "3100c48df746ee5f33cf7816961f1b8468ca19ce4bc81440c6311483bc182af8"
+        },
+        {
+          "task_id": "RULE-009",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "启用AI类人辅助，模型结论不替代自主判断。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-009.response.json",
+          "response_sha256": "d20b5f986472f85bbdf458eb215f85400414c7a202b79c838125287ec3305a63"
+        },
+        {
+          "task_id": "RULE-010",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "评标委员会成员须复核。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-010.response.json",
+          "response_sha256": "980af861b5fd451ba60532f50df65c18b44840de6d5222253ffada9edca0fb4d"
+        },
+        {
+          "task_id": "RULE-011",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "该处列为建议，不自行推定否决。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-011.response.json",
+          "response_sha256": "e4abc4f767f0820f6db1abd0a962063a8cd2a945939af7c18bac0d7444b9c08a"
+        },
+        {
+          "task_id": "RULE-012",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "不足5家全入围，达到5家取前5，最末同分均入围。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-012.response.json",
+          "response_sha256": "b5377102c47e02a32c9b4fc42a640ffd76231c824a55c38b1b98425c04c35f0e"
+        },
+        {
+          "task_id": "RULE-013",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "复核不通过不予增补。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-013.response.json",
+          "response_sha256": "c61cc853ea4dfc0e4990183d22ae63f8a7b774fdecd46bedbd878f9e37053e86"
+        },
+        {
+          "task_id": "RULE-014",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "不足3家否决所有投标。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-014.response.json",
+          "response_sha256": "23da19dd9e92cf4d1428b799487825cd20f213b6e4e59e0795300c5638b204ca"
+        },
+        {
+          "task_id": "RULE-015",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "价格降序占位，奇数按(S+1)/2、偶数按S/2取不低于相应价格者，再价格升序推荐。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-015.response.json",
+          "response_sha256": "a77ccb02065022b19166dd583278e891386addaee36f54517a2aaf2c800a58f6"
+        },
+        {
+          "task_id": "RULE-016",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "先技术得分高，再委员会投票。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-016.response.json",
+          "response_sha256": "c200f1dad622c2b8ed9458b647ac46b3ad9b1c775c84abe8f61bafbdeecf5a3c"
+        },
+        {
+          "task_id": "RULE-017",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "旧文70<F<80，补疑改为70<F<90；应保留两份版本依据。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-017.response.json",
+          "response_sha256": "80455b77db263501c8a5bfa1a57a3cc8fb0d1ef41b64ff31de3c554a765bc697"
+        },
+        {
+          "task_id": "RULE-018",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "公开否决表涉及该要求，不能作为本公司已发生的原因。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-018.response.json",
+          "response_sha256": "dc8ce45243485e1e61584e5f8fad16c67f9e0d956d02bf96526d7cbb2582cf2b"
+        },
+        {
+          "task_id": "RULE-019",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "2026年09月30日至2026年10月08日，不当作最终中标。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-019.response.json",
+          "response_sha256": "beaf6bc44f17cdd8e3c7e284df266fddb2373c9943937a27c87c3caf05640f55"
+        },
+        {
+          "task_id": "RULE-020",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "明确不执行。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-020.response.json",
+          "response_sha256": "5e427d145647d04c7ee80862e931abb1e98c32d3550db325f152c3788e961ade"
+        },
+        {
+          "task_id": "RULE-021",
+          "core_reference_agreement": "met_with_unsupported_extra",
+          "review_note": "40%主结论正确，却把同页延续的商务企业实力35%并入技术权重，虚构权重合计冲突。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "40%。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-021.response.json",
+          "response_sha256": "126507cbb0f45f751c963c3df9afccfd3157e2d3166b063b8a8a18dcaa8fe16f"
+        },
+        {
+          "task_id": "RULE-022",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "分数>70者取前9，最末同分纳入；不足9家全取。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-022.response.json",
+          "response_sha256": "e45c713e5b96e864d953a37547c5a667c576a4aa8c1bcded38451fa67c39e170"
+        },
+        {
+          "task_id": "RULE-023",
+          "core_reference_agreement": "partial",
+          "review_note": "补齐N≥10且3≤X+Y<5例外，但漏掉同页X+Y<3时可继续推荐并说明理由、否则否决的例外。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "N<3否决全部，3≤N<10推荐3，N≥10推荐5，另有不足人数例外。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-023.response.json",
+          "response_sha256": "dc34cb67a5b81d7afdb853f654e0a38f49ca29fea9541ece034a68ced5a6293f"
+        },
+        {
+          "task_id": "RULE-024",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "AAA优先，另外三者不区分优先顺序。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-024.response.json",
+          "response_sha256": "271bccf8528faf628029eeb1e3d89e53fc4f0c9b0f058822c9b5f69483b2b2c1"
+        },
+        {
+          "task_id": "RULE-025",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "每人选一家，票数排序；最高同票低报价优先，同价再投票。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-025.response.json",
+          "response_sha256": "a453d63ede0b9345b7751809a0afbfbb4979de363060d0dd89de1f2721ae9a3e"
+        },
+        {
+          "task_id": "RULE-026",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "延期前后时间均认可，但保函内容须符合招标要求。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-026.response.json",
+          "response_sha256": "6d7b2ef68b5993f07b0c746855c7682ce06d556fb1387ac2648fb9909e80213f"
+        },
+        {
+          "task_id": "RULE-027",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "补疑原文为2023年9月17日，与2026年项目延期信息冲突，须人工确认。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-027.response.json",
+          "response_sha256": "96836d9b49ae6f2e3e37707a962df1ae4c371c1756675d3be223ce645117d770"
+        },
+        {
+          "task_id": "RULE-028",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "补疑答复均可，认可投标时或中标后提供。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-028.response.json",
+          "response_sha256": "2a99a2174e1be7f1e47116908cc406a817887b9c7dfed60db7130bad96df358c"
+        },
+        {
+          "task_id": "RULE-029",
+          "core_reference_agreement": "met_with_unsupported_extra",
+          "review_note": "主时长正确，但将质量标准、养护等级及未说明的起算点叙述为冲突；不同指标或信息未给出不自动构成矛盾。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "成活3个月，日常9个月，不计保存养护。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-029.response.json",
+          "response_sha256": "09debaae51f5350eab0d718456bebc365b74d88c7babba6c45c4a743a95a7e51"
+        },
+        {
+          "task_id": "RULE-030",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "合同与竣工验收报告同时提供；姓名不一致以竣工验收报告为准。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-030.response.json",
+          "response_sha256": "aca2ee18b3d3c043e14ee7402168946001277000c009c35a1ab5de64b7b4c453"
+        },
+        {
+          "task_id": "RULE-031",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "由1865株调整为29840株。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-031.response.json",
+          "response_sha256": "d98e4ca76dc93e17e486df6655d07c94c686aa40a5e212c2bd2a12cc7a4152c9"
+        },
+        {
+          "task_id": "RULE-032",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "候选排名不分先后。",
+          "response_artifact": "results/llm-public-rules-flash/RULE-032.response.json",
+          "response_sha256": "be0d76d15e52ccffcc67288ef72037c8b0668f035e515565e7d10b2b6e2e20cf"
+        }
+      ],
+      "summary": {
+        "tasks": 32,
+        "automatic_gate_passed": 32,
+        "core_reference_met_without_logged_extra": 28,
+        "core_partial": 1,
+        "core_not_met": 0,
+        "with_unsupported_extra": 3,
+        "required_sources_selected": 32,
+        "median_response_seconds": 1.526
+      },
+      "summary_artifact_sha256": "f318ecaf7ecbe36f2b13b7e16de7ad0b4254f5906528f1f0c66229c370712b1e"
+    },
+    {
+      "experiment_id": "llm-public-rules-pro",
+      "tasks": [
+        {
+          "task_id": "RULE-001",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "成员自主决定采纳或不予采纳。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-001.response.json",
+          "response_sha256": "b6be1f4da9999d4c6bb657456b6818447e5f9b90b5292162eebfec98184bd99f"
+        },
+        {
+          "task_id": "RULE-002",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "停止使用服务，放弃有关建议，依据项目特点及专业能力完成程序。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-002.response.json",
+          "response_sha256": "0bde22133ed8f78c2c4d91046df6b9217489a108de589b462df1c239001be1f1"
+        },
+        {
+          "task_id": "RULE-003",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "不替代自主判断，不改变法定责任。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-003.response.json",
+          "response_sha256": "e72a073ef59e3e2da87fed2e7a021f80bb5e8938abe2401b626c94ab36ced99e"
+        },
+        {
+          "task_id": "RULE-004",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "视为放弃澄清、说明或补正。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-004.response.json",
+          "response_sha256": "6ce989c59fb77e123c45445f3a0684b701f2a59808d0a1970f96238cb704f627"
+        },
+        {
+          "task_id": "RULE-005",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "2026年5月8日起，三年。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-005.response.json",
+          "response_sha256": "0a9e622ded31e7fcc02a58e9973c04c7ac3e0843912a749916574d7aefdb49d4"
+        },
+        {
+          "task_id": "RULE-006",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "评标委员会评审并推荐，定标委员会按规则择优确定中标人。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-006.response.json",
+          "response_sha256": "76574c0dc616b3b49573956813c8942194bb41c855138d8d898da9d28c004bd8"
+        },
+        {
+          "task_id": "RULE-007",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "技术评分合理价格法。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-007.response.json",
+          "response_sha256": "deebdb66df2383a95a568fbd75080c08a7dc316d4637e975840d69c0d2ec256b"
+        },
+        {
+          "task_id": "RULE-008",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "本项满分100分，综合考虑酌情赋分；未给六项独立权重。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-008.response.json",
+          "response_sha256": "bdc63de2f7d970f586842ed8f53bd7fab5c2b04b148e61c730cec9d1dc769bf1"
+        },
+        {
+          "task_id": "RULE-009",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "启用AI类人辅助，模型结论不替代自主判断。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-009.response.json",
+          "response_sha256": "d5921068fb979738348a711b65c2db3a079a914a6c6521e946b2a29c2f4b390d"
+        },
+        {
+          "task_id": "RULE-010",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "评标委员会成员须复核。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-010.response.json",
+          "response_sha256": "c43e0f83fc1f574cf968f8d8b904b3fd1b84250c646be11b1c5973e399113d46"
+        },
+        {
+          "task_id": "RULE-011",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "该处列为建议，不自行推定否决。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-011.response.json",
+          "response_sha256": "c68f441224e04e3e2e643e36c74d24e8cd9ecc4e2853c1d21625647f07e57eb0"
+        },
+        {
+          "task_id": "RULE-012",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "不足5家全入围，达到5家取前5，最末同分均入围。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-012.response.json",
+          "response_sha256": "3a730a83715959de1eba85b432785f77af8f75a99f7a3feb062c96a139c311cb"
+        },
+        {
+          "task_id": "RULE-013",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "复核不通过不予增补。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-013.response.json",
+          "response_sha256": "1d01e5e485df589f7ecef25a56b4d6fa37734f330626a612439ea65bcab9c0fc"
+        },
+        {
+          "task_id": "RULE-014",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "不足3家否决所有投标。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-014.response.json",
+          "response_sha256": "b2c6a1b836433df5a98ff1346dad0243da4c9f708836bf48d5c7af5699c73c67"
+        },
+        {
+          "task_id": "RULE-015",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "价格降序占位，奇数按(S+1)/2、偶数按S/2取不低于相应价格者，再价格升序推荐。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-015.response.json",
+          "response_sha256": "bead87faad58e84c2028be9697d56c10a332957ba03f3c92c66c27c1907cd621"
+        },
+        {
+          "task_id": "RULE-016",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "先技术得分高，再委员会投票。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-016.response.json",
+          "response_sha256": "b44c3efc035d20d544be5fce37f4d866e2fa80452b85078d8b8c5b378a694441"
+        },
+        {
+          "task_id": "RULE-017",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": false,
+          "reference_answer": "旧文70<F<80，补疑改为70<F<90；应保留两份版本依据。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-017.response.json",
+          "response_sha256": "220965d0d6858d33d307d36ce62a54a14713fa725d51b2a45cb0db8d96c441b7"
+        },
+        {
+          "task_id": "RULE-018",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "公开否决表涉及该要求，不能作为本公司已发生的原因。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-018.response.json",
+          "response_sha256": "d9d42ea0b94b4302c9233da0c866a12ebabc99a3705075b9dca4c2cdb016c60f"
+        },
+        {
+          "task_id": "RULE-019",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "2026年09月30日至2026年10月08日，不当作最终中标。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-019.response.json",
+          "response_sha256": "ae753f285095124198cf7b7ae697b30f1764c09ce1b3cb48a10fe5e96a405bc3"
+        },
+        {
+          "task_id": "RULE-020",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "明确不执行。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-020.response.json",
+          "response_sha256": "8d520f92d2557d9350ce2c6503801063326a2287d1306e298d74f8274c6620bc"
+        },
+        {
+          "task_id": "RULE-021",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "40%。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-021.response.json",
+          "response_sha256": "4087ecdb49387de44641fd6f4146159b39b79fc3722487767ee30c357067b46e"
+        },
+        {
+          "task_id": "RULE-022",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "分数>70者取前9，最末同分纳入；不足9家全取。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-022.response.json",
+          "response_sha256": "af7540e047a737b4dfffcbc48bb96988b75ba26f1e979c06a8e05dd793115c38"
+        },
+        {
+          "task_id": "RULE-023",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "N<3否决全部，3≤N<10推荐3，N≥10推荐5，另有不足人数例外。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-023.response.json",
+          "response_sha256": "6fdeefddec4ddcc75a18e9ae98e3acb7ff70d9d65e37cdfd318bc4c99a684a23"
+        },
+        {
+          "task_id": "RULE-024",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "AAA优先，另外三者不区分优先顺序。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-024.response.json",
+          "response_sha256": "64be578c1164e74a6e3ddc36ad910b742ea306c5d10046ff8279436dd789ba68"
+        },
+        {
+          "task_id": "RULE-025",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "每人选一家，票数排序；最高同票低报价优先，同价再投票。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-025.response.json",
+          "response_sha256": "083c501528f191594e6436acae72fc67478006da6b690e36d9339f185ee6875b"
+        },
+        {
+          "task_id": "RULE-026",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "延期前后时间均认可，但保函内容须符合招标要求。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-026.response.json",
+          "response_sha256": "6f2c8f462b6d728af2f41e431e7fc10e66b9692a3bb486ffe9cfb5828fa40dcc"
+        },
+        {
+          "task_id": "RULE-027",
+          "core_reference_agreement": "met_with_unsupported_extra",
+          "review_note": "识别2023与2026冲突正确，但直接说应为2026，未将更正值标为待官方确认的假设。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "补疑原文为2023年9月17日，与2026年项目延期信息冲突，须人工确认。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-027.response.json",
+          "response_sha256": "8a81789f57de4bec2c38e41acc8cf0dddf334a96bea3fc123eef844d2a623b28"
+        },
+        {
+          "task_id": "RULE-028",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "补疑答复均可，认可投标时或中标后提供。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-028.response.json",
+          "response_sha256": "f0e943e63068447770c6e7a3c46ccd09d0895c6a37562addcd682cf1d9a7f6f0"
+        },
+        {
+          "task_id": "RULE-029",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "成活3个月，日常9个月，不计保存养护。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-029.response.json",
+          "response_sha256": "4c0ec9f705e64fe2cb3e97560762d5d45937bcb26cec3e547851250dc1289541"
+        },
+        {
+          "task_id": "RULE-030",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "合同与竣工验收报告同时提供；姓名不一致以竣工验收报告为准。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-030.response.json",
+          "response_sha256": "de324b6572dc320332f57bc4748efc5092f32c94518bdfbc2c938d4d2a1076c5"
+        },
+        {
+          "task_id": "RULE-031",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "由1865株调整为29840株。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-031.response.json",
+          "response_sha256": "0b467f8bef2743ea53366b1390f91dcd58cbc111325b6bce9307d7ce1c2feb2d"
+        },
+        {
+          "task_id": "RULE-032",
+          "core_reference_agreement": "met",
+          "review_note": "主答案与既有参考一致；此项为开发者已知参考复核，不是工程独立验收。",
+          "automatic_contract_and_citation_gate": true,
+          "all_required_source_files_selected": true,
+          "reference_answer": "候选排名不分先后。",
+          "response_artifact": "results/llm-public-rules-pro/RULE-032.response.json",
+          "response_sha256": "3f70128cfbe81174b7d40354813ee6dec4e6bf386d58cb1b41bc7cc3f83ef2b6"
+        }
+      ],
+      "summary": {
+        "tasks": 32,
+        "automatic_gate_passed": 32,
+        "core_reference_met_without_logged_extra": 31,
+        "core_partial": 0,
+        "core_not_met": 0,
+        "with_unsupported_extra": 1,
+        "required_sources_selected": 31,
+        "median_response_seconds": 1.7255
+      },
+      "summary_artifact_sha256": "d7a7d98116b71c4495338c3b6619eb5dadef7ab712edf9419d74934bf2b96cdb"
+    }
+  ],
+  "actual_completion_calls": 64,
+  "usage": {
+    "prompt_tokens": 260598,
+    "completion_tokens": 10932,
+    "prompt_cache_hit_tokens": 27520,
+    "prompt_cache_miss_tokens": 233078
+  },
+  "estimated_cost_usd_offpeak_to_peak": [
+    0.109775,
+    0.21955
+  ],
+  "limits": [
+    "未计算独立语义准确率或工程诊断准确率",
+    "同集上的开发者主观检查不能作为盲测",
+    "两次运行的输入内容及任务协议一致，可作 Flash 与 Pro 的局部对照",
+    "模型非思考模式结果不代表思考模式能力",
+    "企业案例正文未外传，评分尚未调用"
+  ],
+  "flash_pro_dossier_input_messages_identical_all_32": true
+}

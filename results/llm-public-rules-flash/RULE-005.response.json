@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-005",
+  "input_file_sha256": "342f15446f8b2bddb11aa8936094d74626d69b85d8d0e3ea6856016ea36d4d77",
+  "started_at": "2026-10-07T03:56:35.787174+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-flash",
+    "response_model": "deepseek-flash",
+    "response_id": "2696b9e2-31cb-4ee2-a3b1-965bcdd6e424",
+    "created": 1791345395,
+    "usage": {
+      "prompt_tokens": 2666,
+      "completion_tokens": 124,
+      "total_tokens": 2790,
+      "prompt_tokens_details": {
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 1770
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.225,
+    "request_sha256": "63a103bdb7611d21e09d6389abfe27ae8f8472f0593ea8adf5b297292ea3c783",
+    "response_sha256": "f56340d4f13972296e66afe68ce62b0a443fb603114cbd98ea155385d6715f47",
+    "output": {
+      "task_id": "RULE-005",
+      "status": "supported",
+      "answer": "依据原文件《合肥市工程建设项目电子招标投标操作规程》（合公信〔2026〕20号）第三十条：本规程自2026年5月8日起施行，有效期三年；原《合肥市公共资源交易电子招标投标操作规程》（合公业〔2022〕250号）同时废止。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "仅依据PUB-002第9页第三十条原文；施行日期与有效期均为该规程自身规定，未涉及其他文件或补疑。"
+    }
+  }
+}

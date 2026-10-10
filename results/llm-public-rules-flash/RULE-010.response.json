@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-010",
+  "input_file_sha256": "95aef0ec26b33a49a646ade8429c156a3fb7f39895bd446ca4b6eba22735928a",
+  "started_at": "2026-10-07T03:56:42.512036+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-flash",
+    "response_model": "deepseek-flash",
+    "response_id": "0fbb246b-df9c-44e5-bbeb-24de78d95b08",
+    "created": 1791345402,
+    "usage": {
+      "prompt_tokens": 3526,
+      "completion_tokens": 137,
+      "total_tokens": 3663,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 2886
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.031,
+    "request_sha256": "b2f5d59ab90efa4d994a1a7b575a5029adbcb58ea777c466b6eb3259f1cfb46e",
+    "response_sha256": "2d3d546361170a712bc01991c0695076b246db9724288e248486fcfe398ed3a5",
+    "output": {
+      "task_id": "RULE-010",
+      "status": "supported",
+      "answer": "需要。依据招标文件正文（PUB-004）评标办法部分，在技术文件详细评审环节，评标委员会成员须对人工智能辅助评审结果进行复核。该要求为强制（“须”），适用于技术文件详细评审环节；此为原招标文件正文规定，非补疑。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "仅PUB-004第66页一条原文直接支持；未提供补疑内容，无法判断补疑是否修改该要求。该条仅涉及AI辅助评审结果的复核，不涉及最终中标或技术入围规则。"
+    }
+  }
+}

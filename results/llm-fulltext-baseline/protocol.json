@@ -1,0 +1,47 @@
+{
+  "experiment_id": "llm-fulltext-baseline",
+  "prompt_version": "DS-PROMPT-001-v1",
+  "code_sha256": {
+    "run_deepseek.py": "21330281bc4cf16dd05b6e5e3d3ec46f7ce4c02c0ac12b9d362bce2e8b6afb57",
+    "deepseek_client.py": "daaaebcdfaab7b80e79160841ee7030ab69984c34ef4555bdfb77568f91fff79",
+    "model_service.py": "8bcab758c2eeb4b59c783d89aa127d98c0607d82c639d4e79318831b3ca2ab6c",
+    "rule_evidence.py": "a96616e8987fb965bd2f8a2cdb2c385ccf80603f4304769243b4e1fc292d6cd4"
+  },
+  "declared_before_calls": "Flash full-case 3 identical repeats plus Pro 1 on the same full input; no calibration or tuning",
+  "scope": "case",
+  "max_completion_calls": 4,
+  "maximum_output_tokens_per_call": 8000,
+  "known_to_analyst": true,
+  "blind_evaluation": false,
+  "case_model_input": "all 219 tender pages and all 50 body pages; archived originals only",
+  "excluded_from_model_input": [
+    "user score",
+    "observed shortlist cutoff",
+    "case metadata",
+    "case analysis",
+    "reference answers"
+  ],
+  "pricing_source": "https://api-docs.deepseek.com/quick_start/pricing/",
+  "pricing_verified_date": "2026-10-07",
+  "estimated_cost_currency": "USD",
+  "pricing_per_million_peak": {
+    "deepseek-flash": [
+      0.006,
+      0.3,
+      1.2
+    ],
+    "deepseek-v4-pro": [
+      0.044,
+      1.32,
+      3.96
+    ]
+  },
+  "cost_method": "cache hit/miss and completion tokens × official rates; off-peak is half; range is estimate, not payment receipt",
+  "external_transfer_authorization": {
+    "source": "direct_user_message",
+    "received_date": "2026-10-07",
+    "scope": "CASE-001 full archived tender and submitted technical body",
+    "destination": "https://api.deepseek.com/chat/completions",
+    "purpose": "diagnostic and exploratory technical-total scoring experiments"
+  }
+}

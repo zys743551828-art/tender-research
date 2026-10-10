@@ -1,0 +1,559 @@
+{
+  "experiment_id": "review-fulltext",
+  "review_date": "2026-10-07",
+  "reviewer": "developer, not independent municipal engineer",
+  "reference_known_to_reviewer": true,
+  "official_label_verified": false,
+  "engineering_accuracy_estimated": false,
+  "reviews": [
+    {
+      "response_file": "results/llm-fulltext-baseline/CASE-FLASH-1.response.json",
+      "response_sha256": "16004647e71cf1f4e8b42141d528e8ebd8a4cba47b6273a2c256056bd3be2ef9",
+      "findings": [
+        {
+          "id": "F-001",
+          "classification": "title_mismatch_supported",
+          "review_note": "原页同一小节标题为球墨铸铁管，紧随正文为FRPM；只能确认标题与正文对象表述不一致，实际设计管材仍待核实。"
+        },
+        {
+          "id": "F-002",
+          "classification": "scope_unconfirmed",
+          "review_note": "工程事实或具体范围尚未确认；不作为已证实矛盾、官方缺项或扣分归因。"
+        },
+        {
+          "id": "F-003",
+          "classification": "local_vs_total_unconfirmed",
+          "review_note": "5.2米对应特定深基槽段，8.6米是项目总体描述；未核实同区段，不认定工程矛盾。"
+        },
+        {
+          "id": "F-004",
+          "classification": "subset_vs_total_not_contradiction",
+          "review_note": "d400局部修复可以包含于DN300-DN800总体范围内，801米相同不构成工程量矛盾。"
+        },
+        {
+          "id": "F-005",
+          "classification": "different_process_possible",
+          "review_note": "工程事实或具体范围尚未确认；不作为已证实矛盾、官方缺项或扣分归因。"
+        },
+        {
+          "id": "F-006",
+          "classification": "different_geology_possible",
+          "review_note": "工程事实或具体范围尚未确认；不作为已证实矛盾、官方缺项或扣分归因。"
+        }
+      ]
+    },
+    {
+      "response_file": "results/llm-fulltext-baseline/CASE-FLASH-2.response.json",
+      "response_sha256": "3ea4e8035f9b2f6e28905a78a43aa311c6c8d38c7baa8144df1d9d830adb8700",
+      "findings": [
+        {
+          "id": "F-001",
+          "classification": "local_vs_total_unconfirmed",
+          "review_note": "5.2米对应特定深基槽段，8.6米是项目总体描述；未核实同区段，不认定工程矛盾。"
+        },
+        {
+          "id": "F-002",
+          "classification": "scope_unconfirmed",
+          "review_note": "工程事实或具体范围尚未确认；不作为已证实矛盾、官方缺项或扣分归因。"
+        },
+        {
+          "id": "F-003",
+          "classification": "title_mismatch_supported",
+          "review_note": "原页同一小节标题为球墨铸铁管，紧随正文为FRPM；只能确认标题与正文对象表述不一致，实际设计管材仍待核实。"
+        },
+        {
+          "id": "F-004",
+          "classification": "subset_vs_total_not_contradiction",
+          "review_note": "d400局部修复可以包含于DN300-DN800总体范围内，801米相同不构成工程量矛盾。"
+        },
+        {
+          "id": "F-005",
+          "classification": "duration_issue_supported_counts_unconfirmed",
+          "review_note": "正文36页“130天”与正文2、23页120日历天计划及49页图表120日历天不一致；130天不是已注明的人日。12/32人数仍须统一工种、时段和并行口径，不直接推定否决或扣分。"
+        },
+        {
+          "id": "F-006",
+          "classification": "quantity_and_unit_unconfirmed",
+          "review_note": "工程事实或具体范围尚未确认；不作为已证实矛盾、官方缺项或扣分归因。"
+        }
+      ]
+    },
+    {
+      "response_file": "results/llm-fulltext-baseline/CASE-FLASH-3.response.json",
+      "response_sha256": "6aec61892930c33f952b52b7a81e1d99ca654ad360c6ae2e4110631b6a8725ed",
+      "findings": [
+        {
+          "id": "F-001",
+          "classification": "local_vs_total_unconfirmed",
+          "review_note": "5.2米对应特定深基槽段，8.6米是项目总体描述；未核实同区段，不认定工程矛盾。"
+        },
+        {
+          "id": "F-002",
+          "classification": "different_process_possible",
+          "review_note": "工程事实或具体范围尚未确认；不作为已证实矛盾、官方缺项或扣分归因。"
+        },
+        {
+          "id": "F-003",
+          "classification": "scope_unconfirmed",
+          "review_note": "工程事实或具体范围尚未确认；不作为已证实矛盾、官方缺项或扣分归因。"
+        },
+        {
+          "id": "F-004",
+          "classification": "labor_aggregation_unproven",
+          "review_note": "附表47、48页按工序列人数，正文按日均和时间阶段说明；需要跨页汇总和并行规则，不能用普工一行32人直接否定总人数126人。"
+        },
+        {
+          "id": "F-005",
+          "classification": "higher_target_compatible_with_minimum",
+          "review_note": "95%内部目标可以同时满足70%合格线，不能把更高目标认定为矛盾。"
+        },
+        {
+          "id": "F-006",
+          "classification": "title_mismatch_supported_multimaterial_unconfirmed",
+          "review_note": "工程事实或具体范围尚未确认；不作为已证实矛盾、官方缺项或扣分归因。"
+        }
+      ]
+    },
+    {
+      "response_file": "results/llm-fulltext-baseline/CASE-PRO-1.response.json",
+      "response_sha256": "07cdef8a052a1eda15447916fa19bc801f69cf2078a3635f9494c96d76c1a05b",
+      "findings": [
+        {
+          "id": "F-001",
+          "classification": "multimaterial_not_itself_contradiction",
+          "review_note": "工程事实或具体范围尚未确认；不作为已证实矛盾、官方缺项或扣分归因。"
+        },
+        {
+          "id": "F-002",
+          "classification": "labor_time_scope_unconfirmed",
+          "review_note": "工程事实或具体范围尚未确认；不作为已证实矛盾、官方缺项或扣分归因。"
+        },
+        {
+          "id": "F-003",
+          "classification": "norm_and_cost_claim_unsupported",
+          "review_note": "“高于常规”“可能增加造价/扣分”等无设计或现行规范依据，不接受为可执行建议。"
+        },
+        {
+          "id": "F-004",
+          "classification": "danger_scope_unconfirmed",
+          "review_note": "工程事实或具体范围尚未确认；不作为已证实矛盾、官方缺项或扣分归因。"
+        },
+        {
+          "id": "F-005",
+          "classification": "page_count_false_and_diagram_coverage_error",
+          "review_note": "技术标原件50个物理页，等于而非超过建议50页；原文66页被误引为65页，重复选同一段不证明两个章节重复。"
+        },
+        {
+          "id": "F-006",
+          "classification": "materials_allocation_unconfirmed",
+          "review_note": "工程事实或具体范围尚未确认；不作为已证实矛盾、官方缺项或扣分归因。"
+        }
+      ]
+    },
+    {
+      "response_file": "results/llm-fulltext-id-bound/BOUND-FLASH-1.response.json",
+      "response_sha256": "a0ac1518c6fd6e4b6e40424c1e18cd66fc05458cb79908a1fc264d9b418e5688",
+      "findings": [
+        {
+          "id": "F-001",
+          "classification": "title_mismatch_supported",
+          "review_note": "原页同一小节标题为球墨铸铁管，紧随正文为FRPM；只能确认标题与正文对象表述不一致，实际设计管材仍待核实。"
+        },
+        {
+          "id": "F-002",
+          "classification": "heading_object_mismatch_to_review",
+          "review_note": "工程事实或具体范围尚未确认；不作为已证实矛盾、官方缺项或扣分归因。"
+        },
+        {
+          "id": "F-003",
+          "classification": "claim_kind_conflicts_with_scope_reason",
+          "review_note": "模型自己的scope_reason已说明对象不同或未确定，却把kind记为文本矛盾；必须拦截语义矛盾。"
+        },
+        {
+          "id": "F-004",
+          "classification": "claim_kind_conflicts_with_scope_reason",
+          "review_note": "模型自己的scope_reason已说明对象不同或未确定，却把kind记为文本矛盾；必须拦截语义矛盾。"
+        },
+        {
+          "id": "F-005",
+          "classification": "gap_missing_requirement_and_scope_unconfirmed",
+          "review_note": "工程事实或具体范围尚未确认；不作为已证实矛盾、官方缺项或扣分归因。"
+        },
+        {
+          "id": "F-006",
+          "classification": "project_scope_needs_drawings",
+          "review_note": "工程事实或具体范围尚未确认；不作为已证实矛盾、官方缺项或扣分归因。"
+        }
+      ]
+    },
+    {
+      "response_file": "results/llm-fulltext-id-bound/BOUND-FLASH-2.response.json",
+      "response_sha256": "65095eb8576d592ddfc925e4e7fc7b631ee66121b9de4e781be76d376c78efdb",
+      "findings": [
+        {
+          "id": "F-001",
+          "classification": "local_vs_total_unconfirmed_correctly_deferred",
+          "review_note": "工程事实或具体范围尚未确认；不作为已证实矛盾、官方缺项或扣分归因。"
+        },
+        {
+          "id": "F-002",
+          "classification": "scope_unconfirmed_correctly_deferred",
+          "review_note": "工程事实或具体范围尚未确认；不作为已证实矛盾、官方缺项或扣分归因。"
+        },
+        {
+          "id": "F-003",
+          "classification": "subset_vs_total_correctly_deferred",
+          "review_note": "工程事实或具体范围尚未确认；不作为已证实矛盾、官方缺项或扣分归因。"
+        },
+        {
+          "id": "F-004",
+          "classification": "stricter_bound_not_itself_contradiction",
+          "review_note": "工程事实或具体范围尚未确认；不作为已证实矛盾、官方缺项或扣分归因。"
+        },
+        {
+          "id": "F-005",
+          "classification": "different_materials_not_itself_issue",
+          "review_note": "工程事实或具体范围尚未确认；不作为已证实矛盾、官方缺项或扣分归因。"
+        },
+        {
+          "id": "F-006",
+          "classification": "labor_aggregation_unproven",
+          "review_note": "附表47、48页按工序列人数，正文按日均和时间阶段说明；需要跨页汇总和并行规则，不能用普工一行32人直接否定总人数126人。"
+        }
+      ]
+    },
+    {
+      "response_file": "results/llm-fulltext-id-bound/BOUND-FLASH-3.response.json",
+      "response_sha256": "923a2e16cb9beb4e9397e3eac7cadbc6e1380e7d53edc30ca5f5c3a147ef9ae4",
+      "findings": [
+        {
+          "id": "F-001",
+          "classification": "title_mismatch_supported",
+          "review_note": "原页同一小节标题为球墨铸铁管，紧随正文为FRPM；只能确认标题与正文对象表述不一致，实际设计管材仍待核实。"
+        },
+        {
+          "id": "F-002",
+          "classification": "kind_overstates_local_vs_total",
+          "review_note": "工程事实或具体范围尚未确认；不作为已证实矛盾、官方缺项或扣分归因。"
+        },
+        {
+          "id": "F-003",
+          "classification": "kind_overstates_unconfirmed_scope",
+          "review_note": "工程事实或具体范围尚未确认；不作为已证实矛盾、官方缺项或扣分归因。"
+        },
+        {
+          "id": "F-004",
+          "classification": "counts_unconfirmed_duration_needs_review",
+          "review_note": "工程事实或具体范围尚未确认；不作为已证实矛盾、官方缺项或扣分归因。"
+        },
+        {
+          "id": "F-005",
+          "classification": "higher_target_compatible_with_minimum",
+          "review_note": "95%内部目标可以同时满足70%合格线，不能把更高目标认定为矛盾。"
+        },
+        {
+          "id": "F-006",
+          "classification": "business_document_absence_not_technical_gap",
+          "review_note": "招标要求放入商务文件其他材料，输入仅技术标；未取得商务文件不能认定该材料缺失。"
+        }
+      ]
+    },
+    {
+      "response_file": "results/llm-fulltext-id-bound/BOUND-PRO-1.response.json",
+      "response_sha256": "95aeaf82806ac630fb487321cfe5623ea75484945459de7804aec0c83c24c400",
+      "findings": [
+        {
+          "id": "F-001",
+          "classification": "title_mismatch_supported",
+          "review_note": "原页同一小节标题为球墨铸铁管，紧随正文为FRPM；只能确认标题与正文对象表述不一致，实际设计管材仍待核实。"
+        },
+        {
+          "id": "F-002",
+          "classification": "kind_claim_self_contradiction",
+          "review_note": "模型claim及scope_reason明确说内容一致且无矛盾，kind却为文本矛盾；不接受为问题。"
+        },
+        {
+          "id": "F-003",
+          "classification": "labor_aggregation_unproven",
+          "review_note": "附表47、48页按工序列人数，正文按日均和时间阶段说明；需要跨页汇总和并行规则，不能用普工一行32人直接否定总人数126人。"
+        },
+        {
+          "id": "F-004",
+          "classification": "diagram_absence_false",
+          "review_note": "技术标49页原页视觉核实确有网络图和横道图；只抽取到标题不能认定图表缺失。"
+        },
+        {
+          "id": "F-005",
+          "classification": "local_vs_total_correctly_deferred",
+          "review_note": "工程事实或具体范围尚未确认；不作为已证实矛盾、官方缺项或扣分归因。"
+        },
+        {
+          "id": "F-006",
+          "classification": "scope_correctly_deferred",
+          "review_note": "工程事实或具体范围尚未确认；不作为已证实矛盾、官方缺项或扣分归因。"
+        }
+      ]
+    },
+    {
+      "response_file": "results/llm-fulltext-id-bound/THINK-PRO-1.response.json",
+      "response_sha256": "08718070da4d338093ccd5cd085e08b042bf319b30df85bb39628e701168bf81",
+      "findings": [
+        {
+          "id": "F-001",
+          "classification": "duration_issue_supported_counts_unconfirmed",
+          "review_note": "正文36页“130天”与正文2、23页120日历天计划及49页图表120日历天不一致；130天不是已注明的人日。12/32人数仍须统一工种、时段和并行口径，不直接推定否决或扣分。"
+        },
+        {
+          "id": "F-002",
+          "classification": "project_scope_needs_drawings_unsafe_delete_action",
+          "review_note": "正文16页确有建设路；招标3、4页公开范围未明示建设路，最终对应关系待图纸清单核实，不直接删段或替换道路。"
+        },
+        {
+          "id": "F-003",
+          "classification": "title_mismatch_supported",
+          "review_note": "原页同一小节标题为球墨铸铁管，紧随正文为FRPM；只能确认标题与正文对象表述不一致，实际设计管材仍待核实。"
+        }
+      ]
+    },
+    {
+      "response_file": "results/llm-fulltext-budget-probe/THINK-FLASH-BUDGET-1.response.json",
+      "response_sha256": "af16e7bcef1b41fcba340ed07c68015e1b36c350731eb0c3a5bbb660e8f580ca",
+      "findings": [
+        {
+          "id": "F-001",
+          "classification": "text_issue_supported_design_unknown",
+          "review_note": "同页标题对象错配成立；跨页管材使用部位待图纸确认。"
+        },
+        {
+          "id": "F-002",
+          "classification": "scope_unconfirmed_kind_overstates",
+          "review_note": "石粉与C20均写管腔/管顶回填，但可能对应不同区段或结构；未确认前应为工程疑点，不能断言实际材料冲突。"
+        },
+        {
+          "id": "F-003",
+          "classification": "engineering_scope_correctly_deferred",
+          "review_note": "不同桩型、桩长和更严格垂直度可对应不同条件，缺分段设计不统一参数。"
+        },
+        {
+          "id": "F-004",
+          "classification": "project_scope_correctly_deferred",
+          "review_note": "建设路、沉井等对应范围需图纸清单；仅确定不属于本标段后才可删改。"
+        },
+        {
+          "id": "F-005",
+          "classification": "duration_issue_supported_counts_unconfirmed",
+          "review_note": "120与130天文字不一致成立；人数与工种口径待复核。"
+        },
+        {
+          "id": "F-006",
+          "classification": "units_and_repair_scope_unconfirmed",
+          "review_note": "米与处不能相加；须管段与缺陷映射，不反推重复工程量。"
+        }
+      ]
+    },
+    {
+      "response_file": "results/llm-fulltext-visual-facts/VISUAL-FACTS-PRO-1.response.json",
+      "response_sha256": "9957e0129bcedcb9dd19535ca76c1c78cc45bfe6df9f845aa654db906c6e84d7",
+      "findings": [
+        {
+          "id": "F-001",
+          "classification": "real_issue_but_wrong_selected_page",
+          "review_note": "标题与FRPM正文在技术标3页，所选P002仅目录及项目范围；有效证据ID仍可能选错页，该引用不支持发现。"
+        },
+        {
+          "id": "F-002",
+          "classification": "local_vs_total_correctly_deferred",
+          "review_note": "5.2米局部、8.6米总体，保持工程待核实。"
+        },
+        {
+          "id": "F-003",
+          "classification": "real_duration_issue_but_wrong_rule_page",
+          "review_note": "130天在技术标36页属实；所选招标P009不是120日历天依据，正确规则位置为P004。应补正文P002/P023及图表事实，不直接批准引用。"
+        },
+        {
+          "id": "F-004",
+          "classification": "different_units_correctly_deferred",
+          "review_note": "801+2499.8=3300.8算术成立，但22处不得加到米数；不能认定超工程量。"
+        }
+      ]
+    }
+  ],
+  "combined_reviewed_findings": 61,
+  "visual_probes": {
+    "summary_file": "results/llm-visual-probe.json",
+    "sha256": "43d01de92ad67860adb9bb035c832c8641a677c4956f1effac465c4dd89f557a",
+    "checks": [
+      {
+        "evidence_id": "FILE-002-P049-VISUAL",
+        "reference": {
+          "has_visible_content": true,
+          "has_network_diagram": true,
+          "has_gantt_chart": true,
+          "has_site_layout": false,
+          "planning_horizon_days": 120
+        },
+        "core_probe_passed": true,
+        "scope": "presence and visible 120-day horizon only; verbose observations not fully verified"
+      },
+      {
+        "evidence_id": "FILE-002-P050-VISUAL",
+        "reference": {
+          "has_visible_content": true,
+          "has_network_diagram": false,
+          "has_gantt_chart": false,
+          "has_site_layout": true,
+          "planning_horizon_days": 120
+        },
+        "core_probe_passed": true,
+        "scope": "presence and visible 120-day horizon only; verbose observations not fully verified"
+      },
+      {
+        "evidence_id": "PUB-012-P003-VISUAL",
+        "reference": {
+          "has_visible_content": false,
+          "has_network_diagram": false,
+          "has_gantt_chart": false,
+          "has_site_layout": false,
+          "planning_horizon_days": null
+        },
+        "core_probe_passed": true,
+        "scope": "presence and visible 120-day horizon only; verbose observations not fully verified"
+      }
+    ],
+    "reference_method": "PDFium 1.3x local renders visually inspected; model image request PDFium 2x; originals preserved"
+  },
+  "all_calls": [
+    {
+      "file": "results/llm-fulltext-baseline/CASE-FLASH-1.response.json",
+      "status": "received",
+      "input_binding_valid": true,
+      "model": "deepseek-flash",
+      "elapsed_seconds": 14.49,
+      "candidate_score": 4.5
+    },
+    {
+      "file": "results/llm-fulltext-baseline/CASE-FLASH-2.response.json",
+      "status": "received",
+      "input_binding_valid": true,
+      "model": "deepseek-flash",
+      "elapsed_seconds": 15.947,
+      "candidate_score": 4.5
+    },
+    {
+      "file": "results/llm-fulltext-baseline/CASE-FLASH-3.response.json",
+      "status": "received",
+      "input_binding_valid": true,
+      "model": "deepseek-flash",
+      "elapsed_seconds": 15.732,
+      "candidate_score": 4.5
+    },
+    {
+      "file": "results/llm-fulltext-baseline/CASE-PRO-1.response.json",
+      "status": "received",
+      "input_binding_valid": true,
+      "model": "deepseek-v4-pro",
+      "elapsed_seconds": 30.277,
+      "candidate_score": 4.5
+    },
+    {
+      "file": "results/llm-fulltext-id-bound/BOUND-FLASH-1.response.json",
+      "status": "received",
+      "input_binding_valid": true,
+      "model": "deepseek-flash",
+      "elapsed_seconds": 15.632,
+      "candidate_score": 4.5
+    },
+    {
+      "file": "results/llm-fulltext-id-bound/BOUND-FLASH-2.response.json",
+      "status": "received",
+      "input_binding_valid": true,
+      "model": "deepseek-flash",
+      "elapsed_seconds": 14.39,
+      "candidate_score": null
+    },
+    {
+      "file": "results/llm-fulltext-id-bound/BOUND-FLASH-3.response.json",
+      "status": "received",
+      "input_binding_valid": true,
+      "model": "deepseek-flash",
+      "elapsed_seconds": 13.336,
+      "candidate_score": null
+    },
+    {
+      "file": "results/llm-fulltext-id-bound/BOUND-PRO-1.response.json",
+      "status": "received",
+      "input_binding_valid": true,
+      "model": "deepseek-v4-pro",
+      "elapsed_seconds": 28.831,
+      "candidate_score": 4.2
+    },
+    {
+      "file": "results/llm-fulltext-id-bound/THINK-FLASH-1.response.json",
+      "status": "failed",
+      "input_binding_valid": true,
+      "error_category": "incomplete_generation",
+      "usage_available": false
+    },
+    {
+      "file": "results/llm-fulltext-id-bound/THINK-PRO-1.response.json",
+      "status": "received",
+      "input_binding_valid": true,
+      "model": "deepseek-v4-pro",
+      "elapsed_seconds": 68.346,
+      "candidate_score": 4.2
+    },
+    {
+      "file": "results/llm-fulltext-budget-probe/THINK-FLASH-BUDGET-1.response.json",
+      "status": "received",
+      "input_binding_valid": true,
+      "model": "deepseek-flash",
+      "elapsed_seconds": 112.272,
+      "candidate_score": 3.8
+    },
+    {
+      "file": "results/llm-fulltext-visual-facts/VISUAL-FACTS-PRO-1.response.json",
+      "status": "received",
+      "input_binding_valid": true,
+      "model": "deepseek-v4-pro",
+      "elapsed_seconds": 72.511,
+      "candidate_score": 4.0
+    },
+    {
+      "file": "results/llm-visual-probe/VISUAL-PROBE-1.response.json",
+      "status": "received",
+      "input_binding_valid": true,
+      "model": "deepseek-flash",
+      "elapsed_seconds": 5.31,
+      "candidate_score": null
+    }
+  ],
+  "actual_calls": 13,
+  "successful_calls": 12,
+  "usage_successful_calls_only": {
+    "prompt_tokens": 1229931,
+    "completion_tokens": 70030,
+    "prompt_cache_hit_tokens": 668800,
+    "prompt_cache_miss_tokens": 561131
+  },
+  "estimated_successful_call_cost_usd_offpeak_to_peak": [
+    0.335188,
+    0.670375
+  ],
+  "pricing_source": "https://api-docs.deepseek.com/quick_start/pricing/",
+  "pricing_verified_date": "2026-10-07",
+  "billing_complete": false,
+  "failed_call_billing_unknown": [
+    "llm-fulltext-id-bound/THINK-FLASH-1"
+  ],
+  "budget_probe_messages_identical": true,
+  "limits": [
+    "分类只评已产生发现，不构成全稿问题召回率",
+    "不同对象参数只可待核实，不能补造工程真值",
+    "图表存在与120日历天已核实，未逐节点验证网络逻辑或平面坐标",
+    "响应成功不等于候选分数或诊断通过",
+    "有效证据ID不等于语义支持",
+    "单例不同方案分数范围不是置信区间",
+    "原16k未完成响应未留finish_reason和usage，不反推确切停止原因或费用",
+    "图表事实融入后的单次响应不证明工程效果"
+  ]
+}

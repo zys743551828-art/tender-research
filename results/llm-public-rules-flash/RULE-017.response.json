@@ -1,0 +1,37 @@
+{
+  "call_id": "RULE-017",
+  "input_file_sha256": "1e8a275792d1bf2b0a88e0af09337721524dd08dab4956d2d3262d7ee16bb1dc",
+  "started_at": "2026-10-07T03:56:52.901269+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-flash",
+    "response_model": "deepseek-flash",
+    "response_id": "147c6a55-8a6d-4a12-b313-49ee48106baf",
+    "created": 1791345413,
+    "usage": {
+      "prompt_tokens": 3079,
+      "completion_tokens": 174,
+      "total_tokens": 3253,
+      "prompt_tokens_details": {
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 1927
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.211,
+    "request_sha256": "37056cfed22bffb98001853e6a8d5109de9ee277e22206b36b33aec530332371",
+    "response_sha256": "2119f1700572096796b9d33b71e97d6f9b7056dc233d0b74de22e830e018d996",
+    "output": {
+      "task_id": "RULE-017",
+      "status": "supported",
+      "answer": "补疑1将施工组织设计评分中的“良好”区间由原招标文件的“70分＜F＜80分”修改为“70分＜F＜90分”；“一般”（50分＜F≤70分）与“优秀”（90分≤F≤100分）区间未变。该修改属补疑对原招标文件的变更，补疑视同招标文件组成部分，与原招标文件具有同等法律效力。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "limitations": "E1为补疑1原文，明确记载修改前后区间；E2为原招标文件技术文件详细评审标准，仅用于对照原“良好”区间。证据仅涉及评分区间划分，未涉及分项权重或最终中标结果。"
+    }
+  }
+}

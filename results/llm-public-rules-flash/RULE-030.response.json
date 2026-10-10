@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-030",
+  "input_file_sha256": "a881cf9a8384e731bc42c4dfa07b373c9d260a2e13524272fae424fc671b669d",
+  "started_at": "2026-10-07T03:57:15.530522+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-flash",
+    "response_model": "deepseek-flash",
+    "response_id": "09dacc45-b513-4a4a-bc2f-6a06b82245f2",
+    "created": 1791345435,
+    "usage": {
+      "prompt_tokens": 4391,
+      "completion_tokens": 137,
+      "total_tokens": 4528,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 4007
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.02,
+    "request_sha256": "e5fbeaf5e582e53ca20ed06e58f857260e5c23ef8e99fd7afdd4e94a587f343c",
+    "response_sha256": "9ba0e0b107a0131961641c9676b349fd4d5d4c8cb5ad30b5ad52c46a8dbd460c",
+    "output": {
+      "task_id": "RULE-030",
+      "status": "supported",
+      "answer": "补疑1明确：如颁奖文件或颁奖单位官网文件未能体现项目负责人姓名的，须同时提供项目施工合同扫描件及竣工验收报告；合同与竣工验收报告项目负责人不一致的，以竣工验收报告为准。因此仅提供施工合同扫描件不足以认可，必须同时提供竣工验收报告。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "该答复仅针对本项目（2026BFJGZ50917）补疑1中项目负责人奖项荣誉评审的补充证明方式；未提供招标正文中该评审项原文，也未涉及其他奖项或业绩证明情形。"
+    }
+  }
+}

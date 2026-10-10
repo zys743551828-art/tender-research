@@ -1,0 +1,37 @@
+{
+  "call_id": "RULE-025",
+  "input_file_sha256": "bdaa1d03ccd87b162c6715887226cc0e2681881f895cca8e20ddd53cbf980bf4",
+  "started_at": "2026-10-07T03:57:06.580194+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-flash",
+    "response_model": "deepseek-flash",
+    "response_id": "ddac2d34-8e44-40a9-a09e-5805611e0fe8",
+    "created": 1791345426,
+    "usage": {
+      "prompt_tokens": 3674,
+      "completion_tokens": 253,
+      "total_tokens": 3927,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 3162
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.798,
+    "request_sha256": "a13c5a56adc614887d8476ab227a4751e7ad108a0db81d0b0886c3171486d54c",
+    "response_sha256": "a11f406bd585ff56df796437c4a8321e991f3277d2533116381fb9b0a4f1d1bb",
+    "output": {
+      "task_id": "RULE-025",
+      "status": "supported",
+      "answer": "本项目定标办法采用票决法（直接票决）（原招标文件正文，非补疑）。直接票决确定中标人：定标委员会成员在中标候选人中选择1家进行投票，推荐的得1票，最终按推荐得票数由高到低的顺序排序确定中标人。最高同票处理：票决中出现推荐得票数相同以致影响中标人确定的，由定标委员会对推荐得票数最高且相同的中标候选人，按投标报价由低到高的顺序排序，投标报价最低者确定为中标人。若投标报价也相同：由定标委员会对投标报价相同的中标候选人再次进行投票，得票数高的为中标人。",
+      "evidence_ids": [
+        "E1",
+        "E3"
+      ],
+      "limitations": "E1为示范文本定标办法前附表条款，E3确认本项目定标办法采用票决法（直接票决）；所给材料未提供补疑1、2，若补疑对定标规则另有修改，本结论不覆盖。本结论仅涉及定标（中标人确定）规则，不涉及技术入围或评标推荐规则。"
+    }
+  }
+}

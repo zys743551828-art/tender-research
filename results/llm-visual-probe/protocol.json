@@ -1,0 +1,30 @@
+{
+  "experiment_id": "llm-visual-probe",
+  "model": "deepseek-flash",
+  "thinking": false,
+  "max_completion_calls": 1,
+  "output_token_limit": 4000,
+  "purpose": "image chart presence, horizon and layout probe; no score prediction",
+  "render": {
+    "engine": "pypdfium2",
+    "scale": 2,
+    "format": "PNG",
+    "detail": "original"
+  },
+  "known_reference_not_blind": true,
+  "expected_answers_excluded_from_input": true,
+  "external_transfer_authorization": {
+    "source": "direct_user_message",
+    "date": "2026-10-07",
+    "scope": "CASE-001 full tender and technical body",
+    "destination": "https://api.deepseek.com/chat/completions"
+  },
+  "vision_source": "https://api-docs.deepseek.com/updates/",
+  "verified_date": "2026-10-07",
+  "code_sha256": {
+    "run_deepseek_visual.py": "73deeaf97abbd25a8820d63577079615674255636f04334c8f7a5da741c81504",
+    "run_deepseek.py": "1bee9341041694bc53bb6796a66582c03e3847176e31c72fc875dde38a47e25c",
+    "deepseek_client.py": "daaaebcdfaab7b80e79160841ee7030ab69984c34ef4555bdfb77568f91fff79",
+    "model_service.py": "8bcab758c2eeb4b59c783d89aa127d98c0607d82c639d4e79318831b3ca2ab6c"
+  }
+}

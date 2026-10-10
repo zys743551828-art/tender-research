@@ -1,0 +1,701 @@
+{
+  "experiment_id": "llm-fulltext-baseline",
+  "finished_at": "2026-10-07T04:20:39.001771+00:00",
+  "actual_completion_calls": 4,
+  "successful_completions": 4,
+  "health": {
+    "provider": "deepseek",
+    "base_url": "https://api.deepseek.com",
+    "checked_at": "2026-10-07T04:19:09.942980+00:00",
+    "status": "available",
+    "models": [
+      "deepseek-flash",
+      "deepseek-v4-pro"
+    ]
+  },
+  "originals": [
+    {
+      "file_id": "FILE-001",
+      "source_path": "01-招标资料/CASE-001_招标文件_20260820.pdf",
+      "sha256": "0ac3fc35e412cd8aeec7614f28c41743331dedd5d22be988feab553296006e25",
+      "pages": 219,
+      "project_ids": [
+        "2026AFWGZ50940"
+      ],
+      "identity_status": "identified",
+      "text_sparse_pdf_pages": [],
+      "ocr_required_candidate_pages": [],
+      "rendered_blank_pages": []
+    },
+    {
+      "file_id": "FILE-002",
+      "source_path": "02-投标文件/CASE-001_技术标_安徽秉一市政_20260910.pdf",
+      "sha256": "5027159571bf015e6c0d01a8f782a868ad382a08c24520187f7d23fb2f23779f",
+      "pages": 50,
+      "project_ids": [],
+      "identity_status": "not_identified",
+      "text_sparse_pdf_pages": [],
+      "ocr_required_candidate_pages": [],
+      "rendered_blank_pages": []
+    }
+  ],
+  "case_calls": [
+    {
+      "call_id": "CASE-FLASH-1",
+      "model": "deepseek-flash",
+      "status": "received",
+      "candidate_score": 4.5,
+      "validation": {
+        "contract_errors": [],
+        "citation_count": 33,
+        "valid_citations": 29,
+        "citation_checks": [
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": false,
+            "reason": "quote_not_in_source"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": false,
+            "reason": "quote_not_in_source"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": false,
+            "reason": "quote_not_in_source"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": false,
+            "reason": "quote_not_in_source"
+          }
+        ],
+        "automatic_gate_passed": false,
+        "semantic_and_engineering_review": "pending_not_implied_by_quote_matching"
+      },
+      "comparison_to_user_report": {
+        "target": 4.26,
+        "signed_difference": 0.24,
+        "absolute_difference": 0.24,
+        "usable_candidate": false
+      }
+    },
+    {
+      "call_id": "CASE-FLASH-2",
+      "model": "deepseek-flash",
+      "status": "received",
+      "candidate_score": 4.5,
+      "validation": {
+        "contract_errors": [],
+        "citation_count": 31,
+        "valid_citations": 24,
+        "citation_checks": [
+          {
+            "valid": false,
+            "reason": "quote_not_in_source"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": false,
+            "reason": "quote_not_in_source"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": false,
+            "reason": "quote_not_in_source"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": false,
+            "reason": "quote_not_in_source"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": false,
+            "reason": "quote_not_in_source"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": false,
+            "reason": "quote_not_in_source"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": false,
+            "reason": "quote_not_in_source"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          }
+        ],
+        "automatic_gate_passed": false,
+        "semantic_and_engineering_review": "pending_not_implied_by_quote_matching"
+      },
+      "comparison_to_user_report": {
+        "target": 4.26,
+        "signed_difference": 0.24,
+        "absolute_difference": 0.24,
+        "usable_candidate": false
+      }
+    },
+    {
+      "call_id": "CASE-FLASH-3",
+      "model": "deepseek-flash",
+      "status": "received",
+      "candidate_score": 4.5,
+      "validation": {
+        "contract_errors": [],
+        "citation_count": 36,
+        "valid_citations": 33,
+        "citation_checks": [
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": false,
+            "reason": "quote_not_in_source"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": false,
+            "reason": "quote_not_in_source"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": false,
+            "reason": "quote_not_in_source"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          }
+        ],
+        "automatic_gate_passed": false,
+        "semantic_and_engineering_review": "pending_not_implied_by_quote_matching"
+      },
+      "comparison_to_user_report": {
+        "target": 4.26,
+        "signed_difference": 0.24,
+        "absolute_difference": 0.24,
+        "usable_candidate": false
+      }
+    },
+    {
+      "call_id": "CASE-PRO-1",
+      "model": "deepseek-v4-pro",
+      "status": "received",
+      "candidate_score": 4.5,
+      "validation": {
+        "contract_errors": [],
+        "citation_count": 32,
+        "valid_citations": 25,
+        "citation_checks": [
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": false,
+            "reason": "quote_not_in_source"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": false,
+            "reason": "quote_not_in_source"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": false,
+            "reason": "quote_not_in_source"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": false,
+            "reason": "quote_not_in_source"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": false,
+            "reason": "quote_not_in_source"
+          },
+          {
+            "valid": false,
+            "reason": "quote_not_in_source"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": false,
+            "reason": "quote_not_in_source"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          },
+          {
+            "valid": true,
+            "reason": "source_text_match_only"
+          }
+        ],
+        "automatic_gate_passed": false,
+        "semantic_and_engineering_review": "pending_not_implied_by_quote_matching"
+      },
+      "comparison_to_user_report": {
+        "target": 4.26,
+        "signed_difference": 0.24,
+        "absolute_difference": 0.24,
+        "usable_candidate": false
+      }
+    }
+  ],
+  "rule_calls": [],
+  "flash_repeat": {
+    "n": 3,
+    "values": [
+      4.5,
+      4.5,
+      4.5
+    ],
+    "mean": 4.5,
+    "range": 0.0,
+    "population_std": 0.0
+  },
+  "reference_kind": "user_report_pending_official_source_single_known_case_not_blind",
+  "official_verified_pairs": 0,
+  "trained_on_real_cases": false,
+  "usage": {
+    "prompt_tokens": 432925,
+    "completion_tokens": 15259,
+    "prompt_cache_hit_tokens": 216064,
+    "prompt_cache_miss_tokens": 216861
+  },
+  "estimated_cost_usd_offpeak_to_peak": [
+    0.103577,
+    0.207153
+  ],
+  "payment_receipt_available": false,
+  "artifact_sha256": {
+    "CASE-FLASH-1.input.json": "366f61b9eee7bf7bc6d07b50a5cc1617b1efad7a3b8e1e5108ad0e2dec8eb1aa",
+    "CASE-FLASH-1.response.json": "16004647e71cf1f4e8b42141d528e8ebd8a4cba47b6273a2c256056bd3be2ef9",
+    "CASE-FLASH-2.input.json": "eb69ac51127e1b42a127112a6db0a1d9f7c30245687486b8e184e0c9f9c7084e",
+    "CASE-FLASH-2.response.json": "3ea4e8035f9b2f6e28905a78a43aa311c6c8d38c7baa8144df1d9d830adb8700",
+    "CASE-FLASH-3.input.json": "401f0231f55e82391cf402e21e76069d527407443f683ff45fd9068f244448fd",
+    "CASE-FLASH-3.response.json": "6aec61892930c33f952b52b7a81e1d99ca654ad360c6ae2e4110631b6a8725ed",
+    "CASE-PRO-1.input.json": "60b4fb6f6aa564a1a57082444c6d8f1bb60a56f511978333d9dd9f12a84261f8",
+    "CASE-PRO-1.response.json": "07cdef8a052a1eda15447916fa19bc801f69cf2078a3635f9494c96d76c1a05b",
+    "health.json": "a8d5695f46b4d14d8ff6eb4643b189560d982dafe556d01f4f9b5410f7d64d98",
+    "protocol.json": "5677fe124f627919f72103b7939d9feea8740f63d3e5900660aac8923306fb97"
+  },
+  "limits": [
+    "单例差值和重复波动不等于独立预测误差",
+    "引用匹配不证明语义或工程判断",
+    "没有官方分项和纯AI成绩",
+    "输入为抽取文字，图形及复杂版式未全面核验",
+    "供应商模型别名无法固定服务权重版本"
+  ]
+}

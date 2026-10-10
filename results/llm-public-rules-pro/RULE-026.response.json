@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-026",
+  "input_file_sha256": "90282c5a86efdc895b1868afad459e0b376c3c09892c98efbf8acbd879680b61",
+  "started_at": "2026-10-07T03:59:18.808457+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro",
+    "response_model": "deepseek-v4-pro",
+    "response_id": "fd75f8e7-2534-43ff-b356-7a5952eda15d",
+    "created": 1791345559,
+    "usage": {
+      "prompt_tokens": 4967,
+      "completion_tokens": 137,
+      "total_tokens": 5104,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 4711
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 2.004,
+    "request_sha256": "e51f6d5dfcef5058a8fabfc2bb2198ec7c357e9669f51be743b4a0fc68ae707e",
+    "response_sha256": "a394a84e37129717ab5a988aedf0c5c46bca3cc404360db8401157458a9d16f4",
+    "output": {
+      "task_id": "RULE-026",
+      "status": "supported",
+      "answer": "延期前开标时间的保函仍可被认可。补疑1明确：投标保证金（含电子保函、银行保函、担保机构担保、保证保险等）中涉及的开标时间为延期前或延期后的，且内容符合招标文件要求的，均予以认可。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "仅依据补疑1第一部分延期部分内容；未提供原招标文件对保函开标时间的具体要求，但补疑已明确认可延期前开标时间。"
+    }
+  }
+}

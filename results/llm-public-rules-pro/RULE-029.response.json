@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-029",
+  "input_file_sha256": "8ef0f5f4652d8759c301cf69e6dac8f9e6fc4e73a6eaac9e345ebb641ed80691",
+  "started_at": "2026-10-07T03:59:24.762157+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro",
+    "response_model": "deepseek-v4-pro",
+    "response_id": "7c0d1348-e325-4a32-9934-c2563cfa3974",
+    "created": 1791345564,
+    "usage": {
+      "prompt_tokens": 4172,
+      "completion_tokens": 127,
+      "total_tokens": 4299,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 3916
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.726,
+    "request_sha256": "7b12aa024f94ed531641226791ef06f82987b2509e45f9508751e5088e8eb2bb",
+    "response_sha256": "e42519fcd67be3db1508708f81cd3d5add8d291f9d1ac6591d4f1fc1fdde672a",
+    "output": {
+      "task_id": "RULE-029",
+      "status": "supported",
+      "answer": "本项目不计保存养护；成活养护3个月，日常养护9个月，养护等级一级。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "依据补疑2（PUB-010）第1页第2条；招标文件正文（PUB-008）中绿化养护责任书模板显示绿化养护期12个月，但补疑2作为招标文件组成部分，其明确成活养护3个月、日常养护9个月、不计保存养护，应优先适用。"
+    }
+  }
+}

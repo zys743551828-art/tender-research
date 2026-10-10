@@ -1,0 +1,57 @@
+{
+  "experiment_id": "llm-fulltext-visual-facts",
+  "prompt_version": "DS-CASE-002-v1",
+  "code_sha256": {
+    "run_deepseek_case.py": "10000c23c94be67e5c0209c2ee83b4bcdfab5b3ba96d5791685ecbe332472114",
+    "run_deepseek.py": "b8293ab04b7c520a6002a510366b90cc5f282e9a7af32f0cb2746c1fcc5c1489",
+    "model_service.py": "60511c7f196c4364db34bbccf420d276ac0faccb0f804dab9d7221d2832ce292",
+    "deepseek_client.py": "4a464b641197629c5bc5c944e77ae91d8b92d3126b0270a53468bbcd7ef9a4eb",
+    "rule_evidence.py": "a96616e8987fb965bd2f8a2cdb2c385ccf80603f4304769243b4e1fc292d6cd4"
+  },
+  "max_completion_calls": 1,
+  "jobs": [
+    [
+      "VISUAL-FACTS-PRO-1",
+      "deepseek-v4-pro",
+      true
+    ]
+  ],
+  "output_token_limit": 16000,
+  "thinking_effort": "high",
+  "configuration": "full llm-fulltext-id-bound messages plus verified original-page chart presence facts; Pro high thinking 16000 tokens; no label or earlier diagnosis supplied",
+  "known_to_analyst": true,
+  "blind_evaluation": false,
+  "label_used_to_tune_prompt": false,
+  "excluded_inputs": [
+    "reported score",
+    "observed cutoff",
+    "case analysis",
+    "earlier model outputs"
+  ],
+  "source": "all archived tender 219 pages and submitted body 50 pages as extracted text; no images sent",
+  "external_transfer_authorization": {
+    "source": "direct_user_message",
+    "date": "2026-10-07",
+    "destination": "https://api.deepseek.com/chat/completions",
+    "scope": "CASE-001 full tender and technical body"
+  },
+  "pricing_source": "https://api-docs.deepseek.com/quick_start/pricing/",
+  "pricing_verified_date": "2026-10-07",
+  "pricing_per_million_peak": {
+    "deepseek-flash": [
+      0.006,
+      0.3,
+      1.2
+    ],
+    "deepseek-v4-pro": [
+      0.044,
+      1.32,
+      3.96
+    ]
+  },
+  "thinking_source": "https://api-docs.deepseek.com/guides/thinking_mode/",
+  "visual_fact_sources": {
+    "llm-visual-probe.json": "43d01de92ad67860adb9bb035c832c8641a677c4956f1effac465c4dd89f557a",
+    "review-fulltext.json": "7512faeafedd57ad6b9b7a3ac53121f68de63dc7e83f897656a3c78144f31220"
+  }
+}

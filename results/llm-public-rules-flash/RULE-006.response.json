@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-006",
+  "input_file_sha256": "d9eb88330ba3b7269a8b0c49abb720445d66bd68cd03f04aa8f6fc964b7c8305",
+  "started_at": "2026-10-07T03:56:37.015122+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-flash",
+    "response_model": "deepseek-flash",
+    "response_id": "214c79f9-20fa-4d4e-b276-ad4f0f5b8a58",
+    "created": 1791345397,
+    "usage": {
+      "prompt_tokens": 3539,
+      "completion_tokens": 119,
+      "total_tokens": 3658,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 3027
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.0,
+    "request_sha256": "ab7cc8b4778b0c1c1140bd848f755ee1fba795572c9051fd9c3313bb351d2778",
+    "response_sha256": "2ddf26a5d1eaffba4e52ca9840ac48d4944aa20a12130f7cd6af16f0bb5e5fb8",
+    "output": {
+      "task_id": "RULE-006",
+      "status": "supported",
+      "answer": "评审环节由评标委员会完成：评标委员会按照评标办法审查投标文件，向招标人推荐一定数量的中标候选人，并出具评标报告。定标环节由定标委员会完成：定标委员会按照定标规则，在中标候选人中择优确定中标人。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "依据为合肥市评定分离管理办法（试行）第二条的定义性规定；未涉及具体项目的评标委员会或定标委员会实际组成与人员。"
+    }
+  }
+}

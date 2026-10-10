@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-021",
+  "input_file_sha256": "bd6ffaa086aec0f580f92281d3c48a08f49d0541aa006d5431094b5d0d2a6922",
+  "started_at": "2026-10-07T03:56:58.744746+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-flash",
+    "response_model": "deepseek-flash",
+    "response_id": "ebea3b6c-f628-4274-bde6-89bb733843a3",
+    "created": 1791345418,
+    "usage": {
+      "prompt_tokens": 3835,
+      "completion_tokens": 209,
+      "total_tokens": 4044,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 3067
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.619,
+    "request_sha256": "3870cfebd4b01ac6957f91ced0c3373c910b5062c9ada3774db004cc23d68750",
+    "response_sha256": "f6c0577ce336bd0b4d4750d9030ea2c1de9b8693b0542f49cd7f9c936cd22ca3",
+    "output": {
+      "task_id": "RULE-021",
+      "status": "supported",
+      "answer": "按所给招标文件正文（示范文本2023年版）技术文件评审（2.2.1（2））标准，“工程重点难点保障体系”一项的权重为40%。该40%为技术文件评审项内部权重；同页另列企业实力35%、确保工期与质量的保障体系与措施及确保安全文明生产的管理体系与措施30%、确保人、材、机的保障体系与措施30%，各项权重之和超过100%，故该40%不能直接等同于最终中标评分占比，且材料未提供补疑对权重的调整，最终中标结果亦未提供。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "仅依据招标文件正文第88页（PDF页码88）技术文件评审标准表；该页同时列出的各项权重合计超过100%，条款内部存在不一致，且未提供补疑1、2及最终中标信息，无法确认是否为最终适用权重。"
+    }
+  }
+}

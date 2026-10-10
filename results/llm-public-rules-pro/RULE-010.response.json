@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-010",
+  "input_file_sha256": "3923730228459092a8926606c3f41af58a4ae00add45dd874a0f659422f6d519",
+  "started_at": "2026-10-07T03:58:48.718733+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro",
+    "response_model": "deepseek-v4-pro",
+    "response_id": "3fd63345-9756-40fa-926f-ce8b1a159a03",
+    "created": 1791345529,
+    "usage": {
+      "prompt_tokens": 3523,
+      "completion_tokens": 100,
+      "total_tokens": 3623,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 3267
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.705,
+    "request_sha256": "e07c05c11f95e56b1b84d49a59ccc4217ba017da3123da74ad589d47d20d27eb",
+    "response_sha256": "83b529aa64c93fee975b6e38d059260327900affb5fca3f09a4c2b26a81a2dd3",
+    "output": {
+      "task_id": "RULE-010",
+      "status": "supported",
+      "answer": "需要复核。招标文件正文第66页明确要求：在技术文件详细评审环节，评标委员会成员须对人工智能辅助评审结果进行复核。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "仅依据招标文件正文，未提供补疑文件；该要求为强制规定，但未说明复核的具体方式和标准。"
+    }
+  }
+}

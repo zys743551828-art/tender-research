@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-019",
+  "input_file_sha256": "44daecd0b61d268db5b81f1cfb2a34236b4024612e9199b3e61606b22fa4191e",
+  "started_at": "2026-10-07T03:59:05.297753+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro",
+    "response_model": "deepseek-v4-pro",
+    "response_id": "ea9b0688-6e72-4a12-9923-9349532367be",
+    "created": 1791345545,
+    "usage": {
+      "prompt_tokens": 5634,
+      "completion_tokens": 108,
+      "total_tokens": 5742,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 5378
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.629,
+    "request_sha256": "bcdb744a67be195255321f397596886a9512d0e20fe48e3b927d8aef56842259",
+    "response_sha256": "9cba17456b3c47239325c249972325b735e90d1a2976fadb097a84498a69ceb7",
+    "output": {
+      "task_id": "RULE-019",
+      "status": "supported",
+      "answer": "本次中标候选人公示期到2026年10月08日。",
+      "evidence_ids": [
+        "E5"
+      ],
+      "limitations": "依据中标候选人公示文件（PUB-007）中明确载明的公示期：2026年09月30日至2026年10月08日。招标文件（PUB-004）仅规定公示期不少于3日，未给出具体日期。"
+    }
+  }
+}

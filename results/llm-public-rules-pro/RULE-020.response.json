@@ -1,0 +1,37 @@
+{
+  "call_id": "RULE-020",
+  "input_file_sha256": "21227569570e3d817250d78c0d1148816ab2ebae7246dcdf238b7e3304f11b4f",
+  "started_at": "2026-10-07T03:59:06.930222+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro",
+    "response_model": "deepseek-v4-pro",
+    "response_id": "672ae165-1a1b-4728-a23b-2809d65e22d9",
+    "created": 1791345547,
+    "usage": {
+      "prompt_tokens": 4135,
+      "completion_tokens": 163,
+      "total_tokens": 4298,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 3879
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.888,
+    "request_sha256": "0c4f33aeb8347c11033e338fa493b2c7acfbff58a00bdadce50881d87299535c",
+    "response_sha256": "2cb2cf12af1c0e1e895aee88d94ab7b3cd16b3ee5011636992d40eb300e5eb0b",
+    "output": {
+      "task_id": "RULE-020",
+      "status": "supported",
+      "answer": "不执行AI“类人”辅助评标。依据招标文件正文评标办法前附表（E3）明确勾选“☑不执行AI‘类人’辅助评标”，且正文3.3.1（E1）规定“技术文件详细评审是否执行AI‘类人’辅助评标见评标办法前附表”，因此本项目技术文件详细评审不执行AI类人辅助评标。",
+      "evidence_ids": [
+        "E3",
+        "E1"
+      ],
+      "limitations": "证据来自招标文件正文（PUB-008），未提供补疑文件；若补疑有修改，以补疑为准。"
+    }
+  }
+}

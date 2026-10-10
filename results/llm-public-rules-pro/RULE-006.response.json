@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-006",
+  "input_file_sha256": "a547deba3f93cbfceb39d92ce9e8b45c616de33c5ec56419f954b2aa39c5b968",
+  "started_at": "2026-10-07T03:58:41.973361+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro",
+    "response_model": "deepseek-v4-pro",
+    "response_id": "00ce1b62-c0bd-48a1-8771-6a125498db58",
+    "created": 1791345522,
+    "usage": {
+      "prompt_tokens": 3536,
+      "completion_tokens": 81,
+      "total_tokens": 3617,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 3280
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.392,
+    "request_sha256": "df9dbf5712b1886c2c8123fdc97ecd12dd80fb52c306d96e85452821cb176b18",
+    "response_sha256": "15ffc940953e94e9a964103841f283cbbaae87d63f76af8a7a0ffd9500763380",
+    "output": {
+      "task_id": "RULE-006",
+      "status": "supported",
+      "answer": "评审环节由评标委员会完成，定标环节由定标委员会完成。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "依据为《合肥市工程建设项目招标投标评定分离管理办法（试行）》第二条，未涉及具体项目。"
+    }
+  }
+}

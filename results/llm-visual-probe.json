@@ -1,0 +1,95 @@
+{
+  "experiment_id": "llm-visual-probe",
+  "finished_at": "2026-10-07T04:29:44.603292+00:00",
+  "actual_completion_calls": 1,
+  "status": "received",
+  "images": [
+    {
+      "evidence_id": "FILE-002-P049-VISUAL",
+      "file_id": "FILE-002",
+      "pdf_page": 49,
+      "source_sha256": "5027159571bf015e6c0d01a8f782a868ad382a08c24520187f7d23fb2f23779f",
+      "rendered_png_sha256": "dd4b7c1966403dc427a36cf1bc656c01503b5503c9245266734525ea5d24126c",
+      "width": 1191,
+      "height": 1684
+    },
+    {
+      "evidence_id": "FILE-002-P050-VISUAL",
+      "file_id": "FILE-002",
+      "pdf_page": 50,
+      "source_sha256": "5027159571bf015e6c0d01a8f782a868ad382a08c24520187f7d23fb2f23779f",
+      "rendered_png_sha256": "d36bd598d9a2ec1264ae4e148f76a5919173881d703c7546ec91fe8032b4057b",
+      "width": 1191,
+      "height": 1684
+    },
+    {
+      "evidence_id": "PUB-012-P003-VISUAL",
+      "file_id": "PUB-012",
+      "pdf_page": 3,
+      "source_sha256": "fed2609ca6f7163f078c645146793882ecf1800bd499a6e82f9a9c2b964b858c",
+      "rendered_png_sha256": "7ac588a3d11d59ea46fcaf49230d6805563d34c963b97153786498007af26bdc",
+      "width": 1190,
+      "height": 1684
+    }
+  ],
+  "score_generated": false,
+  "semantic_review": "developer_visual_reference_pending_not_independent_engineer",
+  "limits": [
+    "only three known probes",
+    "chart presence is not complete graph/coordinate recognition",
+    "image probe cannot replace full-document score input"
+  ],
+  "output": {
+    "pages": [
+      {
+        "evidence_id": "FILE-002-P049-VISUAL",
+        "has_visible_content": true,
+        "has_network_diagram": true,
+        "has_gantt_chart": true,
+        "has_site_layout": false,
+        "planning_horizon_days": 120,
+        "observations": "页眉：施工组织设计；标题：附表四：计划开工日期、完工日期和进度网络图；图题：广德未来科创城污水管网改造及新建工程项目-科技路、昌盛路及周边污水管网改造及新建工程；上部为双代号网络图，含节点编号及工作名称（施工准备、管道封堵、拉森钢板桩支护、新建管网沟槽开挖、管道异物清除、新建管网垫层及基础施工、塑料管铺设施工、化学注浆堵漏施工、钢筋混凝土检查井施工、井字架设、管道闭水试验、拉入法CIPP紫外光固化修复、不锈钢双胀环修复、拉森钢板桩拔桩及孔穴回填、短管（气动碎管法）修复、检查井修复施工、检查井井盖及附属更换、道路拆除作业、道路基层及面层施工、土方回填及余方弃置、沥青路面及粘层施工、道路附属设施施工、围墙修复及饰面施工、钢混混凝土地面施工、竣工验收），横轴刻度1~120；下部为横道图，标题：广德未来科创城污水管网改造及新建工程项目-科技路、昌盛路及周边污水管网改造及新建工程，计划竣工总工期120日历天，纵轴为工作名称，横轴10~120；页脚：第49页。",
+        "limitations": "网络图中部分节点编号及工作持续时间数字较小，个别数字不可读，已按可见内容记录，不可读数字未作推测。"
+      },
+      {
+        "evidence_id": "FILE-002-P050-VISUAL",
+        "has_visible_content": true,
+        "has_network_diagram": false,
+        "has_gantt_chart": false,
+        "has_site_layout": true,
+        "planning_horizon_days": 120,
+        "observations": "页眉：施工组织设计；标题：附表五：施工总平面图；图中标注道路：昌盛路、北环路、建东大道、广宜路、科技路、外环路；标注区域：办公区及试验报验设施、机械停放区、钢筋模板加工区、钢板桩钢支撑堆放区、道路材料堆放区、加工区、洗车平台、沉淀池、临时厕所、垃圾房、茶水亭、材料仓库、试验室、标养室、警卫室、工人生活区、消防应急、五牌一图、扬尘噪声控制、垃圾分类、有限空间作业、地下管线保护、围挡警示、洗车平台、交通导行；图例含进度措施；下方说明文字：本施工总平面图布置说明依据招标文件、施工图纸及广德经济开发区管理要求，按照“项目集中管理区+沿线流动生产区+分段动态布置”的原则，在科技路与昌盛路交叉口西南侧设置办公区及试验报验设施，在科技路北侧设置工人生活区，在昌盛路东侧、北环线与广宜路交叉口北侧、建东大道旁及北环线与外环路交叉口西侧分别布置钢筋模板加工区、钢板桩钢支撑堆放区、道路材料堆放区和机械停放区，并沿施工段设置管材堆放区、临时厕所、垃圾房和茶水亭；运输利用现有市政道路并设洗车平台、沉淀池和交通导行，临时水电按三级配电、两级保护及明排集水井布置，同时落实围挡警示、五牌一图、扬尘噪声控制、垃圾分类、消防应急、有限空间作业和地下管线保护措施，并随施工准备、主体施工和收尾阶段动态调整，确保工程在120日历天内安全、有序、绿色、高效实施。附表六：临时用地表，含用途、面积（㎡）、位置、需用时间四列，共16行数据；页脚：第50页。",
+        "limitations": "平面图中部分小字标注及图例文字较小，个别文字不可读，已按可见内容记录。"
+      },
+      {
+        "evidence_id": "PUB-012-P003-VISUAL",
+        "has_visible_content": false,
+        "has_network_diagram": false,
+        "has_gantt_chart": false,
+        "has_site_layout": false,
+        "planning_horizon_days": null,
+        "observations": "页面为空白，无可读文字或图形。",
+        "limitations": "页面无可见内容，无法读取任何信息。"
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 3211,
+    "completion_tokens": 982,
+    "total_tokens": 4193,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3211
+  },
+  "estimated_cost_usd_offpeak_to_peak": [
+    0.001071,
+    0.002142
+  ],
+  "artifact_sha256": {
+    "VISUAL-PROBE-1.response.json": "d0537d0db3f42b2b88044f91288db633be941e9f734280e3f50bb94cfa7d4f36",
+    "VISUAL-PROBE-1.input.json": "f8f0b7aaa287a19506338dd59a34b4b66c3266740fd81a11a1241faf378fa466",
+    "protocol.json": "b8a7830eb27de97a33ce2eb43aeb92e909c6ca9f448892c2a7d52552c93d8543"
+  }
+}

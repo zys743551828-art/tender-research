@@ -1,0 +1,38 @@
+{
+  "call_id": "RULE-023",
+  "input_file_sha256": "2422c42e067b45fb7f093b29243bce9e4e561040903d3930c19aff3d732a97f5",
+  "started_at": "2026-10-07T03:57:02.850180+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-flash",
+    "response_model": "deepseek-flash",
+    "response_id": "5b66e9fa-d2d9-42e7-b290-c36859f7dabb",
+    "created": 1791345423,
+    "usage": {
+      "prompt_tokens": 3715,
+      "completion_tokens": 271,
+      "total_tokens": 3986,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 3075
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.71,
+    "request_sha256": "f7e4b2c5089685727211b1ee069057be61b89e6ab34a31e7ff8ae5c586999a81",
+    "response_sha256": "8a733fb28f4d3ae42d035a282da2188eb77f99a7f81440119a326e5c5a551d06",
+    "output": {
+      "task_id": "RULE-023",
+      "status": "supported",
+      "answer": "关系为：先按通过商务、技术、报价文件初步评审的投标人数量N确定拟推荐中标候选人数量M（N＜3时否决全部投标；3≤N＜10时推荐3家；N≥10时推荐5家），再按综合评价结果在通过初审的投标人中择优推荐M家。即初审通过人数N是确定推荐数量M的基数，M为3或5（N≥10且3≤X+Y＜5时为例外，推荐X+Y家）；综合评价结果为一般的不得推荐。此为原招标文件（示范文本）第三章评标办法前附表规定，非补疑。推荐中标候选人不等于最终中标人，最终中标人由定标委员会按定标办法（票决法）确定。",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E6"
+      ],
+      "limitations": "证据来自招标文件正文（示范文本2023年版）第三章评标及定标办法，文件身份说明要求结合补疑1、2，但本题未提供补疑，故补疑是否修改推荐数量规则未知；E1、E2为同一前附表连续页，E6仅证明定标阶段另行确定中标人，不改变推荐数量规则。"
+    }
+  }
+}

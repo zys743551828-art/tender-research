@@ -1,0 +1,36 @@
+{
+  "call_id": "RULE-005",
+  "input_file_sha256": "665a790a637997a76a1517a9c43533ac6df0f4ba17ffaa38adfcbd9099a20ba0",
+  "started_at": "2026-10-07T03:58:40.516932+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro",
+    "response_model": "deepseek-v4-pro",
+    "response_id": "ef9fd35b-9cb7-40fa-a45d-2b82474eaf01",
+    "created": 1791345520,
+    "usage": {
+      "prompt_tokens": 2663,
+      "completion_tokens": 80,
+      "total_tokens": 2743,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 2407
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.453,
+    "request_sha256": "b1f3d0e06b9cbc88be2254e2dddfb9beee013a4049151111cd6d41987655b17c",
+    "response_sha256": "daa21c6d21bd48985094fc7c1c33f6a6f7c76abf95a669f4851775057f6a4042",
+    "output": {
+      "task_id": "RULE-005",
+      "status": "supported",
+      "answer": "《合肥市工程建设项目电子招标投标操作规程》自2026年5月8日起施行，有效期三年。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "limitations": "仅依据PUB-002文件第三十条，未提供其他相关文件。"
+    }
+  }
+}

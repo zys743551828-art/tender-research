@@ -1,0 +1,37 @@
+{
+  "call_id": "RULE-027",
+  "input_file_sha256": "6c44fc3d35818260a15cda106e56cc993f0c78d2f8b1884649591933533f07cc",
+  "started_at": "2026-10-07T03:57:10.016614+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-flash",
+    "response_model": "deepseek-flash",
+    "response_id": "a5fad407-e8df-45bd-84bf-17b609fafa00",
+    "created": 1791345430,
+    "usage": {
+      "prompt_tokens": 5111,
+      "completion_tokens": 233,
+      "total_tokens": 5344,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 4471
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.452,
+    "request_sha256": "4a4b2a1d2ab5af4bdf8fba95c8d3cbe60d9d7aff95084652eb4efaf27be1aee3",
+    "response_sha256": "bc07f23d8edb8a0a22d4526853182b337af926f5d3537f20b0d374bc3440e65d",
+    "output": {
+      "task_id": "RULE-027",
+      "status": "supported",
+      "answer": "存在年份冲突。补疑1（PUB-009，2026-09-02发布）第一部分第2项将招标文件获取截止时间延期到“2023年9月17日9:30”，年份2023与同项目其他时间（原开标/投标截止2026年9月8日、延期后2026年9月17日、澄清时间2026年9月6日）及原招标文件获取时间“2026年08月19日至投标截止时间”均不一致，属明显年份笔误/冲突。原文件（PUB-008）获取截止时间为投标截止时间（2026年09月08日09时30分），补疑1将其延期但年份写为2023。",
+      "evidence_ids": [
+        "E1",
+        "E3"
+      ],
+      "limitations": "仅能确认补疑1文本中该年份与同文件其他日期及原招标文件不一致，构成冲突；补疑未提供更正说明，无法确定正确年份应为2026，亦不能据此推断实际获取截止时间。"
+    }
+  }
+}

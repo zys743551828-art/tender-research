@@ -1,0 +1,37 @@
+{
+  "call_id": "RULE-020",
+  "input_file_sha256": "37bdbacd019e1a41dd425de5c5e4b624d7ff1f6d151f32d2468d98873ce53377",
+  "started_at": "2026-10-07T03:56:57.245969+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-flash",
+    "response_model": "deepseek-flash",
+    "response_id": "230e7ef4-88b3-440d-9b62-5ba149b7866c",
+    "created": 1791345417,
+    "usage": {
+      "prompt_tokens": 4138,
+      "completion_tokens": 235,
+      "total_tokens": 4373,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 3370
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.495,
+    "request_sha256": "499421338c19daabe82bf13ee9663de42f6dcdc817b632a6d8d93ebfc6cd9a73",
+    "response_sha256": "d5b5df29af7518256e3b381b21cd5b59c045b98b241431a0198b015940f2b98e",
+    "output": {
+      "task_id": "RULE-020",
+      "status": "supported",
+      "answer": "不执行。本项目招标文件第三章评标办法前附表第3.3.1项“技术文件详细评审”明确勾选“☑不执行AI‘类人’辅助评标”，并规定评委评分为该项分值×100%的须提出充足理由并在评标报告中陈述；对未提供或明显不符合要求的评审项可作0分处理，亦须提出充足理由并在评标报告中陈述。评标办法正文3.3.1仅说明“技术文件详细评审是否执行AI‘类人’辅助评标见评标办法前附表”，具体结论以前附表勾选为准。",
+      "evidence_ids": [
+        "E3",
+        "E1"
+      ],
+      "limitations": "证据为招标文件正文（示范文本2023年版）第三章评标办法前附表及正文；文件身份说明提示须结合补疑1、2，但本题未提供补疑内容，故不排除补疑另有调整；本结论仅针对技术文件详细评审是否执行AI“类人”辅助评标，不涉及最终中标结果。"
+    }
+  }
+}

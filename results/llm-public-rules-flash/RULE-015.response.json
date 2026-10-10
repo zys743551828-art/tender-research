@@ -1,0 +1,37 @@
+{
+  "call_id": "RULE-015",
+  "input_file_sha256": "8ffb9df4ae9e6f4350b3716ae96ea58d21a63cd3149d117bb4f116ef57fbe397",
+  "started_at": "2026-10-07T03:56:49.922548+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-flash",
+    "response_model": "deepseek-flash",
+    "response_id": "522d851d-8d92-4073-86f0-f92a2c70a044",
+    "created": 1791345410,
+    "usage": {
+      "prompt_tokens": 3712,
+      "completion_tokens": 272,
+      "total_tokens": 3984,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 3072
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.602,
+    "request_sha256": "0c4b0c1efe0ec1f46c3afeda9dbf2bed96b4587ac2de2a6e27a04da1894361d8",
+    "response_sha256": "10e709b80ffc7fe703b1897c243f50a8abd5c062bbd13ee0fd6e825a3de48cd6",
+    "output": {
+      "task_id": "RULE-015",
+      "status": "supported",
+      "answer": "依据招标文件正文（原文件，非补疑）第三章评标办法附件2“推荐规则”：报价文件评审通过的投标人数量记为S，按评标价由高到低排序，相同报价均占排序。S为奇数时，对评标价不低于第（S+1）/2个报价的投标人，按评标价由低到高依次推荐中标候选人；S为偶数时，对评标价不低于第S/2个报价的投标人，按评标价由低到高依次推荐中标候选人。评标价相同时，先按技术文件详细评审得分高者优先，仍不能确定时由评标委员会投票、少数服从多数确定顺序。该规则确定的是推荐中标候选人顺序，非最终中标人；且推荐前须通过异常低价评审，未通过者否决、不得推荐。",
+      "evidence_ids": [
+        "E1",
+        "E3"
+      ],
+      "limitations": "仅依据PUB-004招标文件正文第67页附件2及第70页附件4；未提供补疑1，若补疑对推荐规则另有修改，本结论不覆盖。S的取值以报价文件评审通过家数为准，材料未给出本项目实际家数。"
+    }
+  }
+}

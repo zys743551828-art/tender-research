@@ -1,0 +1,37 @@
+{
+  "call_id": "RULE-007",
+  "input_file_sha256": "e268436aeade24a3698d95beca9b90c7ec925283e9ed787ec3e012278c626ef9",
+  "started_at": "2026-10-07T03:58:43.368779+00:00",
+  "status": "received",
+  "response": {
+    "provider": "deepseek",
+    "requested_model": "deepseek-v4-pro",
+    "response_model": "deepseek-v4-pro",
+    "response_id": "ab84879f-c467-4c67-947a-c78ab1fb5d5f",
+    "created": 1791345523,
+    "usage": {
+      "prompt_tokens": 4209,
+      "completion_tokens": 83,
+      "total_tokens": 4292,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 3953
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 1.515,
+    "request_sha256": "3d3f783df3e3f92981aba67d7c14a0245a8e44e95804b3381a1684d0fd9d0eb5",
+    "response_sha256": "9cef60a6d463f23d55c2fa5ac2d9bed6f7dad27867930941b49fc6b5e0c4c484",
+    "output": {
+      "task_id": "RULE-007",
+      "status": "supported",
+      "answer": "本项目采用技术评分合理价格法。",
+      "evidence_ids": [
+        "E3",
+        "E5"
+      ],
+      "limitations": "证据来自招标文件正文，未提供补疑文件；评标方法在招标公告和评标办法章节中明确，无冲突。"
+    }
+  }
+}
