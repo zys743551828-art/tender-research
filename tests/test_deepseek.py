@@ -27,7 +27,7 @@ class DeepSeekBoundaryTests(unittest.TestCase):
         self.fixture_key = 'sk-unit-test-credential-with-no-real-account'
         self.path.write_text(self.fixture_key)
         self.path.chmod(0o600)
-        self.env = patch.dict(os.environ, {'DEEPSEEK_API_KEY': ''})
+        self.env = patch.dict(os.environ, {'DEEPSEEK_API_KEY': self.fixture_key})
         self.env.start()
         self.client = DeepSeekClient(self.root)
 
@@ -39,14 +39,26 @@ class DeepSeekBoundaryTests(unittest.TestCase):
         return {'choices': [{'message': {'content': content}, 'finish_reason': finish}],
                 'usage': {'prompt_tokens': 12, 'completion_tokens': 3}, 'model': 'deepseek-flash'}
 
-    def test_private_credential_read(self):
+    def test_environment_credential_read(self):
         self.assertEqual(get_key(self.root), self.fixture_key)
 
+    @unittest.skipIf(os.name == 'nt', 'Windows 使用环境变量，文件权限由 ACL 管理')
+    def test_private_credential_read(self):
+        with patch.dict(os.environ, {'DEEPSEEK_API_KEY': ''}):
+            self.assertEqual(get_key(self.root), self.fixture_key)
+
+    @unittest.skipIf(os.name == 'nt', 'POSIX 文件权限检查')
     def test_world_readable_credential_rejected(self):
         self.path.chmod(0o644)
-        with self.assertRaises(ProviderError) as caught:
+        with patch.dict(os.environ, {'DEEPSEEK_API_KEY': ''}), self.assertRaises(ProviderError) as caught:
             get_key(self.root)
         self.assertEqual(caught.exception.category, 'credential_permissions_too_open')
+
+    @unittest.skipUnless(os.name == 'nt', 'Windows 凭据边界检查')
+    def test_windows_file_credential_requires_environment(self):
+        with patch.dict(os.environ, {'DEEPSEEK_API_KEY': ''}), self.assertRaises(ProviderError) as caught:
+            get_key(self.root)
+        self.assertEqual(caught.exception.category, 'credential_requires_environment_on_windows')
 
     def test_external_endpoint_rejected_without_network(self):
         with patch.object(self.client.opener, 'open') as opened, self.assertRaises(ProviderError):

@@ -27,9 +27,11 @@ def get_key(root: Path) -> str:
         path = root / ".secrets/deepseek_api_key"
         if not path.exists():
             raise ProviderError("missing_credential")
+        if os.name == "nt":
+            raise ProviderError("credential_requires_environment_on_windows")
         if path.stat().st_mode & 0o077:
             raise ProviderError("credential_permissions_too_open")
-        key = path.read_text().strip()
+        key = path.read_text(encoding="utf-8").strip()
     if not key or not re.fullmatch(r"sk-[A-Za-z0-9_-]+", key):
         raise ProviderError("invalid_credential_format")
     return key

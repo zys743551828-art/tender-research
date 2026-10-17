@@ -22,6 +22,7 @@ python -m tender_research.store fetch --dest ../tender-datasets   # 按资料清
 ```
 
 存储配置（`TENDER_STORE_*`）见 tender-datasets 的 `入库模板/README.md` 第 5 节。
+签名默认按端点选择：阿里云 OSS 使用 `s3`，其余使用 `s3v4`；自定义域名可设置 `TENDER_STORE_SIGNATURE=s3`。
 
 ## 2. 入口
 
@@ -59,7 +60,7 @@ PG_DSN="host=localhost port=5432 user=postgres" .venv-orchestration/bin/python s
 
 ### 大模型凭据
 
-读取环境变量 `DEEPSEEK_API_KEY` 或 `.secrets/deepseek_api_key`（目录权限 700、文件 600，已被版本管理忽略）。凭据不进入提示、结果或日志；`run_all` 会检查仓库内是否出现该密钥。企业全文只在公司明确授权的范围内发送，授权范围记录在各实验的 `protocol.json`。
+读取环境变量 `DEEPSEEK_API_KEY`，POSIX 系统也可使用 `.secrets/deepseek_api_key`（目录权限 700、文件 600，已被版本管理忽略）。Windows 的 ACL 不能用 POSIX 权限位核实，因此只接受环境变量，不读取凭据文件；`run_all` 遇到该文件仍判为权限检查未通过。凭据不进入提示、结果或日志；`run_all` 会检查仓库内是否出现该密钥。企业全文只在公司明确授权的范围内发送，授权范围记录在各实验的 `protocol.json`。
 
 ## 3. 代码
 

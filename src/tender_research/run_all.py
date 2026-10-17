@@ -5,6 +5,7 @@ import argparse
 import hashlib
 import importlib.metadata
 import json
+import os
 import platform
 import sys
 import time
@@ -54,7 +55,7 @@ def run(datasets: Path = paths.DATASETS, output: Path = paths.RESULTS) -> int:
     # 只返回是否发现泄漏及路径，永不返回匹配内容。
     leaks = [str(p.relative_to(paths.REPO)) for p in paths.REPO.rglob("*")
              if key and p.is_file() and ".secrets" not in p.parts and ".git" not in p.parts and key.encode() in p.read_bytes()]
-    credential_private = not key_path.exists() or not key_path.stat().st_mode & 0o077
+    credential_private = not key_path.exists() or (os.name != "nt" and not key_path.stat().st_mode & 0o077)
     passed = (result.wasSuccessful() and all(c["passed"] for c in checks["checks"] + outcomes["checks"])
               and all(r["matches_manifest"] for r in sources.values()) and not leaks and credential_private)
     report = {"experiment_id": "test-record", "provenance": "synthetic_contract_tests_and_real_source_integrity",

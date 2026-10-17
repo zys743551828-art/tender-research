@@ -9,6 +9,7 @@
 - ``TENDER_STORE_ENDPOINT``、``TENDER_STORE_REGION``、``TENDER_STORE_BUCKET``
 - ``TENDER_STORE_ACCESS_KEY_ID``、``TENDER_STORE_SECRET_ACCESS_KEY``
 - ``TENDER_STORE_ADDRESSING``：virtual（默认，阿里云 OSS 要求）或 path
+- ``TENDER_STORE_SIGNATURE``：auto（默认；阿里云端点用 s3，其余用 s3v4）、s3、s3v4
 - ``TENDER_STORE_WRITE_GUARD``：auto（默认；OSS 端点用 x-oss-forbid-overwrite，其余用 If-None-Match）、
   if-none-match、oss、head（只做上传前 HEAD 检查）
 """
@@ -25,6 +26,7 @@ import sys
 from collections.abc import Callable, Iterable, Mapping
 from dataclasses import dataclass, field
 from pathlib import Path
+from urllib.parse import urlsplit
 
 from .paths import DATASETS
 
@@ -57,6 +59,14 @@ class StoreConfig:
     secret_access_key: str = field(repr=False)
     addressing: str = "virtual"
     write_guard: str = "auto"
+    signature_version: str = "auto"
+
+    @property
+    def signature(self) -> str:
+        if self.signature_version != "auto":
+            return self.signature_version
+        host = urlsplit(self.endpoint).hostname or ""
+        return "s3" if host.endswith(".aliyuncs.com") else "s3v4"
 
     @property
     def guard(self) -> str:
@@ -86,11 +96,14 @@ def load_config(env: Mapping[str, str] | None = None) -> StoreConfig:
                           + "。在环境变量中设置，或用对应的 *_FILE 变量指向只含该值的文件。")
     addressing = env.get("TENDER_STORE_ADDRESSING", "virtual")
     guard = env.get("TENDER_STORE_WRITE_GUARD", "auto")
+    signature = env.get("TENDER_STORE_SIGNATURE", "auto")
+    if signature not in ("auto", "s3", "s3v4"):
+        raise ConfigError("TENDER_STORE_SIGNATURE 须为 auto、s3 或 s3v4")
     if addressing not in ("virtual", "path"):
         raise ConfigError(f"TENDER_STORE_ADDRESSING 须为 virtual 或 path：{addressing!r}")
     if guard not in GUARDS:
         raise ConfigError(f"TENDER_STORE_WRITE_GUARD 须为 {'、'.join(GUARDS)} 之一：{guard!r}")
-    return StoreConfig(**values, addressing=addressing, write_guard=guard)
+    return StoreConfig(**values, addressing=addressing, write_guard=guard, signature_version=signature)
 
 
 def cache_root(env: Mapping[str, str] | None = None) -> Path:
@@ -128,7 +141,7 @@ def make_client(config: StoreConfig):
     client = boto3.client(
         "s3", endpoint_url=config.endpoint, region_name=config.region,
         aws_access_key_id=config.access_key_id, aws_secret_access_key=config.secret_access_key,
-        config=Config(signature_version="s3v4", s3={"addressing_style": config.addressing},
+        config=Config(signature_version=config.signature, s3={"addressing_style": config.addressing},
                       request_checksum_calculation="when_required", response_checksum_validation="when_required"))
     if config.guard == "oss":
         client.meta.events.register("before-sign.s3.PutObject", _forbid_overwrite)

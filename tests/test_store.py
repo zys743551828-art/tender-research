@@ -7,6 +7,7 @@ import io
 import json
 import shutil
 from pathlib import Path
+from urllib.parse import parse_qs, urlsplit
 
 import pytest
 
@@ -127,6 +128,25 @@ def test_storage_key_and_config(tmp_path):
     assert store.load_config(dict(STORE_ENV, TENDER_STORE_ENDPOINT="https://s3.example.com")).guard == "if-none-match"
     with pytest.raises(store.ConfigError, match="TENDER_STORE_BUCKET"):
         store.load_config({k: v for k, v in STORE_ENV.items() if k != "TENDER_STORE_BUCKET"})
+
+
+@pytest.mark.parametrize("endpoint,signature", [
+    ("https://s3.oss-cn-hangzhou.aliyuncs.com", "s3"),
+    ("https://s3.example.com", "s3v4"),
+])
+def test_provider_presigned_signature(endpoint, signature):
+    pytest.importorskip("boto3")
+    client = store.make_client(store.load_config(dict(STORE_ENV, TENDER_STORE_ENDPOINT=endpoint)))
+    query = parse_qs(urlsplit(client.generate_presigned_url(
+        "get_object", Params={"Bucket": "fixture", "Key": "fixture.pdf"}, ExpiresIn=60)).query)
+    assert ("Signature" in query) == (signature == "s3")
+    assert ("X-Amz-Signature" in query) == (signature == "s3v4")
+
+
+def test_explicit_signature_config():
+    assert store.load_config(dict(STORE_ENV, TENDER_STORE_SIGNATURE="s3v4")).signature == "s3v4"
+    with pytest.raises(store.ConfigError, match="TENDER_STORE_SIGNATURE"):
+        store.load_config(dict(STORE_ENV, TENDER_STORE_SIGNATURE="invalid"))
 
 
 def test_push_is_idempotent(library, fake):

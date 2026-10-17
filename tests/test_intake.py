@@ -137,7 +137,7 @@ def test_happy_path_two_projects(env):
     case = env["datasets"] / "CASE-005_合肥_示例路道路"
     cached = env["cache"] / "CASE-005_合肥_示例路道路"
     assert sorted(p.name for p in case.rglob("*")) == ["README.md", "资料清单.json"]   # 仓库不含原件
-    names = sorted(str(p.relative_to(cached)) for p in cached.rglob("*") if p.is_file())
+    names = sorted(p.relative_to(cached).as_posix() for p in cached.rglob("*") if p.is_file())
     assert names == ["01-招标资料/CASE-005_招标文件_日期未注明.pdf", "01-招标资料/CASE-005_补遗1_日期未注明.pdf",
                      "02-投标文件/CASE-005_技术标_示例甲市政_20260420.pdf", "03-评审结果/CASE-005_成绩来源_20260512.pdf"]
     assert not (env["cache"] / "CASE-006_合肥_示例路道路" / "03-评审结果").exists()
