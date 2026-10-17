@@ -1,0 +1,307 @@
+[
+  {
+    "path": "cache/rapidocr/ch_ppocr_mobile_v2.0_cls_mobile.onnx",
+    "bytes": 585532,
+    "sha256": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c"
+  },
+  {
+    "path": "cache/rapidocr/PP-OCRv6_det_small.onnx",
+    "bytes": 9929594,
+    "sha256": "090f04abcd9d9a7498bc4ebf677e4cb9bdce1fe4197ddb7e529f1ef44e1ff94f"
+  },
+  {
+    "path": "cache/rapidocr/PP-OCRv6_rec_small.onnx",
+    "bytes": 21234383,
+    "sha256": "6f327246b50388f3c176ae304bd95767ea6dc0c9ae92153ef8cbe210b3c14884"
+  },
+  {
+    "path": "mineru/models/MinerU-4_models_onnx/Layout/PP-DocLayoutV2/inference.onnx",
+    "bytes": 213963712,
+    "sha256": "cd540dc296ff3115fe78efa65b68501e6a8dc74b198acc9834a725ffaa095aac"
+  },
+  {
+    "path": "mineru/models/MinerU-4_models_onnx/Layout/PP-DocLayoutV2/inference.yml",
+    "bytes": 1482,
+    "sha256": "93100e0fb2cd76b9d246a853deea85e191d8333b2cfca7be76e82e4c4ebfa819"
+  },
+  {
+    "path": "mineru/models/MinerU-4_models_onnx/MFR/pp_formulanet_plus_m/PP-FormulaNet_plus-M.onnx",
+    "bytes": 591263297,
+    "sha256": "20a32595c2b30282dcd069e6295e9fad96115697beb66acb9b681b814006d193"
+  },
+  {
+    "path": "mineru/models/MinerU-4_models_onnx/MFR/pp_formulanet_plus_m/PP-FormulaNet_plus-M_inference.yml",
+    "bytes": 2244564,
+    "sha256": "87b5f3d7f2b2fe553627d77b37f496608ca150ebd0ef62d362591edca47b5538"
+  },
+  {
+    "path": "mineru/models/MinerU-4_models_onnx/OCR/paddleocr/ch_PP-OCRv6_small_rec_infer.onnx",
+    "bytes": 21159378,
+    "sha256": "5435fd747c9e0efe15a96d0b378d5bd157e9492ed8fd80edf08f30d02fa24634"
+  },
+  {
+    "path": "mineru/models/MinerU-4_models_onnx/OCR/paddleocr/ch_PP-OCRv6_small_rec_inference.yml",
+    "bytes": 150752,
+    "sha256": "c0541b06832948d7d3052e9ac6b572c6063d79ecd800493f4ec14d1b901c16d7"
+  },
+  {
+    "path": "mineru/models/MinerU-4_models_onnx/OCR/paddleocr/ch_PP-OCRv6_tiny_det_infer.onnx",
+    "bytes": 1780590,
+    "sha256": "193bab7a04fca699a6c82e6abb5b81bdb28177f0abd4062552b04908dafb19f8"
+  },
+  {
+    "path": "mineru/models/MinerU-4_models_onnx/OCR/paddleocr/ch_PP-OCRv6_tiny_det_inference.yml",
+    "bytes": 1068,
+    "sha256": "a1fa68ab31e29252936328e728633180908f997023d9eacb81f175e326676554"
+  },
+  {
+    "path": "mineru/models/MinerU-4_models_onnx/OCR/paddleocr/seal_PP-OCRv4_det_infer.onnx",
+    "bytes": 4769171,
+    "sha256": "3e190df84542c2756975febe8f73603b587a23c7f7badfdd3fc8a986540d5bc0"
+  },
+  {
+    "path": "mineru/models/MinerU-4_models_onnx/OCR/paddleocr/seal_PP-OCRv4_det_inference.yml",
+    "bytes": 711,
+    "sha256": "e5b8dd5a727602bdd526d9db152cc767bc761198c453460df7c8f7ae59d2ea3c"
+  },
+  {
+    "path": "mineru/models/MinerU-4_models_onnx/Table/PP-LCNet_x1_0_table_cls.onnx",
+    "bytes": 6776877,
+    "sha256": "c84bf1d79c1c74d534b5b12adb14dd12151c42f7ae3e4be4f1042b830f80b949"
+  },
+  {
+    "path": "mineru/models/MinerU-4_models_onnx/Table/slanet-plus.onnx",
+    "bytes": 7758305,
+    "sha256": "d57a942af6a2f57d6a4a0372573c696a2379bf5857c45e2ac69993f3b334514b"
+  },
+  {
+    "path": "mineru/models/MinerU-4_models_onnx/Table/unet.onnx",
+    "bytes": 8335007,
+    "sha256": "0ea48d3a17e35ef5c2e498a5e799566073234d39b1079ca21d9f4fafe73c6d20"
+  },
+  {
+    "path": "paddlex/official_models/PP-DocBlockLayout/config.json",
+    "bytes": 5684,
+    "sha256": "77b3ed49207f2e36f3973c59c23343b4d26ce993749f15b69452fc04941658d7"
+  },
+  {
+    "path": "paddlex/official_models/PP-DocBlockLayout/inference.json",
+    "bytes": 1081363,
+    "sha256": "abea237f1e53d3dc3bf7ea1321dfebe78552a6070e567dfc94028b622fd575e8"
+  },
+  {
+    "path": "paddlex/official_models/PP-DocBlockLayout/inference.pdiparams",
+    "bytes": 128841073,
+    "sha256": "0ab733dcabfee41517b68b37fde4c696129b88096a93f8b9d8feaa43c27c8942"
+  },
+  {
+    "path": "paddlex/official_models/PP-DocBlockLayout/inference.yml",
+    "bytes": 1619,
+    "sha256": "3d3d5035825b1a2de3348c646e463798d85b9f8c7c5155a81757172261036e1b"
+  },
+  {
+    "path": "paddlex/official_models/PP-DocLayout_plus-L/config.json",
+    "bytes": 6074,
+    "sha256": "adc92346e7ecc5d54dc9ed224c754c9237f56e5d88b0c9208db08cb315d66c09"
+  },
+  {
+    "path": "paddlex/official_models/PP-DocLayout_plus-L/inference.json",
+    "bytes": 1081621,
+    "sha256": "99bd09c0a1b9e88d35c65c305b91711d98055fc94b4a6eecd50da02e04729384"
+  },
+  {
+    "path": "paddlex/official_models/PP-DocLayout_plus-L/inference.pdiparams",
+    "bytes": 129307978,
+    "sha256": "24ca3e2e442164505e250deef59f7ee9a54ea12dd32875c9cd6155d959dc97da"
+  },
+  {
+    "path": "paddlex/official_models/PP-DocLayout_plus-L/inference.yml",
+    "bytes": 1838,
+    "sha256": "d60f782a16f96afb27e8280399899a94c3e9ffc694ffb2f913ea00af1c522f1e"
+  },
+  {
+    "path": "paddlex/official_models/PP-LCNet_x1_0_doc_ori/config.json",
+    "bytes": 2561,
+    "sha256": "e49f6be2fe4034232b05fb80d983a7b9bde4592d4a52812129c9a348057d3147"
+  },
+  {
+    "path": "paddlex/official_models/PP-LCNet_x1_0_doc_ori/inference.json",
+    "bytes": 104441,
+    "sha256": "3580978602f309c3554508dd85d4fe09b73a7e0d80d7f9e63258f5b72c390c69"
+  },
+  {
+    "path": "paddlex/official_models/PP-LCNet_x1_0_doc_ori/inference.pdiparams",
+    "bytes": 6754166,
+    "sha256": "e8d6e7c5d264507e40e58a655779059d616b20d7441ea22047d829eb3931989c"
+  },
+  {
+    "path": "paddlex/official_models/PP-LCNet_x1_0_doc_ori/inference.yml",
+    "bytes": 766,
+    "sha256": "9e195eb729a8173588cd0e8a852c8b373aa606e79e77b4ac7d8346f5426caf26"
+  },
+  {
+    "path": "paddlex/official_models/PP-LCNet_x1_0_table_cls/config.json",
+    "bytes": 2539,
+    "sha256": "3ba2c2754d073d0e91b54fa11bcfff987dead2f94d7a8d3d57c1804071b176ab"
+  },
+  {
+    "path": "paddlex/official_models/PP-LCNet_x1_0_table_cls/inference.json",
+    "bytes": 104441,
+    "sha256": "43401e76ed7b0e34787533016ea4ec9193d5b5964c3f948991fc5b531651ef33"
+  },
+  {
+    "path": "paddlex/official_models/PP-LCNet_x1_0_table_cls/inference.pdiparams",
+    "bytes": 6743918,
+    "sha256": "d0224afd9cfddf22da17407c6c78491baaa1f25922fbb312c9b0d2037c802db0"
+  },
+  {
+    "path": "paddlex/official_models/PP-LCNet_x1_0_table_cls/inference.yml",
+    "bytes": 762,
+    "sha256": "891b1f4b0ccddaf6aca0fce8c8a38e5ab5da9f62fb9adaa7c75e161ee03bb787"
+  },
+  {
+    "path": "paddlex/official_models/PP-LCNet_x1_0_textline_ori/config.json",
+    "bytes": 2487,
+    "sha256": "c1a2576f9713adabdc4a58d9d654fcc9ea93b6efd0e2d3581d5aab409a33f14f"
+  },
+  {
+    "path": "paddlex/official_models/PP-LCNet_x1_0_textline_ori/configuration.json",
+    "bytes": 71,
+    "sha256": "2e1c5a9e1cdae7ee2a28ac27d4e25172029cfa661cbeb4418f6be9998ef02f79"
+  },
+  {
+    "path": "paddlex/official_models/PP-LCNet_x1_0_textline_ori/inference.json",
+    "bytes": 104399,
+    "sha256": "b81929eeaff8e52db0fafb49c9fbfc5bc0572f81641fe0179cc52096323fb4d4"
+  },
+  {
+    "path": "paddlex/official_models/PP-LCNet_x1_0_textline_ori/inference.pdiparams",
+    "bytes": 6743918,
+    "sha256": "0de2bcf996cf553e2b848dd7b1769dafffc6917b1ccdf55c1d8efe7909fbf743"
+  },
+  {
+    "path": "paddlex/official_models/PP-LCNet_x1_0_textline_ori/inference.yml",
+    "bytes": 735,
+    "sha256": "8d5120d0e1a30a9df7ed46aa9119da3796ed066777089d1c1d705f132d5e90f9"
+  },
+  {
+    "path": "paddlex/official_models/PP-OCRv5_server_det/config.json",
+    "bytes": 2871,
+    "sha256": "436bf19010fe3879477e8599a870a0ec8ccd14ca39056805ec4ed20ab318ec04"
+  },
+  {
+    "path": "paddlex/official_models/PP-OCRv5_server_det/inference.json",
+    "bytes": 402480,
+    "sha256": "af5876933d8806a1b50d895867e0781e135cd92ff37381992828fc8d1b842d28"
+  },
+  {
+    "path": "paddlex/official_models/PP-OCRv5_server_det/inference.pdiparams",
+    "bytes": 87932887,
+    "sha256": "183146fe9d9910352f68482f623bcbbb9fa7b9e8fa1463b9ad288cef00524d2d"
+  },
+  {
+    "path": "paddlex/official_models/PP-OCRv5_server_det/inference.yml",
+    "bytes": 903,
+    "sha256": "28fb721efc3634fc8aa677e474b9602cb815a91cf569ef357a7a553d7b3ce685"
+  },
+  {
+    "path": "paddlex/official_models/PP-OCRv5_server_rec/config.json",
+    "bytes": 352253,
+    "sha256": "6a780e213d7a830058ae1b6899c62cc13ca9c1f0f04ae39a27ebb2610fae7c51"
+  },
+  {
+    "path": "paddlex/official_models/PP-OCRv5_server_rec/inference.json",
+    "bytes": 325204,
+    "sha256": "8e6e12e5d42531840310977fffb58165bf889fc5061408c5a8afdb6985f47fcb"
+  },
+  {
+    "path": "paddlex/official_models/PP-OCRv5_server_rec/inference.pdiparams",
+    "bytes": 84390117,
+    "sha256": "63853f062a5f4089befc16f565a68277618e0da5cb45468b49d11079de0ada77"
+  },
+  {
+    "path": "paddlex/official_models/PP-OCRv5_server_rec/inference.yml",
+    "bytes": 148345,
+    "sha256": "2c719dba044c4e2228aef8ff92f5f575394d75d24c16de096a33b7cfd902f66d"
+  },
+  {
+    "path": "paddlex/official_models/RT-DETR-L_wired_table_cell_det/config.json",
+    "bytes": 5695,
+    "sha256": "411eaf19f4cbdfcc5bf4da8aaf15eeb57e7e98213cb721cdb890ec0fa2c1930e"
+  },
+  {
+    "path": "paddlex/official_models/RT-DETR-L_wired_table_cell_det/inference.json",
+    "bytes": 1081363,
+    "sha256": "abea237f1e53d3dc3bf7ea1321dfebe78552a6070e567dfc94028b622fd575e8"
+  },
+  {
+    "path": "paddlex/official_models/RT-DETR-L_wired_table_cell_det/inference.pdiparams",
+    "bytes": 128841073,
+    "sha256": "357321c2845f0a035e8d118622649685a3cdb89d28b09a64e45a5a3df7a9fedc"
+  },
+  {
+    "path": "paddlex/official_models/RT-DETR-L_wired_table_cell_det/inference.yml",
+    "bytes": 1630,
+    "sha256": "edf6d6180f2b9e3e666c744ee5ded38a72c6ef9056cd193250e3e55ba268acef"
+  },
+  {
+    "path": "paddlex/official_models/RT-DETR-L_wireless_table_cell_det/config.json",
+    "bytes": 5698,
+    "sha256": "cf38c6c63c0c5c5b1598c19019cd4d4e6af35a14667c6ec2656aeb215b7e97e1"
+  },
+  {
+    "path": "paddlex/official_models/RT-DETR-L_wireless_table_cell_det/inference.json",
+    "bytes": 1081363,
+    "sha256": "abea237f1e53d3dc3bf7ea1321dfebe78552a6070e567dfc94028b622fd575e8"
+  },
+  {
+    "path": "paddlex/official_models/RT-DETR-L_wireless_table_cell_det/inference.pdiparams",
+    "bytes": 128841073,
+    "sha256": "c0f8c9ea07be8916ece73a8acf807bd21aed3ef11969b319c2dccb2406774c34"
+  },
+  {
+    "path": "paddlex/official_models/RT-DETR-L_wireless_table_cell_det/inference.yml",
+    "bytes": 1633,
+    "sha256": "f2d0f00ea42aacc162f72a35cf54330e392a7d669e9a1b43896d3bd77a512621"
+  },
+  {
+    "path": "paddlex/official_models/SLANet_plus/config.json",
+    "bytes": 4897,
+    "sha256": "de63f29e0096cbfc7dcf772ae7dabc47c3e5348f29e949d9b4dda8875e90ea31"
+  },
+  {
+    "path": "paddlex/official_models/SLANet_plus/inference.json",
+    "bytes": 315660,
+    "sha256": "aba91cd956f4a1648b0f89df94c3cf8acaa066b47e2b689d109843b40d8545a2"
+  },
+  {
+    "path": "paddlex/official_models/SLANet_plus/inference.pdiparams",
+    "bytes": 7666515,
+    "sha256": "012986b0e2bfe90410618bfb4b7cf4fcb6c978caefd84c63c2934f8387b09ab8"
+  },
+  {
+    "path": "paddlex/official_models/SLANet_plus/inference.yml",
+    "bytes": 2035,
+    "sha256": "8a6372d3269a6f112fe13a2da7952a84da6e112c10a3146cbb43de5bd01d19fa"
+  },
+  {
+    "path": "paddlex/official_models/SLANeXt_wired/config.json",
+    "bytes": 4948,
+    "sha256": "1379eb21de34e69e3c5e68492304751db7f139037487c2c62133cdb22233993d"
+  },
+  {
+    "path": "paddlex/official_models/SLANeXt_wired/inference.json",
+    "bytes": 959302,
+    "sha256": "5b872f08e74f628ca1db8405db147e82e6e0c7cb358e101fd01cdafc946632d8"
+  },
+  {
+    "path": "paddlex/official_models/SLANeXt_wired/inference.pdiparams",
+    "bytes": 364771513,
+    "sha256": "ff0362a30f707fa7d27d8453c4396b992fca287377a42d01515bca6eeb3908f5"
+  },
+  {
+    "path": "paddlex/official_models/SLANeXt_wired/inference.yml",
+    "bytes": 2066,
+    "sha256": "abbbd1b4dc6b1a2e9cd34c035514da53a1a6b1ec267292b0b8802025650a33bf"
+  }
+]

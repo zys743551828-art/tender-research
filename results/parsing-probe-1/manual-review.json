@@ -1,0 +1,58 @@
+{
+  "schema": "parsing-probe-manual-review-1",
+  "method": "原页按 2 倍渲染人工查看，与候选保存的文字和 HTML 对照；只核对列明事实，不提供整页字符或表格准确率",
+  "production_enabled": false,
+  "checks": [
+    {
+      "id": "scan-fee-unit",
+      "sample": "PUB-004-p26",
+      "reference": "费率单位为千分号（‰）",
+      "observed": {"pdfium": "只有页脚", "mineru": "费率:%", "rapidocr": "费率：%", "paddle": "费率后另一个单元格识为 %"},
+      "result": "三个候选均有单位错误；不能直接用于费用计算或强制性条款判定"
+    },
+    {
+      "id": "scan-fee-notes",
+      "sample": "PUB-004-p26",
+      "reference": "表下示例金额 15.12 万元、10.8 万元、2.16 万元",
+      "observed": {"mineru": "三个金额均缺失", "rapidocr": "三个金额均读出，第二个示例的说明文字有严重误识别", "paddle": "三个金额与第二个示例说明均读出；收费表的 200 与 500 两列表头被合并"},
+      "result": "结构解析和 OCR 可互补；OCR 文本也需要保存原图与待核验范围"
+    },
+    {
+      "id": "score-column",
+      "sample": "FILE-001-p65",
+      "reference": "施工组织设计所在行的分值单元格仅为 5 分",
+      "observed": {"mineru": "该分值单元格为 5分", "paddle": "分值单元格混入但不限于以下内容、进行评审等正文"},
+      "result": "Paddle 虽有文字锚点命中，合并单元格的行列归属仍错误"
+    },
+    {
+      "id": "labor-row",
+      "sample": "FILE-002-p47",
+      "reference": "普工十个阶段均为 32；挖掘机司机前两阶段为 3，其余八阶段为 0",
+      "observed": {"mineru": "对应表头与两行数字均保留", "paddle": "对应表头与两行数字均保留"},
+      "result": "此处的表格局部关系正确，不外推为整个文件的表格正确"
+    },
+    {
+      "id": "site-land-row",
+      "sample": "FILE-002-p50",
+      "reference": "临时用地表的工人生活区为 350 平方米，机械设备停放区为 250 平方米",
+      "observed": {"mineru": "两组用途与面积在对应 HTML 行保留"},
+      "result": "只验证两行表格；上方地图的空间关系未读懂"
+    },
+    {
+      "id": "gantt-semantics",
+      "sample": "FILE-002-p49",
+      "reference": "网络图的连线和节点、甘特图的绿色工序条均携带信息",
+      "observed": {"pdfium": "仅标题和页脚文字", "mineru": "恢复总工期 120 日历天，但甘特表大量空格，未保留工序条的起止关系", "rapidocr": "读出部分图中文字，存在错字；没有工序依赖或工期条的结构关系"},
+      "result": "图页未完成语义解析，保留原图并标记未覆盖"
+    },
+    {
+      "id": "scoring-weight-row",
+      "sample": "PUB-008-p88",
+      "reference": "工程重点难点保障体系所在行权重为 40%，其后两项各为 30%",
+      "observed": {"mineru": "三项权重及对应内容在三行 HTML 中保留；条款编号有错序"},
+      "result": "权重对应关系局部通过，编号不能不经核对直接用于精确检索"
+    }
+  ],
+  "reference_correction": "初次锚点把原图的普工录为普通工；已按原页改正。推理结果使用原协议 SHA，复核记录另外保留参考协议 SHA 和 reference_changed，未把本轮当独立冻结准确率评测。",
+  "unverified": ["740 页全文候选推理", "跨页表合并", "旋转页", "系统接入与失败恢复", "完整表格金标准", "图形语义", "峰值内存", "串行同负载性能", "正式评分准确率"]
+}

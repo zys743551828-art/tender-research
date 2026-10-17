@@ -1,0 +1,151 @@
+{
+  "schema": "parsing-probe-1",
+  "scope": "10 selected physical pages across 4 documents; not full-document accuracy",
+  "reference_method": "anchors transcribed from rendered original before candidate inference; whitespace and Unicode NFKC normalization only",
+  "render_scale": 2,
+  "samples": [
+    {
+      "id": "FILE-001-p65",
+      "file_id": "FILE-001",
+      "source_path": "CASE-001_广德_污水管网改造及新建/01-招标资料/CASE-001_招标文件_20260820.pdf",
+      "source_sha256": "0ac3fc35e412cd8aeec7614f28c41743331dedd5d22be988feab553296006e25",
+      "physical_page": 65,
+      "category": "scoring_table",
+      "anchors": [
+        "详细评审标准",
+        "施工组织设计",
+        "4.5"
+      ],
+      "structure_review": "manual_required",
+      "figure_semantics_review": "not_applicable"
+    },
+    {
+      "id": "FILE-001-p103",
+      "file_id": "FILE-001",
+      "source_path": "CASE-001_广德_污水管网改造及新建/01-招标资料/CASE-001_招标文件_20260820.pdf",
+      "source_sha256": "0ac3fc35e412cd8aeec7614f28c41743331dedd5d22be988feab553296006e25",
+      "physical_page": 103,
+      "category": "native_text",
+      "anchors": [],
+      "structure_review": "manual_required",
+      "figure_semantics_review": "not_applicable"
+    },
+    {
+      "id": "FILE-002-p8",
+      "file_id": "FILE-002",
+      "source_path": "CASE-001_广德_污水管网改造及新建/02-投标文件/CASE-001_技术标_安徽秉一市政_20260910.pdf",
+      "source_sha256": "5027159571bf015e6c0d01a8f782a868ad382a08c24520187f7d23fb2f23779f",
+      "physical_page": 8,
+      "category": "mixed_layout",
+      "anchors": [],
+      "structure_review": "manual_required",
+      "figure_semantics_review": "manual_required"
+    },
+    {
+      "id": "FILE-002-p47",
+      "file_id": "FILE-002",
+      "source_path": "CASE-001_广德_污水管网改造及新建/02-投标文件/CASE-001_技术标_安徽秉一市政_20260910.pdf",
+      "source_sha256": "5027159571bf015e6c0d01a8f782a868ad382a08c24520187f7d23fb2f23779f",
+      "physical_page": 47,
+      "category": "equipment_labor_table",
+      "anchors": [
+        "劳动力计划表",
+        "全站仪",
+        "普工",
+        "挖掘机司机"
+      ],
+      "structure_review": "manual_required",
+      "figure_semantics_review": "not_applicable"
+    },
+    {
+      "id": "FILE-002-p49",
+      "file_id": "FILE-002",
+      "source_path": "CASE-001_广德_污水管网改造及新建/02-投标文件/CASE-001_技术标_安徽秉一市政_20260910.pdf",
+      "source_sha256": "5027159571bf015e6c0d01a8f782a868ad382a08c24520187f7d23fb2f23779f",
+      "physical_page": 49,
+      "category": "network_gantt",
+      "anchors": [
+        "计划开工日期",
+        "120日历天"
+      ],
+      "structure_review": "manual_required",
+      "figure_semantics_review": "manual_required"
+    },
+    {
+      "id": "FILE-002-p50",
+      "file_id": "FILE-002",
+      "source_path": "CASE-001_广德_污水管网改造及新建/02-投标文件/CASE-001_技术标_安徽秉一市政_20260910.pdf",
+      "source_sha256": "5027159571bf015e6c0d01a8f782a868ad382a08c24520187f7d23fb2f23779f",
+      "physical_page": 50,
+      "category": "site_plan_table",
+      "anchors": [
+        "施工总平面图",
+        "临时用地表",
+        "350",
+        "250"
+      ],
+      "structure_review": "manual_required",
+      "figure_semantics_review": "manual_required"
+    },
+    {
+      "id": "PUB-004-p26",
+      "file_id": "PUB-004",
+      "source_path": "公开规则资料/2026BFFGZ51067/2026BFFGZ51067_招标文件_20260904.pdf",
+      "source_sha256": "24c1c81ec1ca7e9449dd00ca2a136cfcf44e6ccd97e57acb1d8197e67191912b",
+      "physical_page": 26,
+      "category": "scanned_fee_table",
+      "anchors": [
+        "造价咨询工作服务费收费标准",
+        "15.12万元",
+        "10.8万元",
+        "2.16万元"
+      ],
+      "structure_review": "manual_required",
+      "figure_semantics_review": "not_applicable"
+    },
+    {
+      "id": "PUB-004-p149",
+      "file_id": "PUB-004",
+      "source_path": "公开规则资料/2026BFFGZ51067/2026BFFGZ51067_招标文件_20260904.pdf",
+      "source_sha256": "24c1c81ec1ca7e9449dd00ca2a136cfcf44e6ccd97e57acb1d8197e67191912b",
+      "physical_page": 149,
+      "category": "sparse_title",
+      "anchors": [
+        "第六章",
+        "图纸",
+        "另册"
+      ],
+      "structure_review": "manual_required",
+      "figure_semantics_review": "not_applicable"
+    },
+    {
+      "id": "PUB-008-p42",
+      "file_id": "PUB-008",
+      "source_path": "公开规则资料/2026BFJGZ50917/2026BFJGZ50917_招标文件_202608日期未注明.pdf",
+      "source_sha256": "c3af9ea9e24de0925e5c51161be1c7feb1fd6eb11783e84c395ac4454d45523d",
+      "physical_page": 42,
+      "category": "text_photo",
+      "anchors": [
+        "围挡高度为3m",
+        "效果图"
+      ],
+      "structure_review": "manual_required",
+      "figure_semantics_review": "manual_required"
+    },
+    {
+      "id": "PUB-008-p88",
+      "file_id": "PUB-008",
+      "source_path": "公开规则资料/2026BFJGZ50917/2026BFJGZ50917_招标文件_202608日期未注明.pdf",
+      "source_sha256": "c3af9ea9e24de0925e5c51161be1c7feb1fd6eb11783e84c395ac4454d45523d",
+      "physical_page": 88,
+      "category": "merged_scoring_table",
+      "anchors": [
+        "40%",
+        "30%",
+        "工程重点难点保障体系"
+      ],
+      "structure_review": "manual_required",
+      "figure_semantics_review": "not_applicable"
+    }
+  ]
+}

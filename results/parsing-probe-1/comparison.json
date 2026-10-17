@@ -1,0 +1,1027 @@
+{
+  "schema": "parsing-probe-comparison-1",
+  "runs": [
+    {
+      "engine": "pdfium",
+      "run_summary_sha256": "1d58fb962852612d23b9fd6c0adc9dcafa5e85e65637fd54fbd5a3a5d8521324",
+      "inference_protocol_sha256": "3767b16c0281ce2a7284425b7aad06f20bf48cd16a4d810dac38a3e07aab2ffb",
+      "reference_protocol_sha256": "3767b16c0281ce2a7284425b7aad06f20bf48cd16a4d810dac38a3e07aab2ffb",
+      "reference_changed": false,
+      "scope": "10 selected physical pages across 4 documents; not full-document accuracy",
+      "parsed_pages": 10,
+      "expected_pages": 10,
+      "recorded_pages": 10,
+      "anchor_hits": 20,
+      "evaluated_anchors": 25,
+      "expected_anchors": 25,
+      "initialization_seconds": 0.118,
+      "total_seconds": 0.244,
+      "samples": [
+        {
+          "id": "FILE-001-p65",
+          "status": "parsed",
+          "seconds": 0.012,
+          "anchors": [
+            {
+              "expected": "详细评审标准",
+              "found": true
+            },
+            {
+              "expected": "施工组织设计",
+              "found": true
+            },
+            {
+              "expected": "4.5",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "c9315fc66f330e49973923e54fdce1090a53892166135cac4a72adbf6f7efe43",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "FILE-001-p103",
+          "status": "parsed",
+          "seconds": 0.008,
+          "anchors": [],
+          "artifact_sha256": "1999416eb97084e4caeb071dd4fa030457f01fea9212d3ed0031ed36569414a5",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "FILE-002-p8",
+          "status": "parsed",
+          "seconds": 0.005,
+          "anchors": [],
+          "artifact_sha256": "587dd5ea2198310e38dd99f65d97120aed8370f76a0bbfd4c073c110f78c8213",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "manual_required"
+        },
+        {
+          "id": "FILE-002-p47",
+          "status": "parsed",
+          "seconds": 0.008,
+          "anchors": [
+            {
+              "expected": "劳动力计划表",
+              "found": true
+            },
+            {
+              "expected": "全站仪",
+              "found": true
+            },
+            {
+              "expected": "普工",
+              "found": true
+            },
+            {
+              "expected": "挖掘机司机",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "82537247b01ab0ee0b27f3fd7c28bca1b8abf8777ec4a621ba5b4a86730ee17b",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "FILE-002-p49",
+          "status": "parsed",
+          "seconds": 0.004,
+          "anchors": [
+            {
+              "expected": "计划开工日期",
+              "found": true
+            },
+            {
+              "expected": "120日历天",
+              "found": false
+            }
+          ],
+          "artifact_sha256": "3fd5dee2fd386cb79a7b48941ab99e2add11918b9ec1cd2b6f26f42d04e20a8e",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "manual_required"
+        },
+        {
+          "id": "FILE-002-p50",
+          "status": "parsed",
+          "seconds": 0.006,
+          "anchors": [
+            {
+              "expected": "施工总平面图",
+              "found": true
+            },
+            {
+              "expected": "临时用地表",
+              "found": true
+            },
+            {
+              "expected": "350",
+              "found": true
+            },
+            {
+              "expected": "250",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "6ed22b1b0cb8827e173a6e7963d6614910dcf0f37b9d336d7ac1e8a9a61db9e3",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "manual_required"
+        },
+        {
+          "id": "PUB-004-p26",
+          "status": "parsed",
+          "seconds": 0.002,
+          "anchors": [
+            {
+              "expected": "造价咨询工作服务费收费标准",
+              "found": false
+            },
+            {
+              "expected": "15.12万元",
+              "found": false
+            },
+            {
+              "expected": "10.8万元",
+              "found": false
+            },
+            {
+              "expected": "2.16万元",
+              "found": false
+            }
+          ],
+          "artifact_sha256": "2850e9ff8f2d6621855052a8896c7f2ea93c9f5b92a5ca16cff9a4ec44b4cea5",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "PUB-004-p149",
+          "status": "parsed",
+          "seconds": 0.005,
+          "anchors": [
+            {
+              "expected": "第六章",
+              "found": true
+            },
+            {
+              "expected": "图纸",
+              "found": true
+            },
+            {
+              "expected": "另册",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "6dd7a0e2a1e319499ab935f1cabc8c95aca84be30b6abf3e8175af0e716bd75a",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "PUB-008-p42",
+          "status": "parsed",
+          "seconds": 0.004,
+          "anchors": [
+            {
+              "expected": "围挡高度为3m",
+              "found": true
+            },
+            {
+              "expected": "效果图",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "1a3b2b05f4346fc9b67c981f4df6fe6b2337fb2a3497f97386d322acde1367d0",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "manual_required"
+        },
+        {
+          "id": "PUB-008-p88",
+          "status": "parsed",
+          "seconds": 0.006,
+          "anchors": [
+            {
+              "expected": "40%",
+              "found": true
+            },
+            {
+              "expected": "30%",
+              "found": true
+            },
+            {
+              "expected": "工程重点难点保障体系",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "b99fda7c1bc9afdcc3cb745510d2f77530ff67084a867cf1907925318bdcba92",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        }
+      ]
+    },
+    {
+      "engine": "mineru",
+      "run_summary_sha256": "d1ae3b88ed62607f935f948348caff7e6fddc094462552f0e9ca75598f449108",
+      "inference_protocol_sha256": "3767b16c0281ce2a7284425b7aad06f20bf48cd16a4d810dac38a3e07aab2ffb",
+      "reference_protocol_sha256": "3767b16c0281ce2a7284425b7aad06f20bf48cd16a4d810dac38a3e07aab2ffb",
+      "reference_changed": false,
+      "scope": "10 selected physical pages across 4 documents; not full-document accuracy",
+      "parsed_pages": 10,
+      "expected_pages": 10,
+      "recorded_pages": 10,
+      "anchor_hits": 22,
+      "evaluated_anchors": 25,
+      "expected_anchors": 25,
+      "initialization_seconds": 0.0,
+      "total_seconds": 70.952,
+      "samples": [
+        {
+          "id": "FILE-001-p65",
+          "status": "parsed",
+          "seconds": 6.154,
+          "anchors": [
+            {
+              "expected": "详细评审标准",
+              "found": true
+            },
+            {
+              "expected": "施工组织设计",
+              "found": true
+            },
+            {
+              "expected": "4.5",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "12e72c9a206b01477f4627a04227d7fd8e03e1c8729a4953de4a5736277f7ac9",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "FILE-001-p103",
+          "status": "parsed",
+          "seconds": 4.471,
+          "anchors": [],
+          "artifact_sha256": "fbe7b8476e88436d653fa2c67254a5022fae82d5ff2d5a34d492b73aed726af8",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "FILE-002-p8",
+          "status": "parsed",
+          "seconds": 7.664,
+          "anchors": [],
+          "artifact_sha256": "f524cd8fcc4f8a783a5222b678df185436eafcd7a70cfd99b1dfa458ae637fde",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "manual_required"
+        },
+        {
+          "id": "FILE-002-p47",
+          "status": "parsed",
+          "seconds": 9.124,
+          "anchors": [
+            {
+              "expected": "劳动力计划表",
+              "found": true
+            },
+            {
+              "expected": "全站仪",
+              "found": true
+            },
+            {
+              "expected": "普工",
+              "found": true
+            },
+            {
+              "expected": "挖掘机司机",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "050efd7fe5433c81a28a29d4443437226ea221bd6761ac2592115e8b5d2ccb84",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "FILE-002-p49",
+          "status": "parsed",
+          "seconds": 8.619,
+          "anchors": [
+            {
+              "expected": "计划开工日期",
+              "found": true
+            },
+            {
+              "expected": "120日历天",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "063a16ef839a4996e0dab51ff55e91a18e558b1c4b58bfcc80a1a8c5770d57b0",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "manual_required"
+        },
+        {
+          "id": "FILE-002-p50",
+          "status": "parsed",
+          "seconds": 5.289,
+          "anchors": [
+            {
+              "expected": "施工总平面图",
+              "found": true
+            },
+            {
+              "expected": "临时用地表",
+              "found": true
+            },
+            {
+              "expected": "350",
+              "found": true
+            },
+            {
+              "expected": "250",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "56b90cab29a41a16e2a311f180afc659e488cd4818d02da90260afb6cad413ba",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "manual_required"
+        },
+        {
+          "id": "PUB-004-p26",
+          "status": "parsed",
+          "seconds": 12.722,
+          "anchors": [
+            {
+              "expected": "造价咨询工作服务费收费标准",
+              "found": true
+            },
+            {
+              "expected": "15.12万元",
+              "found": false
+            },
+            {
+              "expected": "10.8万元",
+              "found": false
+            },
+            {
+              "expected": "2.16万元",
+              "found": false
+            }
+          ],
+          "artifact_sha256": "1c6902cb7c232ba1ca4f79cb8276a661c0fd99b3f5dc69adc6e274ccc6a16610",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "PUB-004-p149",
+          "status": "parsed",
+          "seconds": 5.179,
+          "anchors": [
+            {
+              "expected": "第六章",
+              "found": true
+            },
+            {
+              "expected": "图纸",
+              "found": true
+            },
+            {
+              "expected": "另册",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "c20f1f0b8dcadde3c7552ded64fe1e7bae07bea6e79d8ccab227b33880436567",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "PUB-008-p42",
+          "status": "parsed",
+          "seconds": 6.082,
+          "anchors": [
+            {
+              "expected": "围挡高度为3m",
+              "found": true
+            },
+            {
+              "expected": "效果图",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "e46a88cda0719c5a4391bac9fbdbbd648b450fb754f33405e80a1b4a8caa9fa7",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "manual_required"
+        },
+        {
+          "id": "PUB-008-p88",
+          "status": "parsed",
+          "seconds": 5.481,
+          "anchors": [
+            {
+              "expected": "40%",
+              "found": true
+            },
+            {
+              "expected": "30%",
+              "found": true
+            },
+            {
+              "expected": "工程重点难点保障体系",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "9cea478711cdde202b9eaae8e54c6c8aa877221bd9cd3d55a35226dc9a58968c",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        }
+      ]
+    },
+    {
+      "engine": "rapidocr",
+      "run_summary_sha256": "759f259fbbfc21a1b1361d32ebf8a430318b0b265fac8946146a7cfdb601fed6",
+      "inference_protocol_sha256": "3767b16c0281ce2a7284425b7aad06f20bf48cd16a4d810dac38a3e07aab2ffb",
+      "reference_protocol_sha256": "3767b16c0281ce2a7284425b7aad06f20bf48cd16a4d810dac38a3e07aab2ffb",
+      "reference_changed": false,
+      "scope": "10 selected physical pages across 4 documents; not full-document accuracy",
+      "parsed_pages": 10,
+      "expected_pages": 10,
+      "recorded_pages": 10,
+      "anchor_hits": 25,
+      "evaluated_anchors": 25,
+      "expected_anchors": 25,
+      "initialization_seconds": 1.362,
+      "total_seconds": 15.51,
+      "samples": [
+        {
+          "id": "FILE-001-p65",
+          "status": "parsed",
+          "seconds": 2.034,
+          "anchors": [
+            {
+              "expected": "详细评审标准",
+              "found": true
+            },
+            {
+              "expected": "施工组织设计",
+              "found": true
+            },
+            {
+              "expected": "4.5",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "cef87a17efc6e8324d47987881c01c35c2c5497701ae7042907bd3b9e0b9c9d9",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "FILE-001-p103",
+          "status": "parsed",
+          "seconds": 1.488,
+          "anchors": [],
+          "artifact_sha256": "a84ac3fbe37aa1d8cecfcfbfffbbf71f8cbf3a65f33eeb0a7d17503189a853d8",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "FILE-002-p8",
+          "status": "parsed",
+          "seconds": 1.388,
+          "anchors": [],
+          "artifact_sha256": "1af7611f20696953e2045da83ca010a1339ca8a9c72809c48d6d4718b656e1df",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "manual_required"
+        },
+        {
+          "id": "FILE-002-p47",
+          "status": "parsed",
+          "seconds": 2.022,
+          "anchors": [
+            {
+              "expected": "劳动力计划表",
+              "found": true
+            },
+            {
+              "expected": "全站仪",
+              "found": true
+            },
+            {
+              "expected": "普工",
+              "found": true
+            },
+            {
+              "expected": "挖掘机司机",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "3b86a6fab076d470d168e94e54ea4d458d030b58b352e8a92ec5d5b6be2f138d",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "FILE-002-p49",
+          "status": "parsed",
+          "seconds": 0.948,
+          "anchors": [
+            {
+              "expected": "计划开工日期",
+              "found": true
+            },
+            {
+              "expected": "120日历天",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "beaf9ad806b6f17fa830a756daa27ca9f8236e712eacdbf0e932e748e106d97b",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "manual_required"
+        },
+        {
+          "id": "FILE-002-p50",
+          "status": "parsed",
+          "seconds": 1.657,
+          "anchors": [
+            {
+              "expected": "施工总平面图",
+              "found": true
+            },
+            {
+              "expected": "临时用地表",
+              "found": true
+            },
+            {
+              "expected": "350",
+              "found": true
+            },
+            {
+              "expected": "250",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "9a7b4c819b2f7929a3b4e624670d23373dd895717839a9f06a5990b416623305",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "manual_required"
+        },
+        {
+          "id": "PUB-004-p26",
+          "status": "parsed",
+          "seconds": 1.254,
+          "anchors": [
+            {
+              "expected": "造价咨询工作服务费收费标准",
+              "found": true
+            },
+            {
+              "expected": "15.12万元",
+              "found": true
+            },
+            {
+              "expected": "10.8万元",
+              "found": true
+            },
+            {
+              "expected": "2.16万元",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "0f879ad6970c89ab1e5207c910f7747ac09c828030d6fa815f672bd602be8392",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "PUB-004-p149",
+          "status": "parsed",
+          "seconds": 0.402,
+          "anchors": [
+            {
+              "expected": "第六章",
+              "found": true
+            },
+            {
+              "expected": "图纸",
+              "found": true
+            },
+            {
+              "expected": "另册",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "b2dea39eadc5b74d4de38d373e3e80d2f218aeada6bb1471f901a69502f8e8c2",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "PUB-008-p42",
+          "status": "parsed",
+          "seconds": 0.849,
+          "anchors": [
+            {
+              "expected": "围挡高度为3m",
+              "found": true
+            },
+            {
+              "expected": "效果图",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "6be30d1ddb8c78f7888901a9ea52d732c685533f3f50a342f64d6dfc13d6b0da",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "manual_required"
+        },
+        {
+          "id": "PUB-008-p88",
+          "status": "parsed",
+          "seconds": 1.969,
+          "anchors": [
+            {
+              "expected": "40%",
+              "found": true
+            },
+            {
+              "expected": "30%",
+              "found": true
+            },
+            {
+              "expected": "工程重点难点保障体系",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "5c9ba9182f22e4838c20a344f243dbe4411867cdce4b6826b89ea7b68fc664ce",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        }
+      ]
+    },
+    {
+      "engine": "paddle",
+      "run_summary_sha256": "1118a37b6ac9ca5a2f3a5a28263443f27bf066e99723b493c403896c4ff05c6e",
+      "inference_protocol_sha256": "e9cc5c63a87f6f7729ac1acc49e521aa5e6cba2078a4c0b35e54b30a2cd4bca3",
+      "reference_protocol_sha256": "3767b16c0281ce2a7284425b7aad06f20bf48cd16a4d810dac38a3e07aab2ffb",
+      "reference_changed": true,
+      "scope": "10 selected physical pages across 4 documents; not full-document accuracy",
+      "parsed_pages": 10,
+      "expected_pages": 10,
+      "recorded_pages": 10,
+      "anchor_hits": 25,
+      "evaluated_anchors": 25,
+      "expected_anchors": 25,
+      "initialization_seconds": 5.633,
+      "total_seconds": 442.938,
+      "samples": [
+        {
+          "id": "FILE-001-p65",
+          "status": "parsed",
+          "seconds": 48.983,
+          "anchors": [
+            {
+              "expected": "详细评审标准",
+              "found": true
+            },
+            {
+              "expected": "施工组织设计",
+              "found": true
+            },
+            {
+              "expected": "4.5",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "a602b6c24db200da4c8e55f28f9c360ddf9505a87f44a1fd66f3236cb576ab88",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "FILE-001-p103",
+          "status": "parsed",
+          "seconds": 42.186,
+          "anchors": [],
+          "artifact_sha256": "4579297fdea7140884604cbd1a739e977b80ae4c750f00a14e9302f3bf2b35df",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "FILE-002-p8",
+          "status": "parsed",
+          "seconds": 40.667,
+          "anchors": [],
+          "artifact_sha256": "befe159ee2eb99b753e0d1becc43e68a3cf7bdda9027753519d3f11e50938a29",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "manual_required"
+        },
+        {
+          "id": "FILE-002-p47",
+          "status": "parsed",
+          "seconds": 74.45,
+          "anchors": [
+            {
+              "expected": "劳动力计划表",
+              "found": true
+            },
+            {
+              "expected": "全站仪",
+              "found": true
+            },
+            {
+              "expected": "普工",
+              "found": true
+            },
+            {
+              "expected": "挖掘机司机",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "74be784291da8263744d7fb494b57dc5c01e1fe2b3d491d0933952cc9b52e6f5",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "FILE-002-p49",
+          "status": "parsed",
+          "seconds": 52.748,
+          "anchors": [
+            {
+              "expected": "计划开工日期",
+              "found": true
+            },
+            {
+              "expected": "120日历天",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "1b8ca95af6d691cd2e89f6d4411e871046f3e4806c9e38d6df7bdc8e2b2169bb",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "manual_required"
+        },
+        {
+          "id": "FILE-002-p50",
+          "status": "parsed",
+          "seconds": 54.09,
+          "anchors": [
+            {
+              "expected": "施工总平面图",
+              "found": true
+            },
+            {
+              "expected": "临时用地表",
+              "found": true
+            },
+            {
+              "expected": "350",
+              "found": true
+            },
+            {
+              "expected": "250",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "fb265acdc780d776738056a2d7ef62fda14d162ae748d5970fbd0dee83d05a5e",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "manual_required"
+        },
+        {
+          "id": "PUB-004-p26",
+          "status": "parsed",
+          "seconds": 38.132,
+          "anchors": [
+            {
+              "expected": "造价咨询工作服务费收费标准",
+              "found": true
+            },
+            {
+              "expected": "15.12万元",
+              "found": true
+            },
+            {
+              "expected": "10.8万元",
+              "found": true
+            },
+            {
+              "expected": "2.16万元",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "8dc10eb949d6cd1133bd066c813f04d7a82411236d687844d9399bb506789f77",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "PUB-004-p149",
+          "status": "parsed",
+          "seconds": 18.584,
+          "anchors": [
+            {
+              "expected": "第六章",
+              "found": true
+            },
+            {
+              "expected": "图纸",
+              "found": true
+            },
+            {
+              "expected": "另册",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "6519f761a6feef486a2a0dcf092d8b6dad52f298155ff5e46d81c1886af762b0",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "PUB-008-p42",
+          "status": "parsed",
+          "seconds": 26.46,
+          "anchors": [
+            {
+              "expected": "围挡高度为3m",
+              "found": true
+            },
+            {
+              "expected": "效果图",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "20e3674b3794485bcdca93c002b898def7274f91f687b2f76a3f1ac9f1003656",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "manual_required"
+        },
+        {
+          "id": "PUB-008-p88",
+          "status": "parsed",
+          "seconds": 40.925,
+          "anchors": [
+            {
+              "expected": "40%",
+              "found": true
+            },
+            {
+              "expected": "30%",
+              "found": true
+            },
+            {
+              "expected": "工程重点难点保障体系",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "fa2620084886841cb7891655bfc0b897221a487a18644064be3c1e2ffbc1aa1c",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        }
+      ]
+    },
+    {
+      "engine": "docling",
+      "run_summary_sha256": "4f7aa0fe9563793b3795e2482ca38d97edb2260345871b5e87e44c69ec853cfa",
+      "inference_protocol_sha256": "e9cc5c63a87f6f7729ac1acc49e521aa5e6cba2078a4c0b35e54b30a2cd4bca3",
+      "reference_protocol_sha256": "3767b16c0281ce2a7284425b7aad06f20bf48cd16a4d810dac38a3e07aab2ffb",
+      "reference_changed": true,
+      "scope": "10 selected physical pages across 4 documents; not full-document accuracy",
+      "parsed_pages": 0,
+      "expected_pages": 10,
+      "recorded_pages": 10,
+      "anchor_hits": 0,
+      "evaluated_anchors": 0,
+      "expected_anchors": 25,
+      "initialization_seconds": 38.693,
+      "total_seconds": 109.456,
+      "samples": [
+        {
+          "id": "FILE-001-p65",
+          "status": "failed",
+          "seconds": 11.769,
+          "anchors": [],
+          "artifact_sha256": null,
+          "error": "LocalEntryNotFoundError: Got: ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on the local disk. Please check your internet connection and try again.",
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "FILE-001-p103",
+          "status": "failed",
+          "seconds": 8.315,
+          "anchors": [],
+          "artifact_sha256": null,
+          "error": "LocalEntryNotFoundError: Got: ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on the local disk. Please check your internet connection and try again.",
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "FILE-002-p8",
+          "status": "failed",
+          "seconds": 8.282,
+          "anchors": [],
+          "artifact_sha256": null,
+          "error": "LocalEntryNotFoundError: Got: ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on the local disk. Please check your internet connection and try again.",
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "manual_required"
+        },
+        {
+          "id": "FILE-002-p47",
+          "status": "failed",
+          "seconds": 8.616,
+          "anchors": [],
+          "artifact_sha256": null,
+          "error": "LocalEntryNotFoundError: Got: ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on the local disk. Please check your internet connection and try again.",
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "FILE-002-p49",
+          "status": "failed",
+          "seconds": 5.134,
+          "anchors": [],
+          "artifact_sha256": null,
+          "error": "LocalEntryNotFoundError: Got: ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on the local disk. Please check your internet connection and try again.",
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "manual_required"
+        },
+        {
+          "id": "FILE-002-p50",
+          "status": "failed",
+          "seconds": 5.14,
+          "anchors": [],
+          "artifact_sha256": null,
+          "error": "LocalEntryNotFoundError: Got: ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on the local disk. Please check your internet connection and try again.",
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "manual_required"
+        },
+        {
+          "id": "PUB-004-p26",
+          "status": "failed",
+          "seconds": 5.092,
+          "anchors": [],
+          "artifact_sha256": null,
+          "error": "LocalEntryNotFoundError: Got: ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on the local disk. Please check your internet connection and try again.",
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "PUB-004-p149",
+          "status": "failed",
+          "seconds": 5.102,
+          "anchors": [],
+          "artifact_sha256": null,
+          "error": "LocalEntryNotFoundError: Got: ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on the local disk. Please check your internet connection and try again.",
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "PUB-008-p42",
+          "status": "failed",
+          "seconds": 5.108,
+          "anchors": [],
+          "artifact_sha256": null,
+          "error": "LocalEntryNotFoundError: Got: ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on the local disk. Please check your internet connection and try again.",
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "manual_required"
+        },
+        {
+          "id": "PUB-008-p88",
+          "status": "failed",
+          "seconds": 8.145,
+          "anchors": [],
+          "artifact_sha256": null,
+          "error": "LocalEntryNotFoundError: Got: ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on the local disk. Please check your internet connection and try again.",
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        }
+      ]
+    }
+  ]
+}

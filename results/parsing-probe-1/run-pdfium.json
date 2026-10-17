@@ -1,0 +1,297 @@
+{
+  "schema": "parsing-probe-result-1",
+  "engine": "pdfium",
+  "protocol_sha256": "3767b16c0281ce2a7284425b7aad06f20bf48cd16a4d810dac38a3e07aab2ffb",
+  "initialization_seconds": 0.118,
+  "initialization_error": null,
+  "started_at": "2026-10-17T14:44:12.135927+00:00",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "cache": "D:\\workspace\\tender\\tender-research\\.runtime\\parsing",
+  "packages": {
+    "annotated-types": "0.8.0",
+    "boto3": "1.40.76",
+    "botocore": "1.40.76",
+    "cffi": "2.1.1",
+    "charset-normalizer": "3.5.2",
+    "colorama": "0.4.6",
+    "cryptography": "50.0.2",
+    "iniconfig": "2.3.1",
+    "jmespath": "1.1.0",
+    "numpy": "2.3.5",
+    "packaging": "26.3",
+    "pdfminer.six": "20251230",
+    "pdfplumber": "0.11.9",
+    "pillow": "13.0.0",
+    "pip": "26.2.1",
+    "pluggy": "1.7.0",
+    "pycparser": "3.11",
+    "pydantic": "2.13.5",
+    "pydantic_core": "2.46.5",
+    "Pygments": "2.21.0",
+    "pypdf": "6.10.0",
+    "pypdfium2": "5.13.0",
+    "pytest": "9.1.1",
+    "python-dateutil": "2.9.0.post0",
+    "ruff": "0.17.1",
+    "s3transfer": "0.14.0",
+    "setuptools": "65.5.0",
+    "six": "1.17.0",
+    "tender-research": "1.0.0",
+    "typing_extensions": "4.16.0",
+    "typing-inspection": "0.4.4",
+    "urllib3": "2.8.0"
+  },
+  "scope": "10 selected physical pages across 4 documents; not full-document accuracy",
+  "samples": [
+    {
+      "id": "FILE-001-p65",
+      "physical_page": 65,
+      "status": "parsed",
+      "structure_review": "not_evaluated",
+      "figure_semantics_review": "not_applicable",
+      "chars": 642,
+      "details": {
+        "table_structure": "unsupported",
+        "figure_semantics": "unsupported"
+      },
+      "anchors": [
+        {
+          "expected": "详细评审标准",
+          "found": true
+        },
+        {
+          "expected": "施工组织设计",
+          "found": true
+        },
+        {
+          "expected": "4.5",
+          "found": true
+        }
+      ],
+      "seconds": 0.012
+    },
+    {
+      "id": "FILE-001-p103",
+      "physical_page": 103,
+      "status": "parsed",
+      "structure_review": "not_evaluated",
+      "figure_semantics_review": "not_applicable",
+      "chars": 703,
+      "details": {
+        "table_structure": "unsupported",
+        "figure_semantics": "unsupported"
+      },
+      "anchors": [],
+      "seconds": 0.008
+    },
+    {
+      "id": "FILE-002-p8",
+      "physical_page": 8,
+      "status": "parsed",
+      "structure_review": "not_evaluated",
+      "figure_semantics_review": "manual_required",
+      "chars": 894,
+      "details": {
+        "table_structure": "unsupported",
+        "figure_semantics": "unsupported"
+      },
+      "anchors": [],
+      "seconds": 0.005
+    },
+    {
+      "id": "FILE-002-p47",
+      "physical_page": 47,
+      "status": "parsed",
+      "structure_review": "not_evaluated",
+      "figure_semantics_review": "not_applicable",
+      "chars": 1448,
+      "details": {
+        "table_structure": "unsupported",
+        "figure_semantics": "unsupported"
+      },
+      "anchors": [
+        {
+          "expected": "劳动力计划表",
+          "found": true
+        },
+        {
+          "expected": "全站仪",
+          "found": true
+        },
+        {
+          "expected": "普工",
+          "found": true
+        },
+        {
+          "expected": "挖掘机司机",
+          "found": true
+        }
+      ],
+      "seconds": 0.008
+    },
+    {
+      "id": "FILE-002-p49",
+      "physical_page": 49,
+      "status": "parsed",
+      "structure_review": "not_evaluated",
+      "figure_semantics_review": "manual_required",
+      "chars": 37,
+      "details": {
+        "table_structure": "unsupported",
+        "figure_semantics": "unsupported"
+      },
+      "anchors": [
+        {
+          "expected": "计划开工日期",
+          "found": true
+        },
+        {
+          "expected": "120日历天",
+          "found": false
+        }
+      ],
+      "seconds": 0.004
+    },
+    {
+      "id": "FILE-002-p50",
+      "physical_page": 50,
+      "status": "parsed",
+      "structure_review": "not_evaluated",
+      "figure_semantics_review": "manual_required",
+      "chars": 1047,
+      "details": {
+        "table_structure": "unsupported",
+        "figure_semantics": "unsupported"
+      },
+      "anchors": [
+        {
+          "expected": "施工总平面图",
+          "found": true
+        },
+        {
+          "expected": "临时用地表",
+          "found": true
+        },
+        {
+          "expected": "350",
+          "found": true
+        },
+        {
+          "expected": "250",
+          "found": true
+        }
+      ],
+      "seconds": 0.006
+    },
+    {
+      "id": "PUB-004-p26",
+      "physical_page": 26,
+      "status": "parsed",
+      "structure_review": "not_evaluated",
+      "figure_semantics_review": "not_applicable",
+      "chars": 4,
+      "details": {
+        "table_structure": "unsupported",
+        "figure_semantics": "unsupported"
+      },
+      "anchors": [
+        {
+          "expected": "造价咨询工作服务费收费标准",
+          "found": false
+        },
+        {
+          "expected": "15.12万元",
+          "found": false
+        },
+        {
+          "expected": "10.8万元",
+          "found": false
+        },
+        {
+          "expected": "2.16万元",
+          "found": false
+        }
+      ],
+      "seconds": 0.002
+    },
+    {
+      "id": "PUB-004-p149",
+      "physical_page": 149,
+      "status": "parsed",
+      "structure_review": "not_evaluated",
+      "figure_semantics_review": "not_applicable",
+      "chars": 19,
+      "details": {
+        "table_structure": "unsupported",
+        "figure_semantics": "unsupported"
+      },
+      "anchors": [
+        {
+          "expected": "第六章",
+          "found": true
+        },
+        {
+          "expected": "图纸",
+          "found": true
+        },
+        {
+          "expected": "另册",
+          "found": true
+        }
+      ],
+      "seconds": 0.005
+    },
+    {
+      "id": "PUB-008-p42",
+      "physical_page": 42,
+      "status": "parsed",
+      "structure_review": "not_evaluated",
+      "figure_semantics_review": "manual_required",
+      "chars": 298,
+      "details": {
+        "table_structure": "unsupported",
+        "figure_semantics": "unsupported"
+      },
+      "anchors": [
+        {
+          "expected": "围挡高度为3m",
+          "found": true
+        },
+        {
+          "expected": "效果图",
+          "found": true
+        }
+      ],
+      "seconds": 0.004
+    },
+    {
+      "id": "PUB-008-p88",
+      "physical_page": 88,
+      "status": "parsed",
+      "structure_review": "not_evaluated",
+      "figure_semantics_review": "not_applicable",
+      "chars": 1120,
+      "details": {
+        "table_structure": "unsupported",
+        "figure_semantics": "unsupported"
+      },
+      "anchors": [
+        {
+          "expected": "40%",
+          "found": true
+        },
+        {
+          "expected": "30%",
+          "found": true
+        },
+        {
+          "expected": "工程重点难点保障体系",
+          "found": true
+        }
+      ],
+      "seconds": 0.006
+    }
+  ],
+  "total_seconds": 0.244
+}
