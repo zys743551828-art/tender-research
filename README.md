@@ -1,3 +1,5 @@
+> 当前工作交接请先读 [HANDOFF-20261017.md](HANDOFF-20261017.md)，并切换到`handoff/2026-10-17`分支。以下历史说明保留原范围。
+
 # tender-research
 
 施组投标诊断的研究与验证程序：规则证据检索、有限规则与疑点诊断、成绩导入、技术分评测与校准、版本闭环，以及大模型（DeepSeek）评测。实际结果、失败和选型判断统一见 [tender-docs 的验证报告](https://github.com/zys743551828-art/tender-docs/blob/main/04-验证与测试/验证报告.md)；本仓库维护运行方法、代码边界和实验输出。
