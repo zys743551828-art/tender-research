@@ -1,0 +1,397 @@
+{
+  "schema": "parsing-probe-comparison-1",
+  "runs": [
+    {
+      "engine": "pdfium",
+      "run_summary_sha256": "350847b9188327db179455a634a47ecaf8bccfba8cdc7eaeebdfc3846a897b5a",
+      "input_transform": {
+        "render_rotation": 0
+      },
+      "inference_protocol_sha256": "978bbf3ba835b6576707337c772a564d995eb2ac42e2b88051b419209024c44f",
+      "reference_protocol_sha256": "978bbf3ba835b6576707337c772a564d995eb2ac42e2b88051b419209024c44f",
+      "reference_changed": false,
+      "scope": "3 physical pages: equipment 46-47 and labor 47-48; exploratory continuation and rotated-render control, not full-document accuracy",
+      "parsed_pages": 3,
+      "expected_pages": 3,
+      "recorded_pages": 3,
+      "anchor_hits": 11,
+      "evaluated_anchors": 11,
+      "expected_anchors": 11,
+      "initialization_seconds": 0.056,
+      "total_seconds": 0.126,
+      "samples": [
+        {
+          "id": "FILE-002-p46",
+          "status": "parsed",
+          "seconds": 0.007,
+          "anchors": [
+            {
+              "expected": "主要施工设备表",
+              "found": true
+            },
+            {
+              "expected": "高压水射流清洗机",
+              "found": true
+            },
+            {
+              "expected": "200bar",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "9244274cfd1bb0b6cb0c0e3b0602a5cc1bbe8fc10c982f264da152596c57401d",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "FILE-002-p47",
+          "status": "parsed",
+          "seconds": 0.007,
+          "anchors": [
+            {
+              "expected": "化学注浆泵",
+              "found": true
+            },
+            {
+              "expected": "劳动力计划表",
+              "found": true
+            },
+            {
+              "expected": "普工",
+              "found": true
+            },
+            {
+              "expected": "挖掘机司机",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "82537247b01ab0ee0b27f3fd7c28bca1b8abf8777ec4a621ba5b4a86730ee17b",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "FILE-002-p48",
+          "status": "parsed",
+          "seconds": 0.005,
+          "anchors": [
+            {
+              "expected": "推土机司机",
+              "found": true
+            },
+            {
+              "expected": "交通导行员",
+              "found": true
+            },
+            {
+              "expected": "现场保洁员",
+              "found": true
+            },
+            {
+              "expected": "桩机操作工",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "0afab7bcfe129049ae5347b31fbd4bd4a2a1748fda3133a1dbb36e7c12bc9bc8",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        }
+      ]
+    },
+    {
+      "engine": "mineru",
+      "run_summary_sha256": "3067600cde91e8dc43913f93ca7a243d51d4bb6fa71efa8afa1456d3b9358d7e",
+      "input_transform": {
+        "render_rotation": 0
+      },
+      "inference_protocol_sha256": "978bbf3ba835b6576707337c772a564d995eb2ac42e2b88051b419209024c44f",
+      "reference_protocol_sha256": "978bbf3ba835b6576707337c772a564d995eb2ac42e2b88051b419209024c44f",
+      "reference_changed": false,
+      "scope": "3 physical pages: equipment 46-47 and labor 47-48; exploratory continuation and rotated-render control, not full-document accuracy",
+      "parsed_pages": 3,
+      "expected_pages": 3,
+      "recorded_pages": 3,
+      "anchor_hits": 11,
+      "evaluated_anchors": 11,
+      "expected_anchors": 11,
+      "initialization_seconds": 0.0,
+      "total_seconds": 14.32,
+      "samples": [
+        {
+          "id": "FILE-002-p46",
+          "status": "parsed",
+          "seconds": 5.888,
+          "anchors": [
+            {
+              "expected": "主要施工设备表",
+              "found": true
+            },
+            {
+              "expected": "高压水射流清洗机",
+              "found": true
+            },
+            {
+              "expected": "200bar",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "4cf01ff3651cc73080694e6299016479bfb182c5c2186878f9f73886b0014ac6",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "FILE-002-p47",
+          "status": "parsed",
+          "seconds": 4.044,
+          "anchors": [
+            {
+              "expected": "化学注浆泵",
+              "found": true
+            },
+            {
+              "expected": "劳动力计划表",
+              "found": true
+            },
+            {
+              "expected": "普工",
+              "found": true
+            },
+            {
+              "expected": "挖掘机司机",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "050efd7fe5433c81a28a29d4443437226ea221bd6761ac2592115e8b5d2ccb84",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "FILE-002-p48",
+          "status": "parsed",
+          "seconds": 4.191,
+          "anchors": [
+            {
+              "expected": "推土机司机",
+              "found": true
+            },
+            {
+              "expected": "交通导行员",
+              "found": true
+            },
+            {
+              "expected": "现场保洁员",
+              "found": true
+            },
+            {
+              "expected": "桩机操作工",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "cef6cf71b23340160f1b90af684243493a41ce74764588cee4df370b97ddcf16",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        }
+      ]
+    },
+    {
+      "engine": "rapidocr",
+      "run_summary_sha256": "73c0a7cdaf8534efb9783bd8ecdb8941626e8fea27f22d364a5793f4c19e4842",
+      "input_transform": {
+        "render_rotation": 0
+      },
+      "inference_protocol_sha256": "978bbf3ba835b6576707337c772a564d995eb2ac42e2b88051b419209024c44f",
+      "reference_protocol_sha256": "978bbf3ba835b6576707337c772a564d995eb2ac42e2b88051b419209024c44f",
+      "reference_changed": false,
+      "scope": "3 physical pages: equipment 46-47 and labor 47-48; exploratory continuation and rotated-render control, not full-document accuracy",
+      "parsed_pages": 3,
+      "expected_pages": 3,
+      "recorded_pages": 3,
+      "anchor_hits": 10,
+      "evaluated_anchors": 11,
+      "expected_anchors": 11,
+      "initialization_seconds": 1.214,
+      "total_seconds": 6.319,
+      "samples": [
+        {
+          "id": "FILE-002-p46",
+          "status": "parsed",
+          "seconds": 1.937,
+          "anchors": [
+            {
+              "expected": "主要施工设备表",
+              "found": true
+            },
+            {
+              "expected": "高压水射流清洗机",
+              "found": false
+            },
+            {
+              "expected": "200bar",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "be4ce0fa25b14feccdf812b158a2b0f6b315d5a5464f8455ce0d38926d34f565",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "FILE-002-p47",
+          "status": "parsed",
+          "seconds": 1.618,
+          "anchors": [
+            {
+              "expected": "化学注浆泵",
+              "found": true
+            },
+            {
+              "expected": "劳动力计划表",
+              "found": true
+            },
+            {
+              "expected": "普工",
+              "found": true
+            },
+            {
+              "expected": "挖掘机司机",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "3b86a6fab076d470d168e94e54ea4d458d030b58b352e8a92ec5d5b6be2f138d",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "FILE-002-p48",
+          "status": "parsed",
+          "seconds": 1.454,
+          "anchors": [
+            {
+              "expected": "推土机司机",
+              "found": true
+            },
+            {
+              "expected": "交通导行员",
+              "found": true
+            },
+            {
+              "expected": "现场保洁员",
+              "found": true
+            },
+            {
+              "expected": "桩机操作工",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "99b7f5ea6f0885b6f5cb01e72de94e36559a0e3741c8640eadc374e1c7649922",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        }
+      ]
+    },
+    {
+      "engine": "rapidocr",
+      "run_summary_sha256": "7c0790f9004df7408023deafafca2dfa3bc08068c559de568b3584d63528eded",
+      "input_transform": {
+        "render_rotation": 90
+      },
+      "inference_protocol_sha256": "978bbf3ba835b6576707337c772a564d995eb2ac42e2b88051b419209024c44f",
+      "reference_protocol_sha256": "978bbf3ba835b6576707337c772a564d995eb2ac42e2b88051b419209024c44f",
+      "reference_changed": false,
+      "scope": "3 physical pages: equipment 46-47 and labor 47-48; exploratory continuation and rotated-render control, not full-document accuracy",
+      "parsed_pages": 3,
+      "expected_pages": 3,
+      "recorded_pages": 3,
+      "anchor_hits": 10,
+      "evaluated_anchors": 11,
+      "expected_anchors": 11,
+      "initialization_seconds": 0.449,
+      "total_seconds": 5.35,
+      "samples": [
+        {
+          "id": "FILE-002-p46",
+          "status": "parsed",
+          "seconds": 1.788,
+          "anchors": [
+            {
+              "expected": "主要施工设备表",
+              "found": true
+            },
+            {
+              "expected": "高压水射流清洗机",
+              "found": false
+            },
+            {
+              "expected": "200bar",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "2f2efb7f2f357bf758a4c16aadc081909d2bd31e8836d1495ac4aa8675fe5c8e",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "FILE-002-p47",
+          "status": "parsed",
+          "seconds": 1.515,
+          "anchors": [
+            {
+              "expected": "化学注浆泵",
+              "found": true
+            },
+            {
+              "expected": "劳动力计划表",
+              "found": true
+            },
+            {
+              "expected": "普工",
+              "found": true
+            },
+            {
+              "expected": "挖掘机司机",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "618fb21e4a8f3fa56c96c3443fa49b94d19091e4ee6dd88b68bacdb06eeda1a7",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        },
+        {
+          "id": "FILE-002-p48",
+          "status": "parsed",
+          "seconds": 1.522,
+          "anchors": [
+            {
+              "expected": "推土机司机",
+              "found": true
+            },
+            {
+              "expected": "交通导行员",
+              "found": true
+            },
+            {
+              "expected": "现场保洁员",
+              "found": true
+            },
+            {
+              "expected": "桩机操作工",
+              "found": true
+            }
+          ],
+          "artifact_sha256": "cd650d04733f1b6d4d53c59fbcff2fa2d3dc73cd76d94a30b0c9f7182f0ee9c4",
+          "error": null,
+          "structure_review": "not_evaluated",
+          "figure_semantics_review": "not_applicable"
+        }
+      ]
+    }
+  ]
+}

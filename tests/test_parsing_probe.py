@@ -44,6 +44,15 @@ def test_wrong_source_rejected_before_engine_load(tmp_path: Path) -> None:
     assert "No module named" not in result.stderr
 
 
+def test_rotation_control_rejects_pdf_input_engine(tmp_path: Path) -> None:
+    result = subprocess.run([
+        sys.executable, str(SCRIPTS / "parsing_probe.py"), "--engine", "mineru", "--protocol", "missing.json",
+        "--datasets", str(tmp_path), "--output", str(tmp_path / "out"), "--cache", str(tmp_path / "cache"),
+        "--render-rotation", "90",
+    ], capture_output=True, text=True, timeout=10, check=False)
+    assert result.returncode != 0 and "requires an image-input OCR engine" in result.stderr
+
+
 @pytest.mark.parametrize("status", ["failed", "parsed"])
 def test_report_keeps_missing_pages_and_failed_anchors_visible(tmp_path: Path, status: str) -> None:
     protocol = tmp_path / "protocol.json"

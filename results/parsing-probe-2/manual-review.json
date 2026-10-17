@@ -1,0 +1,94 @@
+{
+  "schema": "parsing-probe-manual-review-1",
+  "scope": "specific continuation rows only; no general accuracy claim",
+  "artifact_sha256": "cef6cf71b23340160f1b90af684243493a41ce74764588cee4df370b97ddcf16",
+  "row_checks": [
+    {
+      "row": "推土机司机",
+      "values": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "observed": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matches": true
+    },
+    {
+      "row": "电工",
+      "values": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "observed": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "matches": true
+    },
+    {
+      "row": "交通导行员",
+      "values": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "observed": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "matches": true
+    }
+  ],
+  "continuation": "MinerU returns page 48 as a separate table without inherited header or a link to page 47; automatic continuation not implemented",
+  "rotation": "90-degree rendered-image control only; not an original rotated-PDF or OCR accuracy validation",
+  "production": "pdfium-1.2 only adds page-level raster gaps and read-error isolation; no OCR or table join enabled"
+}

@@ -1,0 +1,120 @@
+{
+  "schema": "parsing-probe-1",
+  "scope": "3 physical pages: equipment 46-47 and labor 47-48; exploratory continuation and rotated-render control, not full-document accuracy",
+  "reference_method": "anchors transcribed from original page renders before extension inference; manual row relations evaluated separately",
+  "render_scale": 2,
+  "samples": [
+    {
+      "id": "FILE-002-p46",
+      "file_id": "FILE-002",
+      "source_path": "CASE-001_广德_污水管网改造及新建/02-投标文件/CASE-001_技术标_安徽秉一市政_20260910.pdf",
+      "source_sha256": "5027159571bf015e6c0d01a8f782a868ad382a08c24520187f7d23fb2f23779f",
+      "physical_page": 46,
+      "category": "cross_page_table",
+      "anchors": [
+        "主要施工设备表",
+        "高压水射流清洗机",
+        "200bar"
+      ],
+      "structure_review": "manual_required",
+      "figure_semantics_review": "not_applicable"
+    },
+    {
+      "id": "FILE-002-p47",
+      "file_id": "FILE-002",
+      "source_path": "CASE-001_广德_污水管网改造及新建/02-投标文件/CASE-001_技术标_安徽秉一市政_20260910.pdf",
+      "source_sha256": "5027159571bf015e6c0d01a8f782a868ad382a08c24520187f7d23fb2f23779f",
+      "physical_page": 47,
+      "category": "cross_page_table",
+      "anchors": [
+        "化学注浆泵",
+        "劳动力计划表",
+        "普工",
+        "挖掘机司机"
+      ],
+      "structure_review": "manual_required",
+      "figure_semantics_review": "not_applicable"
+    },
+    {
+      "id": "FILE-002-p48",
+      "file_id": "FILE-002",
+      "source_path": "CASE-001_广德_污水管网改造及新建/02-投标文件/CASE-001_技术标_安徽秉一市政_20260910.pdf",
+      "source_sha256": "5027159571bf015e6c0d01a8f782a868ad382a08c24520187f7d23fb2f23779f",
+      "physical_page": 48,
+      "category": "cross_page_table",
+      "anchors": [
+        "推土机司机",
+        "交通导行员",
+        "现场保洁员",
+        "桩机操作工"
+      ],
+      "structure_review": "manual_required",
+      "figure_semantics_review": "not_applicable"
+    }
+  ],
+  "table_references": [
+    {
+      "pages": [
+        46,
+        47
+      ],
+      "title": "拟投入本标段的主要施工设备表",
+      "continuation": "46页序号1-23，47页起为24-26，随后新表开始"
+    },
+    {
+      "pages": [
+        47,
+        48
+      ],
+      "title": "劳动力计划表",
+      "continuation": "47页表头及普工、挖掘机司机；48页无重复表头，从推土机司机续表",
+      "checks": [
+        {
+          "row": "推土机司机",
+          "values": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "row": "电工",
+          "values": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "row": "交通导行员",
+          "values": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        }
+      ]
+    }
+  ]
+}

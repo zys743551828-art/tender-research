@@ -1,0 +1,143 @@
+[
+  {
+    "file_id": "FILE-002",
+    "source_sha256": "5027159571bf015e6c0d01a8f782a868ad382a08c24520187f7d23fb2f23779f",
+    "parser_version": "pdfium-1.2",
+    "page_count": 50,
+    "coverage": "partial",
+    "gaps": [
+      "page_1:raster_images_unread",
+      "page_2:raster_images_unread",
+      "page_3:raster_images_unread",
+      "page_4:raster_images_unread",
+      "page_5:raster_images_unread",
+      "page_6:raster_images_unread",
+      "page_7:raster_images_unread",
+      "page_8:raster_images_unread",
+      "page_9:raster_images_unread",
+      "page_10:raster_images_unread",
+      "page_11:raster_images_unread",
+      "page_12:raster_images_unread",
+      "page_13:raster_images_unread",
+      "page_14:raster_images_unread",
+      "page_15:raster_images_unread",
+      "page_16:raster_images_unread",
+      "page_17:raster_images_unread",
+      "page_18:raster_images_unread",
+      "page_19:raster_images_unread",
+      "page_20:raster_images_unread",
+      "page_21:raster_images_unread",
+      "page_22:raster_images_unread",
+      "page_23:raster_images_unread",
+      "page_24:raster_images_unread",
+      "page_25:raster_images_unread",
+      "page_26:raster_images_unread",
+      "page_27:raster_images_unread",
+      "page_28:raster_images_unread",
+      "page_29:raster_images_unread",
+      "page_30:raster_images_unread",
+      "page_31:raster_images_unread",
+      "page_32:raster_images_unread",
+      "page_33:raster_images_unread",
+      "page_34:raster_images_unread",
+      "page_35:raster_images_unread",
+      "page_36:raster_images_unread",
+      "page_37:raster_images_unread",
+      "page_38:raster_images_unread",
+      "page_39:raster_images_unread",
+      "page_40:raster_images_unread",
+      "page_41:raster_images_unread",
+      "page_42:raster_images_unread",
+      "page_43:raster_images_unread",
+      "page_44:raster_images_unread",
+      "page_45:raster_images_unread",
+      "page_46:raster_images_unread",
+      "page_47:raster_images_unread",
+      "page_48:raster_images_unread",
+      "page_49:raster_images_unread",
+      "page_50:raster_images_unread"
+    ],
+    "pages": [
+      {
+        "physical_page": 46,
+        "text_layer": "extracted",
+        "text_chars": 1478,
+        "raster_images": 2,
+        "issues": [
+          "raster_images_unread"
+        ],
+        "table_structure": "not_evaluated",
+        "figure_semantics": "not_evaluated"
+      },
+      {
+        "physical_page": 47,
+        "text_layer": "extracted",
+        "text_chars": 1448,
+        "raster_images": 2,
+        "issues": [
+          "raster_images_unread"
+        ],
+        "table_structure": "not_evaluated",
+        "figure_semantics": "not_evaluated"
+      },
+      {
+        "physical_page": 48,
+        "text_layer": "extracted",
+        "text_chars": 710,
+        "raster_images": 2,
+        "issues": [
+          "raster_images_unread"
+        ],
+        "table_structure": "not_evaluated",
+        "figure_semantics": "not_evaluated"
+      },
+      {
+        "physical_page": 49,
+        "text_layer": "extracted",
+        "text_chars": 37,
+        "raster_images": 4,
+        "issues": [
+          "raster_images_unread"
+        ],
+        "table_structure": "not_evaluated",
+        "figure_semantics": "not_evaluated"
+      },
+      {
+        "physical_page": 50,
+        "text_layer": "extracted",
+        "text_chars": 1047,
+        "raster_images": 3,
+        "issues": [
+          "raster_images_unread"
+        ],
+        "table_structure": "not_evaluated",
+        "figure_semantics": "not_evaluated"
+      }
+    ],
+    "chunks": 361
+  },
+  {
+    "file_id": "PUB-004",
+    "source_sha256": "24c1c81ec1ca7e9449dd00ca2a136cfcf44e6ccd97e57acb1d8197e67191912b",
+    "parser_version": "pdfium-1.2",
+    "page_count": 220,
+    "coverage": "partial",
+    "gaps": [
+      "page_26:raster_images_unread"
+    ],
+    "pages": [
+      {
+        "physical_page": 26,
+        "text_layer": "extracted",
+        "text_chars": 4,
+        "raster_images": 1,
+        "issues": [
+          "raster_images_unread"
+        ],
+        "table_structure": "not_evaluated",
+        "figure_semantics": "not_evaluated"
+      }
+    ],
+    "chunks": 1724
+  }
+]

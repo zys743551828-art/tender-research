@@ -31,6 +31,7 @@ def summarize(protocol_path: Path, run_path: Path) -> dict:
                      "structure_review": "not_evaluated", "figure_semantics_review": sample["figure_semantics_review"]})
     return {
         "engine": run["engine"], "run_summary_sha256": hashlib.sha256(run_bytes).hexdigest(),
+        "input_transform": run.get("input_transform"),
         "inference_protocol_sha256": run["protocol_sha256"],
         "reference_protocol_sha256": hashlib.sha256(protocol_bytes).hexdigest(),
         "reference_changed": run["protocol_sha256"] != hashlib.sha256(protocol_bytes).hexdigest(),

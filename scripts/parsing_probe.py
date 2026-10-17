@@ -43,7 +43,7 @@ def configure_cache(root: Path) -> None:
     os.environ["OMP_NUM_THREADS"] = "4"
 
 
-def adapter(engine: str):
+def adapter(engine: str, render_rotation: int = 0):
     if engine == "pdfium":
         import pypdfium2 as pdfium
 
@@ -78,7 +78,9 @@ def adapter(engine: str):
             import pypdfium2 as pdfium
 
             with pdfium.PdfDocument(path) as pdf, closing(pdf[number - 1]) as page:
-                result = pipeline(page.render(scale=2).to_pil())
+                image = page.render(scale=2, rotation=render_rotation).to_pil()
+                image.save(raw.with_suffix(".png"))
+                result = pipeline(image)
             write_json(raw, {"texts": list(result.txts or []),
                              "boxes": result.boxes.tolist() if result.boxes is not None else [],
                              "scores": result.scores.tolist() if hasattr(result.scores, "tolist") else result.scores})
@@ -98,7 +100,7 @@ def adapter(engine: str):
 
             image = raw.with_suffix(".png")
             with pdfium.PdfDocument(path) as pdf, closing(pdf[number - 1]) as page:
-                page.render(scale=2).to_pil().save(image)
+                page.render(scale=2, rotation=render_rotation).to_pil().save(image)
             results = list(pipeline.predict(str(image)))
             payload = [result.json for result in results]
             write_json(raw, payload)
@@ -142,7 +144,11 @@ def main() -> None:
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--cache", type=Path, required=True)
     parser.add_argument("--sample", help="仅跑一个样本 ID，用于故障定位")
+    parser.add_argument("--render-rotation", type=int, choices=[0, 90, 180, 270], default=0,
+                        help="仅对图像输入作旋转对照，保持原始 PDF 字节及页号不变")
     args = parser.parse_args()
+    if args.render_rotation and args.engine not in {"rapidocr", "paddle"}:
+        parser.error("--render-rotation requires an image-input OCR engine")
     configure_cache(args.cache.resolve())
     output = args.output.resolve() / args.engine
     output.mkdir(parents=True, exist_ok=True)
@@ -163,7 +169,7 @@ def main() -> None:
     start = time.perf_counter()
     init_error = None
     try:
-        parse = adapter(args.engine)
+        parse = adapter(args.engine, args.render_rotation)
     except Exception as exc:  # noqa: BLE001 -- 第三方引擎异常作为本轮可审计失败，不吞掉或冒充成功。
         init_error = f"{type(exc).__name__}: {exc}"
         (output / "initialization-error.log").write_text(traceback.format_exc(), encoding="utf-8")
@@ -174,6 +180,7 @@ def main() -> None:
         "initialization_error": init_error,
         "started_at": started_at, "platform": platform.platform(),
         "python": sys.version, "cache": str(args.cache.resolve()),
+        "input_transform": {"render_rotation": args.render_rotation},
         "packages": {d.metadata["Name"]: d.version for d in importlib.metadata.distributions()},
         "scope": protocol["scope"], "samples": [],
     }
