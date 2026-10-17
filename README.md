@@ -163,3 +163,12 @@ python -m tender_research.score_eval \
 | `learning_curve_fractions` | 学习曲线的训练连通组比例 |
 | `label_sources` | 准入的标签来源类型：`official_document`、`company_ledger`、`user_statement`（示例为前两种） |
 | `allow_repeat_runs` | 是否允许 `--repeat-predictions` 读取同一子集的其他运行目录，报告系统原始估计的跨运行波动 |
+
+
+### 融合评分方法与验收协议
+
+当前示例协议冻结六项百分制门槛：MAE ≤ 3、绝对误差 P90 ≤ 5、误差在 ±3 内比例 ≥ 80%、平均偏差绝对值 ≤ 1、相对最佳历史基线的项目组级 95% 增益区间下限 > 0、系统原始逐项合计整轮复跑极差 P90 ≤ 2。重复稳定性至少三次运行，所有准入样本必须在每次运行都有结果；缺少复跑或只覆盖部分样本时不能通过。
+
+`acceptance` 包含 `max_mae`、`max_abs_p90`、`within_points`、`min_within_ratio`、`max_abs_bias`、`max_repeat_range_p90` 与 `minimum_repeat_runs`，必须在查看最终标签前冻结。JSON 与 Markdown 报告分别列出各项实测值、门槛及通过／未通过／不可评价；某项已知不达标为未通过，否则缺数据为不可评价。既有冻结协议没有此字段时维持其原有 MAE／基线判定，融合验收另记不可评价，不能据旧协议结论宣称新方法通过。
+
+格式 B 的 `artifact_extra.input_method` 与导出模型的同名字段记录章节读取方法（当前 `complete-chapters-1`，缺省为 `legacy-truncated`）。不同方法混合的样本不能通过统一评测；导出包保留方法身份与 `evaluation.acceptance`。产品业务登记还要求方法一致、`mode=holdout` 及融合验收通过。合成夹具只验证程序边界，尚无真实成绩精度证据。复跑门槛当前衡量原始逐项合计；正式校准输出的稳定性、区间覆盖和宽度仍需影子运行实测。

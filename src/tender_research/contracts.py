@@ -207,6 +207,7 @@ class PredictionInputs(Handoff):
 
 class PredictionExtra(Handoff):
     """产品后端计算并随预测保存的评分特征（feature_spec 如 pf-1）；值为数值或 null。"""
+    input_method: str = "legacy-truncated"
     feature_spec: str | None = None
     features: dict[str, float | None] = Field(default_factory=dict)
 
@@ -276,6 +277,16 @@ class EvalMinimums(Contract):
     item_matches: int = Field(default=10, ge=1)
 
 
+class EvalAcceptance(Contract):
+    max_mae: float = Field(default=3.0, gt=0, le=100)
+    max_abs_p90: float = Field(default=5.0, gt=0, le=100)
+    within_points: float = Field(default=3.0, gt=0, le=100)
+    min_within_ratio: float = Field(default=0.8, gt=0, le=1)
+    max_abs_bias: float = Field(default=1.0, ge=0, le=100)
+    max_repeat_range_p90: float = Field(default=2.0, ge=0, le=100)
+    minimum_repeat_runs: int = Field(default=3, ge=2)
+
+
 class EvalProtocol(Contract):
     """评测协议：在看测试标签前冻结；文件 SHA 写入报告。"""
     model_config = ConfigDict(extra="forbid", strict=False, allow_inf_nan=False, populate_by_name=True)
@@ -283,6 +294,7 @@ class EvalProtocol(Contract):
     frozen_at: date
     description: str = Field(min_length=1)
     target_mae: float = Field(gt=0, le=100)
+    acceptance: EvalAcceptance | None = None
     selection: str = "cv_mae"
     methods: list[Literal[METHODS]] = Field(min_length=2)
     ridge_alphas: list[float] = Field(default=[0.1, 1.0, 10.0, 100.0], min_length=1)
@@ -305,6 +317,8 @@ class EvalProtocol(Contract):
 
     @model_validator(mode="after")
     def coherent(self):
+        if self.acceptance is not None and (self.target_mae > self.acceptance.max_mae or self.confidence != 0.95):
+            raise ValueError("融合验收协议须采用不宽于 max_mae 的目标和 95% 组级区间")
         if not any(m in BASELINES for m in self.methods) or not any(m in EXPORTABLE for m in self.methods):
             raise ValueError("方法清单须同时含基线与可导出的系统方法")
         if len(set(self.methods)) != len(self.methods):

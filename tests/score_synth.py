@@ -145,6 +145,7 @@ def generate(folder: Path, n_projects: int = 125, seed: int = 7, signal: bool = 
 
 def protocol(folder: Path, **overrides) -> Path:
     base = json.loads((Path(__file__).resolve().parents[1] / "protocols/评测协议.example.json").read_text(encoding="utf-8"))
+    base["acceptance"] = None  # 既有校准机制夹具使用旧协议；融合门槛单独测试
     base.update(overrides)
     path = folder / "评测协议.json"
     path.write_text(json.dumps(base, ensure_ascii=False))

@@ -303,15 +303,18 @@ def robustness_summary(samples, records, repeat_dirs) -> dict:
                     and p and p.status == "candidate":
                 run[sid] = 100.0 * p.estimate / p.maximum
         runs.append(run)
-    spans, sds = [], []
+    spans, sds, complete_spans = [], [], []
     for s in samples:
         values = [r[s.sample_id] for r in runs if r.get(s.sample_id) is not None]
+        if len(values) == len(runs):
+            complete_spans.append(max(values) - min(values))
         if len(values) >= 2:
             spans.append(max(values) - min(values)); sds.append(float(np.std(values, ddof=1)))
     if not spans:
         return {"status": "not_evaluable", "runs": len(runs), "reason": "没有在两次以上运行中都给出估计的样本"}
     return {"status": "evaluated", "runs": len(runs), "n": len(spans), "mean_sd": float(np.mean(sds)),
-            "range_p50": float(np.percentile(spans, 50)), "range_p90": float(np.percentile(spans, 90))}
+            "range_p50": float(np.percentile(spans, 50)), "range_p90": float(np.percentile(spans, 90)),
+            "complete_n": len(complete_spans), "complete_range_p90": float(np.percentile(complete_spans, 90)) if complete_spans else None}
 
 
 # ---------- 主流程 ----------
@@ -467,6 +470,30 @@ def _count(values) -> dict:
     return out
 
 
+def acceptance_summary(protocol, errors, gain, robustness, sample_count) -> dict:
+    limits = protocol.acceptance
+    if limits is None:
+        return {"status": "not_evaluable", "reasons": ["协议未冻结融合验收门槛"], "checks": {}}
+    checks = {}
+    def check(name, actual, threshold, direction="max"):
+        ok = actual is not None and (actual <= threshold if direction == "max" else actual >= threshold)
+        checks[name] = {"actual": actual, "threshold": threshold, "direction": direction,
+                        "status": "not_evaluable" if actual is None else "passed" if ok else "not_passed"}
+    check("mae", float(np.mean(np.abs(errors))), limits.max_mae)
+    check("abs_p90", float(np.percentile(np.abs(errors), 90)), limits.max_abs_p90)
+    check("within_ratio", float(np.mean(np.abs(errors) <= limits.within_points)), limits.min_within_ratio, "min")
+    check("abs_bias", abs(float(np.mean(errors))), limits.max_abs_bias)
+    checks["gain_ci95_low"] = {"actual": gain["low"], "threshold": 0, "direction": "strict_min",
+                              "status": "passed" if gain["low"] > 0 else "not_passed"}
+    complete = (robustness.get("runs", 0) >= limits.minimum_repeat_runs and robustness.get("complete_n", 0) == sample_count)
+    check("repeat_range_p90", robustness.get("complete_range_p90") if complete else None, limits.max_repeat_range_p90)
+    failed = [name for name, row in checks.items() if row["status"] == "not_passed"]
+    missing = [name for name, row in checks.items() if row["status"] == "not_evaluable"]
+    return {"status": "not_passed" if failed else "not_evaluable" if missing else "passed",
+            "reasons": [*(f"{name} 未达到冻结门槛" for name in failed), *(f"{name} 缺少完整复跑数据" for name in missing)],
+            "checks": checks, "within_points": limits.within_points}
+
+
 def evaluate(ctx, mode, split, methods, cutoffs, fields, records, repeat_dirs, every) -> dict:
     p = ctx.protocol
     if mode == "cv":
@@ -485,6 +512,9 @@ def evaluate(ctx, mode, split, methods, cutoffs, fields, records, repeat_dirs, e
     gain = gain_against_baseline(ctx, store, selected, baseline)
     idx = store["idx"]
     reasons, mae = [], metrics[selected]["mae"]
+    robustness = robustness_summary(ctx.samples, records, repeat_dirs) if repeat_dirs else {"status": "not_evaluable", "runs": 1}
+    errors = store["pred"][selected].mean(axis=0) - ctx.y[idx]
+    acceptance = acceptance_summary(p, errors, gain, robustness, len(ctx.samples))
     if mae > p.target_mae:
         reasons.append(f"MAE {mae:.2f} 高于目标 {p.target_mae:.2f}")
     if gain["low"] <= 0:
@@ -495,6 +525,14 @@ def evaluate(ctx, mode, split, methods, cutoffs, fields, records, repeat_dirs, e
                "evaluation_set": "重复分组交叉验证折外预测" if mode == "cv" else "时间留出最终测试集",
                "mae": mae, "target_mae": p.target_mae, "best_baseline": baseline, "gain": gain,
                "scope": scope(ctx.samples, every)}
+    if len({sample.input_method for sample in ctx.samples}) > 1:
+        verdict["reasons"].append("样本混合了不同章节读取方法，应分别评测")
+        verdict["status"] = "not_passed"
+    verdict["acceptance"] = acceptance
+    if p.acceptance is not None and acceptance["status"] != "passed":
+        known_failure = bool(reasons) or acceptance["status"] == "not_passed"
+        verdict["reasons"].extend(acceptance["reasons"])
+        verdict["status"] = "not_passed" if known_failure else "not_evaluable"
     if mode == "cv" and p.selection == "cv_mae":
         verdict["caveat"] = "方法选择与误差估计使用同一组交叉验证折，误差估计略偏乐观；最终结论以时间留出为准"
     per_sample = []
@@ -522,7 +560,7 @@ def evaluate(ctx, mode, split, methods, cutoffs, fields, records, repeat_dirs, e
            "items": item_summary(ctx.samples, p.item_match_threshold, p.minimums.item_matches),
            "per_sample": per_sample}
     if repeat_dirs:
-        out["robustness"] = robustness_summary(ctx.samples, records, repeat_dirs)
+        out["robustness"] = robustness
     return out
 
 
@@ -536,8 +574,10 @@ def scoring_model(ctx: Context, report: dict) -> dict:
               "regions": sorted({s.region for s in ctx.samples})}  # 训练数据里出现过的完整地区，产品端按地名包含关系判断适用
     evaluation = {"n": len(ctx.samples), "projects": len({s.project_key for s in ctx.samples}),
                   "verdict": verdict["status"], "protocol_sha256": report["protocol"]["sha256"], "mode": report["mode"],
-                  "label_sources": report["admission"]["label_sources"], "label_mix": report["admission"]["label_mix"]}
-    bundle = {"schema": "scoring-model/1", "target": "technical_total", "feature_spec": "pf-1",
+                  "label_sources": report["admission"]["label_sources"], "label_mix": report["admission"]["label_mix"],
+                  "acceptance": verdict.get("acceptance", {"status": "not_evaluable"})}
+    methods = {s.input_method for s in ctx.samples}
+    bundle = {"input_method": next(iter(methods)) if len(methods) == 1 else "mixed", "schema": "scoring-model/1", "target": "technical_total", "feature_spec": "pf-1",
               "output": "technical_percent_of_max", "clip": [0.0, 100.0], "scope": scope_,
               "data_sha256": data_sha, "code_sha256": code_sha, "created_at": report["generated_at"]}
     if verdict["status"] == "not_evaluable":
@@ -600,6 +640,12 @@ def render_markdown(r: dict) -> str:
         if v.get("caveat"):
             lines.append(f"说明：{v['caveat']}。")
         lines.append("")
+    acceptance = v.get("acceptance", {})
+    lines += ["## 融合验收门槛", "", f"状态：{STATUS_NAMES.get(acceptance.get('status'), '不可评价')}", "",
+              "| 指标 | 实测 | 门槛 | 状态 |", "| --- | --- | --- | --- |"]
+    for name, row in acceptance.get("checks", {}).items():
+        lines.append(f"| {name} | {f2(row['actual'])} | {row['direction']} {f2(row['threshold'])} | {STATUS_NAMES[row['status']]} |")
+    lines += ["", *acceptance.get("reasons", []), ""]
     a = r["admission"]
     lines += ["## 样本与准入", "",
               (f"配对记录 {a['records']} 份，准入 {a['admitted']} 份，独立项目 {a['independent_projects']} 个，"

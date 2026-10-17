@@ -59,6 +59,7 @@ class Sample:
     system_items: list[dict] = field(default_factory=list)
     label_items: list[dict] = field(default_factory=list)
     group: int = -1
+    input_method: str = "legacy-truncated"
 
 
 # ---------- 准入 ----------
@@ -225,6 +226,7 @@ def build_samples(records: list[PairSample], predictions: dict[str, tuple[System
             system_status="failed" if parsed.status == "failed" else (p.status if p else "no_total_prediction"),
             raw_pct=_scaled(p.estimate, scale) if p else None, native_low_pct=_scaled(p.low, scale) if p else None,
             native_high_pct=_scaled(p.high, scale) if p else None, features=pf1_features(parsed),
+            input_method=parsed.artifact_extra.input_method if parsed.artifact_extra else "legacy-truncated",
             system_items=[i.model_dump() for i in parsed.items],
             label_items=[i.model_dump() for i in r.label.items], group=groups[r.sample_id]))
     return samples, excluded
