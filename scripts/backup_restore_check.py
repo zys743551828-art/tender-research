@@ -57,9 +57,20 @@ def main():
             assert all(re.fullmatch(r"[a-z_0-9]+", n) for n in names)
             return {n: conn.execute(text(f'SELECT count(*) FROM "{n}"')).scalar_one() for n in names}
 
+        def identities(conn, table, fields):
+            columns = set(
+                conn.execute(text("SELECT column_name FROM information_schema.columns WHERE table_schema='public' AND table_name=:t"), {"t": table}).scalars()
+            )
+            selected = ",".join(field if field in columns else f"NULL AS {field}" for field in fields)
+            return [dict(row) for row in conn.execute(text(f"SELECT {selected} FROM {table} ORDER BY id")).mappings()]
+
+        snapshot_fields = ("id", "sha256", "contract_version", "parse_inputs_json", "coverage_gaps_json")
+        rule_fields = ("id", "artifact_id", "source_versions_json", "parse_inputs_json")
+
         with engine.connect() as conn:
             before = counts(conn)
-            snapshots_before = [list(row) for row in conn.execute(text("SELECT id,sha256,contract_version FROM input_snapshots ORDER BY id"))]
+            snapshots_before = identities(conn, "input_snapshots", snapshot_fields)
+            rules_before = identities(conn, "rule_packages", rule_fields)
             revision_before = conn.execute(text("SELECT version_num FROM alembic_version")).scalar_one()
             foreign_keys = conn.execute(text("SELECT count(*) FROM pg_constraint WHERE contype='f' AND connamespace='public'::regnamespace")).scalar_one()
         migration = subprocess.run(
@@ -82,11 +93,12 @@ def main():
             revision_after = conn.execute(text("SELECT version_num FROM alembic_version")).scalar_one()
             assert all(after[n] == count for n, count in before.items())
             assert revision_after == expected_head
-            assert [list(row) for row in conn.execute(text("SELECT id,sha256,contract_version FROM input_snapshots ORDER BY id"))] == snapshots_before
+            assert identities(conn, "input_snapshots", snapshot_fields) == snapshots_before
+            assert identities(conn, "rule_packages", rule_fields) == rules_before
             legacy_unknown = conn.execute(
                 text("SELECT count(*) FROM input_snapshots WHERE parse_inputs_json IS NULL AND coverage_gaps_json IS NULL")
             ).scalar_one()
-            assert legacy_unknown == before["input_snapshots"]
+            assert legacy_unknown == sum(row["parse_inputs_json"] is None and row["coverage_gaps_json"] is None for row in snapshots_before)
             assert {"word_conversions", "word_pdf_links", "word_pdf_adoptions"}.issubset(after)
             assert after["projects"] > 0 and after["file_versions"] > 0 and after["audit_events"] > 0
         blocked = []
@@ -131,7 +143,15 @@ def main():
             "temporary_database_removed": True,
         }
         result.update(
-            {"expected_head": expected_head, "snapshot_id_sha_contract_preserved": True, "legacy_snapshots_without_invented_identity": legacy_unknown}
+            {
+                "expected_head": expected_head,
+                "snapshot_id_sha_contract_preserved": True,
+                "snapshot_parse_and_coverage_preserved": True,
+                "rule_sources_preserved": True,
+                "frozen_snapshot_identities_preserved": sum(row["parse_inputs_json"] is not None for row in snapshots_before),
+                "legacy_snapshots_without_invented_identity": legacy_unknown,
+                "legacy_rule_packages_without_invented_identity": sum(row["parse_inputs_json"] is None for row in rules_before),
+            }
         )
     finally:
         if engine is not None:

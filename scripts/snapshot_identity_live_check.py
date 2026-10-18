@@ -14,6 +14,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--baseline", type=Path)
+    parser.add_argument("--check-rule-sources", action="store_true")
     args = parser.parse_args()
     if args.output.exists():
         raise FileExistsError("使用新的结果路径")
@@ -64,6 +65,24 @@ def main():
                 assert rejected.status_code == 409 and rejected.json()["code"] == "snapshot_parse_identity_unknown"
                 jobs_after = sorted(task["task_id"] for task in get(f"projects/{pid}/tasks"))
                 assert jobs_after == jobs_before
+                rule_check = {}
+                if args.check_rule_sources:
+                    rules = get(f"projects/{pid}/rules")
+                    assert rules["source_parse_state"] == "legacy_unfrozen"
+                    pipeline = get(f"projects/{pid}/pipeline")
+                    assert pipeline["stage"] == "waiting_start" and not pipeline["input_verification_required"]
+                    client.headers["Idempotency-Key"] = "legacy-rule-probe-" + uuid.uuid4().hex
+                    confirmation = client.post(
+                        f"projects/{pid}/rules:confirm",
+                        json={"object_version": str(rules["revision"]), "rule_ids": [rule["rule_id"] for rule in rules["rules"][:1]]},
+                    )
+                    assert confirmation.status_code == 409 and confirmation.json()["code"] == "rule_parse_identity_unknown"
+                    assert sorted(task["task_id"] for task in get(f"projects/{pid}/tasks")) == jobs_before
+                    rule_check = {
+                        "source_parse_state": rules["source_parse_state"],
+                        "stage": pipeline["stage"],
+                        "legacy_confirmation_status": confirmation.status_code,
+                    }
                 identities.append(
                     {
                         "project_id": pid,
@@ -71,6 +90,7 @@ def main():
                         "report_readable": True,
                         "legacy_replay_status": rejected.status_code,
                         "no_new_jobs": True,
+                        **rule_check,
                     }
                 )
             cases.append({"project_id": pid, "snapshots": stable_snapshots, "report": stable_report})
