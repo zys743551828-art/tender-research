@@ -1,0 +1,17 @@
+{
+  "synthetic": true,
+  "model_calls": 0,
+  "child_process_exit": 23,
+  "source_sha256": "7ee539c300fcbcde051e6947ea48f7675a20fe7f8f736a2cf508c4d321b8d247",
+  "accelerated_file_timestamps": true,
+  "idle_worker_reclaimed_inputs": true,
+  "fresh_group_preserved": true,
+  "nonregular_group_preserved": true,
+  "outside_sentinel_preserved": true,
+  "converter_reclaimed_outputs": true,
+  "operation_ids": [
+    "46d1b21d65994073b3985124dd32adf2",
+    "cb75e0c47e324a3f83c831c2c4f295f5",
+    "0167f4134a4a41cea30e84e9384aba12"
+  ]
+}
