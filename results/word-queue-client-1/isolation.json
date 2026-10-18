@@ -1,0 +1,8 @@
+{
+  "own_read": true,
+  "other_job_denied": true,
+  "queue_denied": true,
+  "parent_app_denied": true,
+  "parent_signal_denied": true,
+  "unsafe_start_refused": true
+}

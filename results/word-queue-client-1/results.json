@@ -1,0 +1,330 @@
+[
+  {
+    "case": "plain-chinese",
+    "contract": "word-conversion-1",
+    "source_sha256": "7ee539c300fcbcde051e6947ea48f7675a20fe7f8f736a2cf508c4d321b8d247",
+    "renderer_fingerprint": "7c6487b8fca6b1a5752bfb0c2950e06bf9d6dc8e167db6883d2b7610c1af3e21",
+    "state": "converted",
+    "conversion_attempted": true,
+    "inspection": {
+      "schema": "word-intake-inspection/1",
+      "container_validated": true,
+      "entry_count": 3,
+      "expanded_bytes": 902,
+      "xml_part_count": 3,
+      "active_content_gaps": [],
+      "unsupported_layout_features": [],
+      "requested_fonts": [
+        "Noto Sans CJK SC"
+      ],
+      "conversion_eligible": true,
+      "text_digest": "c55e95b533453a928d4fef53912dcaf1b698aeb6cc976fc516e43f5a5319cd37"
+    },
+    "gaps": [],
+    "page_count": 1,
+    "landlock_abi": 7,
+    "missing_paragraph_count": 0,
+    "missing_examples": [],
+    "missing_glyphs": [],
+    "font_substitutions": [],
+    "ink_pages": [
+      1
+    ],
+    "pdf_sha256": "496e8f4fab90ed08bb9d1ea5a2dce82652ac199fb1c949214afcb28f66a6b04d",
+    "pdf_bytes": 8526,
+    "elapsed_seconds": 1.049,
+    "operation_id": "9f533a41215d4c69a72399b59a7789e8",
+    "isolation": {
+      "network": "none",
+      "no_new_privileges": true,
+      "capabilities": 0,
+      "readonly_root": true,
+      "landlock_abi": 7
+    }
+  },
+  {
+    "case": "table",
+    "contract": "word-conversion-1",
+    "source_sha256": "71d3ccfeea9261b4e3eb46b0b515fd75f0300a4e2dae20807152ab788b53e904",
+    "renderer_fingerprint": "7c6487b8fca6b1a5752bfb0c2950e06bf9d6dc8e167db6883d2b7610c1af3e21",
+    "state": "needs_review",
+    "conversion_attempted": true,
+    "inspection": {
+      "schema": "word-intake-inspection/1",
+      "container_validated": true,
+      "entry_count": 3,
+      "expanded_bytes": 819,
+      "xml_part_count": 3,
+      "active_content_gaps": [],
+      "unsupported_layout_features": [
+        "tbl"
+      ],
+      "requested_fonts": [],
+      "conversion_eligible": true,
+      "text_digest": "39686ad2b19a0b656427c71c66ad2b1486d283f50bbccb5a57cbc3ab64e5b4f7"
+    },
+    "gaps": [
+      "complex_layout_requires_review"
+    ],
+    "page_count": 1,
+    "landlock_abi": 7,
+    "missing_paragraph_count": 0,
+    "missing_examples": [],
+    "missing_glyphs": [],
+    "font_substitutions": [],
+    "ink_pages": [
+      1
+    ],
+    "pdf_sha256": "d36bd4c528f29e66b5f005d2f81baaeb66a35639114867e5bbbb30033c02603a",
+    "pdf_bytes": 7534,
+    "elapsed_seconds": 1.047,
+    "operation_id": "d460da2ad6ae42e7a9aa411ddb8b60de",
+    "isolation": {
+      "network": "none",
+      "no_new_privileges": true,
+      "capabilities": 0,
+      "readonly_root": true,
+      "landlock_abi": 7
+    }
+  },
+  {
+    "case": "missing-font",
+    "contract": "word-conversion-1",
+    "source_sha256": "5f7659da10d94d2d4b45f2548d93043953f24dce529e9991b8100e0a10d0f62b",
+    "renderer_fingerprint": "7c6487b8fca6b1a5752bfb0c2950e06bf9d6dc8e167db6883d2b7610c1af3e21",
+    "state": "needs_review",
+    "conversion_attempted": true,
+    "inspection": {
+      "schema": "word-intake-inspection/1",
+      "container_validated": true,
+      "entry_count": 3,
+      "expanded_bytes": 920,
+      "xml_part_count": 3,
+      "active_content_gaps": [],
+      "unsupported_layout_features": [],
+      "requested_fonts": [
+        "BidwbMissingFontSynthetic"
+      ],
+      "conversion_eligible": true,
+      "text_digest": "c55e95b533453a928d4fef53912dcaf1b698aeb6cc976fc516e43f5a5319cd37"
+    },
+    "gaps": [
+      "font_substitution_requires_review"
+    ],
+    "page_count": 1,
+    "landlock_abi": 7,
+    "missing_paragraph_count": 0,
+    "missing_examples": [],
+    "missing_glyphs": [],
+    "font_substitutions": [
+      {
+        "requested": "BidwbMissingFontSynthetic",
+        "used": "Noto Sans CJK JP"
+      }
+    ],
+    "ink_pages": [
+      1
+    ],
+    "pdf_sha256": "23d23ff073339e76064f1a6acc9fb8985cf1dd9c6dfc5d57666040c86db20cd3",
+    "pdf_bytes": 10859,
+    "elapsed_seconds": 1.147,
+    "operation_id": "1fa02b895a23414294edf04f19b73bcd",
+    "isolation": {
+      "network": "none",
+      "no_new_privileges": true,
+      "capabilities": 0,
+      "readonly_root": true,
+      "landlock_abi": 7
+    }
+  },
+  {
+    "case": "page-field",
+    "contract": "word-conversion-1",
+    "source_sha256": "7aacb602d804a7a66fb8cc7df92ec1e2315d60430c512c47bd63f1e142eaeb2c",
+    "renderer_fingerprint": "7c6487b8fca6b1a5752bfb0c2950e06bf9d6dc8e167db6883d2b7610c1af3e21",
+    "state": "failed",
+    "conversion_attempted": false,
+    "inspection": {
+      "schema": "word-intake-inspection/1",
+      "container_validated": true,
+      "entry_count": 3,
+      "expanded_bytes": 767,
+      "xml_part_count": 3,
+      "active_content_gaps": [
+        "FIELD_EVALUATION_UNSUPPORTED"
+      ],
+      "unsupported_layout_features": [
+        "fldSimple"
+      ],
+      "requested_fonts": [],
+      "conversion_eligible": false,
+      "text_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "gaps": [
+      "FIELD_EVALUATION_UNSUPPORTED"
+    ],
+    "error_code": "word_content_not_supported",
+    "elapsed_seconds": 0.0,
+    "operation_id": "a5956990803749bfacb76bb1085bb5f6",
+    "isolation": {
+      "network": "none",
+      "no_new_privileges": true,
+      "capabilities": 0,
+      "readonly_root": true,
+      "landlock_abi": 7
+    }
+  },
+  {
+    "case": "external-link",
+    "contract": "word-conversion-1",
+    "source_sha256": "01eba5aa636e22152602860bd9c3e314f218ae17b3db09bf55e5ff683430df38",
+    "renderer_fingerprint": "7c6487b8fca6b1a5752bfb0c2950e06bf9d6dc8e167db6883d2b7610c1af3e21",
+    "state": "failed",
+    "conversion_attempted": false,
+    "inspection": {
+      "schema": "word-intake-inspection/1",
+      "container_validated": true,
+      "entry_count": 4,
+      "expanded_bytes": 1171,
+      "xml_part_count": 4,
+      "active_content_gaps": [
+        "EXTERNAL_RELATIONSHIP"
+      ],
+      "unsupported_layout_features": [],
+      "requested_fonts": [
+        "Noto Sans CJK SC"
+      ],
+      "conversion_eligible": false,
+      "text_digest": "c55e95b533453a928d4fef53912dcaf1b698aeb6cc976fc516e43f5a5319cd37"
+    },
+    "gaps": [
+      "EXTERNAL_RELATIONSHIP"
+    ],
+    "error_code": "word_content_not_supported",
+    "elapsed_seconds": 0.0,
+    "operation_id": "c7d5af9dfaf24a76810f36eb0f402b21",
+    "isolation": {
+      "network": "none",
+      "no_new_privileges": true,
+      "capabilities": 0,
+      "readonly_root": true,
+      "landlock_abi": 7
+    }
+  },
+  {
+    "case": "invalid-container",
+    "contract": "word-conversion-1",
+    "source_sha256": "71440fb58fad9b8e03e2acb80c47211b95b1b6beeb4cc813f3b5a640f384b328",
+    "renderer_fingerprint": "7c6487b8fca6b1a5752bfb0c2950e06bf9d6dc8e167db6883d2b7610c1af3e21",
+    "state": "failed",
+    "conversion_attempted": false,
+    "inspection": null,
+    "gaps": [],
+    "error_code": "word_archive_invalid",
+    "elapsed_seconds": 0.0,
+    "operation_id": "6c5253e3eef84de1875a9f45e53b42b1",
+    "isolation": {
+      "network": "none",
+      "no_new_privileges": true,
+      "capabilities": 0,
+      "readonly_root": true,
+      "landlock_abi": 7
+    }
+  },
+  {
+    "case": "wrong-sha",
+    "state": "failed",
+    "error_code": "word_request_invalid",
+    "conversion_attempted": false,
+    "renderer_fingerprint": "7c6487b8fca6b1a5752bfb0c2950e06bf9d6dc8e167db6883d2b7610c1af3e21",
+    "operation_id": "85a432aa096d43048699eb5777fcacca"
+  },
+  {
+    "case": "wrong-renderer",
+    "state": "failed",
+    "error_code": "word_request_invalid",
+    "conversion_attempted": false,
+    "renderer_fingerprint": "7c6487b8fca6b1a5752bfb0c2950e06bf9d6dc8e167db6883d2b7610c1af3e21",
+    "operation_id": "d0547ea0776847cba8fff94fbec4c539"
+  },
+  {
+    "case": "client-plain",
+    "contract": "word-conversion-1",
+    "source_sha256": "7ee539c300fcbcde051e6947ea48f7675a20fe7f8f736a2cf508c4d321b8d247",
+    "renderer_fingerprint": "7c6487b8fca6b1a5752bfb0c2950e06bf9d6dc8e167db6883d2b7610c1af3e21",
+    "state": "converted",
+    "conversion_attempted": true,
+    "inspection": {
+      "schema": "word-intake-inspection/1",
+      "container_validated": true,
+      "entry_count": 3,
+      "expanded_bytes": 902,
+      "xml_part_count": 3,
+      "active_content_gaps": [],
+      "unsupported_layout_features": [],
+      "requested_fonts": [
+        "Noto Sans CJK SC"
+      ],
+      "conversion_eligible": true,
+      "text_digest": "c55e95b533453a928d4fef53912dcaf1b698aeb6cc976fc516e43f5a5319cd37"
+    },
+    "gaps": [],
+    "page_count": 1,
+    "landlock_abi": 7,
+    "missing_paragraph_count": 0,
+    "missing_examples": [],
+    "missing_glyphs": [],
+    "font_substitutions": [],
+    "ink_pages": [
+      1
+    ],
+    "pdf_sha256": "4cdfb0c4e9b9beff7b0b740bcb33323aa62462a91d553f85be63b052f493a458",
+    "pdf_bytes": 8526,
+    "elapsed_seconds": 1.097,
+    "operation_id": "0838ed6905fb49ae8a839aa955c35af2",
+    "isolation": {
+      "network": "none",
+      "no_new_privileges": true,
+      "capabilities": 0,
+      "readonly_root": true,
+      "landlock_abi": 7
+    }
+  },
+  {
+    "case": "client-field",
+    "contract": "word-conversion-1",
+    "source_sha256": "7aacb602d804a7a66fb8cc7df92ec1e2315d60430c512c47bd63f1e142eaeb2c",
+    "renderer_fingerprint": "7c6487b8fca6b1a5752bfb0c2950e06bf9d6dc8e167db6883d2b7610c1af3e21",
+    "state": "failed",
+    "conversion_attempted": false,
+    "inspection": {
+      "schema": "word-intake-inspection/1",
+      "container_validated": true,
+      "entry_count": 3,
+      "expanded_bytes": 767,
+      "xml_part_count": 3,
+      "active_content_gaps": [
+        "FIELD_EVALUATION_UNSUPPORTED"
+      ],
+      "unsupported_layout_features": [
+        "fldSimple"
+      ],
+      "requested_fonts": [],
+      "conversion_eligible": false,
+      "text_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "gaps": [
+      "FIELD_EVALUATION_UNSUPPORTED"
+    ],
+    "error_code": "word_content_not_supported",
+    "elapsed_seconds": 0.0,
+    "operation_id": "4d95df691a5f42bfb897924a58c1aa8a",
+    "isolation": {
+      "network": "none",
+      "no_new_privileges": true,
+      "capabilities": 0,
+      "readonly_root": true,
+      "landlock_abi": 7
+    }
+  }
+]

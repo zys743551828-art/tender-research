@@ -74,6 +74,19 @@ os.close(write); data=os.read(read,8192); os.waitpid(pid,0); print(data.decode()
 """
 
 
+CLIENT = r"""
+import base64,json,sys
+from pathlib import Path
+sys.path.insert(0,'/clientcode')
+from word_conversion import convert_word
+payload=json.load(sys.stdin)
+profile=json.loads(Path('/word-output/renderer.json').read_text())
+result=convert_word(base64.b64decode(payload['data']),'外部改稿.docx',input_dir=Path('/word-input'),output_dir=Path('/word-output'),renderer_fingerprint=profile['fingerprint'],checkpoint=lambda:None)
+print(json.dumps({'report':result.report,'pdf':base64.b64encode(result.pdf).decode() if result.pdf else None},ensure_ascii=False))
+assert not list(Path('/word-input').glob('*.request.json'))
+"""
+
+
 def docker(*arguments, data=None, check=True):
     return subprocess.run(["docker", *arguments], input=data, capture_output=True, text=True, encoding="utf-8", timeout=150, check=check)
 
@@ -82,6 +95,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--image", default="bidwb-word:7.4.7")
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--client-module", type=Path, help="核对产品客户端时传入 backend/src/bidwb/word_conversion.py")
     args = parser.parse_args()
     args.output.mkdir(parents=True, exist_ok=False)
     identity = "bidwb-word-check-" + uuid.uuid4().hex[:12]
@@ -175,6 +189,41 @@ def main():
             else:
                 assert not report["conversion_attempted"] and result["pdf"] is None, report
             print(json.dumps({"case": name, "state": report["state"], "gaps": report.get("gaps", [])}, ensure_ascii=False), flush=True)
+        if args.client_module:
+            client_path = args.client_module.resolve(strict=True).as_posix()
+            for name, source in [("client-plain", word()), ("client-field", word('<w:p><w:fldSimple w:instr="PAGE"/></w:p>'))]:
+                response = docker(
+                    "run",
+                    "-i",
+                    "--rm",
+                    "--network",
+                    "none",
+                    "--read-only",
+                    "--user",
+                    "10001:10001",
+                    "--cap-drop",
+                    "ALL",
+                    "--security-opt",
+                    "no-new-privileges:true",
+                    "--mount",
+                    f"type=volume,source={input_volume},target=/word-input",
+                    "--mount",
+                    f"type=volume,source={output_volume},target=/word-output,readonly",
+                    "--mount",
+                    f"type=bind,source={client_path},target=/clientcode/word_conversion.py,readonly",
+                    "--entrypoint",
+                    "python",
+                    args.image,
+                    "-c",
+                    CLIENT,
+                    data=json.dumps({"data": base64.b64encode(source).decode()}),
+                )
+                result = json.loads(response.stdout)
+                expected = "converted" if name == "client-plain" else "failed"
+                assert result["report"]["state"] == expected, result["report"]
+                assert bool(result["pdf"]) == (name == "client-plain")
+                results.append({"case": name, **result["report"]})
+                print(json.dumps({"case": name, "state": expected}, ensure_ascii=False), flush=True)
         isolation = json.loads(docker("exec", identity, "python", "-c", ISOLATION).stdout)
         assert all(isolation.values())
         invalid = docker("run", "--rm", "--network", "none", args.image, check=False)
