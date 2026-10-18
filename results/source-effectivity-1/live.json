@@ -1,0 +1,379 @@
+{
+  "synthetic": true,
+  "project_id": "prj_216cd2513bbf4cb2",
+  "before": {
+    "rule_set_id": "rpk_6f01fd77096a4e26",
+    "project_id": "prj_216cd2513bbf4cb2",
+    "source_version_ids": [
+      "ver_1e03b92146d14e78",
+      "ver_b1e639de53e74adc"
+    ],
+    "status": "candidate",
+    "revision": 2,
+    "rules": [
+      {
+        "rule_id": "rul_023db98aa4a64dbc",
+        "kind": "mandatory",
+        "statement": "施工组织设计应满足安全文明施工要求",
+        "conditions": [],
+        "exceptions": [],
+        "evidence": [
+          {
+            "evidence_id": "evd_67a661e0dd664856",
+            "project_id": "prj_216cd2513bbf4cb2",
+            "version_id": "ver_1e03b92146d14e78",
+            "file_role": "tender",
+            "file_name": "合成tender.pdf",
+            "source_sha256": "3c1a2e71d2d0c31c8882b3393a733d284508b977d524e18176e6c34a4f6906e3",
+            "physical_page": 1,
+            "printed_page": null,
+            "quote": "本项目技术标满分60分。施工组织设计应满足安全文明施工要求。",
+            "kind": "text",
+            "parser_version": "pdfium-1.3",
+            "bbox": [
+              0.12095,
+              0.08706,
+              0.70402,
+              0.09745
+            ],
+            "semantic_review": "pending",
+            "effectivity_notes": []
+          }
+        ],
+        "confirmation": "pending",
+        "carried_from_rule_id": "rul_15786ea080e547dc",
+        "max_points": null,
+        "source_status": "active"
+      },
+      {
+        "rule_id": "rul_35d6d3b4f0c644e8",
+        "kind": "scoring",
+        "statement": "本项目技术标满分60分",
+        "conditions": [],
+        "exceptions": [],
+        "evidence": [
+          {
+            "evidence_id": "evd_67a661e0dd664856",
+            "project_id": "prj_216cd2513bbf4cb2",
+            "version_id": "ver_1e03b92146d14e78",
+            "file_role": "tender",
+            "file_name": "合成tender.pdf",
+            "source_sha256": "3c1a2e71d2d0c31c8882b3393a733d284508b977d524e18176e6c34a4f6906e3",
+            "physical_page": 1,
+            "printed_page": null,
+            "quote": "本项目技术标满分60分。施工组织设计应满足安全文明施工要求。",
+            "kind": "text",
+            "parser_version": "pdfium-1.3",
+            "bbox": [
+              0.12095,
+              0.08706,
+              0.70402,
+              0.09745
+            ],
+            "semantic_review": "pending",
+            "effectivity_notes": []
+          }
+        ],
+        "confirmation": "pending",
+        "carried_from_rule_id": "rul_bee33359ff2744e8",
+        "max_points": "60",
+        "source_status": "active"
+      },
+      {
+        "rule_id": "rul_b2c6f0dc56f14079",
+        "kind": "mandatory",
+        "statement": "施工组织设计应满足安全文明施工要求。",
+        "conditions": [],
+        "exceptions": [],
+        "evidence": [
+          {
+            "evidence_id": "evd_8ab8fa17883b4402",
+            "project_id": "prj_216cd2513bbf4cb2",
+            "version_id": "ver_b1e639de53e74adc",
+            "file_role": "supplement",
+            "file_name": "合成supplement.pdf",
+            "source_sha256": "6894a08d5b10cc1f812654cfd15438a8a245757efbb78944c91b4d5e022a25e2",
+            "physical_page": 1,
+            "printed_page": null,
+            "quote": "本项目补遗说明：技术标满分80分，以本补遗为准。施工组织设计应满足安全文明施工要求。",
+            "kind": "text",
+            "parser_version": "pdfium-1.3",
+            "bbox": [
+              0.12095,
+              0.08706,
+              0.94593,
+              0.09745
+            ],
+            "semantic_review": "pending",
+            "effectivity_notes": []
+          }
+        ],
+        "confirmation": "pending",
+        "carried_from_rule_id": "rul_e2f2547692b0467d",
+        "max_points": null,
+        "source_status": "active"
+      }
+    ],
+    "terms": {
+      "technical_full_score": {
+        "value": "80",
+        "quote": "技术标满分80分",
+        "evidence": [
+          {
+            "evidence_id": "evd_8ab8fa17883b4402",
+            "project_id": "prj_216cd2513bbf4cb2",
+            "version_id": "ver_b1e639de53e74adc",
+            "file_role": "supplement",
+            "file_name": "合成supplement.pdf",
+            "source_sha256": "6894a08d5b10cc1f812654cfd15438a8a245757efbb78944c91b4d5e022a25e2",
+            "physical_page": 1,
+            "printed_page": null,
+            "quote": "本项目补遗说明：技术标满分80分，以本补遗为准。施工组织设计应满足安全文明施工要求。",
+            "kind": "text",
+            "parser_version": "pdfium-1.3",
+            "bbox": [
+              0.12095,
+              0.08706,
+              0.94593,
+              0.09745
+            ],
+            "semantic_review": "pending",
+            "effectivity_notes": []
+          }
+        ]
+      },
+      "price_rule": null,
+      "conflicts": []
+    },
+    "effectivity_decisions": []
+  },
+  "preview": {
+    "rule_set_id": "rpk_6f01fd77096a4e26",
+    "revision": 2,
+    "affected_rule_ids": [
+      "rul_35d6d3b4f0c644e8"
+    ],
+    "mixed_source_rule_ids": [],
+    "related_sections": [
+      {
+        "title": "片段 1",
+        "evidence": [
+          {
+            "evidence_id": "evd_858bb2f550c64eb3",
+            "project_id": "prj_216cd2513bbf4cb2",
+            "version_id": "ver_20bf4148db1d4866",
+            "file_role": "body",
+            "file_name": "合成body.pdf",
+            "source_sha256": "d567f29573d2d4a036a127f6219d8f471b01add76092d5ec04a84964bfe54434",
+            "physical_page": 1,
+            "printed_page": null,
+            "quote": "本项目施工组织设计：设置围挡，落实施工现场安全防护措施。",
+            "kind": "text",
+            "parser_version": "pdfium-1.3",
+            "bbox": [
+              0.12095,
+              0.09725,
+              0.6854,
+              0.09727
+            ],
+            "semantic_review": "pending",
+            "effectivity_notes": []
+          }
+        ]
+      }
+    ],
+    "gaps": [
+      "章节仅按当前正文关键词相关性列出，需人工核实；未命中不证明没有影响"
+    ]
+  },
+  "after": {
+    "rule_set_id": "rpk_d6e5fbdf4d21477d",
+    "project_id": "prj_216cd2513bbf4cb2",
+    "source_version_ids": [
+      "ver_1e03b92146d14e78",
+      "ver_b1e639de53e74adc"
+    ],
+    "status": "candidate",
+    "revision": 3,
+    "rules": [
+      {
+        "rule_id": "rul_7c850dec44174ae7",
+        "kind": "scoring",
+        "statement": "本项目技术标满分60分",
+        "conditions": [],
+        "exceptions": [],
+        "evidence": [
+          {
+            "evidence_id": "evd_67a661e0dd664856",
+            "project_id": "prj_216cd2513bbf4cb2",
+            "version_id": "ver_1e03b92146d14e78",
+            "file_role": "tender",
+            "file_name": "合成tender.pdf",
+            "source_sha256": "3c1a2e71d2d0c31c8882b3393a733d284508b977d524e18176e6c34a4f6906e3",
+            "physical_page": 1,
+            "printed_page": null,
+            "quote": "本项目技术标满分60分。施工组织设计应满足安全文明施工要求。",
+            "kind": "text",
+            "parser_version": "pdfium-1.3",
+            "bbox": [
+              0.12095,
+              0.08706,
+              0.70402,
+              0.09745
+            ],
+            "semantic_review": "pending",
+            "effectivity_notes": []
+          }
+        ],
+        "confirmation": "pending",
+        "carried_from_rule_id": "rul_35d6d3b4f0c644e8",
+        "max_points": "60",
+        "source_status": "superseded"
+      },
+      {
+        "rule_id": "rul_a26e71838c464b6d",
+        "kind": "mandatory",
+        "statement": "施工组织设计应满足安全文明施工要求",
+        "conditions": [],
+        "exceptions": [],
+        "evidence": [
+          {
+            "evidence_id": "evd_67a661e0dd664856",
+            "project_id": "prj_216cd2513bbf4cb2",
+            "version_id": "ver_1e03b92146d14e78",
+            "file_role": "tender",
+            "file_name": "合成tender.pdf",
+            "source_sha256": "3c1a2e71d2d0c31c8882b3393a733d284508b977d524e18176e6c34a4f6906e3",
+            "physical_page": 1,
+            "printed_page": null,
+            "quote": "本项目技术标满分60分。施工组织设计应满足安全文明施工要求。",
+            "kind": "text",
+            "parser_version": "pdfium-1.3",
+            "bbox": [
+              0.12095,
+              0.08706,
+              0.70402,
+              0.09745
+            ],
+            "semantic_review": "pending",
+            "effectivity_notes": []
+          }
+        ],
+        "confirmation": "pending",
+        "carried_from_rule_id": "rul_023db98aa4a64dbc",
+        "max_points": null,
+        "source_status": "active"
+      },
+      {
+        "rule_id": "rul_de9162a867f74424",
+        "kind": "mandatory",
+        "statement": "施工组织设计应满足安全文明施工要求。",
+        "conditions": [],
+        "exceptions": [],
+        "evidence": [
+          {
+            "evidence_id": "evd_8ab8fa17883b4402",
+            "project_id": "prj_216cd2513bbf4cb2",
+            "version_id": "ver_b1e639de53e74adc",
+            "file_role": "supplement",
+            "file_name": "合成supplement.pdf",
+            "source_sha256": "6894a08d5b10cc1f812654cfd15438a8a245757efbb78944c91b4d5e022a25e2",
+            "physical_page": 1,
+            "printed_page": null,
+            "quote": "本项目补遗说明：技术标满分80分，以本补遗为准。施工组织设计应满足安全文明施工要求。",
+            "kind": "text",
+            "parser_version": "pdfium-1.3",
+            "bbox": [
+              0.12095,
+              0.08706,
+              0.94593,
+              0.09745
+            ],
+            "semantic_review": "pending",
+            "effectivity_notes": []
+          }
+        ],
+        "confirmation": "pending",
+        "carried_from_rule_id": "rul_b2c6f0dc56f14079",
+        "max_points": null,
+        "source_status": "active"
+      }
+    ],
+    "terms": {
+      "technical_full_score": {
+        "value": "80",
+        "quote": "技术标满分80分",
+        "evidence": [
+          {
+            "evidence_id": "evd_8ab8fa17883b4402",
+            "project_id": "prj_216cd2513bbf4cb2",
+            "version_id": "ver_b1e639de53e74adc",
+            "file_role": "supplement",
+            "file_name": "合成supplement.pdf",
+            "source_sha256": "6894a08d5b10cc1f812654cfd15438a8a245757efbb78944c91b4d5e022a25e2",
+            "physical_page": 1,
+            "printed_page": null,
+            "quote": "本项目补遗说明：技术标满分80分，以本补遗为准。施工组织设计应满足安全文明施工要求。",
+            "kind": "text",
+            "parser_version": "pdfium-1.3",
+            "bbox": [
+              0.12095,
+              0.08706,
+              0.94593,
+              0.09745
+            ],
+            "semantic_review": "pending",
+            "effectivity_notes": []
+          }
+        ]
+      },
+      "price_rule": null,
+      "conflicts": []
+    },
+    "effectivity_decisions": [
+      {
+        "decision_id": "sfx_324dcdba9d504ee6",
+        "old_version_id": "ver_1e03b92146d14e78",
+        "new_version_id": "ver_b1e639de53e74adc",
+        "action": "partial_replace",
+        "reason": "合成验证：补遗明确满分80分，仅结束原60分要求，安全文明施工要求继续保留。",
+        "scope_basis": [
+          {
+            "evidence_id": "evd_8ab8fa17883b4402",
+            "quote": "本项目补遗说明：技术标满分80分，以本补遗为准。施工组织设计应满足安全文明施工要求。"
+          }
+        ],
+        "ended_rule_ids": [
+          "rul_35d6d3b4f0c644e8"
+        ],
+        "pending_rule_ids": []
+      }
+    ]
+  },
+  "old_evidence": {
+    "evidence_id": "evd_67a661e0dd664856",
+    "project_id": "prj_216cd2513bbf4cb2",
+    "version_id": "ver_1e03b92146d14e78",
+    "file_role": "tender",
+    "file_name": "合成tender.pdf",
+    "source_sha256": "3c1a2e71d2d0c31c8882b3393a733d284508b977d524e18176e6c34a4f6906e3",
+    "physical_page": 1,
+    "printed_page": null,
+    "quote": "本项目技术标满分60分。施工组织设计应满足安全文明施工要求。",
+    "kind": "text",
+    "parser_version": "pdfium-1.3",
+    "bbox": [
+      0.12095,
+      0.08706,
+      0.70402,
+      0.09745
+    ],
+    "semantic_review": "pending",
+    "effectivity_notes": [
+      "按当前规则版本，“本项目技术标满分60分”已被补遗替代；原文和历史报告保留，同页其他要求不因此失效。"
+    ]
+  },
+  "old_snapshot": "snp_633274a67ca1452b",
+  "new_snapshot": "snp_044e2756979c4ca2",
+  "model_calls": 0
+}

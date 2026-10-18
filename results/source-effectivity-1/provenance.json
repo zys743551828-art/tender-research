@@ -1,0 +1,10 @@
+{
+  "app_commit": "6e9a5b7",
+  "backend_tests": 223,
+  "frontend_tests": 300,
+  "migration": "0003",
+  "backend_image": "sha256:eca7cd0f89e2af5512aab4bc7b59dcc54c04e3124467542981c2a88b1d6f3f64",
+  "web_image": "sha256:ad19c634108a1f9bdc26317a076922acd87b992b9a1869932d4fd3869fbac8bd",
+  "database_backup_sha256": "71e4546477b94ea93fd676302aa39ae45e3c3a2282725f50f6baccadc5145112",
+  "browser_visual_verification": "not_available_missing_browser_service"
+}

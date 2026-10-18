@@ -1,0 +1,1533 @@
+
+> tender-frontend@0.1.0 test
+> vitest run
+
+
+ RUN  v3.2.7 D:/workspace/tender/tender-app/frontend
+
+stderr | src/features/findings/FindingsPage.test.tsx > 问题审核页 > 列出发现，待核实的标“待核实”；招标要求与正文写法并排对照
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/submit/SubmitPage.test.tsx > 提交与结果页：登记前的检查 > 全部通过：直接显示登记表单，提交时间默认填好当前时间
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/submit/SubmitPage.test.tsx > 提交与结果页：登记前的检查 > 可能导致否决的问题没处理完：该项未通过并给出“处理问题”，不显示登记表单
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 问题审核页 > 驳回理由为空时不能提交；确认可以不写理由
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/submit/SubmitPage.test.tsx > 提交与结果页：登记前的检查 > 废标／否决／强制类规则未确认：该项未通过并链接到依据页
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/submit/SubmitPage.test.tsx > 提交与结果页：登记前的检查 > 评分条款的规则未确认不挡提交
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 问题审核页 > 驳回理由为空时不能提交；确认可以不写理由
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 问题审核页 > 确认问题：提交 object_version / decision / reason，带 CSRF 与幂等键；成功后清空理由并提示
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/submit/SubmitPage.test.tsx > 提交与结果页：登记前的检查 > 项目设置为规则按原文接受时，未核对的废标／强制类规则不挡提交
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/submit/SubmitPage.test.tsx > 提交与结果页：登记前的检查 > 资料有更新：说明评审落后于最新输入，并链接到报告
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/submit/SubmitPage.test.tsx > 提交与结果页：登记前的检查 > 没有完成的评审：该项未通过
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/submit/SubmitPage.test.tsx > 提交与结果页：登记提交 > 已登记的提交来自后端列表，并链接到“开标结果”标签
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/submit/SubmitPage.test.tsx > 提交与结果页：登记提交 > 请求体符合 SubmissionRequest：正文与输入取最近一轮评审，不让用户另选
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 问题审核页 > 确认问题：提交 object_version / decision / reason，带 CSRF 与幂等键；成功后清空理由并提示
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 问题审核页 > 412 版本已变化：提示刷新、保留已输入的理由；再次提交仍用同一个幂等键
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 问题审核页 > 缺少事实时展示所需事实，改稿建议说明要先补事实
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/submit/SubmitPage.test.tsx > 提交与结果页：登记提交 > 请求体符合 SubmissionRequest：正文与输入取最近一轮评审，不让用户另选
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/submit/SubmitPage.test.tsx > 提交与结果页：登记提交 > 还有未结案的其他问题：必须勾选“已知晓”才能登记
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 问题审核页 > 状态与分类筛选交给服务端：默认最近一轮评审，切换后带参数重新请求
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 问题审核页 > 列表用稳定短码标注问题，而不是随筛选变化的序号
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 问题审核页 > 审核成功后重新读取项目（状态与 revision 可能已变）
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 问题审核页 > 审核成功后重新读取项目（状态与 revision 可能已变）
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 问题审核页 > 已驳回、已解决的问题可以“重新打开”，提交 decision=reopen 与理由
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/submit/SubmitPage.test.tsx > 提交与结果页：登记提交 > 还有未结案的其他问题：必须勾选“已知晓”才能登记
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/submit/SubmitPage.test.tsx > 提交与结果页：登记提交 > 没有未结案问题时不出现确认框
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/submit/SubmitPage.test.tsx > 提交与结果页：登记提交 > 登记成功后重新读取项目
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 问题审核页 > 已驳回、已解决的问题可以“重新打开”，提交 decision=reopen 与理由
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 问题审核页 > 已确认的问题直接“标记已解决”是次要按钮，并写明尚未采纳建议／未复检
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 问题审核页 > 待修改的问题也可以人工“标记已解决”（次要按钮，提示未复检）
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/submit/SubmitPage.test.tsx > 提交与结果页：登记提交 > 登记成功后重新读取项目
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 问题审核页 > 暂缓且缺事实的问题：说明先录入事实再重新评审，给出事实库链接
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/submit/SubmitPage.test.tsx > 提交与结果页：登记提交 > 409 qualification_rules_unconfirmed：显示后端消息、补一句下一步并逐项列出未满足的条件
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 问题审核页 > 暂缓的问题只能确认或驳回；request_facts 显示为“暂缓，待补事实”
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 问题审核页 > 待修改：说明上传新正文会自动开新一轮评审、不会自动结案；上传链接带正文用途
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 问题审核页 > 确认过的问题：被标为“已解决”前不会出现不存在的动作
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 问题审核页 > 没有发现：空状态
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 问题审核页 > 项目 404：不区分“不存在”与“无权”，不泄漏信息
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 分类与评审状态 > 分类页签带未处理数（取自报告），点击切换分类并带入地址
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/submit/SubmitPage.test.tsx > 提交与结果页：登记提交 > 409 critical_findings_open：显示后端消息、补一句下一步并逐项列出未满足的条件
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 分类与评审状态 > 依据的规则还没核对时，详情里说明暂按原文判断
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 分类与评审状态 > 还没有完成的评审：说明没有评审不等于没有问题，且不请求问题列表
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/submit/SubmitPage.test.tsx > 提交与结果页：登记提交 > 409 snapshot_not_latest：显示后端消息、补一句下一步并逐项列出未满足的条件
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 分类与评审状态 > 资料有更新时顶部提示原因并给出“重新评审”
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 分类与评审状态 > 资料有更新时顶部提示原因并给出“重新评审”
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 分类与评审状态 > 问题处理完、可以登记提交时，页头给出去登记的入口
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 分类与评审状态 > 还有问题没处理时，页头不催着去提交
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 逐条处理 > 显示“第 i / n 条”，上一条／下一条与 J／K 键切换；在输入框里打字不触发
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/submit/SubmitPage.test.tsx > 提交与结果页：登记提交 > 提交时间必填，缺了不发请求
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 逐条处理 > 确认一条后自动跳到后面下一条未处理的问题（跳过已解决的）
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/submit/SubmitPage.test.tsx > 提交与结果页：登记提交 > 还没有登记过提交时给出空状态；“开标结果”标签提示先登记提交
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+ ✓ src/features/submit/SubmitPage.test.tsx (17 tests) 3748ms
+   ✓ 提交与结果页：登记提交 > 请求体符合 SubmissionRequest：正文与输入取最近一轮评审，不让用户另选  511ms
+   ✓ 提交与结果页：登记提交 > 还有未结案的其他问题：必须勾选“已知晓”才能登记  589ms
+   ✓ 提交与结果页：登记提交 > 登记成功后重新读取项目  435ms
+   ✓ 提交与结果页：登记提交 > 409 qualification_rules_unconfirmed：显示后端消息、补一句下一步并逐项列出未满足的条件  451ms
+   ✓ 提交与结果页：登记提交 > 409 snapshot_not_latest：显示后端消息、补一句下一步并逐项列出未满足的条件  431ms
+stderr | src/features/findings/FindingsPage.test.tsx > 逐条处理 > 确认一条后自动跳到后面下一条未处理的问题（跳过已解决的）
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 逐条处理 > 详情头部显示处理进度条，驳回的问题单独说明
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 逐条处理 > 详情头部显示处理进度条，驳回的问题单独说明
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 改稿建议 > 范围必填；提交 RevisionRequest（底稿取快照正文版本、allowed_fact_ids 为空）；返回任务并跟踪，完成后列出建议
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 改稿建议 > 范围必填；提交 RevisionRequest（底稿取快照正文版本、allowed_fact_ids 为空）；返回任务并跟踪，完成后列出建议
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 改稿建议 > 范围必填；提交 RevisionRequest（底稿取快照正文版本、allowed_fact_ids 为空）；返回任务并跟踪，完成后列出建议
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 改稿建议 > 允许使用的事实：从当前事实集勾选，未确认的不可选；请求体带所选 fact_id
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 改稿建议 > 允许使用的事实：从当前事实集勾选，未确认的不可选；请求体带所选 fact_id
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 改稿建议 > 采纳：请求体为 base_version_id 与 null，不带 If-Match；成功后问题刷新为“待修改”
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 改稿建议 > 采纳：请求体为 base_version_id 与 null，不带 If-Match；成功后问题刷新为“待修改”
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 改稿建议 > 展开建议显示“原文 → 改为”，并汇总被丢弃的候选及原因；采纳对话框里直接可见
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 改稿建议 > base_version_stale：提示建议已过期，不能再次提交
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 改稿建议 > base_version_stale：提示建议已过期，不能再次提交
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 改稿建议 > revision_already_reviewed：提示已被处理
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/facts/FactsPanel.test.tsx > 依据页：事实库 > 列出当前事实集的条目
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 改稿建议 > revision_already_reviewed：提示已被处理
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/facts/FactsPanel.test.tsx > 依据页：事实库 > 没有事实：空状态
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 改稿建议 > 驳回：理由必填，请求体为 base_version_id 与 reason
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/facts/FactsPanel.test.tsx > 依据页：事实库 > 说明录入的事实要重新评审后才生效
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/facts/FactsPanel.test.tsx > 依据页：事实库 > 撤回：填写理由后提交，请求体为 {reason}，成功后刷新列表
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/findings/FindingsPage.test.tsx > 改稿建议 > 驳回：理由必填，请求体为 base_version_id 与 reason
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+ ✓ src/features/findings/FindingsPage.test.tsx (34 tests) 6301ms
+   ✓ 问题审核页 > 确认问题：提交 object_version / decision / reason，带 CSRF 与幂等键；成功后清空理由并提示  436ms
+   ✓ 问题审核页 > 已驳回、已解决的问题可以“重新打开”，提交 decision=reopen 与理由  356ms
+   ✓ 改稿建议 > 范围必填；提交 RevisionRequest（底稿取快照正文版本、allowed_fact_ids 为空）；返回任务并跟踪，完成后列出建议  513ms
+   ✓ 改稿建议 > 允许使用的事实：从当前事实集勾选，未确认的不可选；请求体带所选 fact_id  370ms
+   ✓ 改稿建议 > 驳回：理由必填，请求体为 base_version_id 与 reason  461ms
+stderr | src/features/facts/FactsPanel.test.tsx > 依据页：事实库 > 撤回 409 fact_not_current：显示友好提示并刷新列表
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/facts/FactsPanel.test.tsx > 依据页：事实库 > 说明录入后不能修改，录错了撤回再录
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/facts/FactsPanel.test.tsx > 依据页：事实库 > 录入：校验必填；请求体符合 FactRequest；成功后刷新列表
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/facts/FactsPanel.test.tsx > 依据页：事实库 > 后端拒绝（证据不属于本项目）：显示后端中文提示并保留输入
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/facts/FactsPanel.test.tsx > 依据页：事实库 > 证据选择器：检索并勾选，把证据 ID 写入文本框（保留手填内容），可取消勾选
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/price/PricePage.test.tsx > 报价页：试算 > 载入已保存的方案并试算：结果表、换算句、最优候选、风险提示、价格分曲线
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/price/PricePage.test.tsx > 报价页：试算 > 改参数后防抖试算：连续输入只发出最后一次请求
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+ ✓ src/features/facts/FactsPanel.test.tsx (9 tests) 3430ms
+   ✓ 依据页：事实库 > 撤回：填写理由后提交，请求体为 {reason}，成功后刷新列表  407ms
+   ✓ 依据页：事实库 > 撤回 409 fact_not_current：显示友好提示并刷新列表  325ms
+   ✓ 依据页：事实库 > 录入：校验必填；请求体符合 FactRequest；成功后刷新列表  1191ms
+   ✓ 依据页：事实库 > 后端拒绝（证据不属于本项目）：显示后端中文提示并保留输入  675ms
+   ✓ 依据页：事实库 > 证据选择器：检索并勾选，把证据 ID 写入文本框（保留手填内容），可取消勾选  590ms
+stderr | src/features/price/PricePage.test.tsx > 报价页：试算 > 输入不合法：给出友好错误、不发试算请求
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/price/PricePage.test.tsx > 报价页：试算 > 输入不合法：给出友好错误、不发试算请求
+Warning: An update to PriceWorkspace inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at PriceWorkspace (D:\workspace\tender\tender-app\frontend\src\features\price\PricePage.tsx:132:3)
+    at PricePage (D:\workspace\tender\tender-app\frontend\src\features\price\PricePage.tsx:37:66)
+    at Suspense
+    at Deferred (D:\workspace\tender\tender-app\frontend\src\routes\App.tsx:26:21)
+    at RenderedRoute (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at ProjectLayout (D:\workspace\tender\tender-app\frontend\src\routes\ProjectLayout.tsx:13:60)
+    at RenderedRoute (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at div
+    at main
+    at div
+    at ToastProvider (D:\workspace\tender\tender-app\frontend\src\components\Toast.tsx:6:26)
+    at Provider (file:///D:/workspace/tender/tender-app/frontend/node_modules/@radix-ui/react-context/dist/index.mjs:38:15)
+    at TooltipProvider (file:///D:/workspace/tender/tender-app/frontend/node_modules/@radix-ui/react-tooltip/dist/index.mjs:32:5)
+    at AppShell (D:\workspace\tender\tender-app\frontend\src\routes\AppShell.tsx:26:52)
+    at RequireAuth (D:\workspace\tender\tender-app\frontend\src\features\auth\auth.tsx:41:24)
+    at RenderedRoute (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Routes (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:1269:7)
+    at App
+    at Router (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at MemoryRouter (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:1097:7)
+    at QueryClientProvider (file:///D:/workspace/tender/tender-app/frontend/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js:42:32)
+
+stderr | src/features/price/PricePage.test.tsx > 报价页：试算 > 后端试算 422：显示后端中文消息
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/price/PricePage.test.tsx > 报价页：试算 > 平均值法：说明竞争对手报价只是估计；固定值法不显示该说明和“计入己方报价”
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/price/PricePage.test.tsx > 报价页：保存与历史 > 保存：PUT 带整份方案与幂等键，保存的是新版本
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/price/PricePage.test.tsx > 报价页：保存与历史 > 保存时表单不合法：不发请求并显示错误
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/price/PricePage.test.tsx > 报价页：保存与历史 > 后端拒绝保存：显示后端消息
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/rules/RulesPanel.test.tsx > 依据页：规则分组 > 页面显示分组标题与评分条款分值；待核对的提示只出现一次，不在每条规则下重复
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/price/PricePage.test.tsx > 报价页：保存与历史 > 保存过的方案：列出全部版本，可载入到表单
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/rules/RulesPanel.test.tsx > 依据页：规则确认 > 还没有规则：说明会自动提取，没有手动提取按钮
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/rules/RulesPanel.test.tsx > 依据页：规则确认 > 沿用上一版决定的规则显示徽标，全新的规则不显示
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/price/PricePage.test.tsx > 报价页：保存与历史 > 还没有方案、招标文件也没写评标价办法：默认平均值法，可从常见办法开始，不发试算请求
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/rules/RulesPanel.test.tsx > 依据页：规则确认 > 全部按原文确认：一次提交全部待核对的规则，已确认的不在其中
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/rules/RulesPanel.test.tsx > 依据页：规则确认 > 全部按原文确认：一次提交全部待核对的规则，已确认的不在其中
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/rules/RulesPanel.test.tsx > 依据页：规则确认 > 评标办法里提取到技术分满分与评标价规则时，给出原文出处和去报价页的入口
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/rules/RulesPanel.test.tsx > 依据页：规则确认 > 一键确认：不弹窗、不要求理由，请求里没有 reason；规则集合未变不提示重新评审
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/rules/RulesPanel.test.tsx > 依据页：规则确认 > 一键确认：不弹窗、不要求理由，请求里没有 reason；规则集合未变不提示重新评审
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/rules/RulesPanel.test.tsx > 依据页：规则确认 > 驳回必须写理由：弹窗里不填不发请求，填了才提交
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/price/PricePage.test.tsx > 报价页：保存与历史 > 还没有方案、招标文件也没写评标价办法：默认平均值法，可从常见办法开始，不发试算请求
+Warning: An update to PriceWorkspace inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at PriceWorkspace (D:\workspace\tender\tender-app\frontend\src\features\price\PricePage.tsx:132:3)
+    at PricePage (D:\workspace\tender\tender-app\frontend\src\features\price\PricePage.tsx:37:66)
+    at Suspense
+    at Deferred (D:\workspace\tender\tender-app\frontend\src\routes\App.tsx:26:21)
+    at RenderedRoute (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at ProjectLayout (D:\workspace\tender\tender-app\frontend\src\routes\ProjectLayout.tsx:13:60)
+    at RenderedRoute (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at div
+    at main
+    at div
+    at ToastProvider (D:\workspace\tender\tender-app\frontend\src\components\Toast.tsx:6:26)
+    at Provider (file:///D:/workspace/tender/tender-app/frontend/node_modules/@radix-ui/react-context/dist/index.mjs:38:15)
+    at TooltipProvider (file:///D:/workspace/tender/tender-app/frontend/node_modules/@radix-ui/react-tooltip/dist/index.mjs:32:5)
+    at AppShell (D:\workspace\tender\tender-app\frontend\src\routes\AppShell.tsx:26:52)
+    at RequireAuth (D:\workspace\tender\tender-app\frontend\src\features\auth\auth.tsx:41:24)
+    at RenderedRoute (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Routes (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:1269:7)
+    at App
+    at Router (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at MemoryRouter (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:1097:7)
+    at QueryClientProvider (file:///D:/workspace/tender/tender-app/frontend/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js:42:32)
+
+stderr | src/features/rules/RulesPanel.test.tsx > 依据页：规则确认 > 驳回必须写理由：弹窗里不填不发请求，填了才提交
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/price/PricePage.test.tsx > 报价页：保存与历史 > 招标文件写明了评标价办法：第一次打开就按原文填好，显示原文出处，可重新填入
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/price/PricePage.test.tsx > 报价页：保存与历史 > 招标文件写明了评标价办法：第一次打开就按原文填好，显示原文出处，可重新填入
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • POST /api/v1/projects/prj-1/price:simulate
+
+  • Request body: {"params":{"full_score":"30","above_deduct_per_pct":"1","below_deduct_per_pct":"0.5","max_limit":null,"abnormal_low_pct":null,"benchmark":{"method":"average","fixed_value":null,"coefficient":"1","trim_pct":"0","include_own":false}},"competitor_prices":[],"candidate_prices":[],"note":""}
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/rules/RulesPanel.test.tsx > 依据页：规则确认 > 暂缓同样必须写理由，请求为 decision=defer
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+ ✓ src/features/price/PricePage.test.tsx (12 tests) 3359ms
+   ✓ 报价页：试算 > 改参数后防抖试算：连续输入只发出最后一次请求  608ms
+   ✓ 报价页：试算 > 输入不合法：给出友好错误、不发试算请求  806ms
+   ✓ 报价页：保存与历史 > 还没有方案、招标文件也没写评标价办法：默认平均值法，可从常见办法开始，不发试算请求  735ms
+stderr | src/features/rules/RulesPanel.test.tsx > 依据页：规则确认 > 暂缓同样必须写理由，请求为 decision=defer
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/rules/RulesPanel.test.tsx > 依据页：规则确认 > 改变了参与评审的规则集合：后端复制出新规则包，提示重新评审后生效
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/rules/RulesPanel.test.tsx > 依据页：规则确认 > 改变了参与评审的规则集合：后端复制出新规则包，提示重新评审后生效
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/rules/RulesPanel.test.tsx > 依据页：规则确认 > 逐条确认成功后重新读取项目与报告
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/rules/RulesPanel.test.tsx > 依据页：规则确认 > 逐条确认成功后重新读取项目与报告
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+ ✓ src/features/rules/RulesPanel.test.tsx (12 tests) 1742ms
+   ✓ 依据页：规则确认 > 驳回必须写理由：弹窗里不填不发请求，填了才提交  386ms
+   ✓ 依据页：规则确认 > 暂缓同样必须写理由，请求为 decision=defer  340ms
+   ✓ 依据页：规则确认 > 改变了参与评审的规则集合：后端复制出新规则包，提示重新评审后生效  336ms
+stderr | src/features/projects/SettingsPage.test.tsx > 进入设置页时重新读取项目 > 挂载后再取一次项目，避免用过期 revision 提交
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/projects/SettingsPage.test.tsx > 项目设置 > 保存：If-Match 为当前 revision，只发改动字段，成功后刷新显示
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/projects/SettingsPage.test.tsx > 项目设置 > 保存：If-Match 为当前 revision，只发改动字段，成功后刷新显示
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/projects/SettingsPage.test.tsx > 项目设置 > 必填项为空：不发请求并提示
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/projects/SettingsPage.test.tsx > 项目设置 > 412：提示被他人修改并保留输入；载入最新版本后用新 revision 重新保存
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/report/ReportPage.test.tsx > 报告页：没有完成的评审 > 生效关系待核实时引导核实依据，不显示无效的重试按钮
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/report/ReportPage.test.tsx > 报告页：没有完成的评审 > 资料不齐：说明还缺什么，给出上传入口，没有“下一步”按钮
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/report/ReportPage.test.tsx > 报告页：没有完成的评审 > 评审进行中：显示四个环节的状态（文字，不只靠颜色）
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/projects/SettingsPage.test.tsx > 项目设置 > 412：提示被他人修改并保留输入；载入最新版本后用新 revision 重新保存
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/projects/SettingsPage.test.tsx > 项目设置 > 409 等其他后端错误：显示后端中文消息
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/report/ReportPage.test.tsx > 报告页：没有完成的评审 > 评审中断：显示失败环节与原因，点“重新评审”发起 POST /analysis
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/report/ReportPage.test.tsx > 报告页：没有完成的评审 > 评审中断：显示失败环节与原因，点“重新评审”发起 POST /analysis
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/report/ReportPage.test.tsx > 报告页：评审报告 > 结论：一句话说清有没有否决风险，下面是强制要求满足数、预计技术分（未校准、覆盖程度）和报价
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/projects/SettingsPage.test.tsx > 功能开关 > 默认全开（规则按原文接受除外）；改动后整体提交 settings，带当前 revision
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/report/ReportPage.test.tsx > 报告页：评审报告 > 有未处理的否决风险：结论直接说出数量
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/report/ReportPage.test.tsx > 报告页：评审报告 > 报价最优候选：已保存方案时显示报价与价格分
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/report/ReportPage.test.tsx > 报告页：评审报告 > 下一步保留主要动作，其余关键问题有数量且可展开；评审动作交给横幅
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/projects/SettingsPage.test.tsx > 功能开关 > 默认全开（规则按原文接受除外）；改动后整体提交 settings，带当前 revision
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/projects/SettingsPage.test.tsx > 功能开关 > 报价模块关闭时报价页给出说明和去设置的入口
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/report/ReportPage.test.tsx > 报告页：评审报告 > 逐条响应：只展开需要处理的行，违反与无法判断排前；满足的收起，可以展开
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/report/ReportPage.test.tsx > 报告页：评审报告 > 未核对的规则可以在逐条响应里直接按原文确认
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/report/ReportPage.test.tsx > 报告页：评审报告 > 未核对的规则可以在逐条响应里直接按原文确认
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/report/ReportPage.test.tsx > 报告页：评审报告 > 核对覆盖不完整时在矩阵上方提示
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/report/ReportPage.test.tsx > 报告页：评审报告 > 全部问题：一行汇总，每类链接到带 category 的问题页
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/report/ReportPage.test.tsx > 报告页：评审报告 > 技术分预测：估计与区间、“未校准”与一句原因同时出现，失分点带原文，覆盖不全时写明
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/report/ReportPage.test.tsx > 报告页：评审报告 > 打分模型已校准：标“已校准”，区间写明把握，给出模型的样本数、误差与适用范围，不写覆盖程度
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/report/ReportPage.test.tsx > 报告页：评审报告 > 样本不足时不给误差；已校准时给出平均绝对误差与偏差
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/report/ReportPage.test.tsx > 报告页：评审报告 > 样本不足时不给误差；已校准时给出平均绝对误差与偏差
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/report/ReportPage.test.tsx > 报告页：评审报告 > 预测弃权时显示原因，不画区间条
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/report/ReportPage.test.tsx > 报告页：评审报告 > 导出：Word 评审报告与批注版 PDF 是直接下载链接
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+ ✓ src/features/projects/SettingsPage.test.tsx (8 tests) 2018ms
+   ✓ 项目设置 > 412：提示被他人修改并保留输入；载入最新版本后用新 revision 重新保存  339ms
+   ✓ 功能开关 > 报价模块关闭时报价页给出说明和去设置的入口  737ms
+stderr | src/features/report/ReportPage.test.tsx > 报告页：评审报告 > 资料、规则或事实有更新：提示原因并可重新评审
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/report/ReportPage.test.tsx > 报告页：评审报告 > 评审由进行中变为完成后，报告自动重新读取
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/report/ReportPage.test.tsx > 报告页：评审报告 > 评审由进行中变为完成后，报告自动重新读取
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/report/ReportPage.test.tsx > 报告页：项目功能开关 > 手动开始评审：资料就绪时给出“开始评审”，点击发起 POST /analysis
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/report/ReportPage.test.tsx > 报告页：项目功能开关 > 手动开始评审：资料就绪时给出“开始评审”，点击发起 POST /analysis
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/report/ReportPage.test.tsx > 报告页：项目功能开关 > 不显示分数、关闭报价与检测：只列失分点，不出现分数、报价卡片和对应分类
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+ ✓ src/features/report/ReportPage.test.tsx (24 tests) 1753ms
+stderr | src/features/outcomes/OutcomesPage.test.tsx > 结果登记（提交与结果页“开标结果”标签） > 列出后端保存的全部结果，刷新页面后仍在
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/outcomes/OutcomesPage.test.tsx > 结果登记（提交与结果页“开标结果”标签） > 没有结果：空状态；提交从后端列表选择，默认选中 URL 指定的提交
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/outcomes/OutcomesPage.test.tsx > 结果登记（提交与结果页“开标结果”标签） > 登记结果（无分值·仅阶段结果）：提交所选的提交 ID，成功后重新读取列表
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/materials/MaterialsPage.test.tsx > 资料：解析状态与评审进度 > 每个文件显示解析状态；上传即评审，页面没有“下一步”按钮，顶部显示流水线进度
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/materials/MaterialsPage.test.tsx > 资料：解析状态与评审进度 > 解析失败：如实显示状态与原因
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/outcomes/OutcomesPage.test.tsx > 结果登记（提交与结果页“开标结果”标签） > 登记结果（无分值·仅阶段结果）：提交所选的提交 ID，成功后重新读取列表
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/materials/MaterialsPage.test.tsx > 资料：解析状态与评审进度 > 没有招标文件：说明暂时不能评审；文件列表不显示校验值等内部信息
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/outcomes/OutcomesPage.test.tsx > 结果登记（提交与结果页“开标结果”标签） > 有分值的成绩类型必须同时填分值和满分：留空不发请求，并提示改选“无分值”
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/outcomes/OutcomesPage.test.tsx > 结果登记（提交与结果页“开标结果”标签） > 来源资料只列“官方结果”用途的文件；没有时给出到资料上传的提示
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/materials/MaterialsPage.test.tsx > 资料：重复上传 > 服务端返回清单里已有的版本：提示没有产生新版本
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/outcomes/OutcomesPage.test.tsx > 结果登记（提交与结果页“开标结果”标签） > 没有官方结果资料：来源下拉为空，并提示用“官方结果”用途上传
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/outcomes/OutcomesPage.test.tsx > 结果登记（提交与结果页“开标结果”标签） > “核实来源”只出现在官方来源、未被取代、未核实的记录上；被取代的标“已被取代”
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/outcomes/OutcomesPage.test.tsx > 结果登记（提交与结果页“开标结果”标签） > 更正的原记录下拉不列已被取代的记录；报送结果标注需以官方来源重新登记
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/materials/MaterialsPage.test.tsx > 资料：用途与版本 > 按文件名猜用途与版本：同名为新版本，唯一一份正文默认是它的新版本；上传前可以改
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/outcomes/OutcomesPage.test.tsx > 结果登记（提交与结果页“开标结果”标签） > 核实对话框的来源下拉同样只列官方结果资料
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/outcomes/OutcomesPage.test.tsx > 结果登记（提交与结果页“开标结果”标签） > “更正的原记录”只列所选提交下的记录；换提交后清掉已选值
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+ ✓ src/features/outcomes/OutcomesPage.test.tsx (10 tests) 1528ms
+   ✓ 结果登记（提交与结果页“开标结果”标签） > 登记结果（无分值·仅阶段结果）：提交所选的提交 ID，成功后重新读取列表  327ms
+stderr | src/features/materials/MaterialsPage.test.tsx > 资料：用途与版本 > ?role=body 带来的用途优先；结果显示“已记为 X 的第 N 版”
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+ ✓ src/features/materials/MaterialsPage.test.tsx (6 tests) 1345ms
+   ✓ 资料：用途与版本 > 按文件名猜用途与版本：同名为新版本，唯一一份正文默认是它的新版本；上传前可以改  417ms
+   ✓ 资料：用途与版本 > ?role=body 带来的用途优先；结果显示“已记为 X 的第 N 版”  324ms
+stderr | src/features/metrics/MetricsPage.test.tsx > 度量页 > 读取失败：显示后端消息
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+ ✓ src/features/metrics/MetricsPage.test.tsx (11 tests) 1049ms
+   ✓ 度量页 > 结果：提交数、已出结果数、入围率与中标率，条形图有文字描述  670ms
+ ✓ src/features/rules/SourceEffectivity.test.tsx (2 tests) 1182ms
+   ✓ 有据补遗影响 > 先查看范围与相关章节，核对原文并填写理由后提交局部替代  717ms
+   ✓ 有据补遗影响 > 预览后更换范围必须重新查看，不能提交过期预览  463ms
+ ✓ src/lib/sha256.test.ts (9 tests) 878ms
+   ✓ hashSource 分块读取 > 超过 100 MiB 的文件按块读取、结果与一次性计算一致，且从不一次读入整个文件  859ms
+ ✓ src/features/projects/ProjectsPage.test.tsx (8 tests) 901ms
+   ✓ 项目总览 > 新建项目只要求名称；更多信息按需展开，空的选填项为 null  499ms
+stderr | src/features/evidence/SearchPage.test.tsx > 校验与文案 > 被替代条款的原文仍可查，具体效力提示随检索结果显示
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/evidence/SearchPage.test.tsx > 证据检索页 > 还没有任何一轮评审也能检索：默认范围是当前资料，请求体不带 snapshot_id
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/evidence/SearchPage.test.tsx > 证据检索页 > 可以把范围限定在某一轮评审用到的资料：请求体带该轮的 snapshot_id
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/evidence/SearchPage.test.tsx > 证据检索页 > 空检索内容不发请求
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/evidence/SearchPage.test.tsx > 证据检索页 > 检索：请求体符合 SearchRequest；显示原文、页码、文件名、降级说明与原页链接
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/evidence/SearchPage.test.tsx > 证据检索页 > 无结果与后端错误
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+ ✓ src/features/evidence/SearchPage.test.tsx (8 tests) 1035ms
+ ✓ src/features/auth/LoginPage.test.tsx (4 tests) 804ms
+   ✓ 登录页 > 登录成功：请求体为 {username,password}，带幂等键、不带 CSRF，随后进入项目列表  351ms
+stderr | src/routes/App.test.tsx > 导航与路由 > 依据页的标签可用键盘切换，地址带 tab 参数时直接打开事实库
+Warning: An update to ForwardRef(RovingFocusGroupImpl) inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at RovingFocusGroupImpl (file:///D:/workspace/tender/tender-app/frontend/node_modules/@radix-ui/react-roving-focus/dist/index.mjs:44:5)
+    at file:///D:/workspace/tender/tender-app/frontend/node_modules/@radix-ui/react-slot/dist/index.mjs:10:11
+    at file:///D:/workspace/tender/tender-app/frontend/node_modules/@radix-ui/react-collection/dist/index.mjs:30:15
+    at Provider (file:///D:/workspace/tender/tender-app/frontend/node_modules/@radix-ui/react-context/dist/index.mjs:38:15)
+    at CollectionProvider (file:///D:/workspace/tender/tender-app/frontend/node_modules/@radix-ui/react-collection/dist/index.mjs:20:13)
+    at RovingFocusGroup (file:///D:/workspace/tender/tender-app/frontend/node_modules/@radix-ui/react-roving-focus/dist/index.mjs:39:68)
+    at TabsList (file:///D:/workspace/tender/tender-app/frontend/node_modules/@radix-ui/react-tabs/dist/index.mjs:74:13)
+    at div
+    at file:///D:/workspace/tender/tender-app/frontend/node_modules/@radix-ui/react-primitive/dist/index.mjs:32:13
+    at Provider (file:///D:/workspace/tender/tender-app/frontend/node_modules/@radix-ui/react-context/dist/index.mjs:38:15)
+    at Tabs (file:///D:/workspace/tender/tender-app/frontend/node_modules/@radix-ui/react-tabs/dist/index.mjs:31:7)
+    at Tabs (D:\workspace\tender\tender-app\frontend\src\components\Tabs.tsx:6:3)
+    at BasisPage (D:\workspace\tender\tender-app\frontend\src\features\basis\BasisPage.tsx:9:64)
+    at RenderedRoute (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at ProjectLayout (D:\workspace\tender\tender-app\frontend\src\routes\ProjectLayout.tsx:13:60)
+    at RenderedRoute (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at div
+    at main
+    at div
+    at ToastProvider (D:\workspace\tender\tender-app\frontend\src\components\Toast.tsx:6:26)
+    at Provider (file:///D:/workspace/tender/tender-app/frontend/node_modules/@radix-ui/react-context/dist/index.mjs:38:15)
+    at TooltipProvider (file:///D:/workspace/tender/tender-app/frontend/node_modules/@radix-ui/react-tooltip/dist/index.mjs:32:5)
+    at AppShell (D:\workspace\tender\tender-app\frontend\src\routes\AppShell.tsx:26:52)
+    at RequireAuth (D:\workspace\tender\tender-app\frontend\src\features\auth\auth.tsx:41:24)
+    at RenderedRoute (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Routes (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:1269:7)
+    at App
+    at Router (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at MemoryRouter (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:1097:7)
+    at QueryClientProvider (file:///D:/workspace/tender/tender-app/frontend/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js:42:32)
+
+ ✓ src/routes/App.test.tsx (4 tests) 370ms
+ ✓ src/features/rules/TermConflicts.test.tsx (2 tests) 824ms
+   ✓ 投标条件歧义核实 > 并列展示原文及来源，填写依据后才提交所见版本与候选  541ms
+ ✓ src/features/evidence/PdfViewer.test.tsx (7 tests) 358ms
+stderr | src/features/auth/session.test.tsx > 会话失效 > 任意接口 401：清空整个查询缓存（不留上一位用户的项目数据），回到登录页
+[MSW] Error: intercepted a request without a matching request handler:
+
+  • GET /api/v1/projects
+
+If you still wish to intercept this unhandled request, please create a request handler for it.
+Read more: https://mswjs.io/docs/http/intercepting-requests
+
+stderr | src/features/auth/session.test.tsx > 会话失效 > 任意接口 401：清空整个查询缓存（不留上一位用户的项目数据），回到登录页
+Warning: An update to RequireAuth inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at RequireAuth (D:\workspace\tender\tender-app\frontend\src\features\auth\auth.tsx:41:24)
+    at RenderedRoute (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Routes (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:1269:7)
+    at App
+    at Router (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at MemoryRouter (D:\workspace\tender\tender-app\frontend\node_modules\react-router\dist\umd\react-router.development.js:1097:7)
+    at QueryClientProvider (file:///D:/workspace/tender/tender-app/frontend/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js:42:32)
+
+ ✓ src/features/auth/session.test.tsx (1 test) 187ms
+ ✓ src/features/upload/uploader.test.ts (18 tests) 86ms
+ ✓ src/api/endpoints.test.ts (22 tests) 18ms
+ ✓ src/api/client.test.ts (14 tests) 14ms
+ ✓ src/lib/useIdempotentAction.test.tsx (1 test) 13ms
+ ✓ src/features/price/validate.test.ts (18 tests) 8ms
+ ✓ src/lib/evidence.test.ts (11 tests) 5ms
+ ✓ src/features/outcomes/validate.test.ts (8 tests) 5ms
+ ✓ src/features/materials/parse.test.ts (5 tests) 4ms
+ ✓ src/lib/errorHints.test.ts (4 tests) 4ms
+ ✓ src/features/facts/validate.test.ts (3 tests) 4ms
+ ✓ src/features/materials/classify.test.ts (3 tests) 4ms
+ ✓ src/lib/chartColors.test.ts (2 tests) 4ms
+ ✓ src/lib/nextAction.test.ts (3 tests) 3ms
+
+ Test Files  32 passed (32)
+      Tests  300 passed (300)
+   Start at  10:51:58
+   Duration  47.46s (transform 843ms, setup 16.03s, collect 11.49s, tests 32.98s, environment 25.16s, prepare 3.37s)
+
