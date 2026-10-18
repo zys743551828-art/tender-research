@@ -1,0 +1,119 @@
+{
+  "synthetic_component_benchmark": true,
+  "semantic_recall_evaluated": false,
+  "model_encoding_included": false,
+  "api_authorization_and_document_loading_included": false,
+  "production_database_modified": false,
+  "formal_retrieval_mode_changed": false,
+  "temporary_database_removed": true,
+  "results": [
+    {
+      "chunks": 1000,
+      "quote_characters": 67890,
+      "dense_dimensions": 512,
+      "database_bytes": 3211264,
+      "seed_seconds": 0.09018699999978708,
+      "queries": [
+        {
+          "query": "总工期180日历天",
+          "keyword_seconds": 0.011081799999374198,
+          "exact_seconds": 0.005827999999382882,
+          "dense_seconds": 0.014345499999762978,
+          "rrf_seconds": 2.539999877626542e-05,
+          "sum_components_seconds": 0.031280699997296324
+        },
+        {
+          "query": "编号JD-537",
+          "keyword_seconds": 0.009457500000280561,
+          "exact_seconds": 0.005839899999045883,
+          "dense_seconds": 0.012758900000335416,
+          "rrf_seconds": 1.990000055229757e-05,
+          "sum_components_seconds": 0.028076200000214158
+        },
+        {
+          "query": "基坑12m支护",
+          "keyword_seconds": 0.009717599999930826,
+          "exact_seconds": 0.005877600000530947,
+          "dense_seconds": 0.012306499998885556,
+          "rrf_seconds": 1.9799999790848233e-05,
+          "sum_components_seconds": 0.027921499999138177
+        }
+      ],
+      "keyword_median_seconds": 0.009717599999930826,
+      "dense_median_seconds": 0.012758900000335416,
+      "component_sum_median_seconds": 0.028076200000214158
+    },
+    {
+      "chunks": 10000,
+      "quote_characters": 678900,
+      "dense_dimensions": 512,
+      "database_bytes": 31137792,
+      "seed_seconds": 0.8278709999995044,
+      "queries": [
+        {
+          "query": "总工期180日历天",
+          "keyword_seconds": 0.11822140000003856,
+          "exact_seconds": 0.0685486000002129,
+          "dense_seconds": 0.08129169999847363,
+          "rrf_seconds": 2.6700001399149187e-05,
+          "sum_components_seconds": 0.26808840000012424
+        },
+        {
+          "query": "编号JD-537",
+          "keyword_seconds": 0.1045706999993854,
+          "exact_seconds": 0.0586126999987755,
+          "dense_seconds": 0.18950279999990016,
+          "rrf_seconds": 2.970000059576705e-05,
+          "sum_components_seconds": 0.3527158999986568
+        },
+        {
+          "query": "基坑12m支护",
+          "keyword_seconds": 0.11493410000002768,
+          "exact_seconds": 0.05962360000012268,
+          "dense_seconds": 0.08127630000126373,
+          "rrf_seconds": 2.7099998987978324e-05,
+          "sum_components_seconds": 0.2558611000004021
+        }
+      ],
+      "keyword_median_seconds": 0.11493410000002768,
+      "dense_median_seconds": 0.08129169999847363,
+      "component_sum_median_seconds": 0.26808840000012424
+    },
+    {
+      "chunks": 50000,
+      "quote_characters": 3394500,
+      "dense_dimensions": 512,
+      "database_bytes": 155246592,
+      "seed_seconds": 3.681781099998261,
+      "queries": [
+        {
+          "query": "总工期180日历天",
+          "keyword_seconds": 0.6662037000005512,
+          "exact_seconds": 0.31605429999945045,
+          "dense_seconds": 0.42734030000065104,
+          "rrf_seconds": 3.690000085043721e-05,
+          "sum_components_seconds": 1.409635200001503
+        },
+        {
+          "query": "编号JD-537",
+          "keyword_seconds": 0.5933382000002894,
+          "exact_seconds": 0.2917983999996068,
+          "dense_seconds": 0.45410090000041237,
+          "rrf_seconds": 4.0099999750964344e-05,
+          "sum_components_seconds": 1.3392776000000595
+        },
+        {
+          "query": "基坑12m支护",
+          "keyword_seconds": 0.6729069000011805,
+          "exact_seconds": 0.31368039999870234,
+          "dense_seconds": 0.43066600000020117,
+          "rrf_seconds": 3.06999991153134e-05,
+          "sum_components_seconds": 1.4172839999991993
+        }
+      ],
+      "keyword_median_seconds": 0.6662037000005512,
+      "dense_median_seconds": 0.43066600000020117,
+      "component_sum_median_seconds": 1.409635200001503
+    }
+  ]
+}
