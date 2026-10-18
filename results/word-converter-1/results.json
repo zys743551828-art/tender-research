@@ -1,0 +1,250 @@
+[
+  {
+    "case": "plain-chinese",
+    "contract": "word-conversion-1",
+    "source_sha256": "7ee539c300fcbcde051e6947ea48f7675a20fe7f8f736a2cf508c4d321b8d247",
+    "renderer_fingerprint": "7c6487b8fca6b1a5752bfb0c2950e06bf9d6dc8e167db6883d2b7610c1af3e21",
+    "state": "converted",
+    "conversion_attempted": true,
+    "inspection": {
+      "schema": "word-intake-inspection/1",
+      "container_validated": true,
+      "entry_count": 3,
+      "expanded_bytes": 902,
+      "xml_part_count": 3,
+      "active_content_gaps": [],
+      "unsupported_layout_features": [],
+      "requested_fonts": [
+        "Noto Sans CJK SC"
+      ],
+      "conversion_eligible": true,
+      "text_digest": "c55e95b533453a928d4fef53912dcaf1b698aeb6cc976fc516e43f5a5319cd37"
+    },
+    "gaps": [],
+    "page_count": 1,
+    "landlock_abi": 7,
+    "missing_paragraph_count": 0,
+    "missing_examples": [],
+    "missing_glyphs": [],
+    "font_substitutions": [],
+    "ink_pages": [
+      1
+    ],
+    "pdf_sha256": "296aa3ddca74b4d9ba8e1b5397cc5179feb2e719aee6fe9fe2074d9ddbcf2781",
+    "pdf_bytes": 8526,
+    "elapsed_seconds": 1.048,
+    "operation_id": "399dd65963af45278f5fbdcdb59c6401",
+    "isolation": {
+      "network": "none",
+      "no_new_privileges": true,
+      "capabilities": 0,
+      "readonly_root": true,
+      "landlock_abi": 7
+    }
+  },
+  {
+    "case": "table",
+    "contract": "word-conversion-1",
+    "source_sha256": "71d3ccfeea9261b4e3eb46b0b515fd75f0300a4e2dae20807152ab788b53e904",
+    "renderer_fingerprint": "7c6487b8fca6b1a5752bfb0c2950e06bf9d6dc8e167db6883d2b7610c1af3e21",
+    "state": "needs_review",
+    "conversion_attempted": true,
+    "inspection": {
+      "schema": "word-intake-inspection/1",
+      "container_validated": true,
+      "entry_count": 3,
+      "expanded_bytes": 819,
+      "xml_part_count": 3,
+      "active_content_gaps": [],
+      "unsupported_layout_features": [
+        "tbl"
+      ],
+      "requested_fonts": [],
+      "conversion_eligible": true,
+      "text_digest": "39686ad2b19a0b656427c71c66ad2b1486d283f50bbccb5a57cbc3ab64e5b4f7"
+    },
+    "gaps": [
+      "complex_layout_requires_review"
+    ],
+    "page_count": 1,
+    "landlock_abi": 7,
+    "missing_paragraph_count": 0,
+    "missing_examples": [],
+    "missing_glyphs": [],
+    "font_substitutions": [],
+    "ink_pages": [
+      1
+    ],
+    "pdf_sha256": "c2b3b90abea8a63c8d2ae8a2d14dd19291813e08e5357792f4b267cde443c433",
+    "pdf_bytes": 7534,
+    "elapsed_seconds": 0.996,
+    "operation_id": "9f91eb9150fd42109e5b299bcd8b0460",
+    "isolation": {
+      "network": "none",
+      "no_new_privileges": true,
+      "capabilities": 0,
+      "readonly_root": true,
+      "landlock_abi": 7
+    }
+  },
+  {
+    "case": "missing-font",
+    "contract": "word-conversion-1",
+    "source_sha256": "5f7659da10d94d2d4b45f2548d93043953f24dce529e9991b8100e0a10d0f62b",
+    "renderer_fingerprint": "7c6487b8fca6b1a5752bfb0c2950e06bf9d6dc8e167db6883d2b7610c1af3e21",
+    "state": "needs_review",
+    "conversion_attempted": true,
+    "inspection": {
+      "schema": "word-intake-inspection/1",
+      "container_validated": true,
+      "entry_count": 3,
+      "expanded_bytes": 920,
+      "xml_part_count": 3,
+      "active_content_gaps": [],
+      "unsupported_layout_features": [],
+      "requested_fonts": [
+        "BidwbMissingFontSynthetic"
+      ],
+      "conversion_eligible": true,
+      "text_digest": "c55e95b533453a928d4fef53912dcaf1b698aeb6cc976fc516e43f5a5319cd37"
+    },
+    "gaps": [
+      "font_substitution_requires_review"
+    ],
+    "page_count": 1,
+    "landlock_abi": 7,
+    "missing_paragraph_count": 0,
+    "missing_examples": [],
+    "missing_glyphs": [],
+    "font_substitutions": [
+      {
+        "requested": "BidwbMissingFontSynthetic",
+        "used": "Noto Sans CJK JP"
+      }
+    ],
+    "ink_pages": [
+      1
+    ],
+    "pdf_sha256": "214e0cc5c668334dad8d02d25c4cfda103fac4386b5d6dc31f43436b912ca88c",
+    "pdf_bytes": 10859,
+    "elapsed_seconds": 1.099,
+    "operation_id": "60175848c60f499a92206b925522d94e",
+    "isolation": {
+      "network": "none",
+      "no_new_privileges": true,
+      "capabilities": 0,
+      "readonly_root": true,
+      "landlock_abi": 7
+    }
+  },
+  {
+    "case": "page-field",
+    "contract": "word-conversion-1",
+    "source_sha256": "7aacb602d804a7a66fb8cc7df92ec1e2315d60430c512c47bd63f1e142eaeb2c",
+    "renderer_fingerprint": "7c6487b8fca6b1a5752bfb0c2950e06bf9d6dc8e167db6883d2b7610c1af3e21",
+    "state": "failed",
+    "conversion_attempted": false,
+    "inspection": {
+      "schema": "word-intake-inspection/1",
+      "container_validated": true,
+      "entry_count": 3,
+      "expanded_bytes": 767,
+      "xml_part_count": 3,
+      "active_content_gaps": [
+        "FIELD_EVALUATION_UNSUPPORTED"
+      ],
+      "unsupported_layout_features": [
+        "fldSimple"
+      ],
+      "requested_fonts": [],
+      "conversion_eligible": false,
+      "text_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "gaps": [
+      "FIELD_EVALUATION_UNSUPPORTED"
+    ],
+    "error_code": "word_content_not_supported",
+    "elapsed_seconds": 0.0,
+    "operation_id": "9ae6896f8e1a4a9cbc8235e705d93c56",
+    "isolation": {
+      "network": "none",
+      "no_new_privileges": true,
+      "capabilities": 0,
+      "readonly_root": true,
+      "landlock_abi": 7
+    }
+  },
+  {
+    "case": "external-link",
+    "contract": "word-conversion-1",
+    "source_sha256": "01eba5aa636e22152602860bd9c3e314f218ae17b3db09bf55e5ff683430df38",
+    "renderer_fingerprint": "7c6487b8fca6b1a5752bfb0c2950e06bf9d6dc8e167db6883d2b7610c1af3e21",
+    "state": "failed",
+    "conversion_attempted": false,
+    "inspection": {
+      "schema": "word-intake-inspection/1",
+      "container_validated": true,
+      "entry_count": 4,
+      "expanded_bytes": 1171,
+      "xml_part_count": 4,
+      "active_content_gaps": [
+        "EXTERNAL_RELATIONSHIP"
+      ],
+      "unsupported_layout_features": [],
+      "requested_fonts": [
+        "Noto Sans CJK SC"
+      ],
+      "conversion_eligible": false,
+      "text_digest": "c55e95b533453a928d4fef53912dcaf1b698aeb6cc976fc516e43f5a5319cd37"
+    },
+    "gaps": [
+      "EXTERNAL_RELATIONSHIP"
+    ],
+    "error_code": "word_content_not_supported",
+    "elapsed_seconds": 0.0,
+    "operation_id": "31ef4e65ebed4608a025a007a3197277",
+    "isolation": {
+      "network": "none",
+      "no_new_privileges": true,
+      "capabilities": 0,
+      "readonly_root": true,
+      "landlock_abi": 7
+    }
+  },
+  {
+    "case": "invalid-container",
+    "contract": "word-conversion-1",
+    "source_sha256": "71440fb58fad9b8e03e2acb80c47211b95b1b6beeb4cc813f3b5a640f384b328",
+    "renderer_fingerprint": "7c6487b8fca6b1a5752bfb0c2950e06bf9d6dc8e167db6883d2b7610c1af3e21",
+    "state": "failed",
+    "conversion_attempted": false,
+    "inspection": null,
+    "gaps": [],
+    "error_code": "word_archive_invalid",
+    "elapsed_seconds": 0.0,
+    "operation_id": "395e4edaa4ce45e7a9f5764c69887092",
+    "isolation": {
+      "network": "none",
+      "no_new_privileges": true,
+      "capabilities": 0,
+      "readonly_root": true,
+      "landlock_abi": 7
+    }
+  },
+  {
+    "case": "wrong-sha",
+    "state": "failed",
+    "error_code": "word_request_invalid",
+    "conversion_attempted": false,
+    "renderer_fingerprint": "7c6487b8fca6b1a5752bfb0c2950e06bf9d6dc8e167db6883d2b7610c1af3e21",
+    "operation_id": "26f462c5992448de97efb9848798f777"
+  },
+  {
+    "case": "wrong-renderer",
+    "state": "failed",
+    "error_code": "word_request_invalid",
+    "conversion_attempted": false,
+    "renderer_fingerprint": "7c6487b8fca6b1a5752bfb0c2950e06bf9d6dc8e167db6883d2b7610c1af3e21",
+    "operation_id": "61c0179a5c13403c85c90ceb855f9bb7"
+  }
+]
