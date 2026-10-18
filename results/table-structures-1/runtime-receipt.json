@@ -1,0 +1,1 @@
+{"parser": "pdfium-1.4", "existing_runtime_package_versions_preserved": 76, "actual_raster_grid_cell_assignment": true, "blank_one_column_unruled_rotated_rejected": true, "network_disabled": true, "image_root_read_only": true, "packages": {"rapidocr": "3.10.0", "opencv-python-headless": "5.0.0.93", "numpy": "2.4.6", "pypdfium2": "5.14.0"}, "real_bid_quality_evaluated": false}

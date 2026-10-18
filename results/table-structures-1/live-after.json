@@ -1,0 +1,361 @@
+{
+  "synthetic_projects": true,
+  "model_calls": 0,
+  "baseline_matched": true,
+  "cases": [
+    {
+      "project_id": "prj_9f52024b21274c93",
+      "snapshots": [
+        {
+          "snapshot_id": "snp_671d5743a2734cfc",
+          "sha256": "a111380e9dcb3c8c6409338ae0794f694e609a388302a2827735cc543aef2d12",
+          "contract_version": "input-v1",
+          "file_version_ids": [
+            "ver_9f6c9c62928d4b71",
+            "ver_f159bd033bea4502"
+          ],
+          "body_version_id": "ver_f159bd033bea4502",
+          "rule_set_id": "rpk_4973157a8c704efd",
+          "fact_set_id": null,
+          "as_of": "2026-10-18T05:03:34.582267Z",
+          "word_sources": []
+        }
+      ],
+      "report": {
+        "snapshot_id": "snp_671d5743a2734cfc",
+        "qualification": {
+          "snapshot_id": "snp_671d5743a2734cfc",
+          "run_id": "job_13f075e667d84570",
+          "coverage": {
+            "status": "complete",
+            "rules_total": 1,
+            "rules_checked": 1,
+            "rules_failed": 0,
+            "candidates_dropped": 0
+          },
+          "qualification": {
+            "total": 1,
+            "satisfied": 1,
+            "violated": 0,
+            "unclear": 0,
+            "failed": 0
+          },
+          "scoring": {
+            "total": 0,
+            "satisfied": 0,
+            "violated": 0,
+            "unclear": 0,
+            "failed": 0
+          },
+          "rows": [
+            {
+              "rule_id": "rul_d830737b77774803",
+              "kind": "mandatory",
+              "statement": "施工总工期不得超过180日历天",
+              "rule_basis": "unconfirmed",
+              "verdict": "satisfied",
+              "note": "正文明确写明施工总工期为180日历天，未超过规则规定的180日历天上限，满足要求。",
+              "evidence": [
+                {
+                  "evidence_id": "evd_15929d0aecf24f95",
+                  "project_id": "prj_9f52024b21274c93",
+                  "version_id": "ver_f159bd033bea4502",
+                  "file_role": "body",
+                  "file_name": "body-synthetic.pdf",
+                  "source_sha256": "cfedf4773cc6824441fad6bdf60f4a5fffc7dc109c545ab182b02011bd057081",
+                  "physical_page": 1,
+                  "printed_page": null,
+                  "quote": "合成施工组织设计，仅用于系统验证。施工总工期为180日历天，满足招标工期要求。",
+                  "kind": "text",
+                  "parser_version": "pdfium-1.3",
+                  "bbox": [
+                    0.10079,
+                    0.09725,
+                    0.51175,
+                    0.12596
+                  ],
+                  "semantic_review": "pending",
+                  "effectivity_notes": []
+                }
+              ],
+              "finding_ids": []
+            }
+          ]
+        },
+        "prediction": {
+          "prediction_id": "prd_666be3ab741b4fdd",
+          "project_id": "prj_9f52024b21274c93",
+          "snapshot_id": "snp_671d5743a2734cfc",
+          "run_id": "job_2e085f7c472140a3",
+          "target": "technical_total",
+          "status": "abstained",
+          "purpose": "research",
+          "estimated_value": null,
+          "low": null,
+          "high": null,
+          "maximum": null,
+          "technical_full_score": null,
+          "validation_status": "not_validated",
+          "reason": "招标文件的评分条款没有提取到分值，无法估计得分。",
+          "scoring_model": null,
+          "topics": [],
+          "created_at": "2026-10-18T05:03:37.602886Z",
+          "calibration": {
+            "state": "uncalibrated",
+            "pairs": 0,
+            "needed_pairs": 20,
+            "mae": null,
+            "bias": null
+          }
+        },
+        "categories": [
+          {
+            "category": "disqualification",
+            "total": 0,
+            "open": 0,
+            "resolved": 0
+          },
+          {
+            "category": "response",
+            "total": 0,
+            "open": 0,
+            "resolved": 0
+          },
+          {
+            "category": "consistency",
+            "total": 0,
+            "open": 0,
+            "resolved": 0
+          },
+          {
+            "category": "scope",
+            "total": 0,
+            "open": 0,
+            "resolved": 0
+          },
+          {
+            "category": "improvement",
+            "total": 0,
+            "open": 0,
+            "resolved": 0
+          }
+        ]
+      }
+    },
+    {
+      "project_id": "prj_e21c1be8fa1b45ea",
+      "snapshots": [
+        {
+          "snapshot_id": "snp_f6ca8b7fa7f64924",
+          "sha256": "cd623f7b77574512326b3585b34fdc2ab5d85ce14829a456f849cc1dc0232f05",
+          "contract_version": "input-v1",
+          "file_version_ids": [
+            "ver_27e42539acea4040",
+            "ver_9371a06c5cf44394"
+          ],
+          "body_version_id": "ver_27e42539acea4040",
+          "rule_set_id": "rpk_6a99c6bb82c6407f",
+          "fact_set_id": null,
+          "as_of": "2026-10-17T14:00:22.960632Z",
+          "word_sources": []
+        }
+      ],
+      "report": {
+        "snapshot_id": "snp_f6ca8b7fa7f64924",
+        "qualification": {
+          "snapshot_id": "snp_f6ca8b7fa7f64924",
+          "run_id": "job_97de704e7a1349d3",
+          "coverage": {
+            "status": "complete",
+            "rules_total": 3,
+            "rules_checked": 3,
+            "rules_failed": 0,
+            "candidates_dropped": 0
+          },
+          "qualification": {
+            "total": 2,
+            "satisfied": 1,
+            "violated": 1,
+            "unclear": 0,
+            "failed": 0
+          },
+          "scoring": {
+            "total": 1,
+            "satisfied": 0,
+            "violated": 0,
+            "unclear": 1,
+            "failed": 0
+          },
+          "rows": [
+            {
+              "rule_id": "rul_01b212ea53934b75",
+              "kind": "disqualification",
+              "statement": "总工期不得超过一百八十日历天，超过的按废标处理。",
+              "rule_basis": "unconfirmed",
+              "verdict": "violated",
+              "note": "正文明确写明总工期为二百四十日历天，超过规则规定的一百八十日历天，按规则应废标。",
+              "evidence": [],
+              "finding_ids": [
+                "fnd_5cd9ee2cf3bf46fb"
+              ]
+            },
+            {
+              "rule_id": "rul_2002e25ed9a943cc",
+              "kind": "mandatory",
+              "statement": "工程质量必须达到合格标准。",
+              "rule_basis": "unconfirmed",
+              "verdict": "satisfied",
+              "note": "技术标正文明确承诺工程质量目标为合格，满足设计及验收规范，与规则要求的合格标准一致。",
+              "evidence": [
+                {
+                  "evidence_id": "evd_cc5dcba97f2241db",
+                  "project_id": "prj_e21c1be8fa1b45ea",
+                  "version_id": "ver_27e42539acea4040",
+                  "file_role": "body",
+                  "file_name": "合成冒烟-body.pdf",
+                  "source_sha256": "dc4690aef3c7230fee231f1eb431d57e8206a332474d29db001f598d4442f2e0",
+                  "physical_page": 2,
+                  "printed_page": null,
+                  "quote": "第二章 质量保证\n本工程质量目标为合格，满足设计及验收规范。",
+                  "kind": "text",
+                  "parser_version": "pdfium-1.1",
+                  "bbox": [
+                    0.12095,
+                    0.09725,
+                    0.54429,
+                    0.12103
+                  ],
+                  "semantic_review": "pending",
+                  "effectivity_notes": []
+                }
+              ],
+              "finding_ids": []
+            },
+            {
+              "rule_id": "rul_d93802001eef420c",
+              "kind": "scoring",
+              "statement": "施工进度计划合理可行的得8分，计划不合理的得0分。",
+              "rule_basis": "unconfirmed",
+              "verdict": "unclear",
+              "note": "正文仅给出总工期240日历天及分段流水作业的施工方法，未提供进度计划的具体安排（如分阶段节点、关键线路、资源配置、保证措施等），无法判断进度计划是否合理可行。",
+              "evidence": [],
+              "finding_ids": [
+                "fnd_9467beba40044e47"
+              ]
+            }
+          ]
+        },
+        "prediction": {
+          "prediction_id": "prd_86865d6b05d24f95",
+          "project_id": "prj_e21c1be8fa1b45ea",
+          "snapshot_id": "snp_f6ca8b7fa7f64924",
+          "run_id": "job_6a060026df344e0b",
+          "target": "technical_total",
+          "status": "candidate",
+          "purpose": "research",
+          "estimated_value": "0",
+          "low": "0",
+          "high": "0",
+          "maximum": "8",
+          "technical_full_score": "8",
+          "validation_status": "not_validated",
+          "reason": "基于招标文件评分条款与正文的逐项评估，尚未用官方成绩校准；只用于排出可能的失分点，不是对结果的承诺。",
+          "scoring_model": null,
+          "topics": [
+            {
+              "topic": "施工进度计划合理可行的得8分，计划不合理的得0分。（满分 8 分，判为“不合理”档；缺：施工进度计划合理可行）",
+              "points_lost": "8",
+              "assessment": "正文仅写明总工期240日历天，未编制任何施工进度计划，缺少工序安排、关键线路、资源配置、节点控制等实质内容，无法判断计划合理可行，按评分标准属计划不合理，得0分。；具体性与有效性（不足）：仅一句总工期，无进度计划内容，无法支撑合理可行的判断。；前后一致性（无法判断）：正文过短，无前后矛盾证据。",
+              "evidence": [
+                {
+                  "evidence_id": "evd_157929193000422c",
+                  "project_id": "prj_e21c1be8fa1b45ea",
+                  "version_id": "ver_27e42539acea4040",
+                  "file_role": "body",
+                  "file_name": "合成冒烟-body.pdf",
+                  "source_sha256": "dc4690aef3c7230fee231f1eb431d57e8206a332474d29db001f598d4442f2e0",
+                  "physical_page": 1,
+                  "printed_page": null,
+                  "quote": "第一章 施工进度计划\n本工程计划总工期为二百四十日历天。",
+                  "kind": "text",
+                  "parser_version": "pdfium-1.1",
+                  "bbox": [
+                    0.12095,
+                    0.09725,
+                    0.46365,
+                    0.12103
+                  ],
+                  "semantic_review": "pending",
+                  "effectivity_notes": []
+                }
+              ],
+              "limitations": "评分标准仅分合理与不合理两档，判断依赖评委主观经验；所给正文可能不完整，仅见总工期一句。；仅含已解析文字，表格结构与图页未读取"
+            }
+          ],
+          "created_at": "2026-10-17T14:00:35.992175Z",
+          "calibration": {
+            "state": "uncalibrated",
+            "pairs": 0,
+            "needed_pairs": 20,
+            "mae": null,
+            "bias": null
+          }
+        },
+        "categories": [
+          {
+            "category": "disqualification",
+            "total": 1,
+            "open": 1,
+            "resolved": 0
+          },
+          {
+            "category": "response",
+            "total": 0,
+            "open": 0,
+            "resolved": 0
+          },
+          {
+            "category": "consistency",
+            "total": 0,
+            "open": 0,
+            "resolved": 0
+          },
+          {
+            "category": "scope",
+            "total": 1,
+            "open": 1,
+            "resolved": 0
+          },
+          {
+            "category": "improvement",
+            "total": 1,
+            "open": 1,
+            "resolved": 0
+          }
+        ]
+      }
+    }
+  ],
+  "checks": [
+    {
+      "project_id": "prj_9f52024b21274c93",
+      "legacy_snapshots": 1,
+      "report_readable": true,
+      "legacy_replay_status": 409,
+      "no_new_jobs": true,
+      "source_parse_state": "legacy_unfrozen",
+      "stage": "waiting_start",
+      "legacy_confirmation_status": 409
+    },
+    {
+      "project_id": "prj_e21c1be8fa1b45ea",
+      "legacy_snapshots": 1,
+      "report_readable": true,
+      "legacy_replay_status": 409,
+      "no_new_jobs": true,
+      "source_parse_state": "legacy_unfrozen",
+      "stage": "waiting_start",
+      "legacy_confirmation_status": 409
+    }
+  ]
+}

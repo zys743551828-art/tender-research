@@ -1,0 +1,85 @@
+{
+  "version_id": "ver_2c5215641c384d0c",
+  "parse_id": "prs_b5b97ed1ef9f499c",
+  "state": "candidate_preview",
+  "table_count": 2,
+  "table_index": 1,
+  "table_id": "table_2_0",
+  "physical_page": 2,
+  "source": "raster_grid",
+  "bbox": [
+    0.084874,
+    0.0481,
+    0.916807,
+    0.35095
+  ],
+  "row_count": 3,
+  "row_offset": 0,
+  "next_row_offset": null,
+  "rows": [
+    [
+      "Item",
+      "Amount"
+    ],
+    [
+      "Cost",
+      "15.12"
+    ],
+    [
+      "Duration",
+      "180"
+    ]
+  ],
+  "cell_line_indices": [
+    [
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ],
+    [
+      [
+        2
+      ],
+      [
+        3
+      ]
+    ],
+    [
+      [
+        4
+      ],
+      [
+        5
+      ]
+    ]
+  ],
+  "unassigned_line_indices": [],
+  "column_boundaries": [
+    0.084874,
+    0.463025,
+    0.916807
+  ],
+  "row_boundaries": [
+    0.0481,
+    0.14905,
+    0.25,
+    0.35095
+  ],
+  "issues": [
+    "original_structure_not_verified",
+    "selected_pages_only"
+  ],
+  "continuations": [
+    {
+      "from_table_id": "table_1_0",
+      "to_table_id": "table_2_0",
+      "from_page": 1,
+      "to_page": 2,
+      "reason": "adjacent_pages_repeated_header_aligned_columns",
+      "review": "pending"
+    }
+  ]
+}

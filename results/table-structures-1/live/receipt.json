@@ -1,0 +1,36 @@
+{
+  "synthetic_only": true,
+  "project_id": "prj_07988585cfc24ee7",
+  "version_id": "ver_2c5215641c384d0c",
+  "source_sha256": "25b5f0f7ee9c055d9be338beb3ade2d6756d69cee87e2c7f5b1cc2d4c066fb8a",
+  "native_text_characters": [
+    0,
+    0
+  ],
+  "real_local_ocr_and_raster_grid": true,
+  "tables": 2,
+  "rows_per_table": 3,
+  "columns": 2,
+  "repeated_header_continuation_pending": true,
+  "numeric_cell_15_12_found": true,
+  "review": {
+    "review_id": "rcv_7c7b26d57ad54850",
+    "parent_parse_id": "prs_b5b97ed1ef9f499c",
+    "result_parse_id": "prs_005fe6310ad24f65",
+    "source_evidence_id": "evd_27e34f10f7794e8e",
+    "result_evidence_id": "evd_98ecae9f8b904e4f",
+    "decision": "accept",
+    "original_quote": "Cost | 15.12",
+    "result_quote": "Cost | 15.12",
+    "reason": "合成扫描原页逐格核对15.12",
+    "actor_name": "本机联调管理员",
+    "created_at": "2026-10-18T09:40:07.354255Z"
+  },
+  "original_pdf_and_evidence_preserved": true,
+  "structure_unchanged_after_excerpt_review": true,
+  "stale_structure_request_status": 409,
+  "structure_and_partial_ocr_gaps_retained": true,
+  "model_calls": 0,
+  "new_business_analysis_jobs": 0,
+  "real_bid_quality_evaluated": false
+}
