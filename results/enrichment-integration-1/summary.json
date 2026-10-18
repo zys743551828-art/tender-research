@@ -1,0 +1,46 @@
+{
+  "product_commit": "260479b",
+  "runs": [
+    {
+      "file": "PUB-004.json",
+      "source_sha256": "24c1c81ec1ca7e9449dd00ca2a136cfcf44e6ccd97e57acb1d8197e67191912b",
+      "failure": null,
+      "seconds": 9.109,
+      "pages": [
+        {
+          "physical_page": 26,
+          "ocr_status": "recognized_pending",
+          "table_status": "none_detected",
+          "ocr_lines": 90,
+          "native_tables": 0,
+          "issues": []
+        }
+      ]
+    },
+    {
+      "file": "FILE-002.json",
+      "source_sha256": "5027159571bf015e6c0d01a8f782a868ad382a08c24520187f7d23fb2f23779f",
+      "failure": null,
+      "seconds": 5.562,
+      "pages": [
+        {
+          "physical_page": 47,
+          "ocr_status": "recognized_pending",
+          "table_status": "extracted_pending",
+          "ocr_lines": 256,
+          "native_tables": 3,
+          "issues": []
+        },
+        {
+          "physical_page": 48,
+          "ocr_status": "recognized_pending",
+          "table_status": "extracted_pending",
+          "ocr_lines": 288,
+          "native_tables": 1,
+          "issues": []
+        }
+      ]
+    }
+  ],
+  "scope": "isolated selected-page integration; pending candidates only"
+}

@@ -1,0 +1,14 @@
+{
+  "project_id": "prj_7a619cef71f04463",
+  "version_id": "ver_879ec18267124a40",
+  "source_sha256": "a578c946e8a75324f879b8a4f09a89a12a006394afadbe95d493e4d4aa47816b",
+  "parse_job_id": "job_20d04d138b7c4ea9",
+  "parse_state": "succeeded",
+  "query": "15.12",
+  "pending_ocr_hits": 1,
+  "parser_versions": [
+    "pdfium-1.3"
+  ],
+  "synthetic": true,
+  "model_jobs": 0
+}
