@@ -1,0 +1,76 @@
+{
+  "synthetic_projects": true,
+  "model_calls": 0,
+  "read_only": true,
+  "cases": [
+    {
+      "project_id": "prj_9f52024b21274c93",
+      "stage": "done",
+      "actions": [
+        {
+          "key": "record_outcome",
+          "priority": 6,
+          "count": null
+        },
+        {
+          "key": "set_price",
+          "priority": 6,
+          "count": null
+        }
+      ]
+    },
+    {
+      "project_id": "prj_95c10b2577124f25",
+      "stage": "no_report",
+      "actions": [
+        {
+          "key": "start_analysis",
+          "priority": 2,
+          "count": null
+        }
+      ]
+    },
+    {
+      "project_id": "prj_216cd2513bbf4cb2",
+      "stage": "no_report",
+      "actions": [
+        {
+          "key": "wait_analysis",
+          "priority": 2,
+          "count": null
+        }
+      ]
+    },
+    {
+      "project_id": "prj_e21c1be8fa1b45ea",
+      "stage": "done",
+      "actions": [
+        {
+          "key": "handle_disqualification",
+          "priority": 3,
+          "count": 1
+        },
+        {
+          "key": "confirm_rules",
+          "priority": 4,
+          "count": 2
+        },
+        {
+          "key": "verify_facts",
+          "priority": 4,
+          "count": 2
+        },
+        {
+          "key": "improve_score",
+          "priority": 5,
+          "count": null
+        },
+        {
+          "key": "set_price",
+          "priority": 6,
+          "count": null
+        }
+      ]
+    }
+  ]
+}

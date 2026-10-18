@@ -4,6 +4,8 @@
 
 ## 1. 环境
 
+`scripts/next_actions_live_check.py` 只读核对已有合成项目的六级动作、总览／报告一致性和旧轮动作抑制，不启动评审或模型，输出保存到新的 `--output` 路径。
+
 `scripts/outcome_identity_live_check.py` 建立合成项目并通过真实模型评审与正式提交接口验证成绩身份：未知分值保留原类型与 null、幂等重放、更正提交后拦截旧身份、历史成绩保留。模拟提交与未知成绩不代表实际投标或官方成绩，输出使用新的 `--output` 路径；依赖同样复用已有后端环境。
 
 `scripts/assistant_live_check.py --output results/assistant-1/receipt.json` 验证已部署的项目问答和过期确认卡。使用已有后端虚拟环境的 httpx／reportlab，建立合成项目并关闭自动评审，只发一次问答请求；问答后不写决定，改变项目后旧卡应被拒绝。结果不代表真实标书问答质量或浏览器视觉验收。
