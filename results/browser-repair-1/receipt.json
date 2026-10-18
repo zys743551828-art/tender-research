@@ -1,0 +1,17 @@
+{
+  "Plugin": "browser",
+  "Version": "26.1013.40934",
+  "VerifiedFiles": 384,
+  "ConfigurationModified": false,
+  "ExistingCachePreserved": true,
+  "selected_browser": "ChatGPT in-app browser",
+  "verified_actions": [
+    "read authenticated project page",
+    "expand table structures",
+    "switch to second table",
+    "navigate PDF physical page 2",
+    "save JPEG screenshots"
+  ],
+  "business_writes": false,
+  "full_visual_acceptance": false
+}
