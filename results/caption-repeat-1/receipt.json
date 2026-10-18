@@ -1,0 +1,67 @@
+{
+  "protocol_sha256_without_trailing_newline": "0a83d369a0c5cdf74e5337695f2b582ac00f4e435892081622c582143ae49296",
+  "requested_model": "deepseek-chat",
+  "usage": {
+    "prompt_tokens": 9210,
+    "completion_tokens": 3756,
+    "calls": 10
+  },
+  "completed_runs": 10,
+  "arms": {
+    "baseline": {
+      "scores": [
+        "8.00",
+        "8.00",
+        "8.00",
+        "8.00",
+        "8.00"
+      ],
+      "range": [
+        "8.00",
+        "8.00"
+      ],
+      "mean": "8"
+    },
+    "unrelated_caption": {
+      "scores": [
+        "6.00",
+        "6.00",
+        "6.00",
+        "6.00",
+        "6.00"
+      ],
+      "range": [
+        "6.00",
+        "6.00"
+      ],
+      "mean": "6"
+    }
+  },
+  "paired_deltas": [
+    {
+      "pair": 1,
+      "caption_minus_baseline": "-2.00"
+    },
+    {
+      "pair": 2,
+      "caption_minus_baseline": "-2.00"
+    },
+    {
+      "pair": 3,
+      "caption_minus_baseline": "-2.00"
+    },
+    {
+      "pair": 4,
+      "caption_minus_baseline": "-2.00"
+    },
+    {
+      "pair": 5,
+      "caption_minus_baseline": "-2.00"
+    }
+  ],
+  "repeat_penalty_criterion_met": true,
+  "real_score_accuracy_evaluated": false,
+  "actual_image_semantics_evaluated": false,
+  "production_database_modified": false,
+  "production_prompt_modified": false
+}

@@ -1,0 +1,119 @@
+{
+  "pair": 3,
+  "case": "unrelated_caption",
+  "status": "completed",
+  "raw": {
+    "grades": [],
+    "grade": null,
+    "score": "6",
+    "key_points": [
+      {
+        "point": "阶段安排具体、可行",
+        "status": "covered",
+        "evidence_ids": [
+          "shared_body_0"
+        ]
+      },
+      {
+        "point": "关键线路明确、可行",
+        "status": "covered",
+        "evidence_ids": [
+          "shared_body_1"
+        ]
+      },
+      {
+        "point": "资源保障具体、可行",
+        "status": "partial",
+        "evidence_ids": [
+          "shared_body_1"
+        ]
+      },
+      {
+        "point": "总工期不超过180日历天",
+        "status": "covered",
+        "evidence_ids": [
+          "shared_body_0",
+          "shared_body_1"
+        ]
+      }
+    ],
+    "specificity": 0.6,
+    "specificity_note": "阶段划分、关键线路与班组机械配置均针对道路工程工序，但资源数量与工期匹配的论证较简略，且夹有无关装饰照片。",
+    "effectiveness": {
+      "status": "weak",
+      "note": "进度安排与关键线路具体，但资源保障仅列班组和机械数量，未说明与各阶段工期、工作面的匹配及延误应对的资源来源，可行性论证不足。",
+      "evidence_ids": [
+        "shared_body_1"
+      ]
+    },
+    "consistency": {
+      "status": "supported",
+      "note": "正文两处总工期均为180日历天，阶段天数合计180天，与关键线路顺序一致。",
+      "evidence_ids": [
+        "shared_body_0",
+        "shared_body_1"
+      ]
+    },
+    "assessment": "阶段安排与关键线路明确，总工期180天符合上限，前后一致，可得基本分。但资源保障仅列班组和机械数量，未说明与各阶段工期、工作面的匹配及延误时资源补充的具体安排，可行性论证不足；另附与进度无关的装饰照片，不加分。故在满分8分中扣2分。",
+    "limitations": "评分标准未分档，档次与分值依赖评委主观判断；正文未提供进度横道图或网络图，资源保障的可行性难以充分核实。"
+  },
+  "grounded": {
+    "score": "6.00",
+    "grades": [],
+    "grade": null,
+    "interval": null,
+    "grade_position": null,
+    "key_points": [
+      {
+        "point": "阶段安排具体、可行",
+        "status": "covered",
+        "evidence_ids": [
+          "shared_body_0"
+        ]
+      },
+      {
+        "point": "关键线路明确、可行",
+        "status": "covered",
+        "evidence_ids": [
+          "shared_body_1"
+        ]
+      },
+      {
+        "point": "资源保障具体、可行",
+        "status": "partial",
+        "evidence_ids": [
+          "shared_body_1"
+        ]
+      },
+      {
+        "point": "总工期不超过180日历天",
+        "status": "covered",
+        "evidence_ids": [
+          "shared_body_0",
+          "shared_body_1"
+        ]
+      }
+    ],
+    "coverage": 0.875,
+    "downgraded": 0,
+    "specificity": 0.6,
+    "specificity_note": "阶段划分、关键线路与班组机械配置均针对道路工程工序，但资源数量与工期匹配的论证较简略，且夹有无关装饰照片。",
+    "effectiveness": {
+      "status": "weak",
+      "note": "进度安排与关键线路具体，但资源保障仅列班组和机械数量，未说明与各阶段工期、工作面的匹配及延误应对的资源来源，可行性论证不足。",
+      "evidence_ids": [
+        "shared_body_1"
+      ]
+    },
+    "consistency": {
+      "status": "supported",
+      "note": "正文两处总工期均为180日历天，阶段天数合计180天，与关键线路顺序一致。",
+      "evidence_ids": [
+        "shared_body_0",
+        "shared_body_1"
+      ]
+    },
+    "assessment": "阶段安排与关键线路明确，总工期180天符合上限，前后一致，可得基本分。但资源保障仅列班组和机械数量，未说明与各阶段工期、工作面的匹配及延误时资源补充的具体安排，可行性论证不足；另附与进度无关的装饰照片，不加分。故在满分8分中扣2分。",
+    "limitations": "评分标准未分档，档次与分值依赖评委主观判断；正文未提供进度横道图或网络图，资源保障的可行性难以充分核实。"
+  }
+}

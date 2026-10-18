@@ -1,0 +1,111 @@
+{
+  "source_and_protocol_digests_match": true,
+  "shared_body_texts_identical": true,
+  "scheduled_requests_match_frozen_prompts": true,
+  "last_returned_json_matches_saved_raw": true,
+  "all_cited_ids_offered": true,
+  "grounding_downgrades": 0,
+  "semantic_entailment_independently_evaluated": false,
+  "rows": [
+    {
+      "case": "baseline",
+      "pair": 1,
+      "score": "8.00",
+      "effectiveness": "supported",
+      "consistency": "supported",
+      "schema_completions": 1,
+      "all_cited_ids_offered": true,
+      "grounding_downgrades": 0
+    },
+    {
+      "case": "unrelated_caption",
+      "pair": 1,
+      "score": "6.00",
+      "effectiveness": "weak",
+      "consistency": "supported",
+      "schema_completions": 1,
+      "all_cited_ids_offered": true,
+      "grounding_downgrades": 0
+    },
+    {
+      "case": "unrelated_caption",
+      "pair": 2,
+      "score": "6.00",
+      "effectiveness": "weak",
+      "consistency": "supported",
+      "schema_completions": 1,
+      "all_cited_ids_offered": true,
+      "grounding_downgrades": 0
+    },
+    {
+      "case": "baseline",
+      "pair": 2,
+      "score": "8.00",
+      "effectiveness": "supported",
+      "consistency": "supported",
+      "schema_completions": 1,
+      "all_cited_ids_offered": true,
+      "grounding_downgrades": 0
+    },
+    {
+      "case": "baseline",
+      "pair": 3,
+      "score": "8.00",
+      "effectiveness": "supported",
+      "consistency": "supported",
+      "schema_completions": 1,
+      "all_cited_ids_offered": true,
+      "grounding_downgrades": 0
+    },
+    {
+      "case": "unrelated_caption",
+      "pair": 3,
+      "score": "6.00",
+      "effectiveness": "weak",
+      "consistency": "supported",
+      "schema_completions": 1,
+      "all_cited_ids_offered": true,
+      "grounding_downgrades": 0
+    },
+    {
+      "case": "unrelated_caption",
+      "pair": 4,
+      "score": "6.00",
+      "effectiveness": "weak",
+      "consistency": "supported",
+      "schema_completions": 1,
+      "all_cited_ids_offered": true,
+      "grounding_downgrades": 0
+    },
+    {
+      "case": "baseline",
+      "pair": 4,
+      "score": "8.00",
+      "effectiveness": "supported",
+      "consistency": "supported",
+      "schema_completions": 1,
+      "all_cited_ids_offered": true,
+      "grounding_downgrades": 0
+    },
+    {
+      "case": "baseline",
+      "pair": 5,
+      "score": "8.00",
+      "effectiveness": "supported",
+      "consistency": "supported",
+      "schema_completions": 1,
+      "all_cited_ids_offered": true,
+      "grounding_downgrades": 0
+    },
+    {
+      "case": "unrelated_caption",
+      "pair": 5,
+      "score": "6.00",
+      "effectiveness": "weak",
+      "consistency": "supported",
+      "schema_completions": 1,
+      "all_cited_ids_offered": true,
+      "grounding_downgrades": 0
+    }
+  ]
+}

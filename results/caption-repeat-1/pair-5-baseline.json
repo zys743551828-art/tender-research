@@ -1,0 +1,121 @@
+{
+  "pair": 5,
+  "case": "baseline",
+  "status": "completed",
+  "raw": {
+    "grades": [],
+    "grade": null,
+    "score": "8",
+    "key_points": [
+      {
+        "point": "阶段安排具体可行",
+        "status": "covered",
+        "evidence_ids": [
+          "shared_body_0"
+        ]
+      },
+      {
+        "point": "关键线路明确",
+        "status": "covered",
+        "evidence_ids": [
+          "shared_body_1"
+        ]
+      },
+      {
+        "point": "资源保障具体可行",
+        "status": "covered",
+        "evidence_ids": [
+          "shared_body_1"
+        ]
+      },
+      {
+        "point": "总工期不超过180日历天",
+        "status": "covered",
+        "evidence_ids": [
+          "shared_body_0",
+          "shared_body_1"
+        ]
+      }
+    ],
+    "specificity": 0.7,
+    "specificity_note": "正文针对道路工程给出了各阶段天数、关键线路工序链及班组机械配置，与工程对象和工序基本匹配，但资源数量与工程规模的匹配依据较简略。",
+    "effectiveness": {
+      "status": "supported",
+      "note": "阶段划分与衔接、关键线路、班组机械配置及周度核对纠偏措施均有明确表述，措施具体可操作。",
+      "evidence_ids": [
+        "shared_body_0",
+        "shared_body_1"
+      ]
+    },
+    "consistency": {
+      "status": "supported",
+      "note": "两处总工期均为180日历天，阶段天数合计180天，关键线路与阶段顺序一致，无矛盾。",
+      "evidence_ids": [
+        "shared_body_0",
+        "shared_body_1"
+      ]
+    },
+    "assessment": "阶段安排按场地准备、地下管线、道路基层、面层及验收划分并明确天数与衔接，合计180日历天满足工期上限；关键线路清晰；资源保障给出班组、机械配置及周度核对、延误增班的纠偏措施，具体可行，故给满分。",
+    "limitations": "评分标准未分档，满分判断依赖评委对“具体性与可行性”的主观权衡；正文未提供进度横道图或网络图，资源数量与工程量的匹配依据较简略。"
+  },
+  "grounded": {
+    "score": "8.00",
+    "grades": [],
+    "grade": null,
+    "interval": null,
+    "grade_position": null,
+    "key_points": [
+      {
+        "point": "阶段安排具体可行",
+        "status": "covered",
+        "evidence_ids": [
+          "shared_body_0"
+        ]
+      },
+      {
+        "point": "关键线路明确",
+        "status": "covered",
+        "evidence_ids": [
+          "shared_body_1"
+        ]
+      },
+      {
+        "point": "资源保障具体可行",
+        "status": "covered",
+        "evidence_ids": [
+          "shared_body_1"
+        ]
+      },
+      {
+        "point": "总工期不超过180日历天",
+        "status": "covered",
+        "evidence_ids": [
+          "shared_body_0",
+          "shared_body_1"
+        ]
+      }
+    ],
+    "coverage": 1.0,
+    "downgraded": 0,
+    "specificity": 0.7,
+    "specificity_note": "正文针对道路工程给出了各阶段天数、关键线路工序链及班组机械配置，与工程对象和工序基本匹配，但资源数量与工程规模的匹配依据较简略。",
+    "effectiveness": {
+      "status": "supported",
+      "note": "阶段划分与衔接、关键线路、班组机械配置及周度核对纠偏措施均有明确表述，措施具体可操作。",
+      "evidence_ids": [
+        "shared_body_0",
+        "shared_body_1"
+      ]
+    },
+    "consistency": {
+      "status": "supported",
+      "note": "两处总工期均为180日历天，阶段天数合计180天，关键线路与阶段顺序一致，无矛盾。",
+      "evidence_ids": [
+        "shared_body_0",
+        "shared_body_1"
+      ]
+    },
+    "assessment": "阶段安排按场地准备、地下管线、道路基层、面层及验收划分并明确天数与衔接，合计180日历天满足工期上限；关键线路清晰；资源保障给出班组、机械配置及周度核对、延误增班的纠偏措施，具体可行，故给满分。",
+    "limitations": "评分标准未分档，满分判断依赖评委对“具体性与可行性”的主观权衡；正文未提供进度横道图或网络图，资源数量与工程量的匹配依据较简略。"
+  }
+}
