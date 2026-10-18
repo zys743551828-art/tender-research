@@ -1,0 +1,93 @@
+{
+  "model_fingerprint": "b29efd8ae67fc41b0895404ede82fb60ede198a5f58bc34ff57002401ad0b436",
+  "checks": [
+    {
+      "query": false,
+      "batch": 1,
+      "tokens": 4,
+      "truncated": [
+        false
+      ],
+      "token_parity": true,
+      "output_parity": true,
+      "norms": [
+        1.0000002311002778
+      ]
+    },
+    {
+      "query": false,
+      "batch": 2,
+      "tokens": 14,
+      "truncated": [
+        false,
+        false
+      ],
+      "token_parity": true,
+      "output_parity": true,
+      "norms": [
+        1.0000000195540388,
+        0.9999999350544438
+      ]
+    },
+    {
+      "query": false,
+      "batch": 1,
+      "tokens": 512,
+      "truncated": [
+        true
+      ],
+      "token_parity": true,
+      "output_parity": true,
+      "norms": [
+        0.9999999745475276
+      ]
+    },
+    {
+      "query": true,
+      "batch": 1,
+      "tokens": 23,
+      "truncated": [
+        false
+      ],
+      "token_parity": true,
+      "output_parity": true,
+      "norms": [
+        0.9999999652193853
+      ]
+    },
+    {
+      "query": true,
+      "batch": 2,
+      "tokens": 33,
+      "truncated": [
+        false,
+        false
+      ],
+      "token_parity": true,
+      "output_parity": true,
+      "norms": [
+        0.9999998242139493,
+        0.999999954929198
+      ]
+    },
+    {
+      "query": true,
+      "batch": 1,
+      "tokens": 512,
+      "truncated": [
+        true
+      ],
+      "token_parity": true,
+      "output_parity": true,
+      "norms": [
+        0.9999997602958721
+      ]
+    }
+  ],
+  "packages": {
+    "transformers": "5.20.1",
+    "tokenizers": "0.23.3",
+    "onnxruntime": "1.31.0",
+    "numpy": "2.4.6"
+  }
+}

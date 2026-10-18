@@ -1,0 +1,18 @@
+{
+  "app_commit": "872f014",
+  "backend_tests": 205,
+  "parser": "pdfium-1.3",
+  "retrieval_default": "keyword",
+  "deployed_migration": "0002",
+  "production_postgres": "16.15",
+  "production_vector_extension": false,
+  "backup_sha256": "fd78001b5befb1b8f460bcae6e499e6344205c734d3d02efc367300d7ad37d8f",
+  "optional_pgvector": "0.8.7-pg16-bookworm",
+  "model_fingerprint": "b29efd8ae67fc41b0895404ede82fb60ede198a5f58bc34ff57002401ad0b436",
+  "code_sha256": {
+    "backend/src/bidwb/parsing.py": "9039dc8055a6240c274ac27ca33d552aa0770836a7811a3bafef1431bd344bc0",
+    "backend/src/bidwb/retrieval.py": "5155e29b16c81f4fbde973972598ad8e22400eb6bd79977eaa0ea4b6566cee09",
+    "backend/src/bidwb/embeddings.py": "17dbe7a0dfbd98412ed683fe68845a4e0bbb41d28b503f5f8ec473d714885617",
+    "backend/src/bidwb/services/vector_index.py": "bc9c32287da8e2c1dd576df3b10e93baea2c8afc415a9bc9d76f28d0b1d9b165"
+  }
+}

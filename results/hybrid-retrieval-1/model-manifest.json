@@ -1,0 +1,54 @@
+{
+  "model_id": "BAAI/bge-small-zh-v1.5",
+  "source": "AI-ModelScope/bge-small-zh-v1.5",
+  "dimensions": 512,
+  "pooling": "CLS",
+  "normalize": true,
+  "max_tokens": 512,
+  "query_prefix": "为这个句子生成表示以用于检索相关文章：",
+  "files": {
+    "model.safetensors": "354763b9b1357bc9c44f62c6be2276321081ed2567773608c0d0785b61d5a026",
+    "model.onnx": "99ea2ac0fbba56422236660acb8fa9b5e8bf811bb72b23bf719cebe2413c7e92",
+    "tokenizer.json": "48cea5d44424912a6fd1ea647bf4fe50b55ab8b1e5879c3275f80e339e8fae26",
+    "tokenizer_config.json": "e6f3b96db926a37d4039995fbf5ad17de158dfb8f6343d607e4dbaad18d75f5a",
+    "config.json": "3853a7979202c348751b753e36f579c41d8da7d36af617d3d907e1fc9b441f2a",
+    "vocab.txt": "45bbac6b341c319adc98a532532882e91a9cefc0329aa57bac9ae761c27b291c"
+  },
+  "conversion_checks": [
+    {
+      "batch": 1,
+      "tokens": 4,
+      "max_abs_error": 1.1548399925231934e-07,
+      "dimensions": 512,
+      "norms": [
+        1.000000238418579
+      ]
+    },
+    {
+      "batch": 2,
+      "tokens": 9,
+      "max_abs_error": 1.2293457984924316e-07,
+      "dimensions": 512,
+      "norms": [
+        1.0000001192092896,
+        0.9999997615814209
+      ]
+    },
+    {
+      "batch": 1,
+      "tokens": 512,
+      "max_abs_error": 8.568167686462402e-08,
+      "dimensions": 512,
+      "norms": [
+        0.9999999403953552
+      ]
+    }
+  ],
+  "packages": {
+    "torch": "2.14.1+cpu",
+    "transformers": "5.20.1",
+    "tokenizers": "0.23.3",
+    "onnx": "1.23.2",
+    "onnxruntime": "1.31.0"
+  }
+}
