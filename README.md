@@ -4,6 +4,8 @@
 
 ## 1. 环境
 
+`scripts/assistant_live_check.py --output results/assistant-1/receipt.json` 验证已部署的项目问答和过期确认卡。使用已有后端虚拟环境的 httpx／reportlab，建立合成项目并关闭自动评审，只发一次问答请求；问答后不写决定，改变项目后旧卡应被拒绝。结果不代表真实标书问答质量或浏览器视觉验收。
+
 Python 3.11 及以上。数据集默认取与本仓库同级的 `tender-datasets`，可用环境变量 `TENDER_DATASETS` 指定其他位置。
 
 ```bash
