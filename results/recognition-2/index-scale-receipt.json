@@ -1,0 +1,42 @@
+{
+  "real_local_bge": true,
+  "model_fingerprint": "b29efd8ae67fc41b0895404ede82fb60ede198a5f58bc34ff57002401ad0b436",
+  "initial_indexed_evidence": 16,
+  "initial_rebuild_seconds": 0.05950964300063788,
+  "missing_and_corrupt_index_fall_back": true,
+  "worker_rebuild_recovers_hybrid": true,
+  "api_read_and_worker_write_roles": true,
+  "current_identity_filter": true,
+  "rebuild_preserves_all_business_tables": true,
+  "frozen_search_unchanged_after_new_parses_and_reviews": true,
+  "scale_results": [
+    {
+      "evidence": 1000,
+      "review_seconds": 0.08634806999907596,
+      "original_preserved": true,
+      "new_evidence": 1000
+    },
+    {
+      "evidence": 10000,
+      "review_seconds": 0.7042358839971712,
+      "original_preserved": true,
+      "new_evidence": 10000
+    },
+    {
+      "evidence": 20000,
+      "review_seconds": 1.3994924379985605,
+      "original_preserved": true,
+      "new_evidence": 20000
+    },
+    {
+      "evidence": 20001,
+      "limit_rejected_without_writes": true
+    }
+  ],
+  "semantic_quality_evaluated": false,
+  "http_oss_latency_included": false,
+  "scale_store": "MemoryObjectStore",
+  "scale_runs_per_size": 1,
+  "production_modified": false,
+  "temporary_database_removed": true
+}
