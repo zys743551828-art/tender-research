@@ -1,0 +1,11 @@
+{
+  "app_commit": "e647675",
+  "backend_tests": 212,
+  "frontend_tests": 296,
+  "extraction_policy": "per-file-terms-conflict-1",
+  "schema_migration": "0002",
+  "retrieval_default": "keyword",
+  "browser_visual_verification": "not_available_missing_browser_service",
+  "backend_image": "sha256:eeb2b06ba41bedaf9c99f80b80a451bcec6d0c2fdfc8c4b73a1718201ea36dcb",
+  "web_image": "sha256:2ac1eb7ff45f22b2590920ddcd50f892e946b9f2c69a78b62eeec0d6410272ac"
+}
