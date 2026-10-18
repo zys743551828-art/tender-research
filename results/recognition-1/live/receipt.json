@@ -1,0 +1,47 @@
+{
+  "synthetic_only": true,
+  "project_id": "prj_ed913d2c0e604c98",
+  "version_id": "ver_bf31e8e827d84349",
+  "source_sha256": "bf8a643c0c623fb1d3f359b473aee96fdbd064c9b9267ce7b77f9fedb2c7b4fd",
+  "initial_parse_id": "prs_9bcd6483f26d4e18",
+  "accepted": {
+    "review_id": "rcv_04a141d3b0f74f7a",
+    "parent_parse_id": "prs_9bcd6483f26d4e18",
+    "result_parse_id": "prs_3ac924b30cc34cd3",
+    "source_evidence_id": "evd_7fa7dd406c204fb1",
+    "result_evidence_id": "evd_5d7965c3af084e98",
+    "decision": "accept",
+    "original_quote": "Cost | 15.12",
+    "result_quote": "Cost | 15.12",
+    "reason": "合成表格逐格对照，金额为15.12",
+    "actor_name": "本机联调管理员",
+    "created_at": "2026-10-18T07:28:06.705808Z"
+  },
+  "corrected": {
+    "review_id": "rcv_0c5414b3aedc407e",
+    "parent_parse_id": "prs_3ac924b30cc34cd3",
+    "result_parse_id": "prs_83eb860d4f5d4e14",
+    "source_evidence_id": "evd_5d7965c3af084e98",
+    "result_evidence_id": "evd_a949ff404a9a4889",
+    "decision": "correct",
+    "original_quote": "Cost | 15.12",
+    "result_quote": "Cost 15.12",
+    "reason": "合成表格摘录去掉分隔符，金额保持15.12",
+    "actor_name": "本机联调管理员",
+    "created_at": "2026-10-18T07:28:06.843550Z"
+  },
+  "numeric_check_required": true,
+  "idempotent_replay": true,
+  "stale_parse_rejected": true,
+  "original_evidence_unchanged": true,
+  "original_pdf_unchanged": true,
+  "final_pending_count": 2,
+  "coverage_gaps": [
+    "recognition_candidates_pending",
+    "human_verified_candidates_partial"
+  ],
+  "model_calls": 0,
+  "new_analysis_jobs": 0,
+  "real_table_extraction": true,
+  "ocr_accuracy_evaluated": false
+}
