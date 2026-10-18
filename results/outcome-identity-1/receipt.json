@@ -1,0 +1,249 @@
+{
+  "synthetic": true,
+  "project_id": "prj_1bac3afe4ac04784",
+  "report": {
+    "project_id": "prj_1bac3afe4ac04784",
+    "snapshot_id": "snp_0655a03b46d945ae",
+    "round_no": 1,
+    "basis": {
+      "rules_total": 1,
+      "rules_confirmed": 1,
+      "rules_unconfirmed": 0,
+      "coverage": {
+        "status": "complete",
+        "rules_total": 1,
+        "rules_checked": 1,
+        "rules_failed": 0,
+        "candidates_dropped": 0
+      },
+      "generated_from_snapshot_at": "2026-10-18T04:59:20.192080Z"
+    },
+    "qualification": {
+      "snapshot_id": "snp_0655a03b46d945ae",
+      "run_id": "job_b41eb50d8fa6423d",
+      "coverage": {
+        "status": "complete",
+        "rules_total": 1,
+        "rules_checked": 1,
+        "rules_failed": 0,
+        "candidates_dropped": 0
+      },
+      "qualification": {
+        "total": 1,
+        "satisfied": 1,
+        "violated": 0,
+        "unclear": 0,
+        "failed": 0
+      },
+      "scoring": {
+        "total": 0,
+        "satisfied": 0,
+        "violated": 0,
+        "unclear": 0,
+        "failed": 0
+      },
+      "rows": [
+        {
+          "rule_id": "rul_127b3ec9f3f14caf",
+          "kind": "mandatory",
+          "statement": "施工总工期不得超过180日历天",
+          "rule_basis": "unconfirmed",
+          "verdict": "satisfied",
+          "note": "正文明确施工总工期为180日历天，未超过规则上限180日历天，满足要求。",
+          "evidence": [
+            {
+              "evidence_id": "evd_8d062dd81a5f4123",
+              "project_id": "prj_1bac3afe4ac04784",
+              "version_id": "ver_c75231197bfc43f2",
+              "file_role": "body",
+              "file_name": "body-synthetic.pdf",
+              "source_sha256": "ffe21b838297c803bdeeb38b8e9a7b6ec0fa24d515edc6f6abda10d85ed4b4bb",
+              "physical_page": 1,
+              "printed_page": null,
+              "quote": "合成施工组织设计，仅用于系统验证。施工总工期为180日历天，满足招标工期要求。",
+              "kind": "text",
+              "parser_version": "pdfium-1.3",
+              "bbox": [
+                0.10079,
+                0.09725,
+                0.51175,
+                0.12596
+              ],
+              "semantic_review": "pending",
+              "effectivity_notes": []
+            }
+          ],
+          "finding_ids": []
+        }
+      ]
+    },
+    "categories": [
+      {
+        "category": "disqualification",
+        "total": 0,
+        "open": 0,
+        "resolved": 0
+      },
+      {
+        "category": "response",
+        "total": 0,
+        "open": 0,
+        "resolved": 0
+      },
+      {
+        "category": "consistency",
+        "total": 0,
+        "open": 0,
+        "resolved": 0
+      },
+      {
+        "category": "scope",
+        "total": 0,
+        "open": 0,
+        "resolved": 0
+      },
+      {
+        "category": "improvement",
+        "total": 0,
+        "open": 0,
+        "resolved": 0
+      }
+    ],
+    "prediction": {
+      "prediction_id": "prd_10ee57aa63a542f7",
+      "project_id": "prj_1bac3afe4ac04784",
+      "snapshot_id": "snp_0655a03b46d945ae",
+      "run_id": "job_2cf8c909ff314ac2",
+      "target": "technical_total",
+      "status": "abstained",
+      "purpose": "research",
+      "estimated_value": null,
+      "low": null,
+      "high": null,
+      "maximum": null,
+      "technical_full_score": null,
+      "validation_status": "not_validated",
+      "reason": "招标文件的评分条款没有提取到分值，无法估计得分。",
+      "scoring_model": null,
+      "topics": [],
+      "created_at": "2026-10-18T04:59:21.368788Z",
+      "calibration": {
+        "state": "uncalibrated",
+        "pairs": 0,
+        "needed_pairs": 20,
+        "mae": null,
+        "bias": null
+      }
+    },
+    "price": null,
+    "next_actions": [
+      {
+        "key": "set_price",
+        "title": "填写评标价规则，模拟报价得分",
+        "detail": "价格分与技术分合在一起才决定排名。",
+        "target": "price",
+        "count": null
+      },
+      {
+        "key": "submit",
+        "title": "登记提交",
+        "detail": "关键问题与强制性要求已处理完。",
+        "target": "submit",
+        "count": null
+      }
+    ],
+    "pipeline": {
+      "project_id": "prj_1bac3afe4ac04784",
+      "stage": "done",
+      "steps": [
+        {
+          "key": "materials",
+          "state": "done",
+          "task_id": null,
+          "message": null
+        },
+        {
+          "key": "rules",
+          "state": "done",
+          "task_id": null,
+          "message": null
+        },
+        {
+          "key": "review",
+          "state": "done",
+          "task_id": "job_b41eb50d8fa6423d",
+          "message": null
+        },
+        {
+          "key": "prediction",
+          "state": "done",
+          "task_id": "job_2cf8c909ff314ac2",
+          "message": null
+        }
+      ],
+      "missing": [],
+      "snapshot_id": "snp_0655a03b46d945ae",
+      "round_no": 1,
+      "stale_reasons": [],
+      "rules_total": 1,
+      "rules_unconfirmed": 0,
+      "input_verification_required": false,
+      "word_pdf_required": false
+    }
+  },
+  "first_submission": {
+    "submission_id": "sub_9990271ce2144772",
+    "project_id": "prj_1bac3afe4ac04784",
+    "body_version_id": "ver_c75231197bfc43f2",
+    "snapshot_id": "snp_0655a03b46d945ae",
+    "submitted_at": "2026-10-18T04:59:22.076887Z",
+    "confirmation_review_id": "rev_e932c1c41b354ae8",
+    "receipt_artifact": null,
+    "supersedes": null,
+    "body_name": "body-synthetic.pdf",
+    "body_sha256": "ffe21b838297c803bdeeb38b8e9a7b6ec0fa24d515edc6f6abda10d85ed4b4bb",
+    "technical_maximum": null,
+    "superseded": false
+  },
+  "unknown_outcome": {
+    "outcome_id": "out_1f92c7f1ce734928",
+    "project_id": "prj_1bac3afe4ac04784",
+    "submission_id": "sub_9990271ce2144772",
+    "source_kind": "user_reported",
+    "verification_status": "pending",
+    "target": "technical_total",
+    "value": null,
+    "maximum": null,
+    "aggregation": null,
+    "stage_result": "pending",
+    "source_artifact": null,
+    "source_page": null,
+    "published_at": null,
+    "known_at": "2026-10-18T04:59:22.126331Z",
+    "verified_by": null,
+    "supersedes": null
+  },
+  "corrected_submission": {
+    "submission_id": "sub_eba0abad49de465b",
+    "project_id": "prj_1bac3afe4ac04784",
+    "body_version_id": "ver_c75231197bfc43f2",
+    "snapshot_id": "snp_0655a03b46d945ae",
+    "submitted_at": "2026-10-18T04:59:22.076887Z",
+    "confirmation_review_id": "rev_669b98dc395c44eb",
+    "receipt_artifact": null,
+    "supersedes": "sub_9990271ce2144772",
+    "body_name": "body-synthetic.pdf",
+    "body_sha256": "ffe21b838297c803bdeeb38b8e9a7b6ec0fa24d515edc6f6abda10d85ed4b4bb",
+    "technical_maximum": null,
+    "superseded": false
+  },
+  "old_identity_rejection": {
+    "code": "submission_superseded",
+    "message": "此提交已被更正，请选择更正后的实际提交；已有成绩记录仍作为历史保留",
+    "request_id": "req_220eb70fc4434782",
+    "retryable": false,
+    "details": {}
+  },
+  "old_outcome_preserved": true,
+  "idempotency_replay": true
+}
