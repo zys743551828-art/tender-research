@@ -1,0 +1,243 @@
+{
+  "project_id": "prj_b37b4852dd374cef",
+  "snapshot_id": "snp_0e910b4c4a254a82",
+  "round_no": 1,
+  "basis": {
+    "parse_identity": "frozen",
+    "rules_total": 2,
+    "rules_confirmed": 2,
+    "rules_unconfirmed": 0,
+    "coverage": {
+      "status": "complete",
+      "rules_total": 2,
+      "rules_checked": 2,
+      "rules_failed": 0,
+      "candidates_dropped": 0
+    },
+    "generated_from_snapshot_at": "2026-10-18T10:29:20.555340Z"
+  },
+  "qualification": {
+    "snapshot_id": "snp_0e910b4c4a254a82",
+    "run_id": "job_5286ea50364d48c9",
+    "coverage": {
+      "status": "complete",
+      "rules_total": 2,
+      "rules_checked": 2,
+      "rules_failed": 0,
+      "candidates_dropped": 0
+    },
+    "qualification": {
+      "total": 1,
+      "satisfied": 0,
+      "violated": 1,
+      "unclear": 0,
+      "failed": 0
+    },
+    "scoring": {
+      "total": 1,
+      "satisfied": 1,
+      "violated": 0,
+      "unclear": 0,
+      "failed": 0
+    },
+    "rows": [
+      {
+        "rule_id": "rul_16d3576471b34006",
+        "kind": "mandatory",
+        "statement": "施工总工期不得超过180日历天，工程质量必须达到合格。",
+        "rule_basis": "unconfirmed",
+        "verdict": "violated",
+        "note": "正文明确工期240日历天，超过规则上限180日历天，构成违反；质量目标合格满足要求。",
+        "evidence": [],
+        "finding_ids": [
+          "fnd_c6fd31ac915b4dda"
+        ]
+      },
+      {
+        "rule_id": "rul_496ff6e8316043c4",
+        "kind": "scoring",
+        "statement": "施工进度计划合理可行的得8分，计划不合理的得0分。",
+        "rule_basis": "unconfirmed",
+        "verdict": "satisfied",
+        "note": "正文给出了总工期、分阶段工期、关键线路及资源配置，构成可判断的施工进度计划，规则仅要求计划合理可行即得分，未提出更细的量化标准，故判定满足。",
+        "evidence": [
+          {
+            "evidence_id": "evd_211941a21ddc4882",
+            "project_id": "prj_b37b4852dd374cef",
+            "version_id": "ver_8ca5b8bc16da416b",
+            "file_role": "body",
+            "file_name": "浏览器验收-合成body.pdf",
+            "source_sha256": "44f6f0ebd40255642397eb2f4b1291af25e61f4b870ef41c576d2aaae8a0723c",
+            "physical_page": 1,
+            "printed_page": null,
+            "quote": "第一章 施工进度计划\n施工总工期为240日历天，准备20天、管线100天、基层80天、面层40天。关键线路为准备、管线、基层、面层；配置2个班组和2台挖掘机。",
+            "kind": "text",
+            "parser_version": "pdfium-1.4",
+            "bbox": [
+              0.10079,
+              0.12576,
+              0.73668,
+              0.18279
+            ],
+            "semantic_review": "pending",
+            "effectivity_notes": []
+          }
+        ],
+        "finding_ids": []
+      }
+    ]
+  },
+  "categories": [
+    {
+      "category": "disqualification",
+      "total": 0,
+      "open": 0,
+      "resolved": 0
+    },
+    {
+      "category": "response",
+      "total": 1,
+      "open": 1,
+      "resolved": 0
+    },
+    {
+      "category": "consistency",
+      "total": 0,
+      "open": 0,
+      "resolved": 0
+    },
+    {
+      "category": "scope",
+      "total": 1,
+      "open": 1,
+      "resolved": 0
+    },
+    {
+      "category": "improvement",
+      "total": 0,
+      "open": 0,
+      "resolved": 0
+    }
+  ],
+  "prediction": {
+    "prediction_id": "prd_f2a21182b4f94660",
+    "project_id": "prj_b37b4852dd374cef",
+    "snapshot_id": "snp_0e910b4c4a254a82",
+    "run_id": "job_fb1844ab8ffe41bb",
+    "target": "technical_total",
+    "status": "candidate",
+    "purpose": "research",
+    "estimated_value": "8",
+    "low": "8",
+    "high": "8",
+    "maximum": "8",
+    "technical_full_score": "8",
+    "validation_status": "not_validated",
+    "reason": "基于招标文件评分条款与正文的逐项评估，尚未用官方成绩校准；只用于排出可能的失分点，不是对结果的承诺。",
+    "scoring_model": null,
+    "topics": [
+      {
+        "topic": "施工进度计划合理可行的得8分，计划不合理的得0分。（满分 8 分，判为“合理可行”档）",
+        "points_lost": "0",
+        "assessment": "正文明确了总工期240日历天，并按准备20天、管线100天、基层80天、面层40天分解，各阶段合计与总工期一致；同时明确关键线路为准备、管线、基层、面层，并配置2个班组和2台挖掘机，进度计划在工序衔接和资源配置上合理可行，符合评分标准中“合理可行”的要求，得满分8分。；具体性与有效性（有依据）：总工期240天与准备、管线、基层、面层各阶段天数及关键线路、班组和挖掘机配置相互衔接，构成可执行的进度安排。；前后一致性（有依据）：各阶段天数之和为240天，与总工期一致；关键线路与所列工序顺序一致。",
+        "evidence": [
+          {
+            "evidence_id": "evd_211941a21ddc4882",
+            "project_id": "prj_b37b4852dd374cef",
+            "version_id": "ver_8ca5b8bc16da416b",
+            "file_role": "body",
+            "file_name": "浏览器验收-合成body.pdf",
+            "source_sha256": "44f6f0ebd40255642397eb2f4b1291af25e61f4b870ef41c576d2aaae8a0723c",
+            "physical_page": 1,
+            "printed_page": null,
+            "quote": "第一章 施工进度计划\n施工总工期为240日历天，准备20天、管线100天、基层80天、面层40天。关键线路为准备、管线、基层、面层；配置2个班组和2台挖掘机。",
+            "kind": "text",
+            "parser_version": "pdfium-1.4",
+            "bbox": [
+              0.10079,
+              0.12576,
+              0.73668,
+              0.18279
+            ],
+            "semantic_review": "pending",
+            "effectivity_notes": []
+          }
+        ],
+        "limitations": "评分标准仅分“合理可行”与“不合理”两档，判断依赖评委对“合理可行”的主观把握；正文未提供工程量、施工条件及进度横道图等细节，无法进一步核验各阶段工期的合理性。；只读原生文字与已核验摘录，表格结构和图形语义未读取"
+      }
+    ],
+    "created_at": "2026-10-18T10:29:31.926492Z",
+    "calibration": {
+      "state": "uncalibrated",
+      "pairs": 0,
+      "needed_pairs": 20,
+      "mae": null,
+      "bias": null
+    }
+  },
+  "price": null,
+  "next_actions": [
+    {
+      "key": "handle_disqualification",
+      "title": "处理 1 个可能被否决或不满足强制要求的问题",
+      "detail": "这类问题处理完之前不能登记提交。",
+      "target": "findings",
+      "count": 1,
+      "priority": 3
+    },
+    {
+      "key": "verify_facts",
+      "title": "核实 1 个问题需要的事实",
+      "detail": "只录入有原件依据的事实；录入后重新评审，不把模型建议当成事实。",
+      "target": "rules",
+      "count": 1,
+      "priority": 4
+    },
+    {
+      "key": "set_price",
+      "title": "填写评标价规则，模拟报价得分",
+      "detail": "价格分与技术分合在一起才决定排名。",
+      "target": "price",
+      "count": null,
+      "priority": 6
+    }
+  ],
+  "pipeline": {
+    "project_id": "prj_b37b4852dd374cef",
+    "stage": "done",
+    "steps": [
+      {
+        "key": "materials",
+        "state": "done",
+        "task_id": null,
+        "message": null
+      },
+      {
+        "key": "rules",
+        "state": "done",
+        "task_id": null,
+        "message": null
+      },
+      {
+        "key": "review",
+        "state": "done",
+        "task_id": "job_5286ea50364d48c9",
+        "message": null
+      },
+      {
+        "key": "prediction",
+        "state": "done",
+        "task_id": "job_fb1844ab8ffe41bb",
+        "message": null
+      }
+    ],
+    "missing": [],
+    "snapshot_id": "snp_0e910b4c4a254a82",
+    "round_no": 1,
+    "stale_reasons": [],
+    "rules_total": 2,
+    "rules_unconfirmed": 0,
+    "input_verification_required": false,
+    "word_pdf_required": false
+  }
+}

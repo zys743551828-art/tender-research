@@ -1,0 +1,30 @@
+{
+  "synthetic_only": true,
+  "app_commit": "45a5921011fa22f400482f73710e96a32b916082",
+  "web_image": "sha256:f59162088fb1ddaa18d29e155b60e3b89fec071d7e34b4a0fbb549e73d247f24",
+  "services": [
+    "api healthy",
+    "kafka healthy",
+    "postgres healthy",
+    "reaper healthy",
+    "relay healthy",
+    "web healthy",
+    "word-converter healthy",
+    "worker-ai healthy",
+    "worker-experiment healthy",
+    "worker-export healthy",
+    "worker-parse healthy"
+  ],
+  "same_snapshot_id": "snp_0e910b4c4a254a82",
+  "frozen_qualification_matrix_unchanged": true,
+  "current_rules_all_confirmed": true,
+  "mandatory_problem_still_blocks_submission": true,
+  "all_five_tasks_succeeded": true,
+  "browser_creation_ai_analysis_card_rule_card_priority_and_submission_check_exercised": true,
+  "browser_file_selection_upload_download_completion_evaluated": false,
+  "frontend_tests": 327,
+  "frontend_quality_gate_log_sha256": "f143f45f3d7d2701341bf901cb58d6c144ab59f1407debcc489f641620fac530",
+  "backend_tests_rerun": false,
+  "official_score_accuracy_evaluated": false,
+  "automation_resumed": false
+}

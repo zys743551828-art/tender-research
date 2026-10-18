@@ -1,0 +1,22 @@
+{
+  "snapshot_id": "snp_0e910b4c4a254a82",
+  "project_id": "prj_b37b4852dd374cef",
+  "contract_version": "input-v2",
+  "file_version_ids": [
+    "ver_8ca5b8bc16da416b",
+    "ver_b94e966b71bc4fa3"
+  ],
+  "body_version_id": "ver_8ca5b8bc16da416b",
+  "rule_set_id": "rpk_d3342ff568e44eb1",
+  "fact_set_id": null,
+  "as_of": "2026-10-18T10:29:20.555340Z",
+  "reference_dataset_id": null,
+  "coverage_gaps": [],
+  "sha256": "9e3e9898f33958c929e54fff8e44441aa352619c7b64d4ef6d9bb4d70dd88139",
+  "word_sources": [],
+  "parse_identity": "frozen",
+  "parse_ids": {
+    "ver_8ca5b8bc16da416b": "prs_e85e237b1e7d4ce3",
+    "ver_b94e966b71bc4fa3": "prs_ef60bdaf37044202"
+  }
+}

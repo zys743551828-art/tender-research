@@ -1,0 +1,110 @@
+{
+  "items": [
+    {
+      "finding_id": "fnd_c6fd31ac915b4dda",
+      "project_id": "prj_b37b4852dd374cef",
+      "snapshot_id": "snp_0e910b4c4a254a82",
+      "run_id": "job_5286ea50364d48c9",
+      "rule_id": "rul_16d3576471b34006",
+      "source": "rule",
+      "category": "response",
+      "rule_basis": "unconfirmed",
+      "nature": "fact_conflict",
+      "impact": "qualification",
+      "severity": "critical",
+      "statement": "正文施工总工期为240日历天，超过规则要求的180日历天上限，属于未实质性响应。",
+      "evidence": [
+        {
+          "evidence_id": "evd_211941a21ddc4882",
+          "project_id": "prj_b37b4852dd374cef",
+          "version_id": "ver_8ca5b8bc16da416b",
+          "file_role": "body",
+          "file_name": "浏览器验收-合成body.pdf",
+          "source_sha256": "44f6f0ebd40255642397eb2f4b1291af25e61f4b870ef41c576d2aaae8a0723c",
+          "physical_page": 1,
+          "printed_page": null,
+          "quote": "第一章 施工进度计划\n施工总工期为240日历天，准备20天、管线100天、基层80天、面层40天。关键线路为准备、管线、基层、面层；配置2个班组和2台挖掘机。",
+          "kind": "text",
+          "parser_version": "pdfium-1.4",
+          "bbox": [
+            0.10079,
+            0.12576,
+            0.73668,
+            0.18279
+          ],
+          "semantic_review": "pending",
+          "effectivity_notes": []
+        },
+        {
+          "evidence_id": "evd_9424bee58d65430f",
+          "project_id": "prj_b37b4852dd374cef",
+          "version_id": "ver_b94e966b71bc4fa3",
+          "file_role": "tender",
+          "file_name": "浏览器验收-合成tender.pdf",
+          "source_sha256": "e462ece72f770140958816af2ba3e3bcd0bd8a6e66df2ca9567d89832277a5fe",
+          "physical_page": 1,
+          "printed_page": null,
+          "quote": "第一章 强制性要求\n施工总工期不得超过180日历天，工程质量必须达到合格。",
+          "kind": "text",
+          "parser_version": "pdfium-1.4",
+          "bbox": [
+            0.10079,
+            0.12576,
+            0.61254,
+            0.15447
+          ],
+          "semantic_review": "pending",
+          "effectivity_notes": []
+        }
+      ],
+      "required_facts": [],
+      "status": "candidate",
+      "revision": 1,
+      "official_score_effect": null
+    },
+    {
+      "finding_id": "fnd_45a75e5621494719",
+      "project_id": "prj_b37b4852dd374cef",
+      "snapshot_id": "snp_0e910b4c4a254a82",
+      "run_id": "job_5286ea50364d48c9",
+      "rule_id": null,
+      "source": "scope",
+      "category": "scope",
+      "rule_basis": null,
+      "nature": "needs_confirmation",
+      "impact": "technical",
+      "severity": "improvement",
+      "statement": "正文在第 1 页提到“关键线路”，招标文件及补遗中没有出现，可能是其他项目的模板残留，或超出本项目招标范围。",
+      "evidence": [
+        {
+          "evidence_id": "evd_211941a21ddc4882",
+          "project_id": "prj_b37b4852dd374cef",
+          "version_id": "ver_8ca5b8bc16da416b",
+          "file_role": "body",
+          "file_name": "浏览器验收-合成body.pdf",
+          "source_sha256": "44f6f0ebd40255642397eb2f4b1291af25e61f4b870ef41c576d2aaae8a0723c",
+          "physical_page": 1,
+          "printed_page": null,
+          "quote": "第一章 施工进度计划\n施工总工期为240日历天，准备20天、管线100天、基层80天、面层40天。关键线路为准备、管线、基层、面层；配置2个班组和2台挖掘机。",
+          "kind": "text",
+          "parser_version": "pdfium-1.4",
+          "bbox": [
+            0.10079,
+            0.12576,
+            0.73668,
+            0.18279
+          ],
+          "semantic_review": "pending",
+          "effectivity_notes": []
+        }
+      ],
+      "required_facts": [
+        "确认“关键线路”是否属于本项目的招标范围"
+      ],
+      "status": "candidate",
+      "revision": 1,
+      "official_score_effect": null
+    }
+  ],
+  "next_cursor": null
+}

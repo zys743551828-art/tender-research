@@ -1,0 +1,23 @@
+{
+  "version_id": "ver_8ca5b8bc16da416b",
+  "project_id": "prj_b37b4852dd374cef",
+  "file_id": "fil_dd4393361b824a76",
+  "version_number": 1,
+  "original_name": "浏览器验收-合成body.pdf",
+  "role": "body",
+  "artifact": {
+    "artifact_id": "art_56bb4fb750324dcb",
+    "sha256": "44f6f0ebd40255642397eb2f4b1291af25e61f4b870ef41c576d2aaae8a0723c",
+    "media_type": "application/pdf",
+    "byte_size": 2703,
+    "contract_version": "file-v1"
+  },
+  "obtained_at": "2026-10-18T10:28:41.070957Z",
+  "document_date": null,
+  "association_status": "pending",
+  "supersedes": null,
+  "word": null,
+  "source_word_version_id": null,
+  "duplicate": false,
+  "new_file": true
+}

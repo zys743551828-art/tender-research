@@ -1,0 +1,112 @@
+{
+  "source_parse_state": "current",
+  "rule_set_id": "rpk_d3342ff568e44eb1",
+  "project_id": "prj_b37b4852dd374cef",
+  "source_version_ids": [
+    "ver_b94e966b71bc4fa3"
+  ],
+  "status": "confirmed",
+  "revision": 1,
+  "rules": [
+    {
+      "rule_id": "rul_16d3576471b34006",
+      "kind": "mandatory",
+      "statement": "施工总工期不得超过180日历天，工程质量必须达到合格。",
+      "conditions": [],
+      "exceptions": [],
+      "evidence": [
+        {
+          "evidence_id": "evd_9424bee58d65430f",
+          "project_id": "prj_b37b4852dd374cef",
+          "version_id": "ver_b94e966b71bc4fa3",
+          "file_role": "tender",
+          "file_name": "浏览器验收-合成tender.pdf",
+          "source_sha256": "e462ece72f770140958816af2ba3e3bcd0bd8a6e66df2ca9567d89832277a5fe",
+          "physical_page": 1,
+          "printed_page": null,
+          "quote": "第一章 强制性要求\n施工总工期不得超过180日历天，工程质量必须达到合格。",
+          "kind": "text",
+          "parser_version": "pdfium-1.4",
+          "bbox": [
+            0.10079,
+            0.12576,
+            0.61254,
+            0.15447
+          ],
+          "semantic_review": "pending",
+          "effectivity_notes": []
+        }
+      ],
+      "confirmation": "confirmed",
+      "carried_from_rule_id": null,
+      "max_points": null,
+      "source_status": "active"
+    },
+    {
+      "rule_id": "rul_496ff6e8316043c4",
+      "kind": "scoring",
+      "statement": "施工进度计划合理可行的得8分，计划不合理的得0分。",
+      "conditions": [],
+      "exceptions": [],
+      "evidence": [
+        {
+          "evidence_id": "evd_6fb6e10a45a54aaa",
+          "project_id": "prj_b37b4852dd374cef",
+          "version_id": "ver_b94e966b71bc4fa3",
+          "file_role": "tender",
+          "file_name": "浏览器验收-合成tender.pdf",
+          "source_sha256": "e462ece72f770140958816af2ba3e3bcd0bd8a6e66df2ca9567d89832277a5fe",
+          "physical_page": 1,
+          "printed_page": null,
+          "quote": "第二章 技术评分标准\n施工进度计划合理可行的得8分，计划不合理的得0分。技术标满分为8分。",
+          "kind": "text",
+          "parser_version": "pdfium-1.4",
+          "bbox": [
+            0.10079,
+            0.18278,
+            0.58307,
+            0.23999
+          ],
+          "semantic_review": "pending",
+          "effectivity_notes": []
+        }
+      ],
+      "confirmation": "confirmed",
+      "carried_from_rule_id": null,
+      "max_points": "8",
+      "source_status": "active"
+    }
+  ],
+  "terms": {
+    "technical_full_score": {
+      "value": "8",
+      "quote": "技术标满分为8分。",
+      "evidence": [
+        {
+          "evidence_id": "evd_6fb6e10a45a54aaa",
+          "project_id": "prj_b37b4852dd374cef",
+          "version_id": "ver_b94e966b71bc4fa3",
+          "file_role": "tender",
+          "file_name": "浏览器验收-合成tender.pdf",
+          "source_sha256": "e462ece72f770140958816af2ba3e3bcd0bd8a6e66df2ca9567d89832277a5fe",
+          "physical_page": 1,
+          "printed_page": null,
+          "quote": "第二章 技术评分标准\n施工进度计划合理可行的得8分，计划不合理的得0分。技术标满分为8分。",
+          "kind": "text",
+          "parser_version": "pdfium-1.4",
+          "bbox": [
+            0.10079,
+            0.18278,
+            0.58307,
+            0.23999
+          ],
+          "semantic_review": "pending",
+          "effectivity_notes": []
+        }
+      ]
+    },
+    "price_rule": null,
+    "conflicts": []
+  },
+  "effectivity_decisions": []
+}

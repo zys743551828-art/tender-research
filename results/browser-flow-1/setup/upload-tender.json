@@ -1,0 +1,23 @@
+{
+  "version_id": "ver_b94e966b71bc4fa3",
+  "project_id": "prj_b37b4852dd374cef",
+  "file_id": "fil_20d450d430984cd9",
+  "version_number": 1,
+  "original_name": "浏览器验收-合成tender.pdf",
+  "role": "tender",
+  "artifact": {
+    "artifact_id": "art_f1768a9c32134459",
+    "sha256": "e462ece72f770140958816af2ba3e3bcd0bd8a6e66df2ca9567d89832277a5fe",
+    "media_type": "application/pdf",
+    "byte_size": 2663,
+    "contract_version": "file-v1"
+  },
+  "obtained_at": "2026-10-18T10:28:40.734281Z",
+  "document_date": null,
+  "association_status": "pending",
+  "supersedes": null,
+  "word": null,
+  "source_word_version_id": null,
+  "duplicate": false,
+  "new_file": true
+}

@@ -1,0 +1,38 @@
+{
+  "project_id": "prj_b37b4852dd374cef",
+  "stage": "waiting_start",
+  "steps": [
+    {
+      "key": "materials",
+      "state": "done",
+      "task_id": null,
+      "message": null
+    },
+    {
+      "key": "rules",
+      "state": "waiting",
+      "task_id": null,
+      "message": null
+    },
+    {
+      "key": "review",
+      "state": "waiting",
+      "task_id": null,
+      "message": null
+    },
+    {
+      "key": "prediction",
+      "state": "waiting",
+      "task_id": null,
+      "message": null
+    }
+  ],
+  "missing": [],
+  "snapshot_id": null,
+  "round_no": null,
+  "stale_reasons": [],
+  "rules_total": 0,
+  "rules_unconfirmed": 0,
+  "input_verification_required": false,
+  "word_pdf_required": false
+}

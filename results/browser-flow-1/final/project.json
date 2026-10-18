@@ -1,0 +1,23 @@
+{
+  "project_id": "prj_b37b4852dd374cef",
+  "title": "浏览器一期融合验收-合成资料",
+  "tender_number": null,
+  "lot": null,
+  "round": 1,
+  "region": null,
+  "engineering_type": null,
+  "deadline": null,
+  "state": "issues_open",
+  "revision": 6,
+  "owner_id": "mem_fce39d221e0b4ac8",
+  "created_at": "2026-10-18T10:27:17.571227Z",
+  "settings": {
+    "auto_start": false,
+    "accept_rules_as_written": false,
+    "consistency_check": true,
+    "scope_check": true,
+    "show_score": true,
+    "price": true,
+    "outcome_tracking": true
+  }
+}
