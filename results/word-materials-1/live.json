@@ -1,0 +1,230 @@
+{
+  "synthetic": true,
+  "project_id": "prj_5b3a2aa60bb24927",
+  "first": {
+    "version_id": "ver_857b992f31114ed9",
+    "project_id": "prj_5b3a2aa60bb24927",
+    "file_id": "fil_7077e8926e624e64",
+    "version_number": 1,
+    "original_name": "施组一.docx",
+    "role": "body",
+    "artifact": {
+      "artifact_id": "art_efdbefd4be474e09",
+      "sha256": "7ee539c300fcbcde051e6947ea48f7675a20fe7f8f736a2cf508c4d321b8d247",
+      "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "byte_size": 901,
+      "contract_version": "file-v1"
+    },
+    "obtained_at": "2026-10-18T04:26:33.119299Z",
+    "document_date": null,
+    "association_status": "pending",
+    "supersedes": null,
+    "word": {
+      "current": true,
+      "state": "converted",
+      "error_code": null,
+      "adopted_pdf_version_id": "ver_7fa792cd6e704422",
+      "candidates": [
+        {
+          "link_id": "wpl_4e21cebcb8a04e09",
+          "pdf_version_id": "ver_7fa792cd6e704422",
+          "method": "controlled_render",
+          "gaps": []
+        }
+      ]
+    },
+    "source_word_version_id": null
+  },
+  "actual_pdf": {
+    "version_id": "ver_7fa792cd6e704422",
+    "project_id": "prj_5b3a2aa60bb24927",
+    "file_id": "fil_b71f8467f0b84da5",
+    "version_number": 1,
+    "original_name": "施组一.转换.pdf",
+    "role": "body",
+    "artifact": {
+      "artifact_id": "art_6cbaa037be6a4a54",
+      "sha256": "63b744733bc11c6694f8bec803a618d3c6bf6edd9c9ecd03e47f39d410ecd8a0",
+      "media_type": "application/pdf",
+      "byte_size": 8526,
+      "contract_version": "file-v1"
+    },
+    "obtained_at": "2026-10-18T04:26:34.866952Z",
+    "document_date": null,
+    "association_status": "pending",
+    "supersedes": null,
+    "word": null,
+    "source_word_version_id": "ver_857b992f31114ed9"
+  },
+  "failed_word": {
+    "version_id": "ver_3847198c57464d0a",
+    "project_id": "prj_5b3a2aa60bb24927",
+    "file_id": "fil_be18aa5a376f471f",
+    "version_number": 1,
+    "original_name": "外部改稿.docx",
+    "role": "body",
+    "artifact": {
+      "artifact_id": "art_8be6fe722ec24c75",
+      "sha256": "7aacb602d804a7a66fb8cc7df92ec1e2315d60430c512c47bd63f1e142eaeb2c",
+      "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "byte_size": 799,
+      "contract_version": "file-v1"
+    },
+    "obtained_at": "2026-10-18T04:26:35.833391Z",
+    "document_date": null,
+    "association_status": "pending",
+    "supersedes": null,
+    "word": {
+      "current": true,
+      "state": "failed",
+      "error_code": "word_content_not_supported",
+      "adopted_pdf_version_id": null,
+      "candidates": []
+    },
+    "source_word_version_id": null
+  },
+  "fallback_pdf": {
+    "version_id": "ver_22628b940a9f41ea",
+    "project_id": "prj_5b3a2aa60bb24927",
+    "file_id": "fil_5c20f28e4a1649a9",
+    "version_number": 1,
+    "original_name": "此稿实际PDF.pdf",
+    "role": "body",
+    "artifact": {
+      "artifact_id": "art_6cbaa037be6a4a54",
+      "sha256": "63b744733bc11c6694f8bec803a618d3c6bf6edd9c9ecd03e47f39d410ecd8a0",
+      "media_type": "application/pdf",
+      "byte_size": 8526,
+      "contract_version": "file-v1"
+    },
+    "obtained_at": "2026-10-18T04:26:37.116567Z",
+    "document_date": null,
+    "association_status": "pending",
+    "supersedes": null,
+    "word": null,
+    "source_word_version_id": "ver_3847198c57464d0a",
+    "duplicate": false,
+    "new_file": true
+  },
+  "updated_word": {
+    "version_id": "ver_7c440ec3f4194218",
+    "project_id": "prj_5b3a2aa60bb24927",
+    "file_id": "fil_be18aa5a376f471f",
+    "version_number": 2,
+    "original_name": "外部改稿二.docx",
+    "role": "body",
+    "artifact": {
+      "artifact_id": "art_f3faed9c8b514823",
+      "sha256": "0e22d036a4ebf55159cb8d67ec99f6a5a3a06ce0947c17c8a5a81174ce14ec0b",
+      "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "byte_size": 894,
+      "contract_version": "file-v1"
+    },
+    "obtained_at": "2026-10-18T04:26:37.334508Z",
+    "document_date": null,
+    "association_status": "pending",
+    "supersedes": "ver_3847198c57464d0a",
+    "word": {
+      "current": true,
+      "state": "converted",
+      "error_code": null,
+      "adopted_pdf_version_id": "ver_87b4044d5c144fd1",
+      "candidates": [
+        {
+          "link_id": "wpl_8d9e5c37e536433a",
+          "pdf_version_id": "ver_87b4044d5c144fd1",
+          "method": "controlled_render",
+          "gaps": []
+        }
+      ]
+    },
+    "source_word_version_id": null
+  },
+  "old_word": {
+    "version_id": "ver_3847198c57464d0a",
+    "project_id": "prj_5b3a2aa60bb24927",
+    "file_id": "fil_be18aa5a376f471f",
+    "version_number": 1,
+    "original_name": "外部改稿.docx",
+    "role": "body",
+    "artifact": {
+      "artifact_id": "art_8be6fe722ec24c75",
+      "sha256": "7aacb602d804a7a66fb8cc7df92ec1e2315d60430c512c47bd63f1e142eaeb2c",
+      "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "byte_size": 799,
+      "contract_version": "file-v1"
+    },
+    "obtained_at": "2026-10-18T04:26:35.833391Z",
+    "document_date": null,
+    "association_status": "pending",
+    "supersedes": null,
+    "word": {
+      "current": false,
+      "state": "failed",
+      "error_code": "word_content_not_supported",
+      "adopted_pdf_version_id": "ver_22628b940a9f41ea",
+      "candidates": [
+        {
+          "link_id": "wpl_44de5eb6b6b74ba2",
+          "pdf_version_id": "ver_22628b940a9f41ea",
+          "method": "user_declared",
+          "gaps": []
+        }
+      ]
+    },
+    "source_word_version_id": null
+  },
+  "complex_word": {
+    "version_id": "ver_06d5069235f14535",
+    "project_id": "prj_5b3a2aa60bb24927",
+    "file_id": "fil_e2b700b6f0b74c43",
+    "version_number": 1,
+    "original_name": "表格稿.docx",
+    "role": "body",
+    "artifact": {
+      "artifact_id": "art_dd343852a1c84709",
+      "sha256": "f27dfe5ae6d95686a853c9bd0187aa0a700259e7d1125805d196a658011d62cd",
+      "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "byte_size": 816,
+      "contract_version": "file-v1"
+    },
+    "obtained_at": "2026-10-18T04:26:39.662268Z",
+    "document_date": null,
+    "association_status": "pending",
+    "supersedes": null,
+    "word": {
+      "current": true,
+      "state": "needs_review",
+      "error_code": null,
+      "adopted_pdf_version_id": null,
+      "candidates": [
+        {
+          "link_id": "wpl_3b8e1d517a9947b7",
+          "pdf_version_id": "ver_41a911c9f39a4ba3",
+          "method": "controlled_render",
+          "gaps": [
+            "complex_layout_requires_review"
+          ]
+        }
+      ]
+    },
+    "source_word_version_id": null
+  },
+  "adopted_complex_pdf": {
+    "current": true,
+    "state": "needs_review",
+    "error_code": null,
+    "adopted_pdf_version_id": "ver_41a911c9f39a4ba3",
+    "candidates": [
+      {
+        "link_id": "wpl_3b8e1d517a9947b7",
+        "pdf_version_id": "ver_41a911c9f39a4ba3",
+        "method": "controlled_render",
+        "gaps": [
+          "complex_layout_requires_review"
+        ]
+      }
+    ]
+  },
+  "model_calls": 0
+}
