@@ -1,0 +1,118 @@
+{
+  "raw": {
+    "grades": [],
+    "grade": null,
+    "score": "6",
+    "key_points": [
+      {
+        "point": "总工期不得超过180日历天",
+        "status": "covered",
+        "evidence_ids": [
+          "unrelated_caption_body_0",
+          "unrelated_caption_body_1"
+        ]
+      },
+      {
+        "point": "阶段安排具体、可行",
+        "status": "covered",
+        "evidence_ids": [
+          "unrelated_caption_body_0"
+        ]
+      },
+      {
+        "point": "关键线路具体、可行",
+        "status": "covered",
+        "evidence_ids": [
+          "unrelated_caption_body_1"
+        ]
+      },
+      {
+        "point": "资源保障具体、可行",
+        "status": "partial",
+        "evidence_ids": [
+          "unrelated_caption_body_1"
+        ]
+      }
+    ],
+    "specificity": 0.6,
+    "specificity_note": "阶段划分、关键线路与班组机械配置均针对本道路工程，但资源保障仅列班组和机械数量，未说明来源、进场时间及与各阶段的匹配，且夹带无关风景照片。",
+    "effectiveness": {
+      "status": "weak",
+      "note": "阶段与关键线路表述具体，但资源保障措施较笼统，延误应对仅一句“增加同类作业班组”，缺乏可操作细节；无关插图削弱有效性。",
+      "evidence_ids": [
+        "unrelated_caption_body_1",
+        "unrelated_caption_body_2"
+      ]
+    },
+    "consistency": {
+      "status": "supported",
+      "note": "正文两处总工期均为180日历天，阶段天数合计180天，与关键线路顺序一致。",
+      "evidence_ids": [
+        "unrelated_caption_body_0",
+        "unrelated_caption_body_1"
+      ]
+    },
+    "assessment": "总工期180日历天满足不超过180天的要求，阶段划分与关键线路清晰、前后一致，资源保障有班组和机械配置及周度核对、延误增班措施，但资源投入依据、进场安排及各阶段资源匹配说明不具体，且夹带无关风景照片，具体性与可行性不足，故在满分8分中扣2分。",
+    "limitations": "评分标准未分档，得分依赖评委对“具体性与可行性”的主观判断；正文未提供资源投入计算依据和进度横道图，评估存在不确定性。"
+  },
+  "grounded": {
+    "score": "6.00",
+    "grades": [],
+    "grade": null,
+    "interval": null,
+    "grade_position": null,
+    "key_points": [
+      {
+        "point": "总工期不得超过180日历天",
+        "status": "covered",
+        "evidence_ids": [
+          "unrelated_caption_body_0",
+          "unrelated_caption_body_1"
+        ]
+      },
+      {
+        "point": "阶段安排具体、可行",
+        "status": "covered",
+        "evidence_ids": [
+          "unrelated_caption_body_0"
+        ]
+      },
+      {
+        "point": "关键线路具体、可行",
+        "status": "covered",
+        "evidence_ids": [
+          "unrelated_caption_body_1"
+        ]
+      },
+      {
+        "point": "资源保障具体、可行",
+        "status": "partial",
+        "evidence_ids": [
+          "unrelated_caption_body_1"
+        ]
+      }
+    ],
+    "coverage": 0.875,
+    "downgraded": 0,
+    "specificity": 0.6,
+    "specificity_note": "阶段划分、关键线路与班组机械配置均针对本道路工程，但资源保障仅列班组和机械数量，未说明来源、进场时间及与各阶段的匹配，且夹带无关风景照片。",
+    "effectiveness": {
+      "status": "weak",
+      "note": "阶段与关键线路表述具体，但资源保障措施较笼统，延误应对仅一句“增加同类作业班组”，缺乏可操作细节；无关插图削弱有效性。",
+      "evidence_ids": [
+        "unrelated_caption_body_1",
+        "unrelated_caption_body_2"
+      ]
+    },
+    "consistency": {
+      "status": "supported",
+      "note": "正文两处总工期均为180日历天，阶段天数合计180天，与关键线路顺序一致。",
+      "evidence_ids": [
+        "unrelated_caption_body_0",
+        "unrelated_caption_body_1"
+      ]
+    },
+    "assessment": "总工期180日历天满足不超过180天的要求，阶段划分与关键线路清晰、前后一致，资源保障有班组和机械配置及周度核对、延误增班措施，但资源投入依据、进场安排及各阶段资源匹配说明不具体，且夹带无关风景照片，具体性与可行性不足，故在满分8分中扣2分。",
+    "limitations": "评分标准未分档，得分依赖评委对“具体性与可行性”的主观判断；正文未提供资源投入计算依据和进度横道图，评估存在不确定性。"
+  }
+}

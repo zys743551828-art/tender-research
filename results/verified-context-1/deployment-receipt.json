@@ -1,0 +1,54 @@
+{
+  "product_commit": "bea15fc",
+  "method": "complete-chapters-2",
+  "existing_runtime_packages_preserved": 76,
+  "services": {
+    "bidwb-api-1": [
+      "sha256:984a6caef50aee0f1f1eab58e9fb5f0492ed70256099a160ccd0b50fa7e29edc",
+      "healthy"
+    ],
+    "bidwb-web-1": [
+      "sha256:0e842dc211fea5cb4a77eb41ed43543cac67590afdef1b3590c2bd35d128693e",
+      "healthy"
+    ],
+    "bidwb-relay-1": [
+      "sha256:984a6caef50aee0f1f1eab58e9fb5f0492ed70256099a160ccd0b50fa7e29edc",
+      "healthy"
+    ],
+    "bidwb-reaper-1": [
+      "sha256:984a6caef50aee0f1f1eab58e9fb5f0492ed70256099a160ccd0b50fa7e29edc",
+      "healthy"
+    ],
+    "bidwb-worker-parse-1": [
+      "sha256:984a6caef50aee0f1f1eab58e9fb5f0492ed70256099a160ccd0b50fa7e29edc",
+      "healthy"
+    ],
+    "bidwb-worker-ai-1": [
+      "sha256:984a6caef50aee0f1f1eab58e9fb5f0492ed70256099a160ccd0b50fa7e29edc",
+      "healthy"
+    ],
+    "bidwb-worker-experiment-1": [
+      "sha256:984a6caef50aee0f1f1eab58e9fb5f0492ed70256099a160ccd0b50fa7e29edc",
+      "healthy"
+    ],
+    "bidwb-worker-export-1": [
+      "sha256:984a6caef50aee0f1f1eab58e9fb5f0492ed70256099a160ccd0b50fa7e29edc",
+      "healthy"
+    ],
+    "bidwb-word-converter-1": [
+      "sha256:8b2bd9d628d39933a7db78aef4a2a24637a003f6fdb40cd0a9d5788c61b6e74a",
+      "healthy"
+    ],
+    "bidwb-postgres-1": [
+      "sha256:0ea6700a3b4f0ae6ce746519073558aed4d88a79d8d07622a9a644946c7319c4",
+      "healthy"
+    ],
+    "bidwb-kafka-1": [
+      "sha256:3f7b939115cd4872e9cee9369d80bd69712fde55f9902f46d793f64848dedc75",
+      "healthy"
+    ]
+  },
+  "frontend_changed": false,
+  "database_schema_changed": false,
+  "normal_word_service_preserved": true
+}

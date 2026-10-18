@@ -1,0 +1,21 @@
+{
+  "protocol_sha256": "d32c5de20444c67dafadfcb2da572b7923beacdb275cafa65868a27a3eb75963",
+  "requested_model": "deepseek-chat",
+  "usage": {
+    "prompt_tokens": 5219,
+    "completion_tokens": 1874,
+    "calls": 5
+  },
+  "scores": {
+    "baseline": "8.00",
+    "numeric_conflict": "5.00",
+    "generic_expansion": "0.00",
+    "unrelated_caption": "6.00"
+  },
+  "numeric_conflict_detected": true,
+  "generic_not_higher_than_baseline": true,
+  "caption_not_higher_than_baseline": true,
+  "real_score_accuracy_evaluated": false,
+  "actual_image_semantics_evaluated": false,
+  "production_database_modified": false
+}

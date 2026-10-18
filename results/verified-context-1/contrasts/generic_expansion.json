@@ -1,0 +1,92 @@
+{
+  "raw": {
+    "grades": [],
+    "grade": null,
+    "score": "0",
+    "key_points": [
+      {
+        "point": "阶段安排具体、可行",
+        "status": "missing",
+        "evidence_ids": []
+      },
+      {
+        "point": "关键线路明确、可行",
+        "status": "missing",
+        "evidence_ids": []
+      },
+      {
+        "point": "资源保障具体、可行",
+        "status": "missing",
+        "evidence_ids": []
+      },
+      {
+        "point": "总工期不超过180日历天",
+        "status": "missing",
+        "evidence_ids": []
+      }
+    ],
+    "specificity": 0.0,
+    "specificity_note": "正文通篇为“加强组织领导、科学组织施工”等可套用于任何项目的口号式重复文字，未涉及本工程对象、工况、工序或资源，无任何项目针对性。",
+    "effectiveness": {
+      "status": "weak",
+      "note": "仅有笼统表态，无阶段划分、关键线路、资源投入等具体措施，无法支撑进度计划可行性判断。",
+      "evidence_ids": [
+        "generic_expansion_body_0"
+      ]
+    },
+    "consistency": {
+      "status": "unclear",
+      "note": "正文为同一句重复，未出现相互矛盾内容，但也无实质信息可判断前后一致性。",
+      "evidence_ids": []
+    },
+    "assessment": "正文未给出任何阶段安排、关键线路或资源保障的具体内容，也未提及180日历天工期控制，全部为“加强组织领导、科学组织施工”等空泛套话且重复堆砌，不满足评分标准任何要点，故得0分。",
+    "limitations": "评分标准仅设满分、未分档，档次与得分依赖评委对“具体性与可行性”的主观判断；所给正文为重复通用文字，可能并非完整投标文件，章节映射失败亦增加不确定性。"
+  },
+  "grounded": {
+    "score": "0.00",
+    "grades": [],
+    "grade": null,
+    "interval": null,
+    "grade_position": null,
+    "key_points": [
+      {
+        "point": "阶段安排具体、可行",
+        "status": "missing",
+        "evidence_ids": []
+      },
+      {
+        "point": "关键线路明确、可行",
+        "status": "missing",
+        "evidence_ids": []
+      },
+      {
+        "point": "资源保障具体、可行",
+        "status": "missing",
+        "evidence_ids": []
+      },
+      {
+        "point": "总工期不超过180日历天",
+        "status": "missing",
+        "evidence_ids": []
+      }
+    ],
+    "coverage": 0.0,
+    "downgraded": 0,
+    "specificity": 0.0,
+    "specificity_note": "正文通篇为“加强组织领导、科学组织施工”等可套用于任何项目的口号式重复文字，未涉及本工程对象、工况、工序或资源，无任何项目针对性。",
+    "effectiveness": {
+      "status": "weak",
+      "note": "仅有笼统表态，无阶段划分、关键线路、资源投入等具体措施，无法支撑进度计划可行性判断。",
+      "evidence_ids": [
+        "generic_expansion_body_0"
+      ]
+    },
+    "consistency": {
+      "status": "unclear",
+      "note": "正文为同一句重复，未出现相互矛盾内容，但也无实质信息可判断前后一致性。",
+      "evidence_ids": []
+    },
+    "assessment": "正文未给出任何阶段安排、关键线路或资源保障的具体内容，也未提及180日历天工期控制，全部为“加强组织领导、科学组织施工”等空泛套话且重复堆砌，不满足评分标准任何要点，故得0分。",
+    "limitations": "评分标准仅设满分、未分档，档次与得分依赖评委对“具体性与可行性”的主观判断；所给正文为重复通用文字，可能并非完整投标文件，章节映射失败亦增加不确定性。"
+  }
+}

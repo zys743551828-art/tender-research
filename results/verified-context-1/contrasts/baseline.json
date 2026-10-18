@@ -1,0 +1,118 @@
+{
+  "raw": {
+    "grades": [],
+    "grade": null,
+    "score": "8",
+    "key_points": [
+      {
+        "point": "阶段安排具体可行",
+        "status": "covered",
+        "evidence_ids": [
+          "baseline_body_0"
+        ]
+      },
+      {
+        "point": "关键线路明确",
+        "status": "covered",
+        "evidence_ids": [
+          "baseline_body_1"
+        ]
+      },
+      {
+        "point": "资源保障具体可行",
+        "status": "covered",
+        "evidence_ids": [
+          "baseline_body_1"
+        ]
+      },
+      {
+        "point": "总工期不超过180日历天",
+        "status": "covered",
+        "evidence_ids": [
+          "baseline_body_0",
+          "baseline_body_1"
+        ]
+      }
+    ],
+    "specificity": 0.7,
+    "specificity_note": "正文针对合成道路工程给出了各阶段天数、工序衔接、关键线路及班组机械配置，工程对象与工序资源基本匹配，但部分措施仍较通用。",
+    "effectiveness": {
+      "status": "supported",
+      "note": "阶段划分与工期衔接明确，关键线路与资源配置对应，并设有周度核对和延误增班措施，具备可执行性。",
+      "evidence_ids": [
+        "baseline_body_0",
+        "baseline_body_1"
+      ]
+    },
+    "consistency": {
+      "status": "supported",
+      "note": "阶段天数合计180天，与总工期及进度表一致，关键线路与阶段顺序一致。",
+      "evidence_ids": [
+        "baseline_body_0",
+        "baseline_body_1"
+      ]
+    },
+    "assessment": "阶段安排按场地准备、地下管线、道路基层、面层及验收划分并明确天数与衔接；关键线路清晰；资源配置到班组和机械，并有周度核对与延误增班措施；总工期180天未超限，满足评分要求，给满分。",
+    "limitations": "评分标准未分档，满分判断依赖对“具体性与可行性”的主观评价；正文未提供进度横道图或网络图，资源保障的可行性证据有限。"
+  },
+  "grounded": {
+    "score": "8.00",
+    "grades": [],
+    "grade": null,
+    "interval": null,
+    "grade_position": null,
+    "key_points": [
+      {
+        "point": "阶段安排具体可行",
+        "status": "covered",
+        "evidence_ids": [
+          "baseline_body_0"
+        ]
+      },
+      {
+        "point": "关键线路明确",
+        "status": "covered",
+        "evidence_ids": [
+          "baseline_body_1"
+        ]
+      },
+      {
+        "point": "资源保障具体可行",
+        "status": "covered",
+        "evidence_ids": [
+          "baseline_body_1"
+        ]
+      },
+      {
+        "point": "总工期不超过180日历天",
+        "status": "covered",
+        "evidence_ids": [
+          "baseline_body_0",
+          "baseline_body_1"
+        ]
+      }
+    ],
+    "coverage": 1.0,
+    "downgraded": 0,
+    "specificity": 0.7,
+    "specificity_note": "正文针对合成道路工程给出了各阶段天数、工序衔接、关键线路及班组机械配置，工程对象与工序资源基本匹配，但部分措施仍较通用。",
+    "effectiveness": {
+      "status": "supported",
+      "note": "阶段划分与工期衔接明确，关键线路与资源配置对应，并设有周度核对和延误增班措施，具备可执行性。",
+      "evidence_ids": [
+        "baseline_body_0",
+        "baseline_body_1"
+      ]
+    },
+    "consistency": {
+      "status": "supported",
+      "note": "阶段天数合计180天，与总工期及进度表一致，关键线路与阶段顺序一致。",
+      "evidence_ids": [
+        "baseline_body_0",
+        "baseline_body_1"
+      ]
+    },
+    "assessment": "阶段安排按场地准备、地下管线、道路基层、面层及验收划分并明确天数与衔接；关键线路清晰；资源配置到班组和机械，并有周度核对与延误增班措施；总工期180天未超限，满足评分要求，给满分。",
+    "limitations": "评分标准未分档，满分判断依赖对“具体性与可行性”的主观评价；正文未提供进度横道图或网络图，资源保障的可行性证据有限。"
+  }
+}

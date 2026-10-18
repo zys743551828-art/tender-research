@@ -1,0 +1,118 @@
+{
+  "raw": {
+    "grades": [],
+    "grade": null,
+    "score": "5",
+    "key_points": [
+      {
+        "point": "总工期不得超过180日历天",
+        "status": "partial",
+        "evidence_ids": [
+          "numeric_conflict_body_0",
+          "numeric_conflict_body_1"
+        ]
+      },
+      {
+        "point": "阶段安排具体、可行",
+        "status": "covered",
+        "evidence_ids": [
+          "numeric_conflict_body_0"
+        ]
+      },
+      {
+        "point": "关键线路明确、可行",
+        "status": "covered",
+        "evidence_ids": [
+          "numeric_conflict_body_1"
+        ]
+      },
+      {
+        "point": "资源保障具体、可行",
+        "status": "partial",
+        "evidence_ids": [
+          "numeric_conflict_body_1"
+        ]
+      }
+    ],
+    "specificity": 0.6,
+    "specificity_note": "正文针对道路工程列出了具体分项工序、天数、班组与机械配置，但进度表总工期与文字总工期矛盾，且资源保障较简略。",
+    "effectiveness": {
+      "status": "weak",
+      "note": "阶段安排与关键线路具体，但进度表总工期240天与文字180天冲突，资源保障仅列班组和机械，未说明供应与调配可行性。",
+      "evidence_ids": [
+        "numeric_conflict_body_0",
+        "numeric_conflict_body_1"
+      ]
+    },
+    "consistency": {
+      "status": "contradicted",
+      "note": "正文称总工期180日历天，但进度表总工期为240日历天，前后矛盾。",
+      "evidence_ids": [
+        "numeric_conflict_body_0",
+        "numeric_conflict_body_1"
+      ]
+    },
+    "assessment": "阶段安排与关键线路较具体，但总工期出现180天与240天两处矛盾数字，直接影响工期符合性判断；资源保障仅列班组和机械数量，缺乏供应与调配可行性说明。综合具体性与可行性，扣减约3分。",
+    "limitations": "评分标准未分档，得分依赖评委对具体性与可行性的主观权衡；正文未提供进度表细节，无法核实240天与180天何者为准。"
+  },
+  "grounded": {
+    "score": "5.00",
+    "grades": [],
+    "grade": null,
+    "interval": null,
+    "grade_position": null,
+    "key_points": [
+      {
+        "point": "总工期不得超过180日历天",
+        "status": "partial",
+        "evidence_ids": [
+          "numeric_conflict_body_0",
+          "numeric_conflict_body_1"
+        ]
+      },
+      {
+        "point": "阶段安排具体、可行",
+        "status": "covered",
+        "evidence_ids": [
+          "numeric_conflict_body_0"
+        ]
+      },
+      {
+        "point": "关键线路明确、可行",
+        "status": "covered",
+        "evidence_ids": [
+          "numeric_conflict_body_1"
+        ]
+      },
+      {
+        "point": "资源保障具体、可行",
+        "status": "partial",
+        "evidence_ids": [
+          "numeric_conflict_body_1"
+        ]
+      }
+    ],
+    "coverage": 0.75,
+    "downgraded": 0,
+    "specificity": 0.6,
+    "specificity_note": "正文针对道路工程列出了具体分项工序、天数、班组与机械配置，但进度表总工期与文字总工期矛盾，且资源保障较简略。",
+    "effectiveness": {
+      "status": "weak",
+      "note": "阶段安排与关键线路具体，但进度表总工期240天与文字180天冲突，资源保障仅列班组和机械，未说明供应与调配可行性。",
+      "evidence_ids": [
+        "numeric_conflict_body_0",
+        "numeric_conflict_body_1"
+      ]
+    },
+    "consistency": {
+      "status": "contradicted",
+      "note": "正文称总工期180日历天，但进度表总工期为240日历天，前后矛盾。",
+      "evidence_ids": [
+        "numeric_conflict_body_0",
+        "numeric_conflict_body_1"
+      ]
+    },
+    "assessment": "阶段安排与关键线路较具体，但总工期出现180天与240天两处矛盾数字，直接影响工期符合性判断；资源保障仅列班组和机械数量，缺乏供应与调配可行性说明。综合具体性与可行性，扣减约3分。",
+    "limitations": "评分标准未分档，得分依赖评委对具体性与可行性的主观权衡；正文未提供进度表细节，无法核实240天与180天何者为准。"
+  }
+}
