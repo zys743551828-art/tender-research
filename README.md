@@ -1,10 +1,10 @@
 > 后续开发统一使用 `dev`，跟踪 `origin/dev`。应用源码主目录为 `workbench/`；旧供体及历史分支作为来源保留。跨仓维护策略见[正式交接](https://github.com/zys743551828-art/tender-docs/blob/dev/00-项目管理/工作交接.md)。
 
-> 当前工作交接请先读 [HANDOFF-20261017.md](HANDOFF-20261017.md)，并切换到`handoff/2026-10-17`分支。以下历史说明保留原范围。
+> Historical handoff: [HANDOFF-20261017.md](HANDOFF-20261017.md) records the former branch and scope. Continue on `dev`; use the [current installation and operation manual](https://github.com/zys743551828-art/tender-docs/blob/dev/使用说明.md) for the delivered workbench.
 
 # tender-research
 
-施组投标诊断的研究与验证程序：规则证据检索、有限规则与疑点诊断、成绩导入、技术分评测与校准、版本闭环，以及大模型（DeepSeek）评测。实际结果、失败和选型判断统一见 [tender-docs 的验证报告](https://github.com/zys743551828-art/tender-docs/blob/main/04-验证与测试/验证报告.md)；本仓库维护运行方法、代码边界和实验输出。
+施组投标诊断的研究与验证程序：规则证据检索、有限规则与疑点诊断、成绩导入、技术分评测与校准、版本闭环，以及大模型（DeepSeek）评测。实际结果、失败和选型判断统一见 [tender-docs 的验证报告](https://github.com/zys743551828-art/tender-docs/blob/dev/04-验证与测试/验证报告.md)；本仓库维护运行方法、代码边界和实验输出。
 
 ## 1. 环境
 
